@@ -1,0 +1,20 @@
+{
+  "name": "@kp/content",
+  "private": true,
+  "type": "module",
+  "description": "Treść solucji i poradników, schematy zod, migracja i build.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "migrate": "tsx scripts/migrate/index.ts",
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4"
+  }
+}
