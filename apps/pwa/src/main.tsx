@@ -24,7 +24,7 @@ async function start(): Promise<void> {
 
   let render = () => {};
   const store = new PhoneStore(kv, { progress, activeKey }, () => render());
-  const app = { welcomed: false, ...readLocal(APP_KEY, { welcomed: false }) };
+  const app = readLocal(APP_KEY, { welcomed: false });
   let needRefresh = false;
   // Strona już obsługiwana przez service workera = wszystko jest w pamięci podręcznej.
   let offlineReady = !!navigator.serviceWorker?.controller;
@@ -80,7 +80,9 @@ async function start(): Promise<void> {
     settingsExtra: (
       <AppSettings
         offlineReady={offlineReady}
-        onCheckUpdate={registration ? () => registration!.update() : undefined}
+        onCheckUpdate={
+          registration ? () => registration!.update().then(() => undefined) : undefined
+        }
       />
     ),
     onSetManual: (slug, status) => store.setManual(slug, status),
