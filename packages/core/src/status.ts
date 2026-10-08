@@ -3,6 +3,7 @@ import { filterForCharacter, isForRace, type ContentIndex } from './content';
 import { matchGameQuest, type MatchResult } from './match';
 import type {
   CharacterProgress,
+  MapQuest,
   QuestLogEntry,
   QuestStatus,
   QuestStatusResult,
@@ -32,6 +33,13 @@ export interface StatusOutput {
   matched: MatchedEntry[];
   /** Zadania z dziennika bez odpowiednika w treści. */
   unmatched: QuestLogEntry[];
+  /** Zadania z mapy lokacji bez odpowiednika w treści. */
+  unmatchedMap: UnmatchedMapQuest[];
+}
+
+export interface UnmatchedMapQuest {
+  locId: number;
+  quest: MapQuest;
 }
 
 /** Zadania, które wracają (codzienne, powtarzalne) – nigdy nie są „zrobione” na stałe. */
@@ -127,10 +135,57 @@ export function computeStatuses(input: StatusInput): StatusOutput {
     }
   }
 
+  const continuesMet = (q: BuiltQuest) => !q.continues || statusOf(q.continues) === 'done';
+
+  // 3a. Mapa lokacji (GAME.map_quests): są tam zadania w trakcie i do wzięcia, zrobionych nie ma.
+  //     Działa bez lokalizatora.
+  const logQids = new Set((scan?.questLog ?? []).map((e) => e.qid));
+  const unmatchedMap: UnmatchedMapQuest[] = [];
+  for (const map of scan?.mapQuests ?? []) {
+    const onMap = new Set<string>();
+    for (const mq of map.quests) {
+      const match = matchGameQuest(
+        index,
+        { name: mq.name, locId: map.locId, isMain: mq.isMain },
+        applicable,
+      );
+      if (!match) {
+        unmatchedMap.push({ locId: map.locId, quest: mq });
+        continue;
+      }
+      onMap.add(match.quest.slug);
+      if (logQids.has(mq.qid)) continue; // w trakcie – już ustalone z dziennika
+      if (scan?.questLog) {
+        set(
+          match.quest.slug,
+          'available',
+          'scan',
+          match.certain,
+          'Na mapie, a nie ma go w dzienniku – do wzięcia',
+          map.at,
+        );
+      } else {
+        set(
+          match.quest.slug,
+          'available',
+          'scan',
+          false,
+          'Na mapie – do wzięcia albo w trakcie (otwórz dziennik zadań)',
+          map.at,
+        );
+      }
+    }
+    // Zadania tej lokacji, których nie ma na mapie – zrobione albo jeszcze nieodblokowane.
+    for (const q of view.current) {
+      if (q.locId !== map.locId || onMap.has(q.slug) || RECURRING.has(q.kind)) continue;
+      if (!continuesMet(q)) continue;
+      set(q.slug, 'done', 'scan', false, 'Nie ma go już na mapie – pewnie zrobione', map.at);
+    }
+  }
+
   // 4. Teleportacje – tylko z aktywnym lokalizatorem.
   const teleports = scan?.lokalizatorActive ? scan.teleports : undefined;
   const tpByLoc = new Map((teleports ?? []).map((t) => [t.locId, t]));
-  const continuesMet = (q: BuiltQuest) => !q.continues || statusOf(q.continues) === 'done';
   if (teleports) {
     // Lokacja widoczna bez „QUEST” → wszystko tam zrobione.
     for (const q of view.current) {
@@ -230,5 +285,5 @@ export function computeStatuses(input: StatusInput): StatusOutput {
     set(q.slug, 'unknown', 'content', false, 'Brak danych – zeskanuj grę albo oznacz ręcznie');
   }
 
-  return { statuses: Object.fromEntries(out), matched, unmatched };
+  return { statuses: Object.fromEntries(out), matched, unmatched, unmatchedMap };
 }

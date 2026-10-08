@@ -81,8 +81,10 @@ export function setManualStatus(
 }
 
 /**
- * Odhacza (albo odznacza) krok zadania. Gdy po odhaczeniu wszystkie kroki są zrobione, zadanie
- * zostaje oznaczone ręcznie jako zrobione – jak na liście kontrolnej.
+ * Odhacza (albo odznacza) krok zadania. Kroki idą po kolei: odhaczenie kroku 7 odhacza też 1–6,
+ * a odznaczenie kroku 2 odznacza też wszystkie dalsze. Gdy wszystkie kroki są zrobione, zadanie
+ * zostaje oznaczone ręcznie jako zrobione; odznaczenie kroku w zrobionym zadaniu zmienia je na
+ * „w trakcie”.
  */
 export function setStepDone(
   progress: Progress,
@@ -95,17 +97,21 @@ export function setStepDone(
 ): Progress {
   return updateCharacter(progress, key, (c) => {
     const prev = c.quests[slug] ?? {};
-    const steps = { ...prev.steps, [String(step)]: stamp(done, now) };
+    const steps = { ...prev.steps };
+    const range = done
+      ? Array.from({ length: step + 1 }, (_, i) => i)
+      : Array.from({ length: Math.max(totalSteps, step + 1) - step }, (_, i) => step + i);
+    for (const i of range) {
+      // Zmieniamy tylko kroki, które faktycznie zmieniają stan – mniej do synchronizacji.
+      if (steps[String(i)]?.v !== done) steps[String(i)] = stamp(done, now);
+    }
     const allDone =
       totalSteps > 0 &&
       Array.from({ length: totalSteps }, (_, i) => steps[String(i)]?.v).every(Boolean);
-    const quest: QuestProgress = {
-      ...prev,
-      steps,
-      ...(done &&
-        allDone &&
-        prev.manual?.v !== 'done' && { manual: stamp<ManualStatus | null>('done', now) }),
-    };
+    let manual = prev.manual;
+    if (done && allDone && manual?.v !== 'done') manual = stamp<ManualStatus | null>('done', now);
+    if (!done && manual?.v === 'done') manual = stamp<ManualStatus | null>('active', now);
+    const quest: QuestProgress = { ...prev, steps, ...(manual && { manual }) };
     return { ...c, quests: { ...c.quests, [slug]: quest } };
   });
 }

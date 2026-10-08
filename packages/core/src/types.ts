@@ -51,7 +51,23 @@ export interface QuestTrackEntry {
   locId: number;
 }
 
-/** Jeden odczyt stanu gry. Brak `teleports`/`questLog` = tego nie odczytano. */
+/** Zadanie z `GAME.map_quests` – w trakcie albo do wzięcia na mapie lokacji (zrobionych tam nie ma). */
+export interface MapQuest {
+  /** `qb_id` = `data-qid` z dziennika. */
+  qid: number;
+  name: string;
+  isMain: boolean;
+  isDaily: boolean;
+}
+
+/** Zadania widoczne na mapie jednej lokacji w danej chwili. */
+export interface MapScan {
+  locId: number;
+  at: number;
+  quests: MapQuest[];
+}
+
+/** Jeden odczyt stanu gry. Brak `teleports`/`questLog`/`mapQuests` = tego nie odczytano. */
 export interface Scan {
   /** Czas odczytu (ms od epoki). */
   at: number;
@@ -60,6 +76,8 @@ export interface Scan {
   /** Lista teleportacji przefiltrowana („Szukaj”/„Reborn”) – z braku lokacji nic nie wnioskujemy. */
   teleportsPartial?: boolean;
   questLog?: QuestLogEntry[];
+  /** Mapy odwiedzonych lokacji (`GAME.map_quests`) – najnowszy odczyt każdej lokacji. */
+  mapQuests?: MapScan[];
 }
 
 /* ───────────── Statusy ───────────── */

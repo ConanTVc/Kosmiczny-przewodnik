@@ -58,6 +58,7 @@ describe('mergeProgress', () => {
         },
         matched: [],
         unmatched: [],
+        unmatchedMap: [],
       },
     );
     const merged = mergeProgress(phone, pc).characters[KEY]!.quests['hborn/1342/ostatni-rejs'];
@@ -164,6 +165,7 @@ describe('postęp', () => {
       },
       matched: [],
       unmatched: [],
+      unmatchedMap: [],
     };
     const once = applyScanResult(
       base(),
@@ -191,6 +193,29 @@ describe('postęp', () => {
 });
 
 describe('kroki i własne listy', () => {
+  it('kroki po kolei: odhaczenie kroku 7 zaznacza 1–6, odznaczenie kroku 2 zdejmuje kolejne', () => {
+    const slug = 'hborn/1359/hakaishin';
+    let p = setStepDone(base(), KEY, slug, 6, true, 10, 10);
+    const steps = () =>
+      Object.entries(p.characters[KEY]!.quests[slug]!.steps!)
+        .filter(([, s]) => s.v)
+        .map(([i]) => Number(i));
+    expect(steps()).toEqual([0, 1, 2, 3, 4, 5, 6]);
+    p = setStepDone(p, KEY, slug, 7, true, 10, 11);
+    expect(steps()).toEqual([0, 1, 2, 3, 4, 5, 6, 7]);
+    // Kroki 1–7 już były odhaczone – nie dostają nowego znacznika czasu.
+    expect(p.characters[KEY]!.quests[slug]!.steps!['0']!.at).toBe(10);
+    p = setStepDone(p, KEY, slug, 1, false, 10, 12);
+    expect(steps()).toEqual([0]);
+  });
+
+  it('odznaczenie kroku w zrobionym zadaniu zmienia je na „w trakcie”', () => {
+    let p = setStepDone(base(), KEY, 'q', 2, true, 3, 10);
+    expect(p.characters[KEY]!.quests['q']!.manual?.v).toBe('done');
+    p = setStepDone(p, KEY, 'q', 2, false, 3, 11);
+    expect(p.characters[KEY]!.quests['q']!.manual).toEqual({ v: 'active', at: 11 });
+  });
+
   it('odhaczenie wszystkich kroków oznacza zadanie jako zrobione; bez ostatniego – nie', () => {
     let p = setStepDone(base(), KEY, 'hborn/1048/duchy-ognia', 0, true, 3, 10);
     p = setStepDone(p, KEY, 'hborn/1048/duchy-ognia', 1, true, 3, 11);
@@ -210,16 +235,23 @@ describe('kroki i własne listy', () => {
   });
 
   it('kroki scalane osobno z dwóch urządzeń, listy last-write-wins', () => {
+    // Telefon: odhaczone do kroku 4. Komputer: krok 1, a później odznaczony krok 4.
+    const phone = setQuestLists(setStepDone(base(), KEY, 'q', 3, true, 5, 20), KEY, 'q', [], 25);
     const pc = setQuestLists(
-      setStepDone(base(), KEY, 'q', 0, true, 4, 10),
+      setStepDone(setStepDone(base(), KEY, 'q', 0, true, 5, 10), KEY, 'q', 3, false, 5, 30),
       KEY,
       'q',
       ['Na później'],
       30,
     );
-    const phone = setQuestLists(setStepDone(base(), KEY, 'q', 1, true, 4, 20), KEY, 'q', [], 25);
     const merged = mergeProgress(pc, phone).characters[KEY]!.quests['q']!;
-    expect(merged.steps).toEqual({ '0': { v: true, at: 10 }, '1': { v: true, at: 20 } });
+    expect(merged.steps).toEqual({
+      '0': { v: true, at: 20 },
+      '1': { v: true, at: 20 },
+      '2': { v: true, at: 20 },
+      '3': { v: false, at: 30 },
+      '4': { v: false, at: 30 },
+    });
     expect(merged.lists).toEqual({ v: ['Na później'], at: 30 });
     expect(mergeProgress(pc, phone)).toEqual(mergeProgress(phone, pc));
     expect(parseProgress(JSON.parse(JSON.stringify(mergeProgress(pc, phone))))).toBeDefined();

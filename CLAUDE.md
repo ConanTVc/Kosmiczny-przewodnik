@@ -23,7 +23,7 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 ## Twarde zasady
 
 1. **Tylko odczyt.** Skrypt NIGDY nie klika, nie wysyła żądań do serwera gry, nie wywołuje funkcji gry, nie modyfikuje obiektu `GAME`. Jedyna ingerencja w DOM to własny panel.
-2. **Biała lista danych.** Z `GAME` czytamy wyłącznie: `GAME.server`, `GAME.getTime()`, `GAME.char_data.{id, name, race, reborn, loc, bonus18}`. Nigdy nie czytamy ani nie wysyłamy `login`, `captcha`, `sitekey`, `pid` ani innych pól.
+2. **Biała lista danych.** Z `GAME` czytamy wyłącznie: `GAME.server`, `GAME.getTime()`, `GAME.char_data.{id, name, race, reborn, loc, bonus18}` oraz `GAME.map_quests` (z każdego wpisu tylko `{qb_id, rtype, main, name}`; dopisane za zgodą autora 2026-10-08). Nigdy nie czytamy ani nie wysyłamy `login`, `captcha`, `sitekey`, `pid` ani innych pól.
 3. **Local-first.** Wszystko działa offline, synchronizacja w tle.
 4. **Błąd skryptu nie może zepsuć gry** – wszystko, co dotyka strony, w try/catch.
 5. Teksty interfejsu po polsku.
@@ -57,8 +57,15 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 - Nazwy powtarzają się między lokacjami („Rutyna” w 1338 i 1358), mają końcowe spacje i dopiski `[LV2]`, `[III]` → dopasowanie zawsze po **(locId + znormalizowana nazwa)**.
 - Lokacja w dzienniku = lokacja, w której zadanie jest **teraz**. Zadania przechodzą między lokacjami; w solucji to kolejne sekcje z tym samym zadaniem.
 - Długie zadania (główne co 100 kroków) dostają w grze kolejne części z numerem: „Hakaishin”, „Hakaishin II”…; podobnie „Pamiątka 2”. W solucji nazwa bywa bez numeru → zadanie główne dopasowujemy po lokacji, a numer części tolerujemy.
+### Zadania na mapie bieżącej lokacji – `GAME.map_quests`
+- Obiekt: klucz = pozycja na mapie (`"16_10"`), wartość = tablica `{qb_id, rtype, main, name}`. Dotyczy lokacji `GAME.char_data.loc`.
+- Pokazuje zadania **w trakcie i jeszcze niewzięte**; zrobionych nie ma. Działa bez lokalizatora.
+- `main: 1` = zadanie główne, `main: 0` = poboczne, `main: 0` + `rtype: 1` = codzienne.
+- `qb_id` = `data-qid` z dziennika (`quest_log_tr629351`) = `track_quest_629351` w panelu postępów – łączymy po nim bez zgadywania.
+- Zadanie na mapie, którego nie ma w dzienniku → do wzięcia. Zadanie tej lokacji z treści, którego nie ma na mapie → pewnie zrobione (niepewne – może jeszcze nie odblokowane).
+
 ### Panel „Postępy zadań” – `#quest_track_con .qtrack`
-- `data-loc` elementu = lokacja zadania, nazwa w `<b>` – gra skraca długie nazwy do „...” (dopasowanie po początku nazwy).
+- `data-loc` elementu = lokacja zadania, nazwa w `<b>` – gra skraca długie nazwy do „...” (dopasowanie po początku nazwy); id elementu `track_quest_{qid}`.
 - Pokazuje tylko śledzone zadania i nie każdy typ wymagań – źródło pomocnicze, główne to dziennik.
 
 ### Dopasowanie wpisu z gry do treści (sprawdzone na `fixtures/dziennik_s21.tsv`: 135/141, reszty nie ma w solucjach)

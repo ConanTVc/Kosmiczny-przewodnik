@@ -4,6 +4,7 @@ import { parseQuestLog } from '../src/parse/questLog';
 import { parseTeleportList } from '../src/parse/teleports';
 import { applyScanResult, emptyProgress, setManualStatus, upsertCharacter } from '../src/progress';
 import { computeStatuses } from '../src/status';
+import { parseMapQuests } from '../src/mapQuests';
 import type { QuestLogEntry, Scan, TeleportEntry } from '../src/types';
 import { fixtureDocument, loadRealContent, miniContent } from './helpers';
 
@@ -304,5 +305,68 @@ describe('statusy na fixtures z gry (tp_list + qb_list, Hborn)', () => {
       'Wymiana [III]',
       'Opaska Hiper',
     ]);
+  });
+});
+
+describe('mapa lokacji (GAME.map_quests)', () => {
+  it('parseMapQuests kopiuje tylko qb_id, rtype, main, name i pomija błędne wpisy', () => {
+    const raw = {
+      '16_10': [{ qb_id: 853801, rtype: 0, main: 1, name: 'Black', sekret: 'x' }],
+      '5_6': [
+        { qb_id: 853802, rtype: 0, main: 0, name: 'Organizacja ' },
+        { qb_id: 'zle', name: 'X' },
+      ],
+      '7_7': [{ qb_id: 9, rtype: 1, main: 0, name: 'Codzienne' }],
+      '1_1': 'nie tablica',
+    };
+    expect(parseMapQuests(raw)).toEqual([
+      { qid: 853801, name: 'Black', isMain: true, isDaily: false },
+      { qid: 853802, name: 'Organizacja', isMain: false, isDaily: false },
+      { qid: 9, name: 'Codzienne', isMain: false, isDaily: true },
+    ]);
+    expect(parseMapQuests(undefined)).toEqual([]);
+  });
+
+  it('na mapie, a nie w dzienniku → do wzięcia; nie ma na mapie → pewnie zrobione; qb_id z dziennika → w trakcie', () => {
+    const out = computeStatuses({
+      index,
+      character,
+      scan: scan({
+        lokalizatorActive: false,
+        questLog: [{ ...log('Inwazja', 11), qid: 500 }],
+        mapQuests: [
+          {
+            locId: 11,
+            at: 900,
+            quests: [
+              { qid: 500, name: 'Inwazja', isMain: false, isDaily: false },
+              { qid: 501, name: 'Rutyna', isMain: false, isDaily: false },
+              { qid: 502, name: 'Nieznane na mapie', isMain: false, isDaily: false },
+            ],
+          },
+        ],
+      }),
+    });
+    expect(status(out, 'gborn/11/inwazja')).toBe('active');
+    expect(status(out, 'gborn/11/rutyna')).toBe('available');
+    expect(status(out, 'gborn/11/glowne')).toBe('done?');
+    expect(out.unmatchedMap.map((u) => u.quest.name)).toEqual(['Nieznane na mapie']);
+  });
+
+  it('bez dziennika zadanie z mapy jest niepewne (może być w trakcie)', () => {
+    const out = computeStatuses({
+      index,
+      character,
+      scan: scan({
+        mapQuests: [
+          {
+            locId: 11,
+            at: 900,
+            quests: [{ qid: 501, name: 'Rutyna', isMain: false, isDaily: false }],
+          },
+        ],
+      }),
+    });
+    expect(status(out, 'gborn/11/rutyna')).toBe('available?');
   });
 });
