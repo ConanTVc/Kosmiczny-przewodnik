@@ -6,6 +6,7 @@ import {
   indexContent,
   parseQuestLog,
   parseTeleportList,
+  setManualStatus,
   upsertCharacter,
   type Progress,
 } from '@kp/core';
@@ -197,7 +198,7 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
     { key, name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
     1,
   );
-  const mountPanel = () => {
+  const mountPanel = (extra: Partial<PanelProps> = {}) => {
     const host = document.createElement('div');
     document.body.append(host);
     const calls = { onSetStep: vi.fn(), onSetLists: vi.fn() };
@@ -212,6 +213,7 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
       onSetTracked: vi.fn(),
       onSetting: vi.fn(),
       onImport: vi.fn(),
+      ...extra,
     });
     const root = host.shadowRoot!;
     const click = async (el: Element | null | undefined) => {
@@ -266,5 +268,28 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
     expect((root.querySelector('#kp-ahead-chapter') as HTMLSelectElement).value).toBe('hborn');
     expect(root.querySelectorAll('.kp-story').length).toBeGreaterThan(0);
     expect(root.querySelector('.kp-story .kp-steps')).not.toBeNull();
+  });
+
+  it('„Tutaj” chowa zrobione zadania za przyciskiem „Pokaż zrobione”', async () => {
+    const quest = indexContent(content)
+      .byLoc.get(1359)!
+      .find((q) => q.slug.startsWith('hborn/'))!;
+    const { root, click, button } = mountPanel({
+      progress: setManualStatus(progress, key, quest.slug, 'done', 2),
+    });
+    const names = () => [...root.querySelectorAll('.kp-quest-name')].map((n) => n.textContent);
+    expect(names()).not.toContain(quest.name);
+    await click(button('Pokaż zrobione (1)'));
+    expect(names()).toContain(quest.name);
+    expect(button('Ukryj zrobione')).toBeDefined();
+  });
+
+  it('klik w belkę zwija panel – zostaje sam nagłówek', async () => {
+    const onToggleMinimize = vi.fn();
+    const { root, click } = mountPanel({ minimized: true, onToggleMinimize });
+    expect(root.querySelector('.kp-tabs')).toBeNull();
+    expect(root.querySelector('.kp-main')).toBeNull();
+    await click(root.querySelector('.kp-brand-btn'));
+    expect(onToggleMinimize).toHaveBeenCalledOnce();
   });
 });

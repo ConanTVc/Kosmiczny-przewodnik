@@ -16,9 +16,15 @@ const byKind = (a: BuiltQuest, b: BuiltQuest) =>
   KIND_ORDER[a.kind] - KIND_ORDER[b.kind] || a.order - b.order;
 
 export function HereView({ locId, onPick }: { locId?: number; onPick(locId: number): void }) {
-  const { character, index, chapters, relevant, statuses, locName, props } = usePanel();
+  const { character, index, chapters, relevant, statuses, locName, props, focusSlug } = usePanel();
   const [picking, setPicking] = useState(false);
+  const [showDone, setShowDone] = useState(false);
   const relevantSlugs = useMemo(() => new Set(relevant.map((q) => q.slug)), [relevant]);
+  /** Zrobione na pewno (albo oznaczone ręcznie) chowamy; niepewne „Zrobione ?” zostają do potwierdzenia. */
+  const isDone = (q: BuiltQuest) => {
+    const r = statuses[q.slug];
+    return r?.status === 'done' && (r.certain || r.source === 'manual') && q.slug !== focusSlug;
+  };
 
   if (!character) {
     return (
@@ -54,6 +60,9 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
     counts.set(s, (counts.get(s) ?? 0) + 1);
   }
   const isGameLoc = props.currentLoc === locId;
+  const hiddenCount = [...quests, ...passing].filter(isDone).length;
+  const shownQuests = showDone ? quests : quests.filter((q) => !isDone(q));
+  const shownPassing = showDone ? passing : passing.filter((q) => !isDone(q));
 
   return (
     <div class="kp-view">
@@ -94,7 +103,10 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
               .map(([s, n]) => `${STATUS_LABEL[s as keyof typeof STATUS_LABEL]}: ${n}`)
               .join(' · ')}
           </p>
-          {quests.map((q) => {
+          {!showDone && quests.length > 0 && shownQuests.length === 0 && (
+            <p class="kp-muted">Wszystko w tej lokacji zrobione.</p>
+          )}
+          {shownQuests.map((q) => {
             const st = statuses[q.slug]?.status;
             return (
               <QuestCard
@@ -104,13 +116,22 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
               />
             );
           })}
-          {passing.length > 0 && (
+          {shownPassing.length > 0 && (
             <>
               <h3 class="kp-subhead">Zadania, które tu przechodzą</h3>
-              {passing.map((q) => (
+              {shownPassing.map((q) => (
                 <QuestCard key={q.slug} quest={q} showLocation />
               ))}
             </>
+          )}
+          {hiddenCount > 0 && (
+            <button
+              type="button"
+              class="kp-btn kp-btn-small kp-btn-ghost kp-show-done"
+              onClick={() => setShowDone(!showDone)}
+            >
+              {showDone ? 'Ukryj zrobione' : `Pokaż zrobione (${hiddenCount})`}
+            </button>
           )}
         </>
       )}

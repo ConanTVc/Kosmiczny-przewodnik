@@ -85,6 +85,35 @@
   color: var(--accent);
   white-space: nowrap;
 }
+.kp-brand-btn {
+  min-height: var(--tap);
+  padding: 0 6px;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.kp-brand-btn:hover {
+  background: var(--surface-2);
+}
+.kp-brand-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+/* Zwinięty do samej belki – wysokość wyznacza belka, nie ekran. */
+.kp-app.kp-minimized {
+  height: auto;
+  min-height: 0;
+}
+.kp-minimized .kp-top {
+  border-bottom: 0;
+  border-radius: var(--radius);
+}
+.kp-show-done {
+  align-self: flex-start;
+}
 .kp-who {
   flex: 1;
   min-width: 0;
@@ -764,13 +793,20 @@
 .kp-wizard-ask {
   border-color: var(--accent);
 }
-.kp-wizard-ask p {
+.kp-wizard p {
   margin: 0;
 }
 .kp-wizard-line {
   display: block;
   width: calc(100% - 16px);
   cursor: pointer;
+}
+.kp-wizard-warn {
+  margin: 4px 8px 0;
+  padding: 6px 10px;
+  border: 1px solid var(--st-available);
+  border-radius: var(--radius);
+  font-size: 0.9em;
 }
 .kp-wizard-head {
   display: flex;

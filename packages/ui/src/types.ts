@@ -48,4 +48,22 @@ export interface PanelProps {
   /** Import kopii zapasowej – dostaje już zwalidowany postęp. */
   onImport(progress: Progress): void;
   onClose?(): void;
+  /** Panel zwinięty do samej belki (userscript). */
+  minimized?: boolean;
+  /** Kliknięcie belki „Kosmiczny Przewodnik” – zwiń/rozwiń. */
+  onToggleMinimize?(): void;
+  /** Gracz wybrał lokację w „Tutaj” (telefon: zapamiętujemy ją jako ostatnią). */
+  onPickLocation?(locId: number): void;
+  /** Ręczne dodanie postaci (telefon bez gry). Brak = przycisk niewidoczny. */
+  onAddCharacter?(character: NewCharacter): void;
+  /** Ręczna zmiana rebornu postaci (telefon bez synchronizacji). */
+  onSetReborn?(key: string, reborn: number): void;
+}
+
+export interface NewCharacter {
+  name: string;
+  race: number;
+  reborn: number;
+  /** Numer serwera, jeśli gracz go poda. */
+  server?: number;
 }

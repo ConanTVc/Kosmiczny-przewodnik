@@ -22,7 +22,7 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 
 ## Twarde zasady
 
-1. **Tylko odczyt.** Skrypt NIGDY nie klika, nie wysyła żądań do serwera gry, nie wywołuje funkcji gry, nie modyfikuje obiektu `GAME`. Jedyna ingerencja w DOM to własny panel.
+1. **Tylko odczyt.** Skrypt NIGDY nie klika, nie wysyła żądań do serwera gry, nie wywołuje funkcji gry, nie modyfikuje obiektu `GAME`. Jedyna ingerencja w DOM to własny panel oraz ikona przewodnika doklejona na końcu paska szybkich akcji gry (rodzic `.qlink`; własny host z Shadow DOM, bez klas gry, klik nie propaguje do gry; dopisane 2026-10-08 na prośbę właściciela projektu). Bez paska – przycisk w rogu ekranu.
 2. **Biała lista danych.** Z `GAME` czytamy wyłącznie: `GAME.server`, `GAME.getTime()`, `GAME.char_data.{id, name, race, reborn, loc, bonus18}` oraz `GAME.map_quests` (z każdego wpisu tylko `{qb_id, rtype, main, name}`; dopisane za zgodą autora 2026-10-08). Nigdy nie czytamy ani nie wysyłamy `login`, `captcha`, `sitekey`, `pid` ani innych pól.
 3. **Local-first.** Wszystko działa offline, synchronizacja w tle.
 4. **Błąd skryptu nie może zepsuć gry** – wszystko, co dotyka strony, w try/catch.
@@ -95,6 +95,7 @@ Każdy status pamięta źródło (`auto`/`manual`) i znacznik czasu. Zadania z d
 
 Skaner tylko obserwuje (MutationObserver na pojawienie się `#tp_list` / `#qb_list`), nigdy nie klika za gracza. Kreator prowadzi gracza:
 wybierz postać → sprawdź lokalizator → otwórz Teleportacje → otwórz Dziennik zadań → podsumowanie.
+Kreator krok po kroku tylko dla postaci bez pełnego skanu; potem jedna zwinięta linia (skan i tak odświeża się w tle, gdy gracz otworzy Teleportacje albo Dziennik). Nie pokazujemy czasu lokalizatora – tylko aktywny/nieaktywny.
 
 ## Konwencje
 

@@ -114,9 +114,24 @@ export function App(props: PanelProps) {
   const layout = props.layout ?? 'panel';
   return (
     <PanelContext.Provider value={data}>
-      <div class={`kp-app kp-layout-${layout}`} data-theme={theme}>
+      <div
+        class={`kp-app kp-layout-${layout} ${props.minimized ? 'kp-minimized' : ''}`}
+        data-theme={theme}
+      >
         <header class="kp-top">
-          <div class="kp-brand">Kosmiczny Przewodnik</div>
+          {props.onToggleMinimize ? (
+            <button
+              type="button"
+              class="kp-brand kp-brand-btn"
+              aria-expanded={!props.minimized}
+              title={props.minimized ? 'Rozwiń przewodnik' : 'Zwiń przewodnik do belki'}
+              onClick={props.onToggleMinimize}
+            >
+              Kosmiczny Przewodnik <span aria-hidden="true">{props.minimized ? '▸' : '▾'}</span>
+            </button>
+          ) : (
+            <div class="kp-brand">Kosmiczny Przewodnik</div>
+          )}
           {progressChar && (
             <div
               class="kp-who"
@@ -137,32 +152,43 @@ export function App(props: PanelProps) {
             </button>
           )}
         </header>
-        {props.header}
-        <nav class="kp-tabs" aria-label="Zakładki">
-          {TABS.map(([id, label]) => (
-            <button
-              key={id}
-              type="button"
-              class={`kp-tab ${tab === id ? 'kp-tab-on' : ''}`}
-              aria-current={tab === id ? 'page' : undefined}
-              onClick={() => setTab(id)}
-            >
-              {label}
-            </button>
-          ))}
-        </nav>
-        <main class="kp-main">
-          <ErrorBoundary>
-            {tab === 'here' && (
-              <HereView locId={locId} onPick={(id) => (setViewLoc(id), setFocusSlug(undefined))} />
-            )}
-            {tab === 'progress' && <ProgressView />}
-            {tab === 'ahead' && <AheadView />}
-            {tab === 'search' && <SearchView />}
-            {tab === 'characters' && <CharactersView />}
-            {tab === 'settings' && <SettingsView />}
-          </ErrorBoundary>
-        </main>
+        {!props.minimized && props.header}
+        {!props.minimized && (
+          <nav class="kp-tabs" aria-label="Zakładki">
+            {TABS.map(([id, label]) => (
+              <button
+                key={id}
+                type="button"
+                class={`kp-tab ${tab === id ? 'kp-tab-on' : ''}`}
+                aria-current={tab === id ? 'page' : undefined}
+                onClick={() => setTab(id)}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+        )}
+        {!props.minimized && (
+          <main class="kp-main">
+            <ErrorBoundary>
+              {tab === 'here' && (
+                <HereView
+                  locId={locId}
+                  onPick={(id) => {
+                    setViewLoc(id);
+                    setFocusSlug(undefined);
+                    props.onPickLocation?.(id);
+                  }}
+                />
+              )}
+              {tab === 'progress' && <ProgressView />}
+              {tab === 'ahead' && <AheadView />}
+              {tab === 'search' && <SearchView />}
+              {tab === 'characters' && <CharactersView />}
+              {tab === 'settings' && <SettingsView />}
+            </ErrorBoundary>
+          </main>
+        )}
       </div>
     </PanelContext.Provider>
   );

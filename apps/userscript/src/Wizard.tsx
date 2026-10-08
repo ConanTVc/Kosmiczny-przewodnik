@@ -1,5 +1,6 @@
 import type { StatusOutput } from '@kp/core';
 import type { ComponentChildren } from 'preact';
+import { useState } from 'preact/hooks';
 import type { CharacterScan, TrackChoice } from './controller';
 import { lokalizatorSeconds, type GameSnapshot } from './game';
 
@@ -12,19 +13,23 @@ export interface WizardProps {
   pendingNew: boolean;
   scan?: CharacterScan;
   result?: StatusOutput;
+  /** Czas ostatniego pełnego skanu tej postaci (teleportacje bez filtra + dziennik). */
+  lastFullScan?: number | null;
+  /** Zwinięcie kreatora dla postaci jeszcze bez pełnego skanu (zapamiętywane). */
   collapsed: boolean;
   onToggle(): void;
   onTrack(choice: TrackChoice): void;
 }
 
-function duration(seconds: number): string {
-  const h = Math.floor(seconds / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  return h > 0 ? `${h} h ${m} min` : `${m} min`;
-}
-
 const time = (ms: number) =>
   new Date(ms).toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' });
+const dateTime = (ms: number) =>
+  new Date(ms).toLocaleString('pl-PL', {
+    day: '2-digit',
+    month: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
 
 function Step({
   state,
@@ -49,8 +54,13 @@ function Step({
   );
 }
 
-/** Kreator skanu: postać → lokalizator → Teleportacje → Dziennik zadań → podsumowanie. */
+/**
+ * Kreator skanu: postać → lokalizator → Teleportacje → Dziennik zadań → podsumowanie.
+ * Po pierwszym pełnym skanie postaci kreator to jedna linia – skan i tak idzie w tle,
+ * gdy gracz otworzy Teleportacje albo Dziennik zadań.
+ */
 export function Wizard(props: WizardProps) {
+  const [expanded, setExpanded] = useState(false);
   const c = props.game?.character;
   const lok = lokalizatorSeconds(props.game);
   const tp = props.scan?.teleports;
@@ -59,6 +69,14 @@ export function Wizard(props: WizardProps) {
   const count = (s: string) => statuses.filter((r) => r.status === s).length;
   const outside = props.result?.unmatched.length ?? 0;
   const ready = !!c && !!tp && !!log;
+  const known = !!props.lastFullScan;
+  const collapsed = known ? !expanded : props.collapsed;
+  const toggle = known ? () => setExpanded(!expanded) : props.onToggle;
+  const filterWarning = tp?.partial && (
+    <p class="kp-wizard-warn">
+      Lista teleportacji jest przefiltrowana – wyczyść „Szukaj” i ustaw Reborn na „wszystkie”.
+    </p>
+  );
 
   if (props.pendingNew && c) {
     return (
@@ -94,20 +112,30 @@ export function Wizard(props: WizardProps) {
     );
   }
 
-  if (props.collapsed) {
+  if (collapsed) {
+    const summary = `zrobione ${count('done')} · w trakcie ${count('active')} · do wzięcia ${count('available')}`;
     return (
-      <button
-        type="button"
-        class="kp-wizard kp-wizard-line"
-        aria-expanded="false"
-        onClick={props.onToggle}
-      >
-        {ready ? '✓' : '○'} Skan:{' '}
-        {ready
-          ? `zrobione ${count('done')} · w trakcie ${count('active')} · do wzięcia ${count('available')}`
-          : 'otwórz Teleportacje i Dziennik zadań'}
-        <span class="kp-muted"> ▾</span>
-      </button>
+      <>
+        <button
+          type="button"
+          class="kp-wizard kp-wizard-line"
+          aria-expanded="false"
+          onClick={toggle}
+        >
+          {known ? (
+            <>
+              ✓ {props.result ? summary : `Ostatni pełny skan: ${dateTime(props.lastFullScan!)}`}
+              {c && lok <= 0 && <span class="kp-muted"> · bez lokalizatora</span>}
+            </>
+          ) : (
+            <>
+              {ready ? '✓' : '○'} Skan: {ready ? summary : 'otwórz Teleportacje i Dziennik zadań'}
+            </>
+          )}
+          <span class="kp-muted"> ▾</span>
+        </button>
+        {filterWarning}
+      </>
     );
   }
 
@@ -115,10 +143,16 @@ export function Wizard(props: WizardProps) {
     <section class="kp-wizard">
       <div class="kp-wizard-head">
         <strong>Skan gry</strong>
-        <button type="button" class="kp-link" onClick={props.onToggle}>
+        <button type="button" class="kp-link" onClick={toggle}>
           zwiń
         </button>
       </div>
+      {known && (
+        <p class="kp-muted">
+          Ostatni pełny skan: {dateTime(props.lastFullScan!)}. Skan odświeża się sam, gdy otworzysz
+          Teleportacje albo Dziennik zadań.
+        </p>
+      )}
       <ol class="kp-wiz-steps">
         <Step
           state={c ? 'ok' : 'todo'}
@@ -130,7 +164,7 @@ export function Wizard(props: WizardProps) {
         </Step>
         <Step
           state={lok > 0 ? 'ok' : 'warn'}
-          title={lok > 0 ? `Lokalizator: jeszcze ${duration(lok)}` : 'Lokalizator nieaktywny'}
+          title={lok > 0 ? 'Lokalizator aktywny' : 'Lokalizator nieaktywny'}
         >
           {lok <= 0 &&
             'Bez niego nie rozpoznam zrobionych zadań z listy teleportacji. Dziennik i mapa lokacji działają nadal.'}

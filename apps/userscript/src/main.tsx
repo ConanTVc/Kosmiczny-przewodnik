@@ -39,8 +39,10 @@ function PanelSettings({ shell }: { shell: PanelShell }) {
         ))}
       </div>
       <p class="kp-muted">
-        Pokaż/ukryj: Alt+K albo żółta zakładka przy krawędzi ekranu. Szerokość zmienisz,
-        przeciągając krawędź panelu.
+        Pokaż/schowaj: ikona kompasu{' '}
+        {shell.inQuickBar() ? 'w pasku szybkich akcji gry' : 'w rogu ekranu'} albo Alt+K. Klik w
+        belkę „Kosmiczny Przewodnik” zwija panel do rogu. Szerokość zmienisz, przeciągając krawędź
+        panelu.
       </p>
     </section>
   );
@@ -79,6 +81,7 @@ async function start(): Promise<void> {
           pendingNew={!!gameChar && c.pendingNew === gameChar.key}
           scan={gameChar ? c.scans.get(gameChar.key) : undefined}
           result={c.lastResult}
+          lastFullScan={gameChar ? c.progress.characters[gameChar.key]?.lastScan.v : undefined}
           collapsed={shell.ui.wizardCollapsed}
           onToggle={() => shell.setUi({ wizardCollapsed: !shell.ui.wizardCollapsed })}
           onTrack={(choice) => c.answerTrack(choice)}
@@ -93,6 +96,8 @@ async function start(): Promise<void> {
       onSetting: (name, value) => c.setSetting(name, value),
       onImport: (imported) => c.importProgress(imported),
       onClose: () => shell.setUi({ open: false }),
+      minimized: shell.ui.minimized,
+      onToggleMinimize: () => shell.setUi({ minimized: !shell.ui.minimized }),
     };
   };
 
