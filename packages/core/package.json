@@ -1,0 +1,21 @@
+{
+  "name": "@kp/core",
+  "private": true,
+  "type": "module",
+  "description": "Logika bez DOM: parsery HTML gry, dopasowanie, statusy zadań, model postępu i scalanie.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kp/content": "workspace:*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "jsdom": "^30.1.2"
+  }
+}
