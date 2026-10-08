@@ -7,6 +7,12 @@ import monkey from 'vite-plugin-monkey';
 const pkg = JSON.parse(readFileSync(resolve(import.meta.dirname, 'package.json'), 'utf8')) as {
   version: string;
 };
+/**
+ * Wersja skryptu = wersja pakietu + czas budowania (UTC, RRRRMMDDGGMM). Tampermonkey aktualizuje
+ * skrypt tylko na wyższą wersję – dzięki temu każde wdrożenie na Pages trafia do graczy samo.
+ */
+const BUILD_STAMP = new Date().toISOString().replace(/\D/g, '').slice(0, 12);
+const VERSION = `${pkg.version}.${BUILD_STAMP}`;
 /** Adres GitHub Pages projektu (Prompt 7) – stąd aktualizacje skryptu i treści. */
 const PAGES = 'https://conantvc.github.io/Kosmiczny-przewodnik';
 
@@ -24,7 +30,7 @@ export default defineConfig({
         namespace: 'https://github.com/ConanTVc/Kosmiczny-przewodnik',
         description:
           'Solucje, poradniki i tracker zadań do gry Kosmiczni. Tylko czyta to, co gra pokazuje – nic nie klika.',
-        version: pkg.version,
+        version: VERSION,
         match: ['*://kosmiczni.pl/*', '*://*.kosmiczni.pl/*'],
         grant: 'none',
         'run-at': 'document-idle',
