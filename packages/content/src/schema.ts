@@ -114,8 +114,16 @@ export const QuestSchema = z
     /** Domyślnie = reborn rozdziału. */
     rebornMin: RebornSchema.optional(),
     rebornMax: RebornSchema.optional(),
-    /** Zadania, które trzeba skończyć, żeby to w ogóle wziąć. */
+    /**
+     * Zadania, które trzeba ukończyć, żeby ukończyć to („Wykonać zadanie: X” w krokach). NIE blokują
+     * wzięcia – w grze oba mogą być w dzienniku naraz.
+     */
     requires: z.array(SlugSchema).min(1).optional(),
+    /**
+     * Wcześniejsza część tego samego zadania (zadanie przechodzi przez kilka lokacji). Ta część
+     * zaczyna się dopiero po ukończeniu poprzedniej.
+     */
+    continues: SlugSchema.optional(),
     steps: z.array(StepSchema),
     tips: Markdown.optional(),
     /** Nadpisuje autora rozdziału. */
@@ -199,6 +207,7 @@ export const BuiltQuestSchema = z
     rebornMin: RebornSchema,
     rebornMax: RebornSchema.optional(),
     requires: z.array(SlugSchema).optional(),
+    continues: SlugSchema.optional(),
     steps: z.array(StepSchema),
     tips: Markdown.optional(),
     sourceCredit: SourceCreditSchema,

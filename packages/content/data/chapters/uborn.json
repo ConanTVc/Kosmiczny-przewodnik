@@ -691,9 +691,7 @@
           "slug": "uborn/410/duchy-pradawnych-wojownikow",
           "name": "Duchy Pradawnych Wojowników",
           "kind": "side",
-          "requires": [
-            "uborn/389/duchy-pradawnych-wojownikow"
-          ],
+          "continues": "uborn/389/duchy-pradawnych-wojownikow",
           "steps": [
             {
               "requirements": [],
@@ -1494,9 +1492,7 @@
           "slug": "uborn/413/komnata-zywiolow",
           "name": "Komnata Żywiołów",
           "kind": "side",
-          "requires": [
-            "uborn/400/komnata-zywiolow"
-          ],
+          "continues": "uborn/400/komnata-zywiolow",
           "steps": [
             {
               "requirements": [
@@ -1576,9 +1572,7 @@
           "slug": "uborn/412/komnata-zywiolow",
           "name": "Komnata Żywiołów",
           "kind": "side",
-          "requires": [
-            "uborn/413/komnata-zywiolow"
-          ],
+          "continues": "uborn/413/komnata-zywiolow",
           "steps": [
             {
               "requirements": [

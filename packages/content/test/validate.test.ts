@@ -141,7 +141,7 @@ describe('validateContent', () => {
       }),
     );
     expect(errors(r).map((i) => i.message)).toContain(
-      'Cykl w requires: hborn/a → hborn/b → hborn/a',
+      'Cykl w requires/continues: hborn/a → hborn/b → hborn/a',
     );
   });
 

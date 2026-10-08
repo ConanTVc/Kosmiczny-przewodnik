@@ -5436,9 +5436,7 @@
           "slug": "mborn/1396/zaglada-cienia",
           "name": "Zagłada Cienia",
           "kind": "side",
-          "requires": [
-            "mborn/1397/zaglada-cienia"
-          ],
+          "continues": "mborn/1397/zaglada-cienia",
           "steps": [
             {
               "requirements": [
@@ -5470,9 +5468,7 @@
           "slug": "mborn/1396/lowcy-artefaktow",
           "name": "Łowcy Artefaktów",
           "kind": "side",
-          "requires": [
-            "mborn/1397/lowcy-artefaktow"
-          ],
+          "continues": "mborn/1397/lowcy-artefaktow",
           "steps": [
             {
               "requirements": [
@@ -5504,9 +5500,7 @@
           "slug": "mborn/1396/trening-z-makima",
           "name": "Trening z Makimą",
           "kind": "side",
-          "requires": [
-            "mborn/1397/trening-z-makima"
-          ],
+          "continues": "mborn/1397/trening-z-makima",
           "steps": [
             {
               "requirements": [

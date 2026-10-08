@@ -7962,9 +7962,7 @@
           "slug": "hborn/1087/uciekinierzy",
           "name": "Uciekinierzy",
           "kind": "side",
-          "requires": [
-            "hborn/1083/uciekinierzy"
-          ],
+          "continues": "hborn/1083/uciekinierzy",
           "steps": [
             {
               "requirements": [
@@ -8053,9 +8051,7 @@
           "alsoAt": [
             1083
           ],
-          "requires": [
-            "hborn/1087/uciekinierzy"
-          ],
+          "continues": "hborn/1087/uciekinierzy",
           "steps": [
             {
               "requirements": [
@@ -29942,9 +29938,9 @@
           "name": "Nieświęte Sojusze",
           "kind": "side",
           "requires": [
-            "hborn/1360/pomoc-bogini-isztar",
-            "hborn/1359/nieswiete-sojusze"
+            "hborn/1360/pomoc-bogini-isztar"
           ],
+          "continues": "hborn/1359/nieswiete-sojusze",
           "steps": [
             {
               "requirements": [

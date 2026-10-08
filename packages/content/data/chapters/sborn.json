@@ -348,9 +348,7 @@
           "slug": "sborn/649/prezent",
           "name": "Prezent",
           "kind": "side",
-          "requires": [
-            "sborn/648/prezent"
-          ],
+          "continues": "sborn/648/prezent",
           "steps": [
             {
               "requirements": [
@@ -708,9 +706,7 @@
           "slug": "sborn/653/na-ratunek",
           "name": "Na ratunek",
           "kind": "side",
-          "requires": [
-            "sborn/654/na-ratunek"
-          ],
+          "continues": "sborn/654/na-ratunek",
           "steps": [
             {
               "requirements": [
@@ -744,9 +740,7 @@
             654,
             651
           ],
-          "requires": [
-            "sborn/651/kiedy-widze-slodycze-to"
-          ],
+          "continues": "sborn/651/kiedy-widze-slodycze-to",
           "steps": [
             {
               "requirements": [
@@ -898,9 +892,7 @@
           "alsoAt": [
             651
           ],
-          "requires": [
-            "sborn/653/na-ratunek"
-          ],
+          "continues": "sborn/653/na-ratunek",
           "steps": [
             {
               "requirements": [
@@ -1366,9 +1358,7 @@
           "alsoAt": [
             660
           ],
-          "requires": [
-            "sborn/658/pomioty-destrukcji"
-          ],
+          "continues": "sborn/658/pomioty-destrukcji",
           "steps": [
             {
               "requirements": [
@@ -1461,9 +1451,7 @@
           "slug": "sborn/660/pomioty-destrukcji",
           "name": "Pomioty destrukcji",
           "kind": "side",
-          "requires": [
-            "sborn/659/pomioty-destrukcji"
-          ],
+          "continues": "sborn/659/pomioty-destrukcji",
           "steps": [
             {
               "requirements": [
@@ -1745,9 +1733,7 @@
           "slug": "sborn/685/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
-          "requires": [
-            "sborn/684/miecz-na-potwory"
-          ],
+          "continues": "sborn/684/miecz-na-potwory",
           "steps": [
             {
               "requirements": [
@@ -1772,9 +1758,7 @@
           "slug": "sborn/686/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
-          "requires": [
-            "sborn/685/miecz-na-potwory"
-          ],
+          "continues": "sborn/685/miecz-na-potwory",
           "steps": [
             {
               "requirements": [
@@ -1797,9 +1781,7 @@
           "slug": "sborn/687/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
-          "requires": [
-            "sborn/686/miecz-na-potwory"
-          ],
+          "continues": "sborn/686/miecz-na-potwory",
           "steps": [
             {
               "requirements": [

@@ -927,9 +927,7 @@
           "slug": "goku-n/21/ostatnia-wola",
           "name": "Ostatnia Wola",
           "kind": "side",
-          "requires": [
-            "goku-n/20/ostatnia-wola"
-          ],
+          "continues": "goku-n/20/ostatnia-wola",
           "steps": [
             {
               "requirements": [
@@ -3953,9 +3951,7 @@
           "slug": "goku-n/102/bariera",
           "name": "Bariera",
           "kind": "side",
-          "requires": [
-            "goku-n/83/bariera"
-          ],
+          "continues": "goku-n/83/bariera",
           "steps": [
             {
               "requirements": [

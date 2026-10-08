@@ -467,8 +467,8 @@ describe('zadania przechodzące przez kilka lokacji', () => {
       pendingRequires: [],
     } as unknown as ConvertedChapter;
     expect(linkContinuations([conv])).toBe(1);
-    expect(chapter.sections[2]!.quests[0]).toMatchObject({ requires: ['g/147/kc'] });
+    expect(chapter.sections[2]!.quests[0]).toMatchObject({ continues: 'g/147/kc' });
     // „Arena” w odległych lokacjach bez nawigacji to różne zadania
-    expect(chapter.sections[3]!.quests[0]).not.toHaveProperty('requires');
+    expect(chapter.sections[3]!.quests[0]).not.toHaveProperty('continues');
   });
 });

@@ -275,8 +275,8 @@ export function resolveRequires(converted: ConvertedChapter[]): void {
 /**
  * Zadanie poboczne, które przechodzi przez kilka lokacji, jest w solucji opisane jako kilka części
  * o tej samej nazwie (np. „Kosmiczna Choroba”: Ura → Papri → Secato). Część B jest dalszym ciągiem
- * części A, gdy leży w następnej sekcji albo nawigacja A prowadzi do lokacji B. Wtedy B wymaga A
- * (requires) – status wie, że wcześniejsze części są zrobione. Zadań głównych nie łączymy: ich
+ * części A, gdy leży w następnej sekcji albo nawigacja A prowadzi do lokacji B. Wtedy B.continues = A
+ * – status wie, że wcześniejsze części są zrobione. Zadań głównych nie łączymy: ich
  * kolejność wynika z kolejności lokacji. Zwraca liczbę połączeń.
  */
 export function linkContinuations(converted: ConvertedChapter[]): number {
@@ -289,7 +289,7 @@ export function linkContinuations(converted: ConvertedChapter[]): number {
         const key = foldName(q.name);
         const prev = last.get(key);
         if (prev && (prev.section === si - 1 || prev.quest.alsoAt?.includes(section.locId))) {
-          q.requires = [...new Set([...(q.requires ?? []), prev.quest.slug])];
+          q.continues = prev.quest.slug;
           links++;
         }
         last.set(key, { quest: q, section: si, locId: section.locId });
@@ -309,6 +309,7 @@ const QUEST_KEY_ORDER: (keyof Quest)[] = [
   'rebornMin',
   'rebornMax',
   'requires',
+  'continues',
   'steps',
   'tips',
   'sourceCredit',

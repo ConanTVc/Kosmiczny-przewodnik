@@ -158,6 +158,13 @@ export function validateContent(input: ContentInput): ValidationResult {
             file,
             path: `${qPath}.requires`,
           });
+        if (quest.continues)
+          allRequires.push({
+            slug: quest.slug,
+            requires: [quest.continues],
+            file,
+            path: `${qPath}.continues`,
+          });
         quest.alsoAt?.forEach((id, ai) => {
           if (!locById.has(id)) {
             error(
@@ -185,23 +192,24 @@ export function validateContent(input: ContentInput): ValidationResult {
     });
   }
 
-  // requires: istnienie, brak cykli
+  // requires i continues: istnienie, brak cykli
   const graph = new Map<string, string[]>();
   for (const r of allRequires) {
+    const single = r.path.endsWith('.continues');
     r.requires.forEach((dep, i) => {
-      if (dep === r.slug)
-        error(r.file, `${r.path}[${i}]`, 'Zadanie nie może wymagać samego siebie');
-      else if (!slugWhere.has(dep)) error(r.file, `${r.path}[${i}]`, `Nieznane zadanie „${dep}”`);
+      const path = single ? r.path : `${r.path}[${i}]`;
+      if (dep === r.slug) error(r.file, path, 'Zadanie nie może wskazywać samego siebie');
+      else if (!slugWhere.has(dep)) error(r.file, path, `Nieznane zadanie „${dep}”`);
     });
-    graph.set(
-      r.slug,
-      r.requires.filter((d) => d !== r.slug && slugWhere.has(d)),
-    );
+    graph.set(r.slug, [
+      ...(graph.get(r.slug) ?? []),
+      ...r.requires.filter((d) => d !== r.slug && slugWhere.has(d)),
+    ]);
   }
   const cycle = findCycle(graph);
   if (cycle) {
     const first = allRequires.find((r) => r.slug === cycle[0]);
-    error(first?.file ?? '?', first?.path ?? '', `Cykl w requires: ${cycle.join(' → ')}`);
+    error(first?.file ?? '?', first?.path ?? '', `Cykl w requires/continues: ${cycle.join(' → ')}`);
   }
 
   // Poradniki

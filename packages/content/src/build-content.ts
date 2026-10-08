@@ -91,6 +91,7 @@ export function buildContent(content: ValidContent): BuiltContent {
           rebornMin: q.rebornMin ?? chapter.reborn,
           ...(q.rebornMax !== undefined && { rebornMax: q.rebornMax }),
           ...(q.requires && { requires: q.requires }),
+          ...(q.continues && { continues: q.continues }),
           steps: q.steps,
           ...(q.tips && { tips: q.tips }),
           sourceCredit: q.sourceCredit ?? chapter.sourceCredit,

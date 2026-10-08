@@ -68,7 +68,8 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 4. nazwa jednoznaczna w całej treści, mimo innej lokacji – dopasowanie „po nazwie” (mniej pewne, oznaczać w UI),
 5. inaczej → `unmatched`.
 - **Auto-wykrywanie nie musi być idealne.** Gdy nie ma pewności (dopasowanie „po nazwie”, brak lokalizatora, skan częściowy), nie zgadujemy – status `unknown` / „niepewne” i gracz sam oznacza, czy zrobił. Lepiej „nie wiem” niż błędne „zrobione”.
-- Kolejne części zadania przechodzącego przez kilka lokacji są połączone przez `requires` (część B wymaga A) – aktywna późniejsza część oznacza, że wcześniejsze są zrobione.
+- Kolejne części zadania przechodzącego przez kilka lokacji są połączone przez `continues` (część B jest dalszym ciągiem A) – aktywna późniejsza część oznacza, że wcześniejsze są zrobione.
+- `requires` („Wykonać zadanie: X” w krokach) **nie blokuje wzięcia** – w grze oba zadania bywają naraz w dzienniku („Panteon Anarchii” i „Panteon Anarchii II”). Wynika z niego tylko: zadanie zrobione ⇒ X zrobione.
 
 Przykładowe dane: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359), `fixtures/dziennik_s21.tsv` i `fixtures/postepy_s21.tsv` (serwer 21, postać Cumber na Hborn – eksport skryptem z konsoli).
 
@@ -78,7 +79,7 @@ Przykładowe dane: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, 
 2. `active` – zadanie jest w dzienniku.
 3. `done` – lokacja widoczna w teleportacjach bez QUEST przy aktywnym lokalizatorze.
 4. `available` – lokacja ma QUEST, a zadania nie ma w dzienniku.
-5. `locked` – lokacja nieodkryta / reborn za niski / niespełnione `requires`.
+5. `locked` – lokacja nieodkryta / reborn za niski / wcześniejsza część zadania (`continues`) nieskończona / dalej w fabule głównej.
 6. `unknown` – brak danych.
 
 Każdy status pamięta źródło (`auto`/`manual`) i znacznik czasu. Zadania z dziennika, których nie ma w solucjach, trafiają na listę `unmatched`.
