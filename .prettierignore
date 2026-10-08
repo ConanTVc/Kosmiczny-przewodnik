@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+pnpm-lock.yaml
+# Oryginały, fixtures i dokumenty autora – nie ruszamy.
+CLAUDE.md
+PROMPTY.md
+solucje/
+poradniki/
+fixtures/
+# Treść generowana/edytowana w formacie JSON.stringify – pilnuje jej content:build.
+packages/content/data/
