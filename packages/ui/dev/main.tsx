@@ -12,7 +12,9 @@ import {
   parseQuestLog,
   parseTeleportList,
   setManualStatus,
+  setQuestLists,
   setSetting,
+  setStepDone,
   setTracked,
   upsertCharacter,
   type CharacterInfo,
@@ -97,6 +99,10 @@ for (const { info, scan, manual } of demo) {
   for (const [slug, status] of manual ?? [])
     progress = setManualStatus(progress, info.key, slug, status, Date.now());
 }
+// Przykład autora: „Duchy Ognia” na Io – wszystko poza ostatnim krokiem (exp) zrobione, odłożone na później.
+progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 0, true, 3, Date.now());
+progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 1, true, 3, Date.now());
+progress = setQuestLists(progress, 's21:c3465', 'hborn/988/duchy-ognia', ['Na później'], Date.now());
 
 let active: string = demo[0]!.info.key;
 let layout: 'panel' | 'app' = 'panel';
@@ -113,6 +119,9 @@ const props = (): PanelProps => ({
   layout,
   onSetManual: (slug, status) =>
     update((p) => setManualStatus(p, active, slug, status, Date.now())),
+  onSetStep: (slug, step, done, total) =>
+    update((p) => setStepDone(p, active, slug, step, done, total, Date.now())),
+  onSetLists: (slug, lists) => update((p) => setQuestLists(p, active, slug, lists, Date.now())),
   onSelectCharacter: (key) => {
     active = key;
     update((p) => p);

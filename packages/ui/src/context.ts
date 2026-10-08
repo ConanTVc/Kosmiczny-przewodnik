@@ -22,6 +22,10 @@ export interface PanelData {
   locName(id: number): string;
   /** Otwiera lokację w zakładce „Tutaj”. */
   openLocation(locId: number): void;
+  /** Otwiera lokację zadania w „Tutaj” z tym zadaniem rozwiniętym. */
+  openQuest(slug: string): void;
+  /** Zadanie do rozwinięcia i przewinięcia w „Tutaj”. */
+  focusSlug?: string;
   goTo(tab: TabId): void;
 }
 

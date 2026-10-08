@@ -105,7 +105,14 @@ export interface QuestProgress {
   /** Ręczne ustawienie gracza; `v: null` = „przywróć auto” (też musi się zsynchronizować). */
   manual?: Stamped<ManualStatus | null>;
   auto?: Stamped<AutoStatus>;
+  /** Ręcznie odhaczone kroki: numer etapu (od 0) → zrobiony. Scalane osobno dla każdego kroku. */
+  steps?: Record<string, Stamped<boolean>>;
+  /** Własne listy gracza, do których dodał zadanie (np. „Na później”). */
+  lists?: Stamped<string[]>;
 }
+
+/** Wbudowana lista na zadania zostawione celowo (np. ostatni krok z expem na później). */
+export const LATER_LIST = 'Na później';
 
 export interface CharacterProgress {
   name: Stamped<string>;

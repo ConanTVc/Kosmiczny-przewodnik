@@ -11,6 +11,8 @@ const QuestProgressSchema = z
     auto: stamped(
       z.object({ status: z.enum(['active', 'done', 'available']), certain: z.boolean() }).strict(),
     ).optional(),
+    steps: z.record(z.string().regex(/^\d+$/), stamped(z.boolean())).optional(),
+    lists: stamped(z.array(z.string().trim().min(1).max(40)).max(20)).optional(),
   })
   .strict();
 

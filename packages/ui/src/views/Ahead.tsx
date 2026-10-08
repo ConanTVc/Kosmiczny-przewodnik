@@ -1,110 +1,164 @@
 import type { BuiltChapter } from '@kp/content';
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
+import { QuestCard } from '../components/QuestCard';
 import { usePanel } from '../context';
 import { REBORN_LETTER } from '../labels';
 
-function SectionRows({
-  chapter,
-  from,
-  limit,
-}: {
-  chapter: BuiltChapter;
-  from: number;
-  limit?: number;
-}) {
-  const { index, locName, openLocation } = usePanel();
-  const sections = chapter.sections.filter((s) => s.order > from);
-  const shown = limit ? sections.slice(0, limit) : sections;
-  return (
-    <ul class="kp-rows">
-      {shown.map((s) => {
-        const quests = s.quests
-          .map((slug) => index.quests.get(slug))
-          .filter((q) => q !== undefined);
-        const side = quests.filter((q) => q.kind !== 'main').length;
-        return (
-          <li key={s.order}>
-            <button type="button" class="kp-row" onClick={() => openLocation(s.locId)}>
-              <span>
-                {s.order}. {locName(s.locId)}
-              </span>
-              <span class="kp-muted">{side ? `${side} pobocznych` : 'fabuła'}</span>
-            </button>
-          </li>
-        );
-      })}
-      {limit !== undefined && sections.length > limit && (
-        <li class="kp-muted">…i jeszcze {sections.length - limit} lokacji</li>
-      )}
-    </ul>
-  );
-}
+const PAGE = 8;
 
-/** Nadchodzące lokacje i zadania: dalsza część bieżącej fabuły i wyższe reborny. */
+/**
+ * „Przed tobą”: wybrany rozdział od miejsca, do którego doszła postać (albo od początku) –
+ * jako lista lokacji albo fabuła główna krok po kroku do przewijania.
+ */
 export function AheadView() {
-  const { character, chapters, relevant, statuses } = usePanel();
-  const [openChapter, setOpenChapter] = useState<string | undefined>();
-  const [showAll, setShowAll] = useState(false);
-  if (!character) return <p class="kp-empty">Wybierz postać, żeby zobaczyć, co przed nią.</p>;
+  const { character, chapters, relevant, statuses, index, locName, openLocation } = usePanel();
+  const reborn = character?.reborn.v ?? 0;
+  const defaultChapter = (chapters.find((c) => c.reborn === reborn) ?? chapters[0])?.id;
+  const [chapterId, setChapterId] = useState(defaultChapter);
+  const [mode, setMode] = useState<'story' | 'locations'>('story');
+  const [fromStart, setFromStart] = useState(false);
+  const [limit, setLimit] = useState(PAGE);
+  useEffect(() => setLimit(PAGE), [chapterId, mode, fromStart]);
+  useEffect(() => setChapterId(defaultChapter), [character?.key]);
 
-  const reborn = character.reborn.v;
+  if (!character) return <p class="kp-empty">Wybierz postać, żeby zobaczyć, co przed nią.</p>;
+  const chapter = chapters.find((c) => c.id === chapterId);
+  if (!chapter) return <p class="kp-empty">Brak solucji dla tej postaci.</p>;
+
   /** Najdalsza lokacja fabuły głównej, do której postać doszła w rozdziale. */
-  const reached = (chapter: BuiltChapter) => {
+  const reached = (c: BuiltChapter) => {
     let max = 0;
     for (const q of relevant) {
-      if (q.chapter !== chapter.id || q.kind !== 'main') continue;
+      if (q.chapter !== c.id || q.kind !== 'main') continue;
       const st = statuses[q.slug]?.status;
       if (st === 'active' || st === 'done') max = Math.max(max, q.order);
     }
     return max;
   };
-
-  const current = chapters.filter((c) => c.reborn === reborn);
-  const later = chapters.filter((c) => c.reborn > reborn);
+  const position = reached(chapter);
+  const mains = relevant.filter((q) => q.chapter === chapter.id && q.kind === 'main');
+  const done = mains.length > 0 && mains.every((q) => statuses[q.slug]?.status === 'done');
+  // Od bieżącej lokacji fabuły (ona też się liczy – tam jest aktywne zadanie główne).
+  const from = fromStart ? 0 : Math.max(0, position - 1);
+  const sections = chapter.sections.filter((s) => s.order > from);
+  const visible = sections.slice(0, limit);
 
   return (
     <div class="kp-view">
-      {current.map((c) => {
-        const from = reached(c);
-        const left = c.sections.filter((s) => s.order > from).length;
-        return (
-          <section key={c.id} class="kp-block">
-            <h2 class="kp-h">
-              {c.title}: {left ? `jeszcze ${left} lokacji` : 'fabuła ukończona'}
-            </h2>
-            {from === 0 && (
-              <p class="kp-muted">Nie wiem jeszcze, gdzie jesteś w fabule – zeskanuj grę.</p>
-            )}
-            {left > 0 && <SectionRows chapter={c} from={from} limit={showAll ? undefined : 12} />}
-            {left > 12 && (
-              <button
-                type="button"
-                class="kp-btn kp-btn-small kp-btn-ghost"
-                onClick={() => setShowAll(!showAll)}
-              >
-                {showAll ? 'Pokaż mniej' : 'Pokaż wszystkie'}
-              </button>
-            )}
-          </section>
-        );
-      })}
-      {later.length > 0 && <h2 class="kp-h">Kolejne reborny</h2>}
-      {later.map((c) => (
-        <section key={c.id} class="kp-chapter">
-          <button
-            type="button"
-            class="kp-chapter-head"
-            aria-expanded={openChapter === c.id}
-            onClick={() => setOpenChapter(openChapter === c.id ? undefined : c.id)}
+      <div class="kp-toolbar">
+        <label class="kp-label kp-grow">
+          Rozdział
+          <select
+            id="kp-ahead-chapter"
+            class="kp-input"
+            value={chapterId}
+            onChange={(e) => setChapterId((e.target as HTMLSelectElement).value)}
           >
-            <span class="kp-reborn">{REBORN_LETTER[c.reborn]}</span>
-            <span class="kp-chapter-title">{c.title}</span>
-            <span class="kp-muted">{c.sections.length} lokacji</span>
+            {chapters.map((c) => (
+              <option key={c.id} value={c.id}>
+                {REBORN_LETTER[c.reborn]} · {c.title}
+                {c.reborn === reborn ? ' (teraz)' : ''}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <div class="kp-filters" role="tablist" aria-label="Widok">
+        {(
+          [
+            ['story', 'Fabuła krok po kroku'],
+            ['locations', 'Lista lokacji'],
+          ] as const
+        ).map(([m, label]) => (
+          <button
+            key={m}
+            type="button"
+            role="tab"
+            aria-selected={mode === m}
+            class={`kp-filter ${mode === m ? 'kp-filter-on' : ''}`}
+            onClick={() => setMode(m)}
+          >
+            {label}
           </button>
-          {openChapter === c.id && <SectionRows chapter={c} from={0} />}
-        </section>
-      ))}
-      {!current.length && !later.length && <p class="kp-empty">Brak solucji dla tego rebornu.</p>}
+        ))}
+        <label class="kp-check">
+          <input
+            type="checkbox"
+            checked={fromStart}
+            onChange={(e) => setFromStart((e.target as HTMLInputElement).checked)}
+          />
+          od początku
+        </label>
+      </div>
+      <p class="kp-muted">
+        {position === 0
+          ? chapter.reborn > reborn
+            ? 'Ten rozdział jest jeszcze przed tobą.'
+            : 'Nie wiem, gdzie jesteś w tej fabule – zeskanuj grę albo zaznacz zadania główne.'
+          : done
+            ? 'Fabuła tego rozdziału ukończona.'
+            : `Jesteś przy lokacji ${position} z ${chapter.sections.length}: ${locName(chapter.sections[position - 1]!.locId)}.`}
+      </p>
+
+      {mode === 'locations' ? (
+        <ul class="kp-rows">
+          {visible.map((s) => {
+            const side = s.quests.filter((slug) => index.quests.get(slug)?.kind !== 'main').length;
+            return (
+              <li key={s.order}>
+                <button type="button" class="kp-row" onClick={() => openLocation(s.locId)}>
+                  <span>
+                    {s.order}. {locName(s.locId)}
+                  </span>
+                  <span class="kp-muted">{side ? `${side} pobocznych` : 'fabuła'}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        visible.map((s) => {
+          const mains = s.quests
+            .map((slug) => index.quests.get(slug))
+            .filter((q) => q !== undefined && q.kind === 'main');
+          const side = s.quests.length - mains.length;
+          return (
+            <section key={s.order} class="kp-section kp-story">
+              <div class="kp-story-head">
+                <button type="button" class="kp-section-head" onClick={() => openLocation(s.locId)}>
+                  {s.order}. {locName(s.locId)}
+                </button>
+                {side > 0 && (
+                  <button
+                    type="button"
+                    class="kp-link kp-muted"
+                    onClick={() => openLocation(s.locId)}
+                  >
+                    + {side} pobocznych
+                  </button>
+                )}
+              </div>
+              {mains.map((q) => (
+                <QuestCard
+                  key={q!.slug}
+                  quest={q!}
+                  defaultOpen={statuses[q!.slug]?.status !== 'done'}
+                />
+              ))}
+              {mains.length === 0 && <p class="kp-muted">Bez zadania głównego w tej lokacji.</p>}
+            </section>
+          );
+        })
+      )}
+      {sections.length > limit && (
+        <button
+          type="button"
+          class="kp-btn kp-btn-small kp-btn-ghost"
+          onClick={() => setLimit(limit + PAGE)}
+        >
+          Pokaż kolejne lokacje ({sections.length - limit})
+        </button>
+      )}
     </div>
   );
 }

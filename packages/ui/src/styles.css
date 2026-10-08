@@ -659,3 +659,89 @@
 .kp-md th {
   background: var(--surface-2);
 }
+
+/* ───── Kroki, listy, wyszukiwarka, „Przed tobą” ───── */
+.kp-step-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.kp-step-check {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: var(--st-done);
+  cursor: pointer;
+}
+.kp-step-body {
+  flex: 1;
+  min-width: 0;
+}
+.kp-step-done .kp-step-body {
+  opacity: 0.55;
+}
+.kp-steps-count {
+  font-variant-numeric: tabular-nums;
+}
+.kp-later {
+  color: var(--accent);
+  font-size: 0.82em;
+  font-weight: 500;
+}
+.kp-quest-focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.kp-input-small {
+  width: 150px;
+  min-height: calc(var(--tap) - 6px);
+}
+.kp-check {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.9em;
+  color: var(--muted);
+  cursor: pointer;
+}
+.kp-check input {
+  accent-color: var(--accent);
+}
+.kp-filter-kind {
+  border-style: dashed;
+}
+.kp-hit {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.kp-hit-text {
+  overflow-wrap: anywhere;
+}
+.kp-app mark {
+  padding: 0 2px;
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.kp-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-end;
+}
+.kp-grow {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+.kp-story {
+  padding: 8px 0 4px 8px;
+  border-left: 2px solid var(--border);
+}
+.kp-story-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}

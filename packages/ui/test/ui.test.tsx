@@ -84,6 +84,8 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
     const host = document.createElement('div');
     document.body.append(host);
     const onSetManual = vi.fn();
+    const onSetStep = vi.fn();
+    const onSetLists = vi.fn();
     const props: PanelProps = {
       content,
       progress,
@@ -91,6 +93,8 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
       currentLoc: 1359,
       scan,
       onSetManual,
+      onSetStep,
+      onSetLists,
       onSelectCharacter: vi.fn(),
       onSetTracked: vi.fn(),
       onSetting: vi.fn(),
@@ -104,7 +108,7 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
     };
     const tab = (label: string) =>
       [...root.querySelectorAll('.kp-tab')].find((t) => t.textContent === label);
-    return { host, root, handle, click, tab, onSetManual };
+    return { host, root, handle, click, tab, onSetManual, onSetStep, onSetLists };
   };
 
   it('montuje się w Shadow DOM ze stylami i pokazuje bieżącą lokację', () => {
@@ -132,17 +136,18 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
     const { root, click, tab } = setup();
 
     await click(tab('Postęp'));
-    expect(root.querySelectorAll('.kp-filter').length).toBe(6);
+    expect(root.querySelectorAll('.kp-filter').length).toBe(11); // 4 rodzaje + 7 statusów
     expect(root.querySelector('.kp-chapter-head')).not.toBeNull();
     expect(root.querySelector('details.kp-note summary')?.textContent).toMatch(
       /nie ma w solucjach/,
     );
 
     await click(tab('Przed tobą'));
-    expect(root.textContent).toMatch(/Hborn/);
-    expect(root.textContent).toMatch(/Kolejne reborny/);
+    const chapterSelect = root.querySelector('#kp-ahead-chapter') as HTMLSelectElement;
+    expect(chapterSelect.value).toBe('hborn');
+    expect([...chapterSelect.options].map((o) => o.value)).toContain('mborn');
 
-    await click(tab('Poradniki'));
+    await click(tab('Szukaj'));
     expect(root.querySelectorAll('.kp-row').length).toBe(3);
     await click(
       [...root.querySelectorAll('.kp-row')].find((r) => r.textContent?.includes('Koszty')),
@@ -167,6 +172,8 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
       content,
       progress: emptyProgress(),
       onSetManual: vi.fn(),
+      onSetStep: vi.fn(),
+      onSetLists: vi.fn(),
       onSelectCharacter: vi.fn(),
       onSetTracked: vi.fn(),
       onSetting: vi.fn(),
@@ -179,5 +186,85 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
     const { root, handle } = setup();
     handle.unmount();
     expect(root.childNodes.length).toBe(0);
+  });
+});
+
+describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
+  const content = loadRealContent();
+  const key = 's21:c3465';
+  const progress = upsertCharacter(
+    emptyProgress(),
+    { key, name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    1,
+  );
+  const mountPanel = () => {
+    const host = document.createElement('div');
+    document.body.append(host);
+    const calls = { onSetStep: vi.fn(), onSetLists: vi.fn() };
+    mount(host, {
+      content,
+      progress,
+      activeCharacter: key,
+      currentLoc: 1359,
+      onSetManual: vi.fn(),
+      ...calls,
+      onSelectCharacter: vi.fn(),
+      onSetTracked: vi.fn(),
+      onSetting: vi.fn(),
+      onImport: vi.fn(),
+    });
+    const root = host.shadowRoot!;
+    const click = async (el: Element | null | undefined) => {
+      (el as HTMLElement).click();
+      await tick();
+    };
+    const tab = (label: string) =>
+      [...root.querySelectorAll('.kp-tab')].find((t) => t.textContent === label);
+    const button = (text: string) =>
+      [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === text);
+    return { root, click, tab, button, calls };
+  };
+
+  it('odhaczenie kroku i „Na później” wołają callbacki', async () => {
+    const { root, click, calls } = mountPanel();
+    await click(root.querySelector('.kp-quest-head'));
+    const box = root.querySelector('.kp-step-check') as HTMLInputElement;
+    box.checked = true;
+    box.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(calls.onSetStep).toHaveBeenCalledWith(
+      expect.stringMatching(/^hborn\/1359\//),
+      0,
+      true,
+      expect.any(Number),
+    );
+    await click(
+      [...root.querySelectorAll('button')].find((b) => b.textContent?.includes('Na później')),
+    );
+    expect(calls.onSetLists).toHaveBeenCalledWith(expect.stringMatching(/^hborn\/1359\//), [
+      'Na później',
+    ]);
+  });
+
+  it('wyszukiwarka: nagroda bez polskich znaków → zadanie w „Tutaj”', async () => {
+    const { root, click, tab } = mountPanel();
+    await click(tab('Szukaj'));
+    const input = root.querySelector('#kp-search') as HTMLInputElement;
+    input.value = 'czerwone senzu';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 200));
+    const rewards = [...root.querySelectorAll('.kp-block')].find((b) =>
+      b.querySelector('.kp-h')?.textContent?.startsWith('Nagrody'),
+    );
+    expect(rewards?.querySelector('mark')?.textContent?.toLowerCase()).toContain('czerwone'); // podświetlone najdłuższe słowo
+    await click(rewards?.querySelector('.kp-hit'));
+    expect(root.querySelector('.kp-quest-focus')).not.toBeNull();
+  });
+
+  it('przed tobą: fabuła krok po kroku pokazuje zadania główne z krokami', async () => {
+    const { root, click, tab } = mountPanel();
+    await click(tab('Przed tobą'));
+    expect((root.querySelector('#kp-ahead-chapter') as HTMLSelectElement).value).toBe('hborn');
+    expect(root.querySelectorAll('.kp-story').length).toBeGreaterThan(0);
+    expect(root.querySelector('.kp-story .kp-steps')).not.toBeNull();
   });
 });

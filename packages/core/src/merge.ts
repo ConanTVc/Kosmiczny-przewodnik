@@ -42,7 +42,19 @@ const sortedKeys = (a: object, b: object) =>
 function mergeQuest(a: QuestProgress | undefined, b: QuestProgress | undefined): QuestProgress {
   const manual = lww(a?.manual, b?.manual);
   const auto = lww(a?.auto, b?.auto);
-  return { ...(manual && { manual }), ...(auto && { auto }) };
+  const lists = lww(a?.lists, b?.lists);
+  let steps: QuestProgress['steps'];
+  if (a?.steps || b?.steps) {
+    steps = {};
+    for (const i of sortedKeys(a?.steps ?? {}, b?.steps ?? {}))
+      steps[i] = lww(a?.steps?.[i], b?.steps?.[i])!;
+  }
+  return {
+    ...(manual && { manual }),
+    ...(auto && { auto }),
+    ...(steps && { steps }),
+    ...(lists && { lists }),
+  };
 }
 
 function mergeCharacter(a: CharacterProgress, b: CharacterProgress): CharacterProgress {

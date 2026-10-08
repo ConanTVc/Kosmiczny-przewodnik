@@ -1,5 +1,6 @@
 import type { StatusOutput } from './status';
 import {
+  LATER_LIST,
   PROGRESS_VERSION,
   type AutoStatus,
   type CharacterInfo,
@@ -77,6 +78,62 @@ export function setManualStatus(
     ...c,
     quests: { ...c.quests, [slug]: { ...c.quests[slug], manual: stamp(status, now) } },
   }));
+}
+
+/**
+ * Odhacza (albo odznacza) krok zadania. Gdy po odhaczeniu wszystkie kroki są zrobione, zadanie
+ * zostaje oznaczone ręcznie jako zrobione – jak na liście kontrolnej.
+ */
+export function setStepDone(
+  progress: Progress,
+  key: string,
+  slug: string,
+  step: number,
+  done: boolean,
+  totalSteps: number,
+  now: number,
+): Progress {
+  return updateCharacter(progress, key, (c) => {
+    const prev = c.quests[slug] ?? {};
+    const steps = { ...prev.steps, [String(step)]: stamp(done, now) };
+    const allDone =
+      totalSteps > 0 &&
+      Array.from({ length: totalSteps }, (_, i) => steps[String(i)]?.v).every(Boolean);
+    const quest: QuestProgress = {
+      ...prev,
+      steps,
+      ...(done &&
+        allDone &&
+        prev.manual?.v !== 'done' && { manual: stamp<ManualStatus | null>('done', now) }),
+    };
+    return { ...c, quests: { ...c.quests, [slug]: quest } };
+  });
+}
+
+/** Ustawia listy gracza dla zadania (np. „Na później”). Pusta tablica = zadanie na żadnej liście. */
+export function setQuestLists(
+  progress: Progress,
+  key: string,
+  slug: string,
+  lists: string[],
+  now: number,
+): Progress {
+  const clean = [...new Set(lists.map((l) => l.trim()).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, 'pl'),
+  );
+  return updateCharacter(progress, key, (c) => ({
+    ...c,
+    quests: { ...c.quests, [slug]: { ...c.quests[slug], lists: stamp(clean, now) } },
+  }));
+}
+
+/** Nazwy list używanych przez postać (zawsze z „Na później”). */
+export function questLists(character: CharacterProgress | undefined): string[] {
+  const names = new Set<string>([LATER_LIST]);
+  for (const q of Object.values(character?.quests ?? {})) q.lists?.v.forEach((l) => names.add(l));
+  return [...names].sort((a, b) =>
+    a === LATER_LIST ? -1 : b === LATER_LIST ? 1 : a.localeCompare(b, 'pl'),
+  );
 }
 
 export function setSetting(

@@ -6,7 +6,7 @@ import { REBORN_LETTER, raceName } from './labels';
 import type { PanelProps, TabId } from './types';
 import { AheadView } from './views/Ahead';
 import { CharactersView } from './views/Characters';
-import { GuidesView } from './views/Guides';
+import { SearchView } from './views/Search';
 import { HereView } from './views/Here';
 import { ProgressView } from './views/Progress';
 import { SettingsView } from './views/Settings';
@@ -15,7 +15,7 @@ const TABS: [TabId, string][] = [
   ['here', 'Tutaj'],
   ['progress', 'Postęp'],
   ['ahead', 'Przed tobą'],
-  ['guides', 'Poradniki'],
+  ['search', 'Szukaj'],
   ['characters', 'Postacie'],
   ['settings', 'Ustawienia'],
 ];
@@ -76,8 +76,12 @@ export function App(props: PanelProps) {
 
   const [tab, setTab] = useState<TabId>(props.initialTab ?? 'here');
   const [viewLoc, setViewLoc] = useState<number | undefined>();
+  const [focusSlug, setFocusSlug] = useState<string | undefined>();
   // Gdy postać przejdzie do innej lokacji w grze, „Tutaj” znowu pokazuje bieżącą.
-  useEffect(() => setViewLoc(undefined), [props.currentLoc, key]);
+  useEffect(() => {
+    setViewLoc(undefined);
+    setFocusSlug(undefined);
+  }, [props.currentLoc, key]);
 
   const theme = (props.progress.settings['theme']?.v as string | undefined) ?? 'dark';
   const locId = viewLoc ?? props.currentLoc ?? progressChar?.lastLoc.v ?? undefined;
@@ -93,8 +97,17 @@ export function App(props: PanelProps) {
     locName: (id) => index.locations.get(id)?.name ?? `Lokacja ${id}`,
     openLocation: (id) => {
       setViewLoc(id);
+      setFocusSlug(undefined);
       setTab('here');
     },
+    openQuest: (slug) => {
+      const q = index.quests.get(slug);
+      if (!q) return;
+      setViewLoc(q.locId);
+      setFocusSlug(slug);
+      setTab('here');
+    },
+    focusSlug,
     goTo: setTab,
   };
 
@@ -140,10 +153,12 @@ export function App(props: PanelProps) {
         </nav>
         <main class="kp-main">
           <ErrorBoundary>
-            {tab === 'here' && <HereView locId={locId} onPick={setViewLoc} />}
+            {tab === 'here' && (
+              <HereView locId={locId} onPick={(id) => (setViewLoc(id), setFocusSlug(undefined))} />
+            )}
             {tab === 'progress' && <ProgressView />}
             {tab === 'ahead' && <AheadView />}
-            {tab === 'guides' && <GuidesView />}
+            {tab === 'search' && <SearchView />}
             {tab === 'characters' && <CharactersView />}
             {tab === 'settings' && <SettingsView />}
           </ErrorBoundary>

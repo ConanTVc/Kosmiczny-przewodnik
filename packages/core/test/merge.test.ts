@@ -3,8 +3,11 @@ import { mergeProgress } from '../src/merge';
 import {
   applyScanResult,
   emptyProgress,
+  questLists,
   setManualStatus,
+  setQuestLists,
   setSetting,
+  setStepDone,
   setTracked,
   upsertCharacter,
 } from '../src/progress';
@@ -184,5 +187,41 @@ describe('postęp', () => {
     expect(parseProgress(JSON.parse(JSON.stringify(p)))).toEqual(p);
     expect(parseProgress({ version: 1, settings: {}, characters: { zly: {} } })).toBeUndefined();
     expect(parseProgress('nie JSON')).toBeUndefined();
+  });
+});
+
+describe('kroki i własne listy', () => {
+  it('odhaczenie wszystkich kroków oznacza zadanie jako zrobione; bez ostatniego – nie', () => {
+    let p = setStepDone(base(), KEY, 'hborn/1048/duchy-ognia', 0, true, 3, 10);
+    p = setStepDone(p, KEY, 'hborn/1048/duchy-ognia', 1, true, 3, 11);
+    expect(p.characters[KEY]!.quests['hborn/1048/duchy-ognia']!.manual).toBeUndefined();
+    p = setStepDone(p, KEY, 'hborn/1048/duchy-ognia', 2, true, 3, 12);
+    expect(p.characters[KEY]!.quests['hborn/1048/duchy-ognia']!.manual).toEqual({
+      v: 'done',
+      at: 12,
+    });
+  });
+
+  it('listy: bez duplikatów, posortowane, „Na później” zawsze dostępna', () => {
+    const p = setQuestLists(base(), KEY, 'q', ['Exp', ' Na później ', 'Exp'], 5);
+    expect(p.characters[KEY]!.quests['q']!.lists).toEqual({ v: ['Exp', 'Na później'], at: 5 });
+    expect(questLists(p.characters[KEY])).toEqual(['Na później', 'Exp']);
+    expect(questLists(undefined)).toEqual(['Na później']);
+  });
+
+  it('kroki scalane osobno z dwóch urządzeń, listy last-write-wins', () => {
+    const pc = setQuestLists(
+      setStepDone(base(), KEY, 'q', 0, true, 4, 10),
+      KEY,
+      'q',
+      ['Na później'],
+      30,
+    );
+    const phone = setQuestLists(setStepDone(base(), KEY, 'q', 1, true, 4, 20), KEY, 'q', [], 25);
+    const merged = mergeProgress(pc, phone).characters[KEY]!.quests['q']!;
+    expect(merged.steps).toEqual({ '0': { v: true, at: 10 }, '1': { v: true, at: 20 } });
+    expect(merged.lists).toEqual({ v: ['Na później'], at: 30 });
+    expect(mergeProgress(pc, phone)).toEqual(mergeProgress(phone, pc));
+    expect(parseProgress(JSON.parse(JSON.stringify(mergeProgress(pc, phone))))).toBeDefined();
   });
 });

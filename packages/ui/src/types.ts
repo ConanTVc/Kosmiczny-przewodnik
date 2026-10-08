@@ -2,7 +2,7 @@ import type { BuiltContent } from '@kp/content';
 import type { ManualStatus, Progress, Scan } from '@kp/core';
 import type { ComponentChildren } from 'preact';
 
-export type TabId = 'here' | 'progress' | 'ahead' | 'guides' | 'characters' | 'settings';
+export type TabId = 'here' | 'progress' | 'ahead' | 'search' | 'characters' | 'settings';
 
 /** Stan synchronizacji – podaje go aplikacja (Prompt 5); brak = synchronizacja niedostępna. */
 export interface SyncProps {
@@ -36,6 +36,10 @@ export interface PanelProps {
   sync?: SyncProps;
   initialTab?: TabId;
   onSetManual(slug: string, status: ManualStatus | null): void;
+  /** Odhaczenie kroku zadania (numer od 0); `total` – liczba kroków (wszystkie = zadanie zrobione). */
+  onSetStep(slug: string, step: number, done: boolean, total: number): void;
+  /** Własne listy gracza dla zadania (np. „Na później”). */
+  onSetLists(slug: string, lists: string[]): void;
   onSelectCharacter(key: string): void;
   onSetTracked(key: string, tracked: boolean): void;
   onSetting(name: string, value: unknown): void;
