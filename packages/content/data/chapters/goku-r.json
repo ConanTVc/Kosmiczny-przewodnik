@@ -1,0 +1,1336 @@
+{
+  "$schema": "../../schema/chapter.schema.json",
+  "id": "goku-r",
+  "title": "Rborn – Goku",
+  "reborn": 1,
+  "races": [
+    0
+  ],
+  "sourceCredit": {
+    "author": "BaronCorbin"
+  },
+  "sections": [
+    {
+      "locId": 62,
+      "quests": [
+        {
+          "slug": "goku-r/62/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Zuna – Północ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 86,
+      "quests": [
+        {
+          "slug": "goku-r/86/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Wielka jaskinia, a następnie znów na północ do lokacji Gniazdo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 88,
+      "quests": [
+        {
+          "slug": "goku-r/88/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Borgol"
+              ],
+              "rewards": [
+                "1 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Wróć do lokacji Zuna – Północ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 86,
+      "quests": [
+        {
+          "slug": "goku-r/86/poszukiwanie-kul-2",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szalony wódz"
+              ],
+              "rewards": [
+                "1 000 000 szybkości",
+                "Pradawna Smocza Kula",
+                "Podróż do Planeta Nova"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 89,
+      "quests": [
+        {
+          "slug": "goku-r/89/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Glorfin",
+                "Pokonać w pojedynku: Hakon",
+                "Pokonać w pojedynku: Ungmar"
+              ],
+              "rewards": [
+                "Pradawna Smocza Kula",
+                "Technika: Fala Uderzeniowa VI",
+                "Podróż do Planeta Olbrzymów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 90,
+      "quests": [
+        {
+          "slug": "goku-r/90/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Pradawna Smocza Kula",
+                "Podróż do Planeta Lud"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 91,
+      "quests": [
+        {
+          "slug": "goku-r/91/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Mut-Mot"
+              ],
+              "rewards": [
+                "100 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Lord Lude"
+              ],
+              "rewards": [
+                "100 000 wytrzymałości",
+                "Pradawna Smocza Kula",
+                "Podróż do Planeta ZX68"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 92,
+      "quests": [
+        {
+          "slug": "goku-r/92/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Planeta ZX68 – Laboratorium."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 93,
+      "quests": [
+        {
+          "slug": "goku-r/93/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Robot ZX999"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Lild"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia",
+                "Pradawna Smocza Kula"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Mutant"
+              ],
+              "rewards": [
+                "100 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Doktor"
+              ],
+              "rewards": [
+                "Pradawna Smocza Kula",
+                "Podróż do Lodowa Planeta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 94,
+      "quests": [
+        {
+          "slug": "goku-r/94/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Lodowa Dolina Północ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 95,
+      "quests": [
+        {
+          "slug": "goku-r/95/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Lodowy Klif"
+              ],
+              "rewards": [
+                "Pradawna Smocza Kula",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-r/27/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Pradawna Smocza Kula 0/7"
+              ],
+              "rewards": [
+                "Podróż do Dom"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "goku-r/35/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bebi SonGokan"
+              ],
+              "rewards": [
+                "Podróż do Inny wymiar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 96,
+      "quests": [
+        {
+          "slug": "goku-r/96/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Boski trening III"
+              ],
+              "rewards": [
+                "Podróż do Planeta Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/96/zabawa",
+          "name": "Zabawa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Boski trening II",
+                "Zapłacić: 0/5 kk"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ],
+              "note": "Idź na południe do lokacji Tajemna Sala."
+            },
+            {
+              "requirements": [
+                "Pokonaj: Bezduszny(Normal) 0/2 000"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ],
+              "note": "Szukaj literek."
+            },
+            {
+              "requirements": [
+                "Pokonaj: Bezduszny(Champion) 0/2 000"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 73,
+      "quests": [
+        {
+          "slug": "goku-r/73/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Xul"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 98,
+      "quests": [
+        {
+          "slug": "goku-r/98/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/820"
+              ],
+              "rewards": [
+                "Technika: SSJ4",
+                "Podróż do Planeta Tsuful"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/98/wioska",
+          "name": "Wioska",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Xul Trah(Normal) 0/500"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Xul Trah(Champion) 0/200"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Xul Trah(Elita) 0/100"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia",
+                "500 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Korona Trzech Bogów"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 99,
+      "quests": [
+        {
+          "slug": "goku-r/99/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bebi Vegeta"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-r/27/poszukiwanie-kul-2",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Nowa Namek"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 100,
+      "quests": [
+        {
+          "slug": "goku-r/100/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Potrzebna święta woda użyj teleportacji i przenieś się do pałac wszechmogącego"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-r/27/poszukiwanie-kul-3",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Święta Woda"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Wróć na Nową Namek."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 100,
+      "quests": [
+        {
+          "slug": "goku-r/100/poszukiwanie-kul-2",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Święta Woda"
+              ],
+              "rewards": [
+                "500 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Dolina Śmierci."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 101,
+      "quests": [
+        {
+          "slug": "goku-r/101/poszukiwanie-kul",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Splugawiony Strażnik"
+              ],
+              "rewards": [
+                "400 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Wróć na Nową Namek."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 100,
+      "quests": [
+        {
+          "slug": "goku-r/100/poszukiwanie-kul-3",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Teleportuj się do lokacji Dom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "goku-r/35/poszukiwanie-kul-2",
+          "name": "Poszukiwanie kul",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Atakowana Prowincja"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 103,
+      "quests": [
+        {
+          "slug": "goku-r/103/piekielna-zemsta",
+          "name": "Piekielna Zemsta",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Gwardzista Piekieł(Normal) 0/100"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wojownik Piekieł"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/850"
+              ],
+              "rewards": [
+                "1 000 000 siły woli",
+                "Podróż do Piekło"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/103/magiczny-kij",
+          "name": "Magiczny Kij",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1000",
+                "Pokonaj: Gwardzista Piekieł(Champion) 0/250",
+                "Pokonaj: Gwardzista Piekieł(Elita) 0/250",
+                "Pokonaj: Gwardzista Piekieł(Legendarny) 0/1"
+              ],
+              "rewards": [
+                "Magiczny Kij (Przedmiot specjalny Goku)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/103/podroznik",
+          "name": "Podróżnik",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/845",
+                "Pokonaj: Gwardzista Piekieł(Champion) 0/200"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Gwardzista Piekieł(Elita) 0/1"
+              ],
+              "rewards": [
+                "Technika: Smocza Pięść"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/103/potezna-ki",
+          "name": "Potężna Ki",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Energii KI normal 0/10"
+              ],
+              "rewards": [
+                "Technika: Fala Uderzeniowa VII"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 104,
+      "quests": [
+        {
+          "slug": "goku-r/104/piekielna-zemsta",
+          "name": "Piekielna Zemsta",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Morgoth"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: King Cold"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Frezer"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Komórczak"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Cooler"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/880"
+              ],
+              "rewards": [
+                "Podróż do Gruzowisko"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 105,
+      "quests": [
+        {
+          "slug": "goku-r/105/piekielna-zemsta",
+          "name": "Piekielna Zemsta",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Super C17"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/885",
+                "Pokonać w pojedynku: Super C17"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/890",
+                "Pokonać w pojedynku: Super C17"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/900"
+              ],
+              "rewards": [
+                "Podróż do Miejsce Przywołania"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 106,
+      "quests": [
+        {
+          "slug": "goku-r/106/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/901"
+              ],
+              "rewards": [
+                "Podróż do Zatruta Wyspa"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/106/zly",
+          "name": "Zły",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bardzo Zły"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia",
+                "Boski Miecz"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/106/zle-czasy",
+          "name": "Złe Czasy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zapłacić: 0/5 kk",
+                "Pokonaj: Sługa Złego(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Nasiono Życia",
+                "Nasiono Życia",
+                "Nasiono Życia",
+                "Nasiono Życia"
+              ],
+              "note": "Szukaj nasion."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Nasiono Życia 0/4"
+              ],
+              "rewards": [
+                "40 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sługa Złego(Champion) 0/500"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sługa Złego(Elita) 0/250"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 107,
+      "quests": [
+        {
+          "slug": "goku-r/107/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Ryan"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/930",
+                "Pokonać w pojedynku: Smok Ryan"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia",
+                "Czarna Kula",
+                "Podróż do Miasto – Widmo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 108,
+      "quests": [
+        {
+          "slug": "goku-r/108/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Uh"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/940",
+                "Osiągnąć poziom: 0/945",
+                "Osiągnąć poziom: 0/950",
+                "Osiągnąć poziom: 0/955",
+                "Pokonać w pojedynku: Smok Uh"
+              ],
+              "rewards": [
+                "Czarna Kula",
+                "Podróż do Brzeg Jeziora"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 109,
+      "quests": [
+        {
+          "slug": "goku-r/109/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/965",
+                "Pokonać w pojedynku: Smok Ryuu"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia",
+                "Czarna Kula",
+                "Podróż do Pustkowia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 110,
+      "quests": [
+        {
+          "slug": "goku-r/110/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 000",
+                "Pokonać w pojedynku: Smok Chi"
+              ],
+              "rewards": [
+                "Czarna Kula",
+                "Podróż do Zniszczone Miasto"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/110/ofiary",
+          "name": "Ofiary",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Ofiara Smoka(Normal) 0/500"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Ofiara Smoka(Champion) 0/250"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Ofiara Smoka(Elita) 0/150"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 111,
+      "quests": [
+        {
+          "slug": "goku-r/111/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Suu"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 015",
+                "Pokonać w pojedynku: Smok Suu"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Sab"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia",
+                "-20 000 000 szybkości",
+                "Czarna Kula",
+                "Czarna Kula"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 040"
+              ],
+              "rewards": [
+                "10 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 045"
+              ],
+              "rewards": [
+                "15 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Li"
+              ],
+              "rewards": [
+                "18 000 000 000 doświadczenia",
+                "Podróż do Dolina Zagłady"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 112,
+      "quests": [
+        {
+          "slug": "goku-r/112/zle-smoki",
+          "name": "Złe Smoki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 060",
+                "Pokonać w pojedynku: Smok Li"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Li"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Czarna Kula 0/6",
+                "Osiągnąć poziom: 0/1 100",
+                "Pokonać w pojedynku: Smok Omega"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Smok Li"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia",
+                "Podróż do Zaświaty – Część Południowa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 113,
+      "quests": [
+        {
+          "slug": "goku-r/113/smocza-podroz",
+          "name": "Smocza Podróż",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Poległy bohater(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Poległy bohater(Champion) 0/750"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Poległy bohater(Elita) 0/500"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 180"
+              ],
+              "rewards": [
+                "Podróż do Zaświaty – Część Zachodnia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 114,
+      "quests": [
+        {
+          "slug": "goku-r/114/smocza-podroz",
+          "name": "Smocza Podróż",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wcielenie(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wcielenie(Normal) 0/500"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości normal 0/30"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 210"
+              ],
+              "rewards": [
+                "Podróż do Zaświaty – Część Północna"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 115,
+      "quests": [
+        {
+          "slug": "goku-r/115/smocza-podroz",
+          "name": "Smocza Podróż",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Duch przeszłości(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 225",
+                "Pokonaj: Duch przeszłości(Champion) 0/500"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Duch przeszłości(Elita) 0/200"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 249"
+              ],
+              "rewards": [
+                "Podróż do Zaświaty – Część Wschodnia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 116,
+      "quests": [
+        {
+          "slug": "goku-r/116/smocza-podroz",
+          "name": "Smocza Podróz",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 250",
+                "Opanować: Boskość",
+                "Oddaj przedmiot Symbol Siły woli normal 0/100",
+                "Ostateczny warunek:"
+              ],
+              "rewards": [
+                "Odrodzenie I (Koniec Fabuły R born)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-r/116/czas-proby",
+          "name": "Czas próby",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zapłacić: 0/10 kk",
+                "Pokonaj: Strażnik boskości(Champion) 0/1 500"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Strażnik boskości(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia",
+                "10 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

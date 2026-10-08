@@ -1,0 +1,5759 @@
+{
+  "$schema": "../../schema/chapter.schema.json",
+  "id": "gborn",
+  "title": "Gborn",
+  "reborn": 2,
+  "sourceCredit": {
+    "author": ""
+  },
+  "sections": [
+    {
+      "locId": 117,
+      "quests": [
+        {
+          "slug": "gborn/117/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Boska Moc I"
+              ],
+              "rewards": [
+                "Podróż do Omega - Zniszczona Siedziba"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 118,
+      "quests": [
+        {
+          "slug": "gborn/118/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Splugawione Bóstwo"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 100"
+              ],
+              "rewards": [
+                "Podróż do Omega - Planeta Tytanów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 119,
+      "quests": [
+        {
+          "slug": "gborn/119/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Halagir"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Boska Moc III"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia",
+                "Podróż do Omega - Opuszczona Planeta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 120,
+      "quests": [
+        {
+          "slug": "gborn/120/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Opuszczony(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "500 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bezimienny"
+              ],
+              "rewards": [
+                "500 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bezimienny"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bezimienny"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia",
+                "Technika: Gniew Boga",
+                "Podróż do Omega - Planeta Tytanów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 119,
+      "quests": [
+        {
+          "slug": "gborn/119/boskie-obowiazki-2",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Morfeusz"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kasius"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ulather"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Baalezerus"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia",
+                "Podróż do Siedziba Bogów",
+                "Podróż do Planeta Casjo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 131,
+      "quests": [
+        {
+          "slug": "gborn/131/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 235",
+                "Pokonaj: Uczestnik(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xapion"
+              ],
+              "rewards": [
+                "800 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Tengel"
+              ],
+              "rewards": [
+                "800 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Księżycowa Pani"
+              ],
+              "rewards": [
+                "800 000 000 doświadczenia",
+                "25KK",
+                "Podróż do Opuszczona Planeta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 132,
+      "quests": [
+        {
+          "slug": "gborn/132/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Dolgur(Normal) 0/500"
+              ],
+              "rewards": [
+                "900 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Dolgur(Champion) 0/250"
+              ],
+              "rewards": [
+                "20 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Dolgur(Elita) 0/250"
+              ],
+              "rewards": [
+                "20 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Dolgur(Elita) 0/100"
+              ],
+              "rewards": [
+                "20 000 000 wytrzymałości",
+                "Podróż do Planeta Magii"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 133,
+      "note": "Pierwsza lokacja z możliwością tp",
+      "quests": [
+        {
+          "slug": "gborn/133/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Magik(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "900 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Magik(Champion) 0/500",
+                "Pokonać w pojedynku: Ziemny Żółw"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wodny Żółw"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Powietrzny Żółw"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ognisty Żółw"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia",
+                "1 000 000 000 doświadczenia",
+                "Podróż do Planeta Mleckor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 134,
+      "quests": [
+        {
+          "slug": "gborn/134/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 300"
+              ],
+              "rewards": [
+                "2 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Okrutny Potwór"
+              ],
+              "rewards": [
+                "3 000 000 000 doświadczenia",
+                "Podróż do Planeta Wody"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 136,
+      "quests": [
+        {
+          "slug": "gborn/136/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wodnik(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wodnik(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wodnik(Elita) 0/750"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia",
+                "Podróż do Planeta Ciążenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 137,
+      "quests": [
+        {
+          "slug": "gborn/137/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 350",
+                "Pokonać w pojedynku: Ociężały"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Król Ciążenia"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia",
+                "Podróż do Sirius"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 138,
+      "quests": [
+        {
+          "slug": "gborn/138/boskie-obowiazki",
+          "name": "Boskie obowiązki",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Sir(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "5 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sir(Normal) 0/1 500"
+              ],
+              "rewards": [
+                "5 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sir(Normal) 0/2 000"
+              ],
+              "rewards": [
+                "5 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sir(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "5 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sir(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "5 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 420"
+              ],
+              "rewards": [
+                "Podróż do Ziemia - Miejsce Ataku"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 139,
+      "quests": [
+        {
+          "slug": "gborn/139/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xicor"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xicor SSJ"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ],
+              "note": "Kontynuacja po wejściu w tp na Dolina Zniszczenia"
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 480"
+              ],
+              "rewards": [
+                "Podróż do Nieznana Planeta"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/139/inwazja",
+          "name": "Inwazja",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Boski Agresor(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "2 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Boski Agresor(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Boski Agresor(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia",
+                "5 000 000 szybkości"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/139/starozytne-miejsca-mocy",
+          "name": "Starożytne Miejsca Mocy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "50 000 000 siły",
+                "50 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "50 000 000 siły woli",
+                "50 000 000 energii Ki"
+              ],
+              "note": "Kontynuacja po wejściu w tp na Dolina Zniszczenia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 141,
+      "quests": [
+        {
+          "slug": "gborn/141/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Normal x666"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Normal x666"
+              ],
+              "rewards": [
+                "5 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 500"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia",
+                "Podróż do Nieznana Planeta II"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 142,
+      "quests": [
+        {
+          "slug": "gborn/142/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xicor SSJ2"
+              ],
+              "rewards": [
+                "100 000 000 szybkości",
+                "Podróż do Wymiar X"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/142/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Boski Prorok(Normal) 0/3 333"
+              ],
+              "rewards": [
+                "50 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Boski Prorok(Champion) 0/2 222"
+              ],
+              "rewards": [
+                "50 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Boski Prorok(Elita) 0/1 111"
+              ],
+              "rewards": [
+                "50 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Woli Normal x666"
+              ],
+              "rewards": [
+                "30 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Energii Ki Normal x666"
+              ],
+              "rewards": [
+                "30 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 550"
+              ],
+              "rewards": [
+                "60 000 000 siły woli"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/142/wsparcie",
+          "name": "Wsparcie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta treningu"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 299,
+      "quests": [
+        {
+          "slug": "gborn/299/wsparcie",
+          "name": "Wsparcie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 24h"
+              ],
+              "rewards": [
+                "100 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Wytrenowana moc 0/150 000 000"
+              ],
+              "rewards": [
+                "Ulepszony Strój Treningowy klasy Mystic(+5)"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wódź treningowy"
+              ],
+              "rewards": [
+                "750 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wielki mistrz"
+              ],
+              "rewards": [
+                "Akcesorium Unique",
+                "Podróż do Planeta doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 300,
+      "quests": [
+        {
+          "slug": "gborn/300/wsparcie",
+          "name": "Wsparcie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Punkty PvM 100 000"
+              ],
+              "rewards": [
+                "300 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Exper(Elita) 0/1 001"
+              ],
+              "rewards": [
+                "300 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 800"
+              ],
+              "rewards": [
+                "7 482 632 333 do boskości",
+                "Podróż do Planeta szczęścia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 301,
+      "quests": [
+        {
+          "slug": "gborn/301/wsparcie",
+          "name": "Wsparcie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły normal 0/500"
+              ],
+              "rewards": [
+                "Symbol Siły mystic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości normal 0/500"
+              ],
+              "rewards": [
+                "Symbol Szybkości mystic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wytrzymałości normal 0/500"
+              ],
+              "rewards": [
+                "Symbol Wytrzymałości mystic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Woli normal 0/500"
+              ],
+              "rewards": [
+                "Symbol Siły Woli mystic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Energii KI normal 0/500"
+              ],
+              "rewards": [
+                "Symbol Energii KI mystic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj PSK 3"
+              ],
+              "rewards": [
+                "bonus premium na 14 dni: Szczęściarz",
+                "Podróż do Nieznana Planeta II"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 143,
+      "quests": [
+        {
+          "slug": "gborn/143/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 530"
+              ],
+              "rewards": [
+                "Podróż do Wymiar Y"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/143/moc",
+          "name": "Moc",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: X(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "100 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: X(Champion) 0/4 000"
+              ],
+              "rewards": [
+                "100 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: X(Elita) 0/3 000"
+              ],
+              "rewards": [
+                "Technika: Fala Uderzeniowa VIII"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 144,
+      "quests": [
+        {
+          "slug": "gborn/144/moc",
+          "name": "Moc",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 560"
+              ],
+              "rewards": [
+                "Podróż do Wymiar Z"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/144/inwestycja",
+          "name": "Inwestycja",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zapłacić: 50KK",
+                "Pokonaj: Y(Normal) 0/6 000"
+              ],
+              "rewards": [
+                "55KK"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 145,
+      "quests": [
+        {
+          "slug": "gborn/145/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 600"
+              ],
+              "rewards": [
+                "Podróż do Planeta Nudest"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/145/wymiar-z",
+          "name": "Wymiar Z",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zapłacić: 0/10",
+                "Pokonaj: Z(Normal) 0/7 000"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Z(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Z(Elita) 0/4 000"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 146,
+      "quests": [
+        {
+          "slug": "gborn/146/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xicor SSJ3"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia",
+                "Podróż do Planeta Ura"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 147,
+      "quests": [
+        {
+          "slug": "gborn/147/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 630",
+                "Oddaj przedmiot Magiczna Substancja 0/1000"
+              ],
+              "rewards": [
+                "Podróż do Planeta Girlu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/147/kosmiczna-choroba",
+          "name": "Kosmiczna Choroba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 650"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Kontynuacja na Planeta Papri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 148,
+      "quests": [
+        {
+          "slug": "gborn/148/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 12h"
+              ],
+              "rewards": [
+                "Podróż do Planeta Papri"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 149,
+      "quests": [
+        {
+          "slug": "gborn/149/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 680",
+                "Pokonać w pojedynku: Tajemniczy"
+              ],
+              "rewards": [
+                "10 000 000 szybkości",
+                "Podróż do Planeta Secato"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/149/kosmiczna-choroba",
+          "name": "Kosmiczna Choroba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zmutowany"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Silny Mutant"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia",
+                "Zniszczony Kombinezon"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot: Zniszczony Kombinezon"
+              ],
+              "rewards": [
+                "50 000 000 do wszystkich statystyk"
+              ],
+              "note": "Wróć na Planetę Ura."
+            },
+            {
+              "requirements": [
+                "Punkty PvM 10 000"
+              ],
+              "rewards": [],
+              "note": "Kontynuacja na Planeta Secato"
+            }
+          ]
+        },
+        {
+          "slug": "gborn/149/nowe-wyzwanie",
+          "name": "Nowe Wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Info"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 302,
+      "quests": [
+        {
+          "slug": "gborn/302/nowe-wyzwanie",
+          "name": "Nowe Wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zinxin(Champion) 0/2 000"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia",
+                "Podróż do Magiczna Kraina Bukolesa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 303,
+      "quests": [
+        {
+          "slug": "gborn/303/nowe-wyzwanie",
+          "name": "Nowe Wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Król"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę (koles)"
+              ],
+              "rewards": [
+                "Podróż do Planeta Tajemnic"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 304,
+      "quests": [
+        {
+          "slug": "gborn/304/nowe-wyzwanie",
+          "name": "Nowe Wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Sekret(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "6 800 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Sekret(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "680 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Draxiotoxuk"
+              ],
+              "rewards": [
+                "Podróż do Zapomniana Planeta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 305,
+      "quests": [
+        {
+          "slug": "gborn/305/nowe-wyzwanie",
+          "name": "Nowe Wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bóg Czasu"
+              ],
+              "rewards": [
+                "5KK",
+                "7 PSK",
+                "Podróż do Planeta Papri"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 150,
+      "quests": [
+        {
+          "slug": "gborn/150/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/690",
+                "Opanować: Boska Moc VI"
+              ],
+              "rewards": [
+                "Podróż do Planeta Handlowa"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/150/kosmiczna-choroba",
+          "name": "Kosmiczna Choroba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Mutant"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Grupa Mutantów"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia",
+                "Próbki"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot: Próbki"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ],
+              "note": "Wróć na Planetę Ura."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 151,
+      "quests": [
+        {
+          "slug": "gborn/151/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 750"
+              ],
+              "rewards": [
+                "Technika: SSJ5"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kosmiczny Kraken"
+              ],
+              "rewards": [
+                "90 000 000 000 doświadczenia",
+                "30KK",
+                "Podróż do Planeta Roco"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 152,
+      "quests": [
+        {
+          "slug": "gborn/152/nowy-wrog",
+          "name": "Nowy wróg",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/800",
+                "Pokonać w pojedynku: Xicor SSJ4"
+              ],
+              "rewards": [
+                "250 000 000 000 doświadczenia",
+                "Podróż do Dom Pan"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/152/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 810",
+                "Pokonać w pojedynku: Bevin"
+              ],
+              "rewards": [
+                "8 000 000 000 doświadczenia",
+                "Podróż do Planeta Cork"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 306,
+      "quests": [
+        {
+          "slug": "gborn/306/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wyznawca(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "8 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/840"
+              ],
+              "rewards": [
+                "Podróż do Południowa Świątynia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/306/prywatna-wymiana",
+          "name": "Prywatna Wymiana",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Posiadanie Prywatnej Planety",
+                "Oddaj przedmiot Magiczna Substancja x1000",
+                "Oddaj przedmiot Magiczna Esencja x2"
+              ],
+              "rewards": [
+                "1 000 Punktów Rozwoju Prywatnej Planety"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 307,
+      "quests": [
+        {
+          "slug": "gborn/307/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Rozwiąż zagadkę(6)"
+              ],
+              "rewards": [
+                "100 000 000 Siły Woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/120 (limit czasu 00:01:20)"
+              ],
+              "rewards": [
+                "50 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Rare 0/1000"
+              ],
+              "rewards": [
+                "8 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/150 (limit czasu 00:01:00)"
+              ],
+              "rewards": [
+                "8 000 000 000 doświadczenia",
+                "Podróż do Zachodnia Świątynia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 308,
+      "quests": [
+        {
+          "slug": "gborn/308/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 12:00:00"
+              ],
+              "rewards": [
+                "100 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę(12)"
+              ],
+              "rewards": [
+                "8 000 000 000 doświadczenia",
+                "Podróż do Wschodnia Świątynia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 309,
+      "quests": [
+        {
+          "slug": "gborn/309/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Gwardzista(Normal) 0/4 000"
+              ],
+              "rewards": [
+                "10 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Boski Obrońca"
+              ],
+              "rewards": [
+                "50 000 000 wytrzymałości",
+                "Podróż do Boski Ogród"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 310,
+      "quests": [
+        {
+          "slug": "gborn/310/zly-bog",
+          "name": "Zły Bóg",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Dagdo"
+              ],
+              "rewards": [
+                "50 000 000 do wszystkich statystyk",
+                "Boski Pas",
+                "Podróż do Planeta Roco"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 153,
+      "quests": [
+        {
+          "slug": "gborn/153/upadli",
+          "name": "Upadli",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Sługa Upadłych(Normal) 0/1 000",
+                "Pokonaj: Sługa Upadłych(Champion) 0/1 000",
+                "Pokonaj: Sługa Upadłych(Elita) 0/500",
+                "Pokonaj w pojedynku (bez SSJ) Sizzle"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ultra Buu"
+              ],
+              "rewards": [
+                "10 000 000 do wszystkich statystyk",
+                "Podróż do Ziemska Siedziba Upadłych Saiyan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 154,
+      "quests": [
+        {
+          "slug": "gborn/154/upadli",
+          "name": "Upadli",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Elitarny Wojownik(Champion) 0/2 560",
+                "Pokonać w pojedynku: Purika SSJ"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Purika Oozaru"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Mito SSJ3"
+              ],
+              "rewards": [
+                "37 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 899"
+              ],
+              "rewards": [
+                "Podróż do Miejsce Lądowania Lorda Eriona"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/154/wygnany-kowal",
+          "name": "Wygnany kowal",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 860",
+                "Pokonaj: Elitarny Wojownik(Elita) 0/500"
+              ],
+              "rewards": [
+                "Pancerz Unique x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 155,
+      "quests": [
+        {
+          "slug": "gborn/155/wygnany-kowal",
+          "name": "Wygnany kowal",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sizzle"
+              ],
+              "rewards": [
+                "utrata energii Ki - 10%"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Mistyczna kontrola myśli",
+                "Pokonaj: Upadły Strażnik Król(Champion) 0/1 000",
+                "Pokonać w pojedynku: Król Vegeta SSJ3"
+              ],
+              "rewards": [
+                "Mistyczny Klucz x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bardock SSJ4"
+              ],
+              "rewards": [
+                "Mistyczny Klucz x1",
+                "Technika: Działo Dusz",
+                "Opaska Ojca"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 975",
+                "Pokonać w pojedynku: Brolly LSSJ"
+              ],
+              "rewards": [
+                "Mistyczny Klucz x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xicor SSJ5"
+              ],
+              "rewards": [
+                "Mistyczny Klucz x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Mistyczny Klucz 0/4"
+              ],
+              "rewards": [
+                "35 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 050"
+              ],
+              "rewards": [
+                "Podróż do Statek Lorda Eriona"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/155/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Jaskinia Przodków"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 311,
+      "quests": [
+        {
+          "slug": "gborn/311/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "-25 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Potwór(Normal) 0/2 000"
+              ],
+              "rewards": [
+                "20 000 000 000 doświadczenia",
+                "Podróż do Planeta Ibnu - Wschód"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 312,
+      "quests": [
+        {
+          "slug": "gborn/312/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sayiajin"
+              ],
+              "rewards": [
+                "30 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Drugi Sayiajin"
+              ],
+              "rewards": [
+                "30 000 000 szybkości",
+                "Podróż do Osada"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 313,
+      "quests": [
+        {
+          "slug": "gborn/313/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "20 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 12:00:00"
+              ],
+              "rewards": [
+                "Podróż do Przeklęty Las"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 314,
+      "quests": [
+        {
+          "slug": "gborn/314/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Zniszczona Osada"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 315,
+      "quests": [
+        {
+          "slug": "gborn/315/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Ibnu - Wschód"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sorte"
+              ],
+              "rewards": [
+                "Podróż do Przeklęty Las",
+                "Podróż do Planeta Urni"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 316,
+      "quests": [
+        {
+          "slug": "gborn/316/podstep",
+          "name": "Podstęp",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: LeChupacabra(Normal) 0/2 000"
+              ],
+              "rewards": [
+                "100 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: LeChupacabra(Champion) 0/2 000"
+              ],
+              "rewards": [
+                "100 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: LeChupacabra(Elita) 0/2 000"
+              ],
+              "rewards": [
+                "100 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Silny Zabójca"
+              ],
+              "rewards": [
+                "25 000 000 energii Ki"
+              ],
+              "note": "Idź do lokacji Planeta Urni - Południe (południe)."
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Doświadczony Zabójca"
+              ],
+              "rewards": [
+                "25 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Potężny Zabójca"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Król Zabójców"
+              ],
+              "rewards": [
+                "20 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sorte SSJ"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia",
+                "Podróż do Przeklęty Las",
+                "25KK",
+                "Podróż do Miejsce Lądowania Lorda Eriona"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 156,
+      "quests": [
+        {
+          "slug": "gborn/156/upadli",
+          "name": "Upadli",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Gwardzista Eriona(Normal) 0/150",
+                "Pokonać w pojedynku: Generał Kama"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia",
+                "zwiększenie energii Ki - 10%"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Lord Erion"
+              ],
+              "rewards": [
+                "150 000 000 000 doświadczenia",
+                "Podróż do Tunel międzywymiarowy – początek"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 157,
+      "quests": [
+        {
+          "slug": "gborn/157/tunel",
+          "name": "Tunel",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Irris"
+              ],
+              "note": "Idź do lokacji Tunel międzywymiarowy – wir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 160,
+      "quests": [
+        {
+          "slug": "gborn/160/tunel",
+          "name": "Tunel",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Troglodyta(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "Mithril"
+              ],
+              "note": "Idź do lokacji Kopalnia."
+            },
+            {
+              "requirements": [
+                "Pokonaj: Troglodyta(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "Mithril"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Troglodyta(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "Mithril"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Mithril 0/3"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia",
+                "Kamień Wymiaru x1",
+                "Podróż do Tunel międzywymiarowy – wir"
+              ],
+              "note": "Wróć do lokacji Irris."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Vestfalia"
+              ],
+              "note": "Idź do lokacji Tunel międzywymiarowy – wir drugi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 163,
+      "quests": [
+        {
+          "slug": "gborn/163/tunel",
+          "name": "Tunel",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: Czas"
+              ],
+              "rewards": [
+                "Księga"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: Wiatr"
+              ],
+              "rewards": [
+                "Księga"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: Kopernik"
+              ],
+              "rewards": [
+                "Księga"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Księga 0/3"
+              ],
+              "rewards": [
+                "80 000 000 000 doświadczenia",
+                "200 000 000 do wszystkich statystyk",
+                "Kamień Wymiaru x1",
+                "Podróż do Tunel międzywymiarowy – wir drugi"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Starożytność"
+              ],
+              "note": "Idź do lokacji Tunel międzywymiarowy – wir trzeci."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 166,
+      "quests": [
+        {
+          "slug": "gborn/166/tunel",
+          "name": "Tunel",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Harpia(Normal) 0/7 000",
+                "Pokonać w pojedynku: Hydra"
+              ],
+              "rewards": [
+                "125 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kronoss"
+              ],
+              "rewards": [
+                "500 000 000 szybkości",
+                "Kamień Wymiaru x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 100"
+              ],
+              "rewards": [
+                "Podróż do Tunel międzywymiarowy – środek"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Kamień Wymiaru 0/3"
+              ],
+              "rewards": [
+                "Podróż do Turniej"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/166/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Leśna Droga"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 318,
+      "quests": [
+        {
+          "slug": "gborn/318/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zbój"
+              ],
+              "rewards": [
+                "Skrzypce"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Skrzypce 0/1"
+              ],
+              "rewards": [
+                "Medalion",
+                "Podróż do Mroczna Dolina"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/318/zguba",
+          "name": "Zguba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Przepustka"
+              ],
+              "note": "Idź do lokacji Mroczna Dolina.\nPodnieś przedmiot i wróć."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 319,
+      "quests": [
+        {
+          "slug": "gborn/319/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "12 500 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Przepustka 0/1"
+              ],
+              "rewards": [
+                "Podróż do Lodowa Kraina"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 320,
+      "quests": [
+        {
+          "slug": "gborn/320/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Mroźna Dusza(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "300 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 6h"
+              ],
+              "rewards": [
+                "300 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Mroźna Dusza(Normal) 0/10 000",
+                "Pokonaj: Mroźna Dusza(Champion) 0/7 500",
+                "Pokonaj: Mroźna Dusza(Elita) 0/5 000"
+              ],
+              "rewards": [
+                "147 690 834 do boskości",
+                "Podróż do Zagadkowa Kamienica"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 321,
+      "quests": [
+        {
+          "slug": "gborn/321/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: N"
+              ],
+              "rewards": [
+                "100 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: 36"
+              ],
+              "rewards": [
+                "15 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: 24"
+              ],
+              "rewards": [
+                "100 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 9h",
+                "Rozwiąż zagadkę: PAJAK"
+              ],
+              "rewards": [
+                "17 500 000 000 doświadczenia",
+                "7 PSK"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/1000"
+              ],
+              "rewards": [
+                "Podróż do Starożytność"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 265,
+      "quests": [
+        {
+          "slug": "gborn/265/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Ostateczny Trening",
+                "Pokonać w pojedynku: Garan",
+                "Zaczekać 1h",
+                "Osiągnąć poziom: 1 250",
+                "Pokonać w pojedynku: Gridling"
+              ],
+              "rewards": [
+                "150 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:30:00",
+                "Pokonać w pojedynku: Krail"
+              ],
+              "rewards": [
+                "25 000 000 000 doświadczenia",
+                "Podróż do Baria"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/265/ostateczna-przysluga",
+          "name": "Ostateczna Przysługa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Szczyt Loo"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        },
+        {
+          "slug": "gborn/265/slay",
+          "name": "Slay",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 150"
+              ],
+              "rewards": [
+                "Podróż do Wioska Slaya"
+              ],
+              "note": "**Uwaga:** Zadanie przenosi na poboczne lokacje z których można się teleportować\nNależy je wykonać, aby móc robić listy gończe na G"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 270,
+      "quests": [
+        {
+          "slug": "gborn/270/ostateczna-przysluga",
+          "name": "Ostateczna Przysługa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Asu(Normal) 0/200"
+              ],
+              "rewards": [
+                "Medalion"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Medalion 0/1"
+              ],
+              "rewards": [
+                "15 do przyrostu PA",
+                "Podróż do Lodowiec"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 271,
+      "quests": [
+        {
+          "slug": "gborn/271/ostateczna-przysluga",
+          "name": "Ostateczna Przysługa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/550"
+              ],
+              "rewards": [
+                "100 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/500",
+                "Rozwiąż zagadkę: do góry"
+              ],
+              "rewards": [
+                "15KK",
+                "Podróż do Turniej"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 266,
+      "quests": [
+        {
+          "slug": "gborn/266/slay",
+          "name": "Slay",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Okupant(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Okupant(Champion) 0/1 000"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Okupant(Elita) 0/750"
+              ],
+              "rewards": [
+                "70 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/1000",
+                "Zaczekać 02:00:00",
+                "Oddaj przedmiot Symbol Siły Rare 0/100"
+              ],
+              "rewards": [
+                "10 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Rare 0/100"
+              ],
+              "rewards": [
+                "10 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wytrzymałości Rare 0/100"
+              ],
+              "rewards": [
+                "10 000 000 wytrzymałości",
+                "Podróż do Cytadela"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/266/ocalenie",
+          "name": "Ocalenie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "10 000 000 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 267,
+      "quests": [
+        {
+          "slug": "gborn/267/slay",
+          "name": "Slay",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Doktor"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Opresor(Normal) 0/4 000"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 12:00:00",
+                "Pokonać w pojedynku: Mort"
+              ],
+              "rewards": [
+                "25 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Morris"
+              ],
+              "rewards": [
+                "25 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Julian"
+              ],
+              "rewards": [
+                "25 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 200"
+              ],
+              "rewards": [
+                "Podróż do Siedziba Doktora"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/267/poswiecenie",
+          "name": "Poświęcenie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 210"
+              ],
+              "rewards": [
+                "-10 000 000 siły",
+                "-10 000 000 szybkości",
+                "-10 000 000 wytrzymałości",
+                "10 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 268,
+      "quests": [
+        {
+          "slug": "gborn/268/slay",
+          "name": "Slay",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Doktor"
+              ],
+              "rewards": [
+                "125 000 000 000 doświadczenia"
+              ],
+              "note": "Idź do lokacji Loch.\nIdź do lokacji Siedziba Doktora, a następnie do lokacji Główna Sala."
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Doktor"
+              ],
+              "rewards": [
+                "200 000 000 do wszystkich statystyk",
+                "Podróż do Wioska Slaya",
+                "Akcesorium Elite x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 273,
+      "quests": [
+        {
+          "slug": "gborn/273/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Takywan"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/273/zemsta",
+          "name": "Zemsta",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Anian(Elita) 0/20"
+              ],
+              "rewards": [
+                "100 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/273/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta EUL"
+              ],
+              "note": "**Uwaga:** Zadanie przenosi na poboczne lokacje z których można się teleportować\nNależy je wykonać, aby móc robić listy gończe na G\nNiektóre lokacje w tym zadaniu są jednak zablokowane"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 274,
+      "note": "Bez teleportu.",
+      "quests": [
+        {
+          "slug": "gborn/274/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kazik"
+              ],
+              "rewards": [
+                "25 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bastus"
+              ],
+              "rewards": [
+                "25 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Jaś"
+              ],
+              "rewards": [
+                "25 000 000 wytrzymałości",
+                "Podróż do Placówka Doktora"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/274/nauka",
+          "name": "Nauka",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "PA równe 500"
+              ],
+              "rewards": [
+                "150 do przyrostu PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 275,
+      "quests": [
+        {
+          "slug": "gborn/275/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bestia"
+              ],
+              "rewards": [
+                "80 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 275"
+              ],
+              "rewards": [
+                "Podróż do Ośrodek Badawczy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 276,
+      "quests": [
+        {
+          "slug": "gborn/276/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/100"
+              ],
+              "rewards": [
+                "25 000 000 siły",
+                "Podróż do Księżyc Gamma"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/276/haker",
+          "name": "Haker",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Kriill(Normal) 0/10 000"
+              ],
+              "rewards": [
+                "Karta Dostępu x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 277,
+      "note": "Bez teleportu.",
+      "quests": [
+        {
+          "slug": "gborn/277/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zaraza(Champion) 0/2 000"
+              ],
+              "rewards": [
+                "25 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zaraza(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "25 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 290"
+              ],
+              "rewards": [
+                "100 000 000 000 doświadczenia",
+                "Podróż do Czubek Góry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 278,
+      "quests": [
+        {
+          "slug": "gborn/278/potomek",
+          "name": "Potomek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zenza"
+              ],
+              "rewards": [
+                "200 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zenza"
+              ],
+              "rewards": [
+                "200 000 000 do wszystkich statystyk",
+                "Podróż do Księżyc Gamma",
+                "25KK",
+                "Podróż do Baria"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/278/haker-ii",
+          "name": "Haker II",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Karta Dostępu x1",
+                "Pokonaj: Mutant(Normal) 0/2 000",
+                "Pokonaj: Mutant(Normal) 0/3 000",
+                "Pokonaj: Mutant(Normal) 0/4 000"
+              ],
+              "rewards": [
+                "Nagroda: 14 965 265 114 do boskości"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 279,
+      "quests": [
+        {
+          "slug": "gborn/279/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Oficer"
+              ],
+              "rewards": [
+                "500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj PSK 7"
+              ],
+              "rewards": [
+                "Podróż do Vole"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/279/kolekcjoner",
+          "name": "Kolekcjoner",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły normal 0/1000"
+              ],
+              "rewards": [
+                "400 000 000 siły",
+                "400 000 000 szybkości",
+                "400 000 000 wytrzymałości"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 280,
+      "quests": [
+        {
+          "slug": "gborn/280/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Oficer II"
+              ],
+              "rewards": [
+                "75 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/2500",
+                "Osiągnąć poziom: 1 310"
+              ],
+              "rewards": [
+                "Podróż do Riese"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/280/kolekcjoner",
+          "name": "Kolekcjoner",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Rare 0/1000"
+              ],
+              "rewards": [
+                "400 000 000 siły woli",
+                "400 000 000 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 281,
+      "quests": [
+        {
+          "slug": "gborn/281/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kraal"
+              ],
+              "rewards": [
+                "1 000 000 000 000 doświadczenia",
+                "Podróż do Ziemia – Miejsce Zasadzki"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/281/poszukiwacz",
+          "name": "Poszukiwacz",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Chata Kolekcjonera"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 282,
+      "quests": [
+        {
+          "slug": "gborn/282/poszukiwacz",
+          "name": "Poszukiwacz",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "odblokowana nowa lokacja do podróży: Góra Gromów"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Antyczny Dzban",
+                "Zaczekać 24:00:00"
+              ],
+              "rewards": [
+                "15 do przyrostu PA",
+                "odblokowana nowa lokacja do podróży: Szpital"
+              ],
+              "note": "Idź do lokacji Góra Gromów."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Perski Dywan x1"
+              ],
+              "note": "Idź do lokacji Szpital."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Perski Dywan 0/1"
+              ],
+              "rewards": [
+                "1 500 do max PA"
+              ],
+              "note": "Wróć."
+            }
+          ]
+        },
+        {
+          "slug": "gborn/282/kolekcjoner",
+          "name": "Kolekcjoner",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 000",
+                "Zdobyć Śrubka od Android 0/100 (Zapomniana Dolina i w Prawo)"
+              ],
+              "rewards": [
+                "2 do współczynnika do treningu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/282/kolekcjoner-ii",
+          "name": "Kolekcjoner II",
+          "kind": "side",
+          "requires": [
+            "gborn/282/kolekcjoner"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Kolekcjoner",
+                "Zdobyć moc z Tramp 0/1 000 000 000 (Tunel Międzywymiarowy - środek)"
+              ],
+              "rewards": [
+                "500 000 000 do boskości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 0/333",
+                "Oddaj przedmiot Zielone Senzu 0/3"
+              ],
+              "rewards": [
+                "Czerwone Senzu x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 283,
+      "quests": [
+        {
+          "slug": "gborn/283/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wrogi Strażnik(Champion) 0/250",
+                "Pokonaj: Wrogi Strażnik(Elita) 0/250",
+                "Pokonać w pojedynku: Elitarny Strażnik Imperatora"
+              ],
+              "rewards": [
+                "600 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 325",
+                "Opanować: Demoniczna Sprawność",
+                "Pokonać w pojedynku: Syn Piekła"
+              ],
+              "rewards": [
+                "500 000 000 do wszystkich statystyk",
+                "Podróż do Turniej Międzywymiarowy – Gruzowisko"
+              ],
+              "note": "Idź do lokacji Ziemia – Miejsce Zasadzki – Pole Bitwy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 285,
+      "quests": [
+        {
+          "slug": "gborn/285/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 02:00:00",
+                "Pokonaj: Rumor(Normal) 0/2 500"
+              ],
+              "rewards": [
+                "800 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zmodyfikowana Dusza Kraila"
+              ],
+              "rewards": [
+                "300 000 000 do wszystkich statystyk",
+                "Podróż do Turniej Międzywymiarowy - Generator"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/285/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Indiańska wioska"
+              ],
+              "note": "**Uwaga:** Brak możliwości powrotu, aż do ukończenia zadania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 286,
+      "quests": [
+        {
+          "slug": "gborn/286/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Indiański Potwór(Normal) 0/500"
+              ],
+              "rewards": [
+                "50 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Indiański Potwór(Normal) 0/500"
+              ],
+              "rewards": [
+                "Whisky x1"
+              ],
+              "note": "Limit czasu: 00:01:00"
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Whisky 0/1",
+                "Pokonaj: Indiański Potwór(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Indiański Potwór(Champion) 0/2 500"
+              ],
+              "rewards": [
+                "Fragment Klucza x1",
+                "Podróż do Strażnica poziom 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 287,
+      "quests": [
+        {
+          "slug": "gborn/287/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik"
+              ],
+              "rewards": [
+                "600 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Przywódca Straży"
+              ],
+              "rewards": [
+                "500 000 000 000 doświadczenia",
+                "Podróż do Strażnica poziom 2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 288,
+      "quests": [
+        {
+          "slug": "gborn/288/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik"
+              ],
+              "rewards": [
+                "500 000 000 szybkości",
+                "Podróż do Strażnica poziom 3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 289,
+      "quests": [
+        {
+          "slug": "gborn/289/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik"
+              ],
+              "rewards": [
+                "500 000 000 wytrzymałości",
+                "Podróż do Strażnica poziom 4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 290,
+      "quests": [
+        {
+          "slug": "gborn/290/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Fragment Klucza x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Fragment Klucza 0/2"
+              ],
+              "rewards": [
+                "Przepis x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 330"
+              ],
+              "rewards": [
+                "Podróż do Indiańska wioska",
+                "Podróż do Polana Chowańców"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 291,
+      "quests": [
+        {
+          "slug": "gborn/291/tajemnicze-zadanie",
+          "name": "Tajemnicze Zadanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Przepis 0/1",
+                "Pokonaj: Potężny Chowaniec(Normal) 0/10 000"
+              ],
+              "rewards": [
+                "191 607 320 do boskości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wódz Indiańskich Potworów"
+              ],
+              "rewards": [
+                "Berło x1",
+                "Podróż do Indiańska wioska"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Berło 0/1"
+              ],
+              "rewards": [
+                "21 PSK",
+                "Podróż do Turniej Międzywymiarowy – Gruzowisko"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/291/czarodziej",
+          "name": "Czarodziej",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Potężny Chowaniec(Elita) 0/75"
+              ],
+              "rewards": [
+                "500 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 292,
+      "quests": [
+        {
+          "slug": "gborn/292/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Aladjinn"
+              ],
+              "rewards": [
+                "999 999 999 999 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wzmocniony Aladjinn"
+              ],
+              "rewards": [
+                "999 999 999 999 doświadczenia",
+                "Podróż do Pustynia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 293,
+      "quests": [
+        {
+          "slug": "gborn/293/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Namid(Normal) 0/1"
+              ],
+              "rewards": [
+                "600 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Demoniczna Sprawność"
+              ],
+              "rewards": [
+                "200 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Namid(Normal) 0/1 500"
+              ],
+              "rewards": [
+                "900 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Namid(Champion) 0/500"
+              ],
+              "rewards": [
+                "1 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Namid(Elita) 0/50"
+              ],
+              "rewards": [
+                "1 200 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik Pustyni"
+              ],
+              "rewards": [
+                "1 500 000 000 000 doświadczenia",
+                "150 000 000 do wszystkich statystyk",
+                "Podróż do Podziemia Pustyni – Początek"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 294,
+      "quests": [
+        {
+          "slug": "gborn/294/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "PA równe 1000"
+              ],
+              "rewards": [
+                "5 do przyrostu PA"
+              ],
+              "note": "Idź do lokacji Podziemia Pustyni – Korytarz (W prawo)."
+            },
+            {
+              "requirements": [
+                "Pokonaj: Hullin(Normal) 0/5 000 Limit czasu: 00:20:00"
+              ],
+              "rewards": [
+                "1 700 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Tutuer de Dix"
+              ],
+              "rewards": [
+                "1 800 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Deuxieme Garde"
+              ],
+              "rewards": [
+                "2 400 000 000 000 doświadczenia"
+              ],
+              "note": "Idź do lokacji Podziemia Pustyni – Hol (W prawo)."
+            },
+            {
+              "requirements": [
+                "Pokonaj: Nursul(Normal) 0/800"
+              ],
+              "rewards": [
+                "2 000 000 000 000 doświadczenia"
+              ],
+              "note": "Idź do lokacji Podziemia Pustyni – Sala (W prawo)."
+            },
+            {
+              "requirements": [
+                "PA równe 100"
+              ],
+              "rewards": [
+                "2 000 000 000 000 doświadczenia",
+                "Podróż do Lochy"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/294/opaska",
+          "name": "Opaska",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Opaska Ojca"
+              ],
+              "rewards": [
+                "200 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 322,
+      "quests": [
+        {
+          "slug": "gborn/322/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Mnolo(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "2 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "PA równe 100"
+              ],
+              "rewards": [
+                "2 500 000 000 000 doświadczenia",
+                "Podróż do Arkosolium"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/322/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Kość od Mnolo 0/50"
+              ],
+              "rewards": [
+                "500 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 323,
+      "quests": [
+        {
+          "slug": "gborn/323/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Limak(Normal) 0/1 500"
+              ],
+              "rewards": [
+                "Podróż do Katakumby"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/323/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć moc z Limak 0/500 000 000"
+              ],
+              "rewards": [
+                "7 000 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 324,
+      "quests": [
+        {
+          "slug": "gborn/324/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Minol(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "Podróż do Kazamat"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/324/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 360",
+                "Wygrane walki PvP 0/100"
+              ],
+              "rewards": [
+                "20 000 000 punktów PvP"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/324/znalezisko",
+          "name": "Znalezisko",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Dziwny Kamień"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 325,
+      "quests": [
+        {
+          "slug": "gborn/325/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 3"
+              ],
+              "rewards": [
+                "3 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Punkty PvM 10 000",
+                "Pokonaj: Furcja(Normal) 0/1 500"
+              ],
+              "rewards": [
+                "3 500 000 000 000 doświadczenia",
+                "Podróż do Jezioro"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 326,
+      "quests": [
+        {
+          "slug": "gborn/326/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/10000",
+                "Oddaj przedmiot Symbol Szybkości Super Elite 0/100",
+                "Opanować: Wojownik Absolutny",
+                "Pokonać w pojedynku: Mistrz"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia",
+                "Podróż do Step"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/326/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/200"
+              ],
+              "rewards": [
+                "5 000 000 000 wytrzymałości",
+                "100 PSK"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/326/kamien",
+          "name": "Kamień",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Dziwny kamień 0/1"
+              ],
+              "rewards": [
+                "15 do przyrostu PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 327,
+      "quests": [
+        {
+          "slug": "gborn/327/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 320"
+              ],
+              "rewards": [
+                "1 000 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Ghor(Normal) 0/1 500"
+              ],
+              "rewards": [
+                "1 500 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Normal 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Gonzaalez"
+              ],
+              "rewards": [
+                "1 500 000 000 szybkości",
+                "Podróż do Góry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 328,
+      "quests": [
+        {
+          "slug": "gborn/328/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Normal 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Wytrenowana moc 0/500 000 000"
+              ],
+              "rewards": [
+                "1 500 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Molok"
+              ],
+              "rewards": [
+                "1 500 000 000 siły",
+                "Podróż do Erem"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/328/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 380",
+                "Zdobyć Fragment Zbroi od Razog 0/30"
+              ],
+              "rewards": [
+                "Pancerz Legendarny"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Skrawek Skóry od Razog 0/500"
+              ],
+              "rewards": [
+                "Pas Legendarny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 329,
+      "quests": [
+        {
+          "slug": "gborn/329/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wytrzymałości Normal 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Kilk(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "1 500 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Golem"
+              ],
+              "rewards": [
+                "1 500 000 000 wytrzymałości",
+                "Podróż do Wodospad"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/329/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Skrawek Opaski od Kilk 0/666"
+              ],
+              "rewards": [
+                "Opaska Legendary"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 330,
+      "quests": [
+        {
+          "slug": "gborn/330/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 15"
+              ],
+              "rewards": [
+                "1 500 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 01:00:00"
+              ],
+              "rewards": [
+                "1 500 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Energii KI Normal 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 340"
+              ],
+              "rewards": [
+                "Technika: Drac Furia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Lauri"
+              ],
+              "rewards": [
+                "1 500 000 000 energii Ki",
+                "Podróż do Błonie"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/330/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Scouter Normal 0/100"
+              ],
+              "rewards": [
+                "Scouter Legendary"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 331,
+      "quests": [
+        {
+          "slug": "gborn/331/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Woli 0/1000"
+              ],
+              "rewards": [
+                "1 500 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/5000"
+              ],
+              "rewards": [
+                "1 500 000 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Do"
+              ],
+              "rewards": [
+                "1 500 000 000 siły woli",
+                "Podróż do Sefahat"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/331/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Czystość CHI 0/60"
+              ],
+              "rewards": [
+                "800 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Potęga CHI 0/10"
+              ],
+              "rewards": [
+                "1 300 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 332,
+      "quests": [
+        {
+          "slug": "gborn/332/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wastw(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "7 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Esencja 0/1"
+              ],
+              "rewards": [
+                "2 000 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik I"
+              ],
+              "rewards": [
+                "7 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik II"
+              ],
+              "rewards": [
+                "7 500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik III"
+              ],
+              "rewards": [
+                "8 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik IV"
+              ],
+              "rewards": [
+                "8 500 000 000 000 doświadczenia",
+                "Podróż do Valupto"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/332/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 430",
+                "Pokonać w pojedynku: Rajsna"
+              ],
+              "rewards": [
+                "30 do przyrostu PA",
+                "3 000 do max PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 333,
+      "quests": [
+        {
+          "slug": "gborn/333/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wytrenowana moc 0/600 000 000",
+                "Pokonać w pojedynku: Strażnicy"
+              ],
+              "rewards": [
+                "9 000 000 000 000 doświadczenia",
+                "Podróż do Wejście do Dabinu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/333/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 440",
+                "Zdobyć Cegła od Tamr 0/5 000",
+                "Zdobyć Deska od Tamr 0/5 000"
+              ],
+              "rewards": [
+                "Magiczny Amulet Mystic x1"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/333/artefakt",
+          "name": "Artefakt",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Normal 0/5000",
+                "Oddaj przedmiot Magiczna Substancja 0/7500"
+              ],
+              "rewards": [
+                "Boski Medalion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 334,
+      "quests": [
+        {
+          "slug": "gborn/334/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/900"
+              ],
+              "rewards": [
+                "9 500 000 000 000 doświadczenia",
+                "Pas Super Unique x1",
+                "Podróż do Dabin - Początek"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/334/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 0/250"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia",
+                "Rękawice Mystic G1500 x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 335,
+      "quests": [
+        {
+          "slug": "gborn/335/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 360"
+              ],
+              "rewards": [
+                "Podróż do Dabin"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/335/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: Godzinę",
+                "Rozwiąż zagadkę: Echo"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/335/skarbiec",
+          "name": "Skarbiec",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "5KK"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 336,
+      "quests": [
+        {
+          "slug": "gborn/336/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Rozwiąż zagadkę: ogień",
+                "Zaczekać 01:00:00"
+              ],
+              "rewards": [
+                "Podróż do Felle"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/336/nowy-trening",
+          "name": "Nowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Boski Pas 0/1"
+              ],
+              "rewards": [
+                "5 000 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Rzezibrzuch"
+              ],
+              "rewards": [
+                "20 000 000 000 000 doświadczenia",
+                "5 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "5 do przyrostu PA"
+              ],
+              "note": "Od tego momentu zadanie cofa na poprzednie lokacje.\nWróć do lokacji Wejście do Dabinu."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "30KK",
+                "Czystość CHI x1",
+                "Potęga CHI x1",
+                "Czerwone Senzu x1"
+              ],
+              "note": "Wróć do lokacji Valupto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 337,
+      "quests": [
+        {
+          "slug": "gborn/337/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Egon(Normal) 0/5 000",
+                "Pokonać w pojedynku: Bestia"
+              ],
+              "rewards": [
+                "Podróż do Wejście do Dabinu",
+                "Podróż do Polif"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 338,
+      "quests": [
+        {
+          "slug": "gborn/338/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Awod(Normal) 0/4 100",
+                "Oddaj PSK 1"
+              ],
+              "rewards": [
+                "15 500 000 000 000 doświadczenia",
+                "Podróż do Propiska"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 339,
+      "quests": [
+        {
+          "slug": "gborn/339/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 01:00:00"
+              ],
+              "rewards": [
+                "Podróż do Bumi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 340,
+      "quests": [
+        {
+          "slug": "gborn/340/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bres"
+              ],
+              "rewards": [
+                "17 500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 400"
+              ],
+              "rewards": [
+                "Podróż do Gua"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 341,
+      "quests": [
+        {
+          "slug": "gborn/341/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 420"
+              ],
+              "rewards": [
+                "Podróż do Imezi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 342,
+      "quests": [
+        {
+          "slug": "gborn/342/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 01:00:00"
+              ],
+              "rewards": [
+                "2 500 000 000 do wszystkich statystyk",
+                "Podróż do Puncak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 343,
+      "quests": [
+        {
+          "slug": "gborn/343/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Snut"
+              ],
+              "rewards": [
+                "17 500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Merk(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "17 500 000 000 000 doświadczenia",
+                "Podróż do Pelabuhan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 344,
+      "quests": [
+        {
+          "slug": "gborn/344/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczna Substancja 0/5000"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Owo(Normal) 0/5 000"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia",
+                "Podróż do Laut"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 345,
+      "quests": [
+        {
+          "slug": "gborn/345/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Lichm(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "2 500 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Potwory"
+              ],
+              "rewards": [
+                "Pancerz Super Elite x1",
+                "Podróż do Pemeltrio"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 346,
+      "quests": [
+        {
+          "slug": "gborn/346/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Krass(Elita) 0/5 000"
+              ],
+              "rewards": [
+                "17 500 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Krass(Normal) 0/4 000"
+              ],
+              "rewards": [
+                "17 500 000 000 000 doświadczenia"
+              ],
+              "note": "Limit czasu: 00:15:00"
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 1 500"
+              ],
+              "rewards": [
+                "2 500 000 000 do wszystkich statystyk",
+                "Podróż do Maratoia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/346/lesny-ratunek",
+          "name": "Leśny Ratunek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/2 000",
+                "Pokonaj: Krass(Elita) 0/5 000"
+              ],
+              "rewards": [
+                "10 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Wieczne Ziarno od Duch Przodka 0/300 (Okolice Świętej Wierzy)"
+              ],
+              "rewards": [
+                "5 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Nasiono Prawdy od Strażnik Panteonu 0/100 (Planeta Bogów - Zachód)"
+              ],
+              "rewards": [
+                "5 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Nasiono Czasu od Namid 0/100 (Pustynia)"
+              ],
+              "rewards": [
+                "5 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "5 000 000 000 000 doświadczenia"
+              ],
+              "note": "Wybór: [Chętnie Pomogę] lub [Niestety nie mam juz Czasu]\nAutor wybrał: [Chętnie Pomogę]"
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/400",
+                "Wytrenowana moc 0/2 000 000 000"
+              ],
+              "rewards": [
+                "10 do współczynnika do treningu",
+                "10KK",
+                "Czerwone Senzu x2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 347,
+      "quests": [
+        {
+          "slug": "gborn/347/dziwne-misje",
+          "name": "Dziwne misje",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Uczniowie"
+              ],
+              "rewards": [
+                "Akcesorium Elite x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Trener"
+              ],
+              "rewards": [
+                "Akcesorium Elite x1",
+                "Podróż do Niebiański Pałac"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/347/odbudowa-wioski",
+          "name": "Odbudowa wioski",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Części Elektroniczne od Android 0/500 (zapomniana Dolina i w prawo)"
+              ],
+              "rewards": [
+                "10"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Materiały od Ran 0/400 (Dabin)"
+              ],
+              "rewards": [
+                "1 000 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zolnu(Elita) 0/5 000"
+              ],
+              "rewards": [
+                "zwiększenie energii Ki - 5%",
+                "25 000 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 353,
+      "quests": [
+        {
+          "slug": "gborn/353/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Nazoidów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 354,
+      "quests": [
+        {
+          "slug": "gborn/354/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć moc z Dowolny przeciwnik 0/2 100 000 000"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x1",
+                "Podróż do Niebiański Pałac",
+                "Podróż do Opustoszała Planeta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 355,
+      "quests": [
+        {
+          "slug": "gborn/355/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 01:00:00",
+                "Oddaj PSK 0/50",
+                "Pokonaj: Samotnik(Normal) 0/2 000",
+                "Pokonaj: Samotnik(Champion) 0/3 000",
+                "Pokonaj: Samotnik(Elita) 0/4 000",
+                "Pokonać w pojedynku: Drzewo Śmierci"
+              ],
+              "rewards": [
+                "Podróż do Planeta Śmierci"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/355/polowanie",
+          "name": "Polowanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Samotnik(Elita) 0/7 000"
+              ],
+              "rewards": [
+                "20 do przyrostu PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 356,
+      "quests": [
+        {
+          "slug": "gborn/356/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Skalne Monstrum"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x1",
+                "2 do współczynnika do treningu",
+                "Podróż do Niebiański Pałac",
+                "Czarna Smocza Kula x1",
+                "Czarna Smocza Kula x1",
+                "Podróż do Dolina Treningowa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 357,
+      "quests": [
+        {
+          "slug": "gborn/357/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wytrenowana moc 0/1 000 000 000"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x1",
+                "500 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Wytrenowana moc 0/1 500 000 000"
+              ],
+              "rewards": [
+                "5 do współczynnika do treningu",
+                "Podróż do Niebiański Pałac",
+                "Podróż do Rozpadlina",
+                "Podróż do Boska Kuźnia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/357/w-poszukiwaniu-sily",
+          "name": "W poszukiwaniu siły",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Trener(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "50 000 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Trener(Elita) 0/7 000"
+              ],
+              "rewards": [
+                "20 000 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Trener(Legendarny) 0/1 000"
+              ],
+              "rewards": [
+                "20 000 000 000 wytrzymałośc"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Legendary 0/50"
+              ],
+              "rewards": [
+                "Mistyczny Symbol Siły x400"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości Legendary 0/50"
+              ],
+              "rewards": [
+                "Mistyczny Symbol Szybkości x400"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Mistyczny Symbol Siły 0/400",
+                "Oddaj przedmiot Mistyczny Symbol Szybkości 0/400",
+                "Zaczekać 00:30:00"
+              ],
+              "rewards": [
+                "30 000 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 358,
+      "quests": [
+        {
+          "slug": "gborn/358/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Stal od Android 0/200 (zapomniana Dolina i w prawo)"
+              ],
+              "rewards": [
+                "odblokowana nowa lokacja do podróży: Zatruta Wyspa"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Zatruta Stal od Otruty 0/200 (Zatruta Wyspa)"
+              ],
+              "rewards": [
+                "odblokowana nowa lokacja do podróży: Planeta Bogów"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Boska Stal od Inkwizytor 0/200 (Planeta Bogów)"
+              ],
+              "rewards": [
+                "odblokowana nowa lokacja do podróży: Wrota zaświatów"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Duchowa Stal od Zbłąkana dusza 0/200 (Wrota Zaświatów)",
+                "Zaczekać 12:00:00"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x1",
+                "Miecz Żywiołów x1",
+                "Podróż do Niebiański Pałac"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Miecz Żywiołów 0/1"
+              ],
+              "rewards": [
+                "Identyfikator Turniejowy x1",
+                "Tytuł: Uczestnik Turnieju"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Identyfikator Turniejowy 0/1",
+                "Osiągnąć poziom: 2 500"
+              ],
+              "rewards": [
+                "Podróż do Turniej Międzygalaktyczny"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/358/konkurs-kowalstwa",
+          "name": "Konkurs Kowalstwa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Adamantium od Samotnik 0/500 (Opustoszała Planeta)"
+              ],
+              "rewards": [
+                "20 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Kawałek Tytanu od Erzo 0/300"
+              ],
+              "rewards": [
+                "20 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wytrzymałości Mystic 0/20"
+              ],
+              "rewards": [
+                "1 000 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/5000"
+              ],
+              "rewards": [
+                "Pancerz Epic x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 360,
+      "quests": [
+        {
+          "slug": "gborn/360/wielki-turniej",
+          "name": "Wielki Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:30:00",
+                "Pokonać w pojedynku: Goku G21",
+                "Pokonać w pojedynku: Goku G21"
+              ],
+              "rewards": [
+                "Legendarna Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:05:00",
+                "Pokonać w pojedynku: Freezer G5"
+              ],
+              "rewards": [
+                "Czerwone Senzu x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Cooler G5",
+                "Zaczekać 01:00:00",
+                "Zaczekać 00:30:00",
+                "Pokonać w pojedynku: King Cold G13"
+              ],
+              "rewards": [
+                "Epicka Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 12:00:00",
+                "Pokonać w pojedynku: Komórczak G2"
+              ],
+              "rewards": [
+                "10 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 0/1000",
+                "Pokonać w pojedynku: Buu G8"
+              ],
+              "rewards": [
+                "10 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:10:00",
+                "Pokonać w pojedynku: Uub"
+              ],
+              "rewards": [
+                "Mistyczna Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Raditz"
+              ],
+              "rewards": [
+                "10 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj PSK 0/1"
+              ],
+              "rewards": [
+                "Zielone Senzu x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Hanashia"
+              ],
+              "rewards": [
+                "1 000 do max PA",
+                "Podróż do Turniej Międzygalaktyczny – Arena II"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/360/turniejowa-rozrywka",
+          "name": "Turniejowa Rozrywka",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:05:00",
+                "Pokonaj: Nazoid(Elita) 0/10 000 (planeta nazoidów)"
+              ],
+              "rewards": [
+                "80 000 000 000 do wszystkich statystyk",
+                "Czerwone Senzu x2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 361,
+      "note": "W zadaniach z wyborem opisane są oba warianty.",
+      "quests": [
+        {
+          "slug": "gborn/361/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "requires": [
+            "gborn/360/wielki-turniej"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Wielki Turniej",
+                "Zaczekać 00:10:00",
+                "Pokonać w pojedynku: Dabura"
+              ],
+              "rewards": [
+                "Opaska Epic x1"
+              ],
+              "note": "Z lewej będzie lepsza opcja\nWybór: [Śmierć] lub [Łaska]\nAutor wybrał: Łaska\n**Inny wariant:** Autor wybrał: Śmierć"
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Scouter Epic x1",
+                "Opaska Epic x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bardock U7"
+              ],
+              "rewards": [
+                "500 000 000 do boskości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: C16 U10"
+              ],
+              "rewards": [
+                "Epicka Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Brolly LSSJ"
+              ],
+              "rewards": [
+                "10 do współczynnika do treningu",
+                "Czerwone Senzu x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Północny Kaioshin"
+              ],
+              "rewards": [
+                "Podróż do Zniszczona Planeta Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/361/mistyczne-symbole",
+          "name": "Mistyczne Symbole",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 0/300"
+              ],
+              "rewards": [
+                "Symbol Wytrzymałości Mystic x5"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj PSK 0/140"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x49"
+              ],
+              "note": "Wybór: [Oczywiście] lub [Niestety nie mam juz Czasu]\n**Inny wariant:** Autor wybrał: Niestety nie mam już Czasu\nKoniec zadania.\nAutor wybrał: Oczywiście"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 362,
+      "quests": [
+        {
+          "slug": "gborn/362/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:05:00"
+              ],
+              "rewards": [
+                "Substancja Przyśpieszająca (x4) x5",
+                "Znak Demona x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Kontrola Demonicznej Aury"
+              ],
+              "rewards": [
+                "Technika: Demoniczne uderzenie",
+                "Podróż do Mroczny Pałac Astaroth"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/362/boskie-zmartwienie",
+          "name": "Boskie zmartwienie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Boski Artefakt od Piekielny Gwardzista 0/400"
+              ],
+              "rewards": [
+                "10KK"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 363,
+      "quests": [
+        {
+          "slug": "gborn/363/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Podwładny Astarotha(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "7 821 878 750 500 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Podwładny Astarotha(Legendarny) 0/20"
+              ],
+              "rewards": [
+                "Czarna Smocza Kula x21",
+                "Podróż do Mroczny pałac Astaroth – Sala"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gborn/363/niespokojna-dusza",
+          "name": "Niespokojna dusza",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Podwładny Astarotha(Champion) 0/10 000",
+                "Pokonaj: Podwładny Astarotha(Elita) 0/7 000"
+              ],
+              "rewards": [
+                "Legendarna Skrzynia x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 364,
+      "quests": [
+        {
+          "slug": "gborn/364/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Astaroth"
+              ],
+              "rewards": [
+                "Znak Demona x1",
+                "Podróż do Zniszczona Planeta Bogów – Oaza"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 365,
+      "quests": [
+        {
+          "slug": "gborn/365/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 10:00:00",
+                "Pokonaj: Zjawa(Elita) 0/500",
+                "Zaczekać 10:00:00",
+                "Pokonaj: Zjawa(Legendarny) 0/50"
+              ],
+              "rewards": [
+                "10 000 000 000 do wszystkich statystyk",
+                "Podróż do Zniszczona Planeta Bogów"
+              ],
+              "note": "Wybór: [Odpoczynek] Lub [Trening]\nAutor wybrał: Trening\n**Inny wariant:** Autor wybrał: Odpoczynek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 362,
+      "quests": [
+        {
+          "slug": "gborn/362/wielki-turniej-ii-2",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Abbadon"
+              ],
+              "rewards": [
+                "Znak Demona x1",
+                "20 000 000 000 wytrzymałości",
+                "Podróż do Zniszczona Planeta Bogów – Oaza",
+                "Żółte Senzu x2"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zjawa(Legendarny) 0/100",
+                "Zaczekać 00:30:00"
+              ],
+              "rewards": [
+                "1 500 000 000 do boskości",
+                "Podróż do Zachodnia Prowincja Piekieł"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 366,
+      "quests": [
+        {
+          "slug": "gborn/366/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Crowley"
+              ],
+              "rewards": [
+                "Znak Demona x1",
+                "Czerwone Senzu x1",
+                "Podróż do Siedziba Władcy Demonów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 367,
+      "quests": [
+        {
+          "slug": "gborn/367/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Władca Demonów"
+              ],
+              "rewards": [
+                "50KK",
+                "Podróż do Turniej Międzygalaktyczny – Arena II"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Nail G13"
+              ],
+              "rewards": [
+                "15 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:06:00",
+                "Pokonać w pojedynku: Vegitto G19"
+              ],
+              "rewards": [
+                "30 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:12:00"
+              ],
+              "rewards": [
+                "Podróż do Planeta Stigma"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 370,
+      "quests": [
+        {
+          "slug": "gborn/370/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10 000"
+              ],
+              "rewards": [
+                "100 000 000 000 siły"
+              ],
+              "note": "Wybór: [Rób Pompki] lub [Zaządaj Innego Zadania]\n**Inny wariant:** Autor wybrał: Zażądaj Innego Zadania"
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/5000",
+                "Wykonaj akcję [klawisz H] 0/10 000"
+              ],
+              "rewards": [
+                "15 do współczynnika do treningu",
+                "100 000 000 000 siły"
+              ],
+              "note": "Autor wybrał: Rób Pompki"
+            },
+            {
+              "requirements": [
+                "Pokonaj: Niszczyciel(Legendarny) 0/1 000",
+                "Oddaj PSK 0/300"
+              ],
+              "rewards": [
+                "Mistyczna Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/20",
+                "Pokonaj: Niszczyciel(Champion) 0/7 000",
+                "Pokonać w pojedynku: Ryner"
+              ],
+              "rewards": [
+                "Epicka Skrzynia x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Symbol Mocy 0/50"
+              ],
+              "rewards": [
+                "5 000 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ryner Forma II"
+              ],
+              "rewards": [
+                "49 PSK",
+                "50 000 000 000 000 doświadczenia",
+                "Podróż do Podziemia Planety Stigma"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 371,
+      "quests": [
+        {
+          "slug": "gborn/371/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zeher(Normal) 0/2 000"
+              ],
+              "rewards": [
+                "50 000 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Sygnet Zehera od Zeher 0/300"
+              ],
+              "rewards": [
+                "30 do współczynnika do treningu"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/24"
+              ],
+              "rewards": [
+                "70 000 000 000 do wszystkich statystyk"
+              ],
+              "note": "Wybór: [Skupię się Na Treningu] Lub [Skupię się na Walce z Przeciwnikami]\n**Inny wariant:** Autor wybrał: Skupię się na Treningu"
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zeher(Champion) 0/5 000",
+                "Spędzone godziny na treningu 0/24"
+              ],
+              "rewards": [
+                "1 000 do max PA",
+                "70 000 000 000 do wszystkich statystyk"
+              ],
+              "note": "Autor wybrał: Skupię się na Walce z Przeciwnikami"
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zeher(Elita) 0/5 000"
+              ],
+              "rewards": [
+                "70 000 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:17:04",
+                "Pokonać w pojedynku: Ryner Forma III"
+              ],
+              "rewards": [
+                "utrata energii Ki - 15%",
+                "Podróż do Podziemia Planety Stigma - Arena"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 373,
+      "quests": [
+        {
+          "slug": "gborn/373/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kyoji"
+              ],
+              "rewards": [
+                "80 000 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Takuya"
+              ],
+              "rewards": [
+                "80 000 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Akihisa"
+              ],
+              "rewards": [
+                "80 000 000 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Hisato"
+              ],
+              "rewards": [
+                "Podróż do Podziemia Planety Stigma"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zeher(Elita) 0/10 000"
+              ],
+              "rewards": [
+                "150 000 000 do boskości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zeher(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "90 000 000 000 000 doświadczenia",
+                "Podróż do Planeta Mrozu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 372,
+      "quests": [
+        {
+          "slug": "gborn/372/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Drexi(Champion) 0/10 000"
+              ],
+              "rewards": [
+                "zwiększenie energii Ki - 10%"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/12",
+                "Pokonaj: Drexi(Elita) 0/15 000"
+              ],
+              "rewards": [
+                "50 000 000 000 do wszystkich statystyk",
+                "Podróż do Terio"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 374,
+      "quests": [
+        {
+          "slug": "gborn/374/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Drexi(Champion) 0/10 000"
+              ],
+              "rewards": [
+                "zwiększenie energii Ki - 10%"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Drexi(Elita) 0/15 000"
+              ],
+              "rewards": [
+                "10 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/5000"
+              ],
+              "rewards": [
+                "500 000 000 do boskości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Hikaru"
+              ],
+              "rewards": [
+                "25KK",
+                "Podróż do Haikyou"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 375,
+      "quests": [
+        {
+          "slug": "gborn/375/wielki-turniej-ii",
+          "name": "Wielki Turniej II",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Galaktyczny Najeźdźca(Champion) 0/10 000"
+              ],
+              "rewards": [
+                "2 000 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Galaktyczny Najeźdźca(Elita) 0/10 000"
+              ],
+              "rewards": [
+                "Czerwone Senzu x2",
+                "Podróż do Turniej Międzygalaktyczny – Arena II"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Vegeta"
+              ],
+              "rewards": [
+                "50 do przyrostu PA",
+                "Odrodzenie II (Koniec Fabuły G)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

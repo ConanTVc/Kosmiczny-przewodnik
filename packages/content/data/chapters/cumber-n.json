@@ -1,0 +1,1221 @@
+{
+  "$schema": "../../schema/chapter.schema.json",
+  "id": "cumber-n",
+  "title": "Nonborn – Cumber",
+  "reborn": 0,
+  "races": [
+    7
+  ],
+  "sourceCredit": {
+    "author": "Naruto"
+  },
+  "sections": [
+    {
+      "locId": 1102,
+      "quests": [
+        {
+          "slug": "cumber-n/1102/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ojciec"
+              ],
+              "rewards": [
+                "25 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Podstawy panowania nad energią"
+              ],
+              "rewards": [
+                "150 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Księga 0/5"
+              ],
+              "rewards": [
+                "300 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Kukła treningowa(Normal) 0/200",
+                "Pokonaj: Kukła treningowa(Champion) 0/400",
+                "Pokonaj: Kukła treningowa(Elita) 0/100",
+                "Zaczekać 00:01:00"
+              ],
+              "rewards": [
+                "3x Zielone senzu, Podróż do Planeta Sadal z innej lini czasowej – Dziedziniec"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1102/wzmocnienie",
+          "name": "Wzmocnienie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wytrenuj Siła 0/100"
+              ],
+              "rewards": [
+                "250 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Wytrenuj Szybkość 0/100"
+              ],
+              "rewards": [
+                "250 do max PA"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1102/trening-walki",
+          "name": "Trening walki",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Buwavu"
+              ],
+              "rewards": [
+                "Tajemna Skrzynia V"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Kukła treningowa(Normal) 0/400"
+              ],
+              "rewards": [
+                "1x Zielone senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Kukła treningowa(Champion) 0/800"
+              ],
+              "rewards": [
+                "1x Zielone senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/1",
+                "Wpisane kody treningowe 0/1",
+                "Pokonać w pojedynku: Buwavu"
+              ],
+              "rewards": [
+                "2x Żółte senzu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1103,
+      "quests": [
+        {
+          "slug": "cumber-n/1103/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:01:00",
+                "Zaczekać 00:02:00"
+              ],
+              "rewards": [
+                "Podróż do Planeta Sadal z innej lini czasowej – Las"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1103/krolewska-straz",
+          "name": "Królewska straż",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik"
+              ],
+              "rewards": [
+                "2 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyte Niebieskie Senzu 0/100"
+              ],
+              "rewards": [
+                "1000x Niebieskie senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 100"
+              ],
+              "rewards": [
+                "20 do przyrostu PA"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1103/krolewska-straz-ii",
+          "name": "Królewska Straż II",
+          "kind": "side",
+          "requires": [
+            "cumber-n/1103/krolewska-straz"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Królewska straż",
+                "Spędzone godziny na treningu 0/4"
+              ],
+              "rewards": [
+                "Technika: Kikoha"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1104,
+      "quests": [
+        {
+          "slug": "cumber-n/1104/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Dzika bestia(Normal) 0/200"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Super Wojownik"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Dzika bestia(Champion) 0/400"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Magnetyzm"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Dzika bestia(Elita) 0/600"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Elitarny łowca"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000",
+                "Zaczekać 00:02:00 –"
+              ],
+              "rewards": [
+                "Podróż do Zamek królewski Króla Sadali"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1104/zywnosc",
+          "name": "Żywność",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zbierz zasób Jedzenie 0/6"
+              ],
+              "rewards": [
+                "2x Paczka kowala"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Jedzenie 0/12"
+              ],
+              "rewards": [
+                "20x Karty Dusz, Scouter Doskonałości"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1105,
+      "quests": [
+        {
+          "slug": "cumber-n/1105/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zbierz zasób Klucz 0/4"
+              ],
+              "rewards": [
+                "50% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000"
+              ],
+              "rewards": [
+                "Podróż do Sala Tronowa"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/500",
+                "Zaczekać 00:03:00"
+              ],
+              "rewards": [
+                "Podróż do Lądowisko planety sadali"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Podróżowanie w kosmosie"
+              ],
+              "rewards": [
+                "Podróż do Planeta Yardrat z innej lini czasowej"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1105/podstawowy-trening-bojowy",
+          "name": "Podstawowy Trening Bojowy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Strażnik króla(Normal) 0/100"
+              ],
+              "rewards": [
+                "15x Potęga Chi"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Strażnik króla(Champion) 0/400"
+              ],
+              "rewards": [
+                "15x Czystość Chi"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Strażnik króla(Elita) 0/200"
+              ],
+              "rewards": [
+                "2x Czerwone senzu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1105/sztuka-cierpliwosci",
+          "name": "Sztuka cierpliwości",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:10:00",
+                "Zaczekać 00:15:00",
+                "Wpisane kody treningowe 0/2"
+              ],
+              "rewards": [
+                "Wyciągi z Magicznych Senzu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1105/przetrwanie-w-kosmosie",
+          "name": "Przetrwanie w kosmosie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć Części od Robot astro mechaniczny (Normal) 0/100"
+              ],
+              "rewards": [
+                "5 kk"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Zaawansowane części od Robot astro mechaniczny (Champion) 0/500"
+              ],
+              "rewards": [
+                "15 kk"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/500",
+                "Wykonaj akcję [klawisz H] 0/1 000"
+              ],
+              "rewards": [
+                "2 000 do max PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1108,
+      "quests": [
+        {
+          "slug": "cumber-n/1108/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:02:00"
+              ],
+              "rewards": [
+                "Podróż do Yardrat – zachód z innej lini czasowej"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1108/pomoc-tubylcom",
+          "name": "Pomoc Tubylcom",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyte punkty PvM 0/3 000"
+              ],
+              "rewards": [
+                "2x Żółte senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Bestia z Yardrat(Champion) 0/2 000"
+              ],
+              "rewards": [
+                "3x Żółte senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Bestia z Yardrat(Elita) 0/1 500"
+              ],
+              "rewards": [
+                "3x Żółte senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Badanie jaskini 0/1"
+              ],
+              "rewards": [
+                "3x Czerwone senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Nieznajomy"
+              ],
+              "rewards": [
+                "2 500 do max PA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1109,
+      "quests": [
+        {
+          "slug": "cumber-n/1109/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Wyczuwanie Ki z odległości"
+              ],
+              "rewards": [
+                "Technika: Błyskawiczna transmisja"
+              ]
+            },
+            {
+              "requirements": [
+                "Wpisane kody treningowe 0/1"
+              ],
+              "rewards": [
+                "Podróż do Statek bandytów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1109/pomoc-tubylcom-ii",
+          "name": "Pomoc Tubylcom II",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/2"
+              ],
+              "rewards": [
+                "50 000 punktów PvP"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/500"
+              ],
+              "rewards": [
+                "10 000 punktów PvP"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Plugawa istota"
+              ],
+              "rewards": [
+                "5x Paczka Kowala"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1110,
+      "quests": [
+        {
+          "slug": "cumber-n/1110/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Potęga gniewu"
+              ],
+              "rewards": [
+                "Technika: SSJ"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Grupa bandytów"
+              ],
+              "rewards": [
+                "Pancerz Doskonałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:01:00",
+                "Zaczekać 00:01:00",
+                "Pokonać w pojedynku: Herszt"
+              ],
+              "rewards": [
+                "50 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/1"
+              ],
+              "rewards": [
+                "Pas Doskonałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:01:00",
+                "Zaczekać 00:01:00"
+              ],
+              "rewards": [
+                "50x Karty Dusz"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/2 000"
+              ],
+              "rewards": [
+                "Podróż do Planete Eurilia z innej lini czasowej"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1110/bandycki-skarb",
+          "name": "Bandycki Skarb",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/500"
+              ],
+              "rewards": [
+                "5x Fioletowe senzu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1111,
+      "quests": [
+        {
+          "slug": "cumber-n/1111/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Aklimatyzacja",
+                "Wykonaj akcję [klawisz H] 0/1 000",
+                "Wykonaj akcję [klawisz H] 0/2 000",
+                "Wykonaj akcję [klawisz H] 0/3 000"
+              ],
+              "rewards": [
+                "Technika: SSJ2"
+              ]
+            },
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/1"
+              ],
+              "rewards": [
+                "50 do przyrostu PA, Podróż do Wejscie do świątyni"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj w pojedynku (bez SSJ) Drzwi świątyni",
+                "Pokonaj w pojedynku (z aktywnym SSJ1) Drzwi świątyni"
+              ],
+              "rewards": [
+                "Technika: Fala Energii"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj w pojedynku (z aktywnym SSJ2) Drzwi świątyni",
+                "Wykonaj akcję [klawisz H] 0/5000"
+              ],
+              "rewards": [
+                "Technika: SSJ3"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Dziwna postać Opaska Doskonałości",
+                "Zaczekać 00:06:00"
+              ],
+              "rewards": [
+                "Podróż do Świątynia Sayian z innej lini czasowej"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1111/starozytna-cywilizacja",
+          "name": "Starożytna cywilizacja",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zbierz zasób Przeszukanie ruin 0/3"
+              ],
+              "rewards": [
+                "100% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Przeszukanie ruin 0/5"
+              ],
+              "rewards": [
+                "250 Punkty Ewolucji dla aktywnego stwora"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1111/swiatynna-aura",
+          "name": "Świątynna aura",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Świątynna aura(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "2x Substancja Przyspieszająca x20"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Świątynna aura(Elita) 0/2 000"
+              ],
+              "rewards": [
+                "2x Substancja Przyspieszająca x20"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj w pojedynku: Duch"
+              ],
+              "rewards": [
+                "Ostateczna Substancja"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1113,
+      "quests": [
+        {
+          "slug": "cumber-n/1113/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Umarły wojownik(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "2x Tajemna Skrzynia I"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Umarły wojownik(Elita) 0/2 000"
+              ],
+              "rewards": [
+                "2x Tajemna Skrzynia II"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Opętanie",
+                "Oddaj Punkty Teleportacji 0/10"
+              ],
+              "rewards": [
+                "Podróż do Planeta Sadal z innej lini czasowej – Okolice domu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1113/do-przodu",
+          "name": "Do przodu",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykorzystane Punkty PA 0/6 105"
+              ],
+              "rewards": [
+                "100x Niebieski Klejnot"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykorzystane Punkty PA 0/27 914"
+              ],
+              "rewards": [
+                "150x Cesarski Klejnot"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykorzystane Punkty PA 0/39 435"
+              ],
+              "rewards": [
+                "200x Czarny Klejnot"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1114,
+      "quests": [
+        {
+          "slug": "cumber-n/1114/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ojciec"
+              ],
+              "rewards": [
+                "2x Czerwone senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:06:00"
+              ],
+              "rewards": [
+                "Podróż do Planeta Sadal z innej lini czasowej – Dziedziniec zamkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1114/zemsta",
+          "name": "Zemsta",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Wojownik Sadalii(Champion) 0/3 000"
+              ],
+              "rewards": [
+                "5x Mistyczna Skrzynia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wojownik Sadalii(Elita) 0/2 000"
+              ],
+              "rewards": [
+                "5 KK"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wojownik Sadalii(Legendarny) 0/200"
+              ],
+              "rewards": [
+                "Scouter Potęgi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1115,
+      "quests": [
+        {
+          "slug": "cumber-n/1115/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wojownicy Króla"
+              ],
+              "rewards": [
+                "200% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Król"
+              ],
+              "rewards": [
+                "2x Kompresor Czasu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Boski Super Saiyanin"
+              ],
+              "rewards": [
+                "2x Kompresor Czasu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Boski Super Saiyanin"
+              ],
+              "rewards": [
+                "75 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:01:00"
+              ],
+              "rewards": [
+                "Podróż do Międzywymiarowa pustka"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1115/zemsta-ii",
+          "name": "Zemsta II",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Silny wojownik Sadali(Champion) 0/3 500"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Kondycja"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Silny wojownik Sadali(Elita) 0/2 500"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Zaawansowana Kondycja"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Silny wojownik Sadali(Legendarny) 0/300"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Mistrz treningu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1116,
+      "quests": [
+        {
+          "slug": "cumber-n/1116/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Fu"
+              ],
+              "rewards": [
+                "200% doświadczenia do następnego poziomu"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/1116/miedzywymiarowy-trening",
+          "name": "Międzywymiarowy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Fu"
+              ],
+              "rewards": [
+                "Zwiększenie energii Ki – 5%"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/1"
+              ],
+              "rewards": [
+                "50% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Fu"
+              ],
+              "rewards": [
+                "50% bazowego PA zostaje odnowione"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "cumber-n/27/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Pole bitwy"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/27/zadanie-pvm",
+          "name": "Zadanie PVM",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyte punkty PvM 0/500"
+              ],
+              "rewards": [
+                "Punkty PvM (zależne od poziomu doświadczenia)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/27/zadanie-pvp",
+          "name": "Zadanie PVP",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Wygrane walki PvP 0/10"
+              ],
+              "rewards": [
+                "Punkty PvP (zależne od poziomu doświadczenia)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/27/zadanie-symboli",
+          "name": "Zadanie Symboli",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj 20 symboli normal (losowo siły, Szybkości, Wytrzymałość, siła woli, energii KI)"
+              ],
+              "rewards": [
+                "Losowa: kk, skrzynie, senzu itp."
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/27/zadanie-substancji",
+          "name": "Zadanie Substancji",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj 100, 1000 lub 100000 Magicznych substancji"
+              ],
+              "rewards": [
+                "Losowa, zależna od liczby oddanych substancji: kk, skrzynie, senzu itp."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 40,
+      "quests": [
+        {
+          "slug": "cumber-n/40/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Miejsce lądowania"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/40/potezna-moc",
+          "name": "Potężna Moc",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/7",
+                "Zdobyć Fragment Kuli od Sługa Wojowników 0/10"
+              ],
+              "rewards": [
+                "3x Uśpiona Kula Energi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 50,
+      "quests": [
+        {
+          "slug": "cumber-n/50/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Planeta Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/50/pakt",
+          "name": "Pakt",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Rozdroża"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 73,
+      "quests": [
+        {
+          "slug": "cumber-n/73/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Dom"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/73/boska-esencja",
+          "name": "Boska Esencja",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/140"
+              ],
+              "rewards": [
+                "Pusta Esencja Chi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "cumber-n/35/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/10"
+              ],
+              "rewards": [
+                "Podróż do Głębia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-n/35/pamiatka",
+          "name": "Pamiątka",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Medalion 0/1"
+              ],
+              "rewards": [
+                "Zwiększenie energii Ki – 10%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 84,
+      "quests": [
+        {
+          "slug": "cumber-n/84/dziwna-energia",
+          "name": "Dziwna Energia",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:10:00"
+              ],
+              "rewards": [
+                "20 kk"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 250"
+              ],
+              "rewards": [
+                "Odrodzenie"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

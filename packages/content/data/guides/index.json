@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/guides.schema.json",
+  "guides": [
+    {
+      "slug": "koszty-struktur-klanowych",
+      "title": "Koszty struktur klanowych",
+      "tags": [
+        "klan",
+        "struktury",
+        "KP"
+      ],
+      "sourceCredit": {
+        "author": ""
+      },
+      "file": "koszty-struktur-klanowych.md"
+    },
+    {
+      "slug": "zadania-codzienne",
+      "title": "Zadania codzienne",
+      "tags": [
+        "codzienne",
+        "zadania"
+      ],
+      "sourceCredit": {
+        "author": ""
+      },
+      "file": "zadania-codzienne.md"
+    },
+    {
+      "slug": "skrzynie",
+      "title": "Tajemne Skrzynie – zawartość",
+      "tags": [
+        "skrzynie",
+        "przedmioty",
+        "Tajemna Skrzynia"
+      ],
+      "sourceCredit": {
+        "author": ""
+      },
+      "file": "skrzynie.md"
+    }
+  ]
+}

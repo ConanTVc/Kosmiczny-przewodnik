@@ -1,0 +1,6891 @@
+{
+  "$schema": "../schema/locations.schema.json",
+  "locations": [
+    {
+      "id": 1,
+      "name": "Las Wschodni",
+      "reborn": 0
+    },
+    {
+      "id": 2,
+      "name": "Wyspa Genialnego Żółwia",
+      "reborn": 0
+    },
+    {
+      "id": 3,
+      "name": "Wyspa - Sektor Zachodni",
+      "reborn": 0
+    },
+    {
+      "id": 4,
+      "name": "Wyspa - Sektor Centralny"
+    },
+    {
+      "id": 5,
+      "name": "Wyspa - Sektor Wschodni"
+    },
+    {
+      "id": 6,
+      "name": "Wyspa - Sektor Południowy",
+      "reborn": 0
+    },
+    {
+      "id": 7,
+      "name": "Wyspa - Dolina"
+    },
+    {
+      "id": 8,
+      "name": "Płonąca Góra",
+      "reborn": 0
+    },
+    {
+      "id": 9,
+      "name": "Papaja I",
+      "reborn": 0
+    },
+    {
+      "id": 10,
+      "name": "Tajemniczy Las",
+      "reborn": 0
+    },
+    {
+      "id": 11,
+      "name": "Piekielne wrota",
+      "reborn": 0
+    },
+    {
+      "id": 12,
+      "name": "Królestwo Biesów",
+      "reborn": 0
+    },
+    {
+      "id": 13,
+      "name": "Las Zachodni",
+      "reborn": 0
+    },
+    {
+      "id": 14,
+      "name": "Okolice świętej wieży",
+      "reborn": 0
+    },
+    {
+      "id": 15,
+      "name": "Zapomniana Dolina",
+      "reborn": 0
+    },
+    {
+      "id": 16,
+      "name": "Kwatera Główna Armii",
+      "reborn": 0
+    },
+    {
+      "id": 17,
+      "name": "Góry Mgliste",
+      "reborn": 0
+    },
+    {
+      "id": 18,
+      "name": "Dolina Wilków",
+      "reborn": 0
+    },
+    {
+      "id": 19,
+      "name": "Papaja II",
+      "reborn": 0
+    },
+    {
+      "id": 20,
+      "name": "Mroczny Las",
+      "reborn": 0
+    },
+    {
+      "id": 21,
+      "name": "Mroczny Las - Południe",
+      "reborn": 0
+    },
+    {
+      "id": 22,
+      "name": "Dziewicze Pustkowia",
+      "reborn": 0
+    },
+    {
+      "id": 23,
+      "name": "Legowisko"
+    },
+    {
+      "id": 24,
+      "name": "Lodowy Labirynt",
+      "reborn": 0
+    },
+    {
+      "id": 25,
+      "name": "Tajemna Grota",
+      "reborn": 0
+    },
+    {
+      "id": 26,
+      "name": "Okolice Zamku Królewskiego",
+      "reborn": 0
+    },
+    {
+      "id": 27,
+      "name": "Pałac Wszechmogącego",
+      "reborn": 0
+    },
+    {
+      "id": 28,
+      "name": "Przeszłość",
+      "reborn": 0
+    },
+    {
+      "id": 29,
+      "name": "Góra Gromów",
+      "reborn": 0
+    },
+    {
+      "id": 30,
+      "name": "Las Północny",
+      "reborn": 0
+    },
+    {
+      "id": 31,
+      "name": "Papaja III",
+      "reborn": 0
+    },
+    {
+      "id": 32,
+      "name": "Okolice Czarnego Jeziora",
+      "reborn": 0
+    },
+    {
+      "id": 33,
+      "name": "Północne Jezioro",
+      "reborn": 0
+    },
+    {
+      "id": 34,
+      "name": "Siedziba Pterodora",
+      "reborn": 0,
+      "aliases": [
+        "Siedziba Pteodora"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Dom",
+      "reborn": 0
+    },
+    {
+      "id": 36,
+      "name": "Ciche Pustkowie",
+      "reborn": 0
+    },
+    {
+      "id": 37,
+      "name": "Wrota zaświatów",
+      "reborn": 0
+    },
+    {
+      "id": 38,
+      "name": "Droga Węża",
+      "reborn": 0
+    },
+    {
+      "id": 39,
+      "name": "Planeta Kaio",
+      "reborn": 0
+    },
+    {
+      "id": 40,
+      "name": "Pole bitwy",
+      "reborn": 0
+    },
+    {
+      "id": 41,
+      "name": "Szpital",
+      "reborn": 0
+    },
+    {
+      "id": 42,
+      "name": "Statek Kosmiczny",
+      "reborn": 0
+    },
+    {
+      "id": 43,
+      "name": "Namek - Północ",
+      "reborn": 0
+    },
+    {
+      "id": 44,
+      "name": "Namek - Pole bitwy",
+      "reborn": 0
+    },
+    {
+      "id": 45,
+      "name": "Namek - Statek Frezera",
+      "reborn": 0
+    },
+    {
+      "id": 46,
+      "name": "Namek - Sektor Centralny",
+      "reborn": 0
+    },
+    {
+      "id": 47,
+      "name": "Planeta Yardrat",
+      "reborn": 0
+    },
+    {
+      "id": 48,
+      "name": "Planeta Kama - Zachód",
+      "reborn": 0
+    },
+    {
+      "id": 49,
+      "name": "Planeta Kama - Wschód",
+      "reborn": 0
+    },
+    {
+      "id": 50,
+      "name": "Miejsce lądowania",
+      "reborn": 0
+    },
+    {
+      "id": 51,
+      "name": "Magiczny Las",
+      "reborn": 0
+    },
+    {
+      "id": 52,
+      "name": "Wschodnia częśc lasu",
+      "reborn": 0,
+      "aliases": [
+        "Wschodnia Część Lasu"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Górskie zbocza",
+      "reborn": 0
+    },
+    {
+      "id": 54,
+      "name": "Rajska Sala Treningowa",
+      "reborn": 0
+    },
+    {
+      "id": 55,
+      "name": "Prowincja Zachodnia",
+      "reborn": 0
+    },
+    {
+      "id": 56,
+      "name": "Yana"
+    },
+    {
+      "id": 57,
+      "name": "Belgor"
+    },
+    {
+      "id": 58,
+      "name": "Mona"
+    },
+    {
+      "id": 59,
+      "name": "Luna"
+    },
+    {
+      "id": 60,
+      "name": "Mun"
+    },
+    {
+      "id": 61,
+      "name": "Karad"
+    },
+    {
+      "id": 62,
+      "name": "Zun",
+      "reborn": 1
+    },
+    {
+      "id": 63,
+      "name": "Behej"
+    },
+    {
+      "id": 64,
+      "name": "Freezer"
+    },
+    {
+      "id": 65,
+      "name": "Vegeta"
+    },
+    {
+      "id": 66,
+      "name": "Planeta Władcy Zaświatów",
+      "reborn": 0
+    },
+    {
+      "id": 67,
+      "name": "Stadion",
+      "reborn": 0
+    },
+    {
+      "id": 68,
+      "name": "Sekretne Miejsce Treningu",
+      "reborn": 0
+    },
+    {
+      "id": 69,
+      "name": "Południe Planety",
+      "reborn": 0
+    },
+    {
+      "id": 70,
+      "name": "Papaja IV",
+      "reborn": 0
+    },
+    {
+      "id": 71,
+      "name": "Zniszczony Statek Kosmiczny",
+      "reborn": 0
+    },
+    {
+      "id": 72,
+      "name": "Sektor Wschodni",
+      "reborn": 0
+    },
+    {
+      "id": 73,
+      "name": "Planeta Bogów",
+      "reborn": 0
+    },
+    {
+      "id": 74,
+      "name": "Planeta Bogów - Zachód",
+      "reborn": 0
+    },
+    {
+      "id": 75,
+      "name": "Skaliste Zbocza",
+      "reborn": 0
+    },
+    {
+      "id": 76,
+      "name": "Żołądek Bubu",
+      "reborn": 0
+    },
+    {
+      "id": 77,
+      "name": "Wnętrze Bubu",
+      "reborn": 0
+    },
+    {
+      "id": 78,
+      "name": "Głowa Bubu",
+      "reborn": 0
+    },
+    {
+      "id": 79,
+      "name": "Rozpadlina",
+      "reborn": 0
+    },
+    {
+      "id": 80,
+      "name": "Miejsce Treningu",
+      "reborn": 0
+    },
+    {
+      "id": 81,
+      "name": "Miejsce Turnieju",
+      "reborn": 0
+    },
+    {
+      "id": 82,
+      "name": "Zielona Pustynia",
+      "reborn": 0
+    },
+    {
+      "id": 83,
+      "name": "Podziemia Pałacu",
+      "reborn": 0
+    },
+    {
+      "id": 84,
+      "name": "Głębia",
+      "reborn": 0
+    },
+    {
+      "id": 85,
+      "name": "Zuna"
+    },
+    {
+      "id": 86,
+      "name": "Zuna - Północ",
+      "reborn": 1
+    },
+    {
+      "id": 87,
+      "name": "Wielka jaskinia"
+    },
+    {
+      "id": 88,
+      "name": "Gniazdo",
+      "reborn": 1
+    },
+    {
+      "id": 89,
+      "name": "Planeta Nova",
+      "reborn": 1
+    },
+    {
+      "id": 90,
+      "name": "Planeta Olbrzymów",
+      "reborn": 1
+    },
+    {
+      "id": 91,
+      "name": "Planeta Lud",
+      "reborn": 1
+    },
+    {
+      "id": 92,
+      "name": "Planeta ZX68",
+      "reborn": 1
+    },
+    {
+      "id": 93,
+      "name": "Planeta ZX68 - Laboratorium",
+      "reborn": 1
+    },
+    {
+      "id": 94,
+      "name": "Lodowa Planeta",
+      "reborn": 1
+    },
+    {
+      "id": 95,
+      "name": "Lodowa Dolina",
+      "reborn": 1,
+      "aliases": [
+        "Lodowa Dolina Północ"
+      ],
+      "review": [
+        "Dopasowano przybliżenie (zawiera): „Lodowa Dolina” (95) – sprawdź"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Inny wymiar",
+      "reborn": 1
+    },
+    {
+      "id": 97,
+      "name": "Tajemna Sala"
+    },
+    {
+      "id": 98,
+      "name": "Planeta Xul",
+      "reborn": 1
+    },
+    {
+      "id": 99,
+      "name": "Planeta Tsuful",
+      "reborn": 1
+    },
+    {
+      "id": 100,
+      "name": "Nowa Namek",
+      "reborn": 1
+    },
+    {
+      "id": 101,
+      "name": "Dolina Śmierci",
+      "reborn": 1
+    },
+    {
+      "id": 102,
+      "name": "Komnata Umysłu",
+      "reborn": 0
+    },
+    {
+      "id": 103,
+      "name": "Atakowana Prowincja",
+      "reborn": 1
+    },
+    {
+      "id": 104,
+      "name": "Piekło",
+      "reborn": 1
+    },
+    {
+      "id": 105,
+      "name": "Gruzowisko",
+      "reborn": 1
+    },
+    {
+      "id": 106,
+      "name": "Miejsce Przywołania",
+      "reborn": 1
+    },
+    {
+      "id": 107,
+      "name": "Zatruta Wyspa",
+      "reborn": 1
+    },
+    {
+      "id": 108,
+      "name": "Miasto - Widmo",
+      "reborn": 1
+    },
+    {
+      "id": 109,
+      "name": "Brzeg Jeziora",
+      "reborn": 1
+    },
+    {
+      "id": 110,
+      "name": "Pustkowia",
+      "reborn": 1
+    },
+    {
+      "id": 111,
+      "name": "Zniszczone Miasto",
+      "reborn": 1
+    },
+    {
+      "id": 112,
+      "name": "Dolina Zagłady",
+      "reborn": 1
+    },
+    {
+      "id": 113,
+      "name": "Zaświaty - Część Południowa",
+      "reborn": 1
+    },
+    {
+      "id": 114,
+      "name": "Zaświaty - Część Zachodnia",
+      "reborn": 1
+    },
+    {
+      "id": 115,
+      "name": "Zaświaty - Część Północna",
+      "reborn": 1
+    },
+    {
+      "id": 116,
+      "name": "Zaświaty - Część Wschodnia",
+      "reborn": 1
+    },
+    {
+      "id": 117,
+      "name": "Siedziba Bogów",
+      "reborn": 2
+    },
+    {
+      "id": 118,
+      "name": "Omega - Zniszczona Siedziba",
+      "reborn": 2
+    },
+    {
+      "id": 119,
+      "name": "Omega - Planeta Tytanów",
+      "reborn": 2
+    },
+    {
+      "id": 120,
+      "name": "Omega - Opuszczona Planeta",
+      "reborn": 2,
+      "aliases": [
+        "Omega - Omega - Opuszczona Planeta"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "Flora"
+    },
+    {
+      "id": 122,
+      "name": "Syrius"
+    },
+    {
+      "id": 123,
+      "name": "Casjo"
+    },
+    {
+      "id": 124,
+      "name": "Zorda"
+    },
+    {
+      "id": 125,
+      "name": "Rebel"
+    },
+    {
+      "id": 126,
+      "name": "Achaja"
+    },
+    {
+      "id": 127,
+      "name": "Orestes"
+    },
+    {
+      "id": 128,
+      "name": "Eurynia"
+    },
+    {
+      "id": 129,
+      "name": "Pallas"
+    },
+    {
+      "id": 130,
+      "name": "Corsar"
+    },
+    {
+      "id": 131,
+      "name": "Planeta Casjo",
+      "reborn": 2
+    },
+    {
+      "id": 132,
+      "name": "Opuszczona Planeta",
+      "reborn": 2
+    },
+    {
+      "id": 133,
+      "name": "Planeta Magii",
+      "reborn": 2
+    },
+    {
+      "id": 134,
+      "name": "Planeta Mleckor",
+      "reborn": 2
+    },
+    {
+      "id": 135,
+      "name": "Lokacja Specjalna"
+    },
+    {
+      "id": 136,
+      "name": "Planeta Wody",
+      "reborn": 2
+    },
+    {
+      "id": 137,
+      "name": "Planeta Ciążenia",
+      "reborn": 2
+    },
+    {
+      "id": 138,
+      "name": "Sirius",
+      "reborn": 2
+    },
+    {
+      "id": 139,
+      "name": "Ziemia - Miejsce Ataku",
+      "reborn": 2
+    },
+    {
+      "id": 140,
+      "name": "Dolina Zniszczenia"
+    },
+    {
+      "id": 141,
+      "name": "Nieznana Planeta",
+      "reborn": 2
+    },
+    {
+      "id": 142,
+      "name": "Nieznana Planeta II",
+      "reborn": 2
+    },
+    {
+      "id": 143,
+      "name": "Wymiar X",
+      "reborn": 2
+    },
+    {
+      "id": 144,
+      "name": "Wymiar Y",
+      "reborn": 2
+    },
+    {
+      "id": 145,
+      "name": "Wymiar Z",
+      "reborn": 2
+    },
+    {
+      "id": 146,
+      "name": "Planeta Nudest",
+      "reborn": 2
+    },
+    {
+      "id": 147,
+      "name": "Planeta Ura",
+      "reborn": 2
+    },
+    {
+      "id": 148,
+      "name": "Planeta Girlu",
+      "reborn": 2
+    },
+    {
+      "id": 149,
+      "name": "Planeta Papri",
+      "reborn": 2
+    },
+    {
+      "id": 150,
+      "name": "Planeta Secato",
+      "reborn": 2
+    },
+    {
+      "id": 151,
+      "name": "Planeta Handlowa",
+      "reborn": 2
+    },
+    {
+      "id": 152,
+      "name": "Planeta Roco",
+      "reborn": 2
+    },
+    {
+      "id": 153,
+      "name": "Dom Pan",
+      "reborn": 2
+    },
+    {
+      "id": 154,
+      "name": "Ziemska Siedziba Upadłych Saiyan",
+      "reborn": 2
+    },
+    {
+      "id": 155,
+      "name": "Miejsce Lądowania Lorda Eriona",
+      "reborn": 2
+    },
+    {
+      "id": 156,
+      "name": "Statek Lorda Eriona",
+      "reborn": 2
+    },
+    {
+      "id": 157,
+      "name": "Tunel międzywymiarowy – początek",
+      "reborn": 2
+    },
+    {
+      "id": 158,
+      "name": "Tunel międzywymiarowy – środek"
+    },
+    {
+      "id": 159,
+      "name": "Tunel międzywymiarowy – wir"
+    },
+    {
+      "id": 160,
+      "name": "Irris",
+      "reborn": 2
+    },
+    {
+      "id": 161,
+      "name": "Kopalnia"
+    },
+    {
+      "id": 162,
+      "name": "Tunel międzywymiarowy – wir drugi"
+    },
+    {
+      "id": 163,
+      "name": "Vestfalia",
+      "reborn": 2
+    },
+    {
+      "id": 164,
+      "name": "Tunel międzywymiarowy - koniec"
+    },
+    {
+      "id": 165,
+      "name": "Tunel międzywymiarowy - wir trzeci"
+    },
+    {
+      "id": 166,
+      "name": "Starożytność",
+      "reborn": 2
+    },
+    {
+      "id": 167,
+      "name": "Góry Wschodnie"
+    },
+    {
+      "id": 168,
+      "name": "Przedsionek"
+    },
+    {
+      "id": 169,
+      "name": "Saiyańska Kopalnia"
+    },
+    {
+      "id": 170,
+      "name": "Głębia Kopalni"
+    },
+    {
+      "id": 171,
+      "name": "Pałac"
+    },
+    {
+      "id": 172,
+      "name": "Planeta Nindu"
+    },
+    {
+      "id": 173,
+      "name": "Jeziora Nindu"
+    },
+    {
+      "id": 174,
+      "name": "Lasy Nindu"
+    },
+    {
+      "id": 175,
+      "name": "Planeta Frieza 50"
+    },
+    {
+      "id": 176,
+      "name": "Siedziba Freezera - Lądowisko"
+    },
+    {
+      "id": 177,
+      "name": "Siedziba Freezera - Korytarz"
+    },
+    {
+      "id": 178,
+      "name": "Siedziba Freezera - Centrum"
+    },
+    {
+      "id": 179,
+      "name": "Planeta Mudi"
+    },
+    {
+      "id": 180,
+      "name": "Stolica"
+    },
+    {
+      "id": 181,
+      "name": "Tajna Kwatera"
+    },
+    {
+      "id": 182,
+      "name": "Planeta Dezerto"
+    },
+    {
+      "id": 183,
+      "name": "Fajro"
+    },
+    {
+      "id": 184,
+      "name": "Flamo"
+    },
+    {
+      "id": 185,
+      "name": "Planeta Nibi"
+    },
+    {
+      "id": 186,
+      "name": "Planeta Nibi - Północ"
+    },
+    {
+      "id": 187,
+      "name": "Planeta Nibi - Południe"
+    },
+    {
+      "id": 188,
+      "name": "Planeta Nibi - Wschód"
+    },
+    {
+      "id": 189,
+      "name": "Planeta Nibi - Zachód"
+    },
+    {
+      "id": 190,
+      "name": "Podziemia Nibi"
+    },
+    {
+      "id": 191,
+      "name": "Miasto Freezera"
+    },
+    {
+      "id": 192,
+      "name": "Obrzeża miasta"
+    },
+    {
+      "id": 193,
+      "name": "Główna Siedziba Freezera"
+    },
+    {
+      "id": 194,
+      "name": "Planeta Triktek"
+    },
+    {
+      "id": 195,
+      "name": "Planeta Arlia"
+    },
+    {
+      "id": 196,
+      "name": "Pałac Królewski - Przedsionek"
+    },
+    {
+      "id": 197,
+      "name": "Pałac Królewski - Lochy"
+    },
+    {
+      "id": 198,
+      "name": "Pałac Królewski – Komnaty Władcy"
+    },
+    {
+      "id": 199,
+      "name": "Planeta Grinda 3"
+    },
+    {
+      "id": 200,
+      "name": "Planeta Arkadia"
+    },
+    {
+      "id": 201,
+      "name": "Hangar Kapsuł Kosmicznych"
+    },
+    {
+      "id": 202,
+      "name": "Ziemia – Las Tropikalny"
+    },
+    {
+      "id": 203,
+      "name": "Kapsuła Regenerująca"
+    },
+    {
+      "id": 204,
+      "name": "Namek – Osada Nameczan"
+    },
+    {
+      "id": 205,
+      "name": "Namek – Centrum Planety"
+    },
+    {
+      "id": 206,
+      "name": "Namek - Południe"
+    },
+    {
+      "id": 207,
+      "name": "Prima 7"
+    },
+    {
+      "id": 208,
+      "name": "Prima 7 Miejsce Lądowania"
+    },
+    {
+      "id": 209,
+      "name": "Kosmiczna Kapsuła CC"
+    },
+    {
+      "id": 210,
+      "name": "Nowa Kosmiczna Kapsuła CC"
+    },
+    {
+      "id": 211,
+      "name": "Statek kosmiczny CC"
+    },
+    {
+      "id": 212,
+      "name": "Kryjówka"
+    },
+    {
+      "id": 213,
+      "name": "Odludzie"
+    },
+    {
+      "id": 214,
+      "name": "Prowincja wschodnia"
+    },
+    {
+      "id": 215,
+      "name": "Rajska Sala Treningowa",
+      "reborn": 4,
+      "review": [
+        "ID 215 jest daleko od sąsiednich lokacji (670, 671) – sprawdź"
+      ]
+    },
+    {
+      "id": 216,
+      "name": "Nawiedzona Maszyna Treningowa"
+    },
+    {
+      "id": 217,
+      "name": "Planeta Vegeta – Przeszłość"
+    },
+    {
+      "id": 218,
+      "name": "Ukryte Laboratorium"
+    },
+    {
+      "id": 219,
+      "name": "Ukryte Laboratorium – Podziemia"
+    },
+    {
+      "id": 220,
+      "name": "Statek o Zwiększonej Grawitacji"
+    },
+    {
+      "id": 221,
+      "name": "Pierwszy Pokład"
+    },
+    {
+      "id": 222,
+      "name": "Siedziba Demona"
+    },
+    {
+      "id": 223,
+      "name": "Piekielne Otchłanie"
+    },
+    {
+      "id": 224,
+      "name": "Piekielne Otchłanie - Północ"
+    },
+    {
+      "id": 225,
+      "name": "Dystrykt Centralny"
+    },
+    {
+      "id": 226,
+      "name": "Rzeczywistość"
+    },
+    {
+      "id": 227,
+      "name": "Paradoks"
+    },
+    {
+      "id": 228,
+      "name": "Otchłanie Rajskiej Sali"
+    },
+    {
+      "id": 229,
+      "name": "Rajska Komnata"
+    },
+    {
+      "id": 230,
+      "name": "Głębia Rajskiej Sali"
+    },
+    {
+      "id": 231,
+      "name": "Głód"
+    },
+    {
+      "id": 232,
+      "name": "Żądza"
+    },
+    {
+      "id": 233,
+      "name": "Pragnienie"
+    },
+    {
+      "id": 234,
+      "name": "Utopia"
+    },
+    {
+      "id": 235,
+      "name": "Gehenna"
+    },
+    {
+      "id": 236,
+      "name": "Inferno"
+    },
+    {
+      "id": 237,
+      "name": "Dezolacja"
+    },
+    {
+      "id": 238,
+      "name": "Trauer"
+    },
+    {
+      "id": 239,
+      "name": "Larum"
+    },
+    {
+      "id": 240,
+      "name": "Statek Pleurs"
+    },
+    {
+      "id": 241,
+      "name": "Jasyr"
+    },
+    {
+      "id": 242,
+      "name": "Jasyr - północ"
+    },
+    {
+      "id": 243,
+      "name": "Miedo"
+    },
+    {
+      "id": 244,
+      "name": "Ansiedad"
+    },
+    {
+      "id": 245,
+      "name": "Planeta Życzeń"
+    },
+    {
+      "id": 246,
+      "name": "Planeta Życzeń – Wioska Uchodźców"
+    },
+    {
+      "id": 247,
+      "name": "Planeta Życzeń – Pustelnia nad Jeziorem"
+    },
+    {
+      "id": 248,
+      "name": "Planeta Życzeń – Las"
+    },
+    {
+      "id": 249,
+      "name": "Planeta Tura"
+    },
+    {
+      "id": 250,
+      "name": "Pracownia"
+    },
+    {
+      "id": 251,
+      "name": "Góry"
+    },
+    {
+      "id": 252,
+      "name": "Uniwersytet"
+    },
+    {
+      "id": 253,
+      "name": "Dziedziniec"
+    },
+    {
+      "id": 254,
+      "name": "Impluvium"
+    },
+    {
+      "id": 255,
+      "name": "Ruiny"
+    },
+    {
+      "id": 256,
+      "name": "Przestrzeń Kosmiczna"
+    },
+    {
+      "id": 257,
+      "name": "Rubież"
+    },
+    {
+      "id": 258,
+      "name": "Sulphur"
+    },
+    {
+      "id": 259,
+      "name": "Czarna Dziura"
+    },
+    {
+      "id": 260,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 261,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 262,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 263,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 264,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 265,
+      "name": "Turniej",
+      "reborn": 2
+    },
+    {
+      "id": 266,
+      "name": "Wioska Slaya",
+      "reborn": 2
+    },
+    {
+      "id": 267,
+      "name": "Cytadela",
+      "reborn": 2
+    },
+    {
+      "id": 268,
+      "name": "Siedziba Doktora",
+      "reborn": 2
+    },
+    {
+      "id": 269,
+      "name": "Główna Sala"
+    },
+    {
+      "id": 270,
+      "name": "Szczyt Loo",
+      "reborn": 2
+    },
+    {
+      "id": 271,
+      "name": "Lodowiec",
+      "reborn": 2
+    },
+    {
+      "id": 272,
+      "name": "Loch"
+    },
+    {
+      "id": 273,
+      "name": "Baria",
+      "reborn": 2
+    },
+    {
+      "id": 274,
+      "name": "Planeta EUL",
+      "reborn": 2,
+      "teleport": false
+    },
+    {
+      "id": 275,
+      "name": "Placówka Doktora",
+      "reborn": 2
+    },
+    {
+      "id": 276,
+      "name": "Ośrodek Badawczy",
+      "reborn": 2
+    },
+    {
+      "id": 277,
+      "name": "Księżyc Gamma",
+      "reborn": 2,
+      "teleport": false
+    },
+    {
+      "id": 278,
+      "name": "Czubek Góry",
+      "reborn": 2
+    },
+    {
+      "id": 279,
+      "name": "Takywan",
+      "reborn": 2
+    },
+    {
+      "id": 280,
+      "name": "Vole",
+      "reborn": 2
+    },
+    {
+      "id": 281,
+      "name": "Riese",
+      "reborn": 2
+    },
+    {
+      "id": 282,
+      "name": "Chata Kolekcjonera",
+      "reborn": 2
+    },
+    {
+      "id": 283,
+      "name": "Ziemia – Miejsce Zasadzki",
+      "reborn": 2
+    },
+    {
+      "id": 284,
+      "name": "Ziemia – Miejsce Zasadzki – Pole Bitwy"
+    },
+    {
+      "id": 285,
+      "name": "Turniej Międzywymiarowy – Gruzowisko",
+      "reborn": 2
+    },
+    {
+      "id": 286,
+      "name": "Indiańska wioska",
+      "reborn": 2
+    },
+    {
+      "id": 287,
+      "name": "Strażnica poziom 1",
+      "reborn": 2
+    },
+    {
+      "id": 288,
+      "name": "Strażnica poziom 2",
+      "reborn": 2
+    },
+    {
+      "id": 289,
+      "name": "Strażnica poziom 3",
+      "reborn": 2
+    },
+    {
+      "id": 290,
+      "name": "Strażnica poziom 4",
+      "reborn": 2
+    },
+    {
+      "id": 291,
+      "name": "Polana Chowańców",
+      "reborn": 2
+    },
+    {
+      "id": 292,
+      "name": "Turniej Międzywymiarowy - Generator",
+      "reborn": 2
+    },
+    {
+      "id": 293,
+      "name": "Pustynia",
+      "reborn": 2
+    },
+    {
+      "id": 294,
+      "name": "Podziemia Pustyni – Początek",
+      "reborn": 2
+    },
+    {
+      "id": 295,
+      "name": "Podziemia Pustyni – Korytarz"
+    },
+    {
+      "id": 296,
+      "name": "Podziemia Pustyni – Hol"
+    },
+    {
+      "id": 297,
+      "name": "Podziemia Pustyni – Sala"
+    },
+    {
+      "id": 298,
+      "name": "Podziemia Pustyni – Ślepy Zaułek"
+    },
+    {
+      "id": 299,
+      "name": "Planeta treningu",
+      "reborn": 2
+    },
+    {
+      "id": 300,
+      "name": "Planeta doświadczenia",
+      "reborn": 2
+    },
+    {
+      "id": 301,
+      "name": "Planeta szczęścia",
+      "reborn": 2
+    },
+    {
+      "id": 302,
+      "name": "Planeta Info",
+      "reborn": 2
+    },
+    {
+      "id": 303,
+      "name": "Magiczna Kraina Bukolesa",
+      "reborn": 2
+    },
+    {
+      "id": 304,
+      "name": "Planeta Tajemnic",
+      "reborn": 2
+    },
+    {
+      "id": 305,
+      "name": "Zapomniana Planeta",
+      "reborn": 2
+    },
+    {
+      "id": 306,
+      "name": "Planeta Cork",
+      "reborn": 2
+    },
+    {
+      "id": 307,
+      "name": "Południowa Świątynia",
+      "reborn": 2
+    },
+    {
+      "id": 308,
+      "name": "Zachodnia Świątynia",
+      "reborn": 2
+    },
+    {
+      "id": 309,
+      "name": "Wschodnia Świątynia",
+      "reborn": 2
+    },
+    {
+      "id": 310,
+      "name": "Boski Ogród",
+      "reborn": 2
+    },
+    {
+      "id": 311,
+      "name": "Jaskinia Przodków",
+      "reborn": 2
+    },
+    {
+      "id": 312,
+      "name": "Planeta Ibnu - Wschód",
+      "reborn": 2
+    },
+    {
+      "id": 313,
+      "name": "Osada",
+      "reborn": 2
+    },
+    {
+      "id": 314,
+      "name": "Przeklęty Las",
+      "reborn": 2
+    },
+    {
+      "id": 315,
+      "name": "Zniszczona Osada",
+      "reborn": 2
+    },
+    {
+      "id": 316,
+      "name": "Planeta Urni",
+      "reborn": 2
+    },
+    {
+      "id": 317,
+      "name": "Planeta Urni - Południe"
+    },
+    {
+      "id": 318,
+      "name": "Leśna Droga",
+      "reborn": 2
+    },
+    {
+      "id": 319,
+      "name": "Mroczna Dolina",
+      "reborn": 2
+    },
+    {
+      "id": 320,
+      "name": "Lodowa Kraina",
+      "reborn": 2
+    },
+    {
+      "id": 321,
+      "name": "Zagadkowa Kamienica",
+      "reborn": 2
+    },
+    {
+      "id": 322,
+      "name": "Lochy",
+      "reborn": 2
+    },
+    {
+      "id": 323,
+      "name": "Arkosolium",
+      "reborn": 2
+    },
+    {
+      "id": 324,
+      "name": "Katakumby",
+      "reborn": 2
+    },
+    {
+      "id": 325,
+      "name": "Kazamat",
+      "reborn": 2
+    },
+    {
+      "id": 326,
+      "name": "Jezioro",
+      "reborn": 2
+    },
+    {
+      "id": 327,
+      "name": "Step",
+      "reborn": 2
+    },
+    {
+      "id": 328,
+      "name": "Góry",
+      "reborn": 2
+    },
+    {
+      "id": 329,
+      "name": "Erem",
+      "reborn": 2
+    },
+    {
+      "id": 330,
+      "name": "Wodospad",
+      "reborn": 2
+    },
+    {
+      "id": 331,
+      "name": "Błonie",
+      "reborn": 2
+    },
+    {
+      "id": 332,
+      "name": "Sefahat",
+      "reborn": 2
+    },
+    {
+      "id": 333,
+      "name": "Valupto",
+      "reborn": 2
+    },
+    {
+      "id": 334,
+      "name": "Wejście do Dabinu",
+      "reborn": 2
+    },
+    {
+      "id": 335,
+      "name": "Dabin -  Początek",
+      "reborn": 2
+    },
+    {
+      "id": 336,
+      "name": "Dabin",
+      "reborn": 2
+    },
+    {
+      "id": 337,
+      "name": "Felle",
+      "reborn": 2
+    },
+    {
+      "id": 338,
+      "name": "Polif",
+      "reborn": 2
+    },
+    {
+      "id": 339,
+      "name": "Propiska",
+      "reborn": 2
+    },
+    {
+      "id": 340,
+      "name": "Bumi",
+      "reborn": 2
+    },
+    {
+      "id": 341,
+      "name": "Gua",
+      "reborn": 2
+    },
+    {
+      "id": 342,
+      "name": "Imezi",
+      "reborn": 2
+    },
+    {
+      "id": 343,
+      "name": "Puncak",
+      "reborn": 2
+    },
+    {
+      "id": 344,
+      "name": "Pelabuhan",
+      "reborn": 2
+    },
+    {
+      "id": 345,
+      "name": "Laut",
+      "reborn": 2
+    },
+    {
+      "id": 346,
+      "name": "Pemeltrio",
+      "reborn": 2
+    },
+    {
+      "id": 347,
+      "name": "Maratoia",
+      "reborn": 2
+    },
+    {
+      "id": 348,
+      "name": "Siedziba Armii RR"
+    },
+    {
+      "id": 349,
+      "name": "Niebo"
+    },
+    {
+      "id": 350,
+      "name": "Siedziba Imperium Demonów"
+    },
+    {
+      "id": 351,
+      "name": "Siedziba Imperium Saiyan"
+    },
+    {
+      "id": 352,
+      "name": "Rozdroża"
+    },
+    {
+      "id": 353,
+      "name": "Niebiański Pałac",
+      "reborn": 2
+    },
+    {
+      "id": 354,
+      "name": "Planeta Nazoidów",
+      "reborn": 2
+    },
+    {
+      "id": 355,
+      "name": "Opustoszała Planeta",
+      "reborn": 2
+    },
+    {
+      "id": 356,
+      "name": "Planeta Śmierci",
+      "reborn": 2
+    },
+    {
+      "id": 357,
+      "name": "Dolina Treningowa",
+      "reborn": 2
+    },
+    {
+      "id": 358,
+      "name": "Boska Kuźnia",
+      "reborn": 2
+    },
+    {
+      "id": 359,
+      "name": "Siedziba Mistrzów",
+      "reborn": 0
+    },
+    {
+      "id": 360,
+      "name": "Turniej Międzygalaktyczny",
+      "reborn": 2
+    },
+    {
+      "id": 361,
+      "name": "Turniej Międzygalaktyczny – Arena II",
+      "reborn": 2
+    },
+    {
+      "id": 362,
+      "name": "Zniszczona Planeta Bogów",
+      "reborn": 2
+    },
+    {
+      "id": 363,
+      "name": "Mroczny Pałac Astaroth",
+      "reborn": 2
+    },
+    {
+      "id": 364,
+      "name": "Mroczny pałac Astaroth – Sala",
+      "reborn": 2
+    },
+    {
+      "id": 365,
+      "name": "Zniszczona Planeta Bogów – Oaza",
+      "reborn": 2
+    },
+    {
+      "id": 366,
+      "name": "Zachodnia Prowincja Piekieł",
+      "reborn": 2
+    },
+    {
+      "id": 367,
+      "name": "Siedziba Władcy Demonów",
+      "reborn": 2
+    },
+    {
+      "id": 368,
+      "name": "Hodowla Yajirobe"
+    },
+    {
+      "id": 369,
+      "name": "Legenda Shenlonga"
+    },
+    {
+      "id": 370,
+      "name": "Planeta Stigma",
+      "reborn": 2
+    },
+    {
+      "id": 371,
+      "name": "Podziemia Planety Stigma",
+      "reborn": 2
+    },
+    {
+      "id": 372,
+      "name": "Planeta Mrozu",
+      "reborn": 2
+    },
+    {
+      "id": 373,
+      "name": "Podziemia Planety Stigma - Arena",
+      "reborn": 2
+    },
+    {
+      "id": 374,
+      "name": "Terio",
+      "reborn": 2
+    },
+    {
+      "id": 375,
+      "name": "Haikyou",
+      "reborn": 2
+    },
+    {
+      "id": 376,
+      "name": "Niezwykła Planeta",
+      "reborn": 3
+    },
+    {
+      "id": 377,
+      "name": "Planeta Trax",
+      "reborn": 3
+    },
+    {
+      "id": 378,
+      "name": "Planeta Keido",
+      "reborn": 3
+    },
+    {
+      "id": 379,
+      "name": "Alternatywny Pałac Wszechmogącego",
+      "reborn": 3
+    },
+    {
+      "id": 380,
+      "name": "Kraina Senzu"
+    },
+    {
+      "id": 381,
+      "name": "Daleki Zachód"
+    },
+    {
+      "id": 382,
+      "name": "Bagna"
+    },
+    {
+      "id": 383,
+      "name": "Kryjówka Porywaczy"
+    },
+    {
+      "id": 384,
+      "name": "Las Deszczowy",
+      "reborn": 3
+    },
+    {
+      "id": 385,
+      "name": "Labirynt Ciemności",
+      "reborn": 3
+    },
+    {
+      "id": 386,
+      "name": "Starożytna Pustynia",
+      "reborn": 3
+    },
+    {
+      "id": 387,
+      "name": "Grobowiec",
+      "reborn": 3
+    },
+    {
+      "id": 388,
+      "name": "Płonący Las",
+      "reborn": 3
+    },
+    {
+      "id": 389,
+      "name": "Wymiar Bogów",
+      "reborn": 3
+    },
+    {
+      "id": 390,
+      "name": "Czeluście Piekieł",
+      "reborn": 3
+    },
+    {
+      "id": 391,
+      "name": "Piekielna Otchłań",
+      "reborn": 3
+    },
+    {
+      "id": 392,
+      "name": "Jezioro Lawy",
+      "reborn": 3
+    },
+    {
+      "id": 393,
+      "name": "Sala Sądu",
+      "reborn": 3
+    },
+    {
+      "id": 394,
+      "name": "Diabelski Zamek"
+    },
+    {
+      "id": 395,
+      "name": "Czwarty Krąg Piekła",
+      "reborn": 3
+    },
+    {
+      "id": 396,
+      "name": "Wnętrze Cerbera",
+      "reborn": 3
+    },
+    {
+      "id": 397,
+      "name": "Sierociniec",
+      "reborn": 3
+    },
+    {
+      "id": 398,
+      "name": "Brzeg Styksu",
+      "reborn": 3
+    },
+    {
+      "id": 399,
+      "name": "Skarbiec",
+      "reborn": 3
+    },
+    {
+      "id": 400,
+      "name": "Miasto Man",
+      "reborn": 3
+    },
+    {
+      "id": 401,
+      "name": "Grobowce Herezji",
+      "reborn": 3
+    },
+    {
+      "id": 402,
+      "name": "Krwawa Dolina",
+      "reborn": 3
+    },
+    {
+      "id": 403,
+      "name": "Las Samobójców",
+      "reborn": 3
+    },
+    {
+      "id": 404,
+      "name": "Piaski Przeklętych",
+      "reborn": 3
+    },
+    {
+      "id": 405,
+      "name": "Wyspa Treningowa"
+    },
+    {
+      "id": 406,
+      "name": "Restauracja"
+    },
+    {
+      "id": 407,
+      "name": "Turniej Sztuk Walki"
+    },
+    {
+      "id": 408,
+      "name": "Święta Wieża"
+    },
+    {
+      "id": 409,
+      "name": "Dolina"
+    },
+    {
+      "id": 410,
+      "name": "Jaskinia",
+      "reborn": 3
+    },
+    {
+      "id": 411,
+      "name": "Krypta"
+    },
+    {
+      "id": 412,
+      "name": "Komnata Żywiołów",
+      "reborn": 3
+    },
+    {
+      "id": 413,
+      "name": "Piwnica",
+      "reborn": 3
+    },
+    {
+      "id": 414,
+      "name": "Wieczny Mrok",
+      "reborn": 3
+    },
+    {
+      "id": 415,
+      "name": "Obrzeża Piekła",
+      "reborn": 3
+    },
+    {
+      "id": 416,
+      "name": "Sala Tortur",
+      "reborn": 3
+    },
+    {
+      "id": 417,
+      "name": "Mroźna Ścieżka",
+      "reborn": 3
+    },
+    {
+      "id": 418,
+      "name": "Zamarznięte Jezioro",
+      "reborn": 3
+    },
+    {
+      "id": 419,
+      "name": "Bramy Niebios",
+      "reborn": 3
+    },
+    {
+      "id": 420,
+      "name": "Niebiańskie Podziemia",
+      "reborn": 3
+    },
+    {
+      "id": 421,
+      "name": "Niebiański Turniej",
+      "reborn": 3
+    },
+    {
+      "id": 422,
+      "name": "Posiadłość Bulmy",
+      "reborn": 3
+    },
+    {
+      "id": 423,
+      "name": "Okolice Pałacu Niebiańskiego",
+      "reborn": 3
+    },
+    {
+      "id": 424,
+      "name": "Oaza Spokoju",
+      "reborn": 3
+    },
+    {
+      "id": 425,
+      "name": "Kraina Obfitości",
+      "reborn": 3
+    },
+    {
+      "id": 426,
+      "name": "Raj",
+      "reborn": 3
+    },
+    {
+      "id": 427,
+      "name": "Sala Tronowa",
+      "reborn": 3
+    },
+    {
+      "id": 428,
+      "name": "Wnętrze Niebiańskiego Pałacu",
+      "reborn": 3
+    },
+    {
+      "id": 429,
+      "name": "Wymiar Cieni",
+      "reborn": 3
+    },
+    {
+      "id": 430,
+      "name": "Pustka",
+      "reborn": 3
+    },
+    {
+      "id": 431,
+      "name": "Wymiar Nicości",
+      "reborn": 3
+    },
+    {
+      "id": 432,
+      "name": "Przerażający Most",
+      "reborn": 3
+    },
+    {
+      "id": 433,
+      "name": "Wnętrze Zamku",
+      "reborn": 3
+    },
+    {
+      "id": 434,
+      "name": "Zamek Strachu",
+      "reborn": 3
+    },
+    {
+      "id": 435,
+      "name": "Lokacja Halloweenowa"
+    },
+    {
+      "id": 436,
+      "name": "Miasteczko"
+    },
+    {
+      "id": 437,
+      "name": "Otchłań - Poziom 5",
+      "reborn": 3
+    },
+    {
+      "id": 438,
+      "name": "Otchłań - Poziom 3",
+      "reborn": 3
+    },
+    {
+      "id": 439,
+      "name": "Pokój Cieni",
+      "reborn": 3
+    },
+    {
+      "id": 440,
+      "name": "Otchłań - Poziom 4",
+      "reborn": 3
+    },
+    {
+      "id": 441,
+      "name": "Wymiar Strachu",
+      "reborn": 3
+    },
+    {
+      "id": 442,
+      "name": "Wymiar Hexyz",
+      "reborn": 3
+    },
+    {
+      "id": 443,
+      "name": "Wymiar Heza",
+      "reborn": 3
+    },
+    {
+      "id": 444,
+      "name": "Otchłań - Poziom 2",
+      "reborn": 3
+    },
+    {
+      "id": 445,
+      "name": "Otchłań - Poziom 1",
+      "reborn": 3
+    },
+    {
+      "id": 446,
+      "name": "Magazyn Cieni"
+    },
+    {
+      "id": 447,
+      "name": "Okolice Domu"
+    },
+    {
+      "id": 448,
+      "name": "Kryjówka"
+    },
+    {
+      "id": 449,
+      "name": "Wnętrze Kryjówki"
+    },
+    {
+      "id": 450,
+      "name": "Dzicz"
+    },
+    {
+      "id": 451,
+      "name": "Puszcza"
+    },
+    {
+      "id": 452,
+      "name": "Uroczysko"
+    },
+    {
+      "id": 453,
+      "name": "Góry centralne"
+    },
+    {
+      "id": 454,
+      "name": "Zamek Garlicka"
+    },
+    {
+      "id": 455,
+      "name": "Ogród"
+    },
+    {
+      "id": 456,
+      "name": "Zniszczone komnaty Garlicka"
+    },
+    {
+      "id": 457,
+      "name": "Capsule Corporation"
+    },
+    {
+      "id": 458,
+      "name": "Statek Kosmiczny - Maszynownia"
+    },
+    {
+      "id": 459,
+      "name": "Namek - Miejsce Lądowania"
+    },
+    {
+      "id": 460,
+      "name": "Namek - Wioska"
+    },
+    {
+      "id": 461,
+      "name": "Namek - Kryjówka"
+    },
+    {
+      "id": 462,
+      "name": "Namek - Obrzeża"
+    },
+    {
+      "id": 463,
+      "name": "Wielki Turniej"
+    },
+    {
+      "id": 464,
+      "name": "Rozstaje",
+      "reborn": 3
+    },
+    {
+      "id": 465,
+      "name": "Komnata Smoka",
+      "reborn": 3
+    },
+    {
+      "id": 466,
+      "name": "Komnata Regeneracji",
+      "reborn": 3
+    },
+    {
+      "id": 467,
+      "name": "Komnata Legendy",
+      "reborn": 3
+    },
+    {
+      "id": 468,
+      "name": "Komnata Mocy",
+      "reborn": 3
+    },
+    {
+      "id": 469,
+      "name": "Wyimaginowana Kraina Ogarou",
+      "reborn": 3
+    },
+    {
+      "id": 470,
+      "name": "Wejście do Krainy Ogarou",
+      "reborn": 3
+    },
+    {
+      "id": 471,
+      "name": "Biegun"
+    },
+    {
+      "id": 472,
+      "name": "Góry Paozu"
+    },
+    {
+      "id": 473,
+      "name": "Dom Goku"
+    },
+    {
+      "id": 474,
+      "name": "Pustynia Rozbójników"
+    },
+    {
+      "id": 475,
+      "name": "Śnieżne Góry"
+    },
+    {
+      "id": 476,
+      "name": "Wieża Muskułów"
+    },
+    {
+      "id": 477,
+      "name": "Górski Szlak"
+    },
+    {
+      "id": 478,
+      "name": "Brzeg Morza"
+    },
+    {
+      "id": 479,
+      "name": "Wyspa walki"
+    },
+    {
+      "id": 480,
+      "name": "Iluzja miasta"
+    },
+    {
+      "id": 481,
+      "name": "Zniszczony Pałac Wszechmogącego",
+      "reborn": 3
+    },
+    {
+      "id": 482,
+      "name": "Nieznane Tereny",
+      "reborn": 3
+    },
+    {
+      "id": 483,
+      "name": "Wieczne Miasto",
+      "reborn": 3
+    },
+    {
+      "id": 484,
+      "name": "Zniszczona Planeta Bogów",
+      "reborn": 3
+    },
+    {
+      "id": 485,
+      "name": "Więzienie Buu"
+    },
+    {
+      "id": 486,
+      "name": "Planeta Bogów - Miecz Z"
+    },
+    {
+      "id": 487,
+      "name": "Planeta zagłady",
+      "reborn": 3
+    },
+    {
+      "id": 488,
+      "name": "Miasto Sin",
+      "reborn": 3
+    },
+    {
+      "id": 489,
+      "name": "Katis",
+      "reborn": 3
+    },
+    {
+      "id": 490,
+      "name": "Umysł",
+      "reborn": 3
+    },
+    {
+      "id": 491,
+      "name": "Sala treningowa Capsule Corporation"
+    },
+    {
+      "id": 492,
+      "name": "Brama piekieł"
+    },
+    {
+      "id": 493,
+      "name": "Otchłań piekieł"
+    },
+    {
+      "id": 494,
+      "name": "Esencja piekła"
+    },
+    {
+      "id": 495,
+      "name": "Jezioro Wiedźmy"
+    },
+    {
+      "id": 496,
+      "name": "Ego",
+      "reborn": 3
+    },
+    {
+      "id": 497,
+      "name": "Głębia Jestestwa",
+      "reborn": 3
+    },
+    {
+      "id": 498,
+      "name": "Pałac rozpaczy"
+    },
+    {
+      "id": 499,
+      "name": "Zniszczony dom"
+    },
+    {
+      "id": 500,
+      "name": "Czarny zamek"
+    },
+    {
+      "id": 501,
+      "name": "Wieczny ogród"
+    },
+    {
+      "id": 502,
+      "name": "Zakazana Przystań",
+      "reborn": 3
+    },
+    {
+      "id": 503,
+      "name": "Zaginiona Planeta",
+      "reborn": 3
+    },
+    {
+      "id": 504,
+      "name": "Umysł Boga Destrukcji",
+      "reborn": 3
+    },
+    {
+      "id": 505,
+      "name": "Gwiazda Neutronowa",
+      "reborn": 3
+    },
+    {
+      "id": 506,
+      "name": "Ziemska kryjówka Nameczan"
+    },
+    {
+      "id": 507,
+      "name": "Obóz Uchodźców"
+    },
+    {
+      "id": 508,
+      "name": "Królestwo Lorda Sluga"
+    },
+    {
+      "id": 509,
+      "name": "Szumiąca łąka"
+    },
+    {
+      "id": 510,
+      "name": "Szumiąca łąka - Północ"
+    },
+    {
+      "id": 511,
+      "name": "Szumiąca łąka - Wschód"
+    },
+    {
+      "id": 512,
+      "name": "Szumiąca łąka - południe"
+    },
+    {
+      "id": 513,
+      "name": "Szumiąca łąka - Zachód"
+    },
+    {
+      "id": 514,
+      "name": "Dom Bulmy"
+    },
+    {
+      "id": 515,
+      "name": "Przygraniczna wioska"
+    },
+    {
+      "id": 516,
+      "name": "Wioska Aru"
+    },
+    {
+      "id": 517,
+      "name": "Mogiły Saiyan"
+    },
+    {
+      "id": 518,
+      "name": "Dąb"
+    },
+    {
+      "id": 519,
+      "name": "Mroźna kraina"
+    },
+    {
+      "id": 520,
+      "name": "Lodowe pustkowie"
+    },
+    {
+      "id": 521,
+      "name": "Zamarznięta maszynownia"
+    },
+    {
+      "id": 522,
+      "name": "Laboratorium"
+    },
+    {
+      "id": 523,
+      "name": "Podziemie laboratorium"
+    },
+    {
+      "id": 524,
+      "name": "Cmentarzysko maszyn"
+    },
+    {
+      "id": 525,
+      "name": "Żelazna komnata"
+    },
+    {
+      "id": 526,
+      "name": "Kryjówka Chi Chi"
+    },
+    {
+      "id": 527,
+      "name": "Wyspa strachu"
+    },
+    {
+      "id": 528,
+      "name": "Piracka przystań"
+    },
+    {
+      "id": 529,
+      "name": "Siedziba Bojacka"
+    },
+    {
+      "id": 530,
+      "name": "Planeta Klanowa"
+    },
+    {
+      "id": 531,
+      "name": "Siedziba Czterech Szkół"
+    },
+    {
+      "id": 532,
+      "name": "Czarny Bór",
+      "reborn": 3
+    },
+    {
+      "id": 533,
+      "name": "Zamarznięte Pustkowia",
+      "reborn": 3
+    },
+    {
+      "id": 534,
+      "name": "Świątynia Wichrów",
+      "reborn": 3
+    },
+    {
+      "id": 535,
+      "name": "Knieja",
+      "reborn": 3
+    },
+    {
+      "id": 536,
+      "name": "Szkoła"
+    },
+    {
+      "id": 537,
+      "name": "Wypalone Pole Bitwy"
+    },
+    {
+      "id": 538,
+      "name": "Pałac Herkulesa"
+    },
+    {
+      "id": 539,
+      "name": "Spopielona Droga Węża"
+    },
+    {
+      "id": 540,
+      "name": "Sąd Ostateczny"
+    },
+    {
+      "id": 541,
+      "name": "Miejsce Rzezi"
+    },
+    {
+      "id": 542,
+      "name": "Krwawy Kanion"
+    },
+    {
+      "id": 543,
+      "name": "Wyspa Pamięci"
+    },
+    {
+      "id": 544,
+      "name": "Pałac Spustoszenia - Wnętrze"
+    },
+    {
+      "id": 545,
+      "name": "Pałac Spustoszenia - Sala Tronowa"
+    },
+    {
+      "id": 546,
+      "name": "Nicość"
+    },
+    {
+      "id": 547,
+      "name": "Nowa Planeta Kaio"
+    },
+    {
+      "id": 548,
+      "name": "Zaginiony Kanion",
+      "reborn": 3
+    },
+    {
+      "id": 549,
+      "name": "Koszary Armii Zniszczenia",
+      "reborn": 3
+    },
+    {
+      "id": 550,
+      "name": "Podziemne Więzienie",
+      "reborn": 3
+    },
+    {
+      "id": 551,
+      "name": "Koloseum śmierci",
+      "reborn": 3
+    },
+    {
+      "id": 552,
+      "name": "Starożytna Planeta Sadan",
+      "reborn": 3
+    },
+    {
+      "id": 553,
+      "name": "Starożytna Planeta Sadan - Północ",
+      "reborn": 3
+    },
+    {
+      "id": 554,
+      "name": "Starożytna Planeta Sadan - Południe",
+      "reborn": 3
+    },
+    {
+      "id": 555,
+      "name": "Przestrzeń Ponadwymiarowa",
+      "reborn": 3
+    },
+    {
+      "id": 556,
+      "name": "Planeta Fox",
+      "reborn": 3
+    },
+    {
+      "id": 557,
+      "name": "Promenada",
+      "reborn": 3
+    },
+    {
+      "id": 558,
+      "name": "Stadion"
+    },
+    {
+      "id": 559,
+      "name": "Trybuny"
+    },
+    {
+      "id": 560,
+      "name": "Strefa Kibica"
+    },
+    {
+      "id": 561,
+      "name": "Mars z równoległego świata",
+      "reborn": 3
+    },
+    {
+      "id": 562,
+      "name": "Mars Z Równoległego Świata - Górski Szczyt",
+      "reborn": 3
+    },
+    {
+      "id": 563,
+      "name": "Zniszczona Planeta Fox",
+      "reborn": 3
+    },
+    {
+      "id": 564,
+      "name": "Planeta Voulia",
+      "reborn": 3
+    },
+    {
+      "id": 565,
+      "name": "Ukryty Skarbiec"
+    },
+    {
+      "id": 566,
+      "name": "Studnia Życzeń"
+    },
+    {
+      "id": 567,
+      "name": "Szczyt Marsa"
+    },
+    {
+      "id": 568,
+      "name": "Plaża"
+    },
+    {
+      "id": 569,
+      "name": "Boisko do Siatkówki"
+    },
+    {
+      "id": 570,
+      "name": "Ganek Domu"
+    },
+    {
+      "id": 571,
+      "name": "Planeta Eurilia - Arena Turniejowa",
+      "reborn": 3
+    },
+    {
+      "id": 572,
+      "name": "Planeta Eurilia - Południe",
+      "reborn": 3
+    },
+    {
+      "id": 573,
+      "name": "Planeta Eurilia - Wschód",
+      "reborn": 3
+    },
+    {
+      "id": 574,
+      "name": "Planeta Eurilia - Centrum",
+      "reborn": 3
+    },
+    {
+      "id": 575,
+      "name": "Planeta Voulia - Wioska",
+      "reborn": 3
+    },
+    {
+      "id": 576,
+      "name": "Planeta Voulia - Zamek Królewski",
+      "reborn": 3
+    },
+    {
+      "id": 577,
+      "name": "Góry"
+    },
+    {
+      "id": 578,
+      "name": "Dom Goku"
+    },
+    {
+      "id": 579,
+      "name": "Pałac Garlica"
+    },
+    {
+      "id": 580,
+      "name": "Pustynia"
+    },
+    {
+      "id": 581,
+      "name": "Planeta Eurilia - Biblioteka",
+      "reborn": 3
+    },
+    {
+      "id": 582,
+      "name": "Świat Eterdana",
+      "reborn": 3
+    },
+    {
+      "id": 583,
+      "name": "Mapa Survivalowa"
+    },
+    {
+      "id": 584,
+      "name": "Zniszczona Capsule Corporation"
+    },
+    {
+      "id": 585,
+      "name": "Okolice Capsule Corporation"
+    },
+    {
+      "id": 586,
+      "name": "Zniszczone Satan City"
+    },
+    {
+      "id": 587,
+      "name": "Odludzie"
+    },
+    {
+      "id": 588,
+      "name": "Satan City obrzeża"
+    },
+    {
+      "id": 589,
+      "name": "Satan City Centrum"
+    },
+    {
+      "id": 590,
+      "name": "Sala treningowa 1"
+    },
+    {
+      "id": 591,
+      "name": "Sala treningowa 2"
+    },
+    {
+      "id": 592,
+      "name": "Sala treningowa 3"
+    },
+    {
+      "id": 593,
+      "name": "Nieznany las"
+    },
+    {
+      "id": 594,
+      "name": "Piekło na ziemi"
+    },
+    {
+      "id": 595,
+      "name": "Prowincja"
+    },
+    {
+      "id": 596,
+      "name": "Opuszczone góry"
+    },
+    {
+      "id": 597,
+      "name": "CC sala treningowa"
+    },
+    {
+      "id": 598,
+      "name": "Tajne laboratorium"
+    },
+    {
+      "id": 599,
+      "name": "Elektrownia"
+    },
+    {
+      "id": 600,
+      "name": "Skalna dolina"
+    },
+    {
+      "id": 601,
+      "name": "Sala Vegety"
+    },
+    {
+      "id": 602,
+      "name": "Statek kosmiczny CC – przyszłość"
+    },
+    {
+      "id": 603,
+      "name": "Podziemia laboratorium dr. Gero"
+    },
+    {
+      "id": 604,
+      "name": "Centrum"
+    },
+    {
+      "id": 605,
+      "name": "Południowa prowincja"
+    },
+    {
+      "id": 606,
+      "name": "Północna prowincja"
+    },
+    {
+      "id": 607,
+      "name": "Las"
+    },
+    {
+      "id": 608,
+      "name": "Nowa Vegeta"
+    },
+    {
+      "id": 609,
+      "name": "Nowa Vegeta - obrzeża"
+    },
+    {
+      "id": 610,
+      "name": "Nowa vegeta prowincja"
+    },
+    {
+      "id": 611,
+      "name": "Miejsce walki"
+    },
+    {
+      "id": 612,
+      "name": "Nowa Vegeta - stolica"
+    },
+    {
+      "id": 613,
+      "name": "Samotnia"
+    },
+    {
+      "id": 614,
+      "name": "Centrum Czasu"
+    },
+    {
+      "id": 615,
+      "name": "Dom bogini czasu"
+    },
+    {
+      "id": 616,
+      "name": "Miejsce walki - zmieniona przeszłość"
+    },
+    {
+      "id": 617,
+      "name": "Planeta Voulia – Lochy",
+      "reborn": 3
+    },
+    {
+      "id": 618,
+      "name": "Planeta Bogów - Wschód",
+      "reborn": 3
+    },
+    {
+      "id": 619,
+      "name": "Fubrion - Jaskinia",
+      "reborn": 3
+    },
+    {
+      "id": 620,
+      "name": "Siedziba Dawnych Bogów",
+      "reborn": 3
+    },
+    {
+      "id": 621,
+      "name": "Fubrion",
+      "reborn": 3
+    },
+    {
+      "id": 622,
+      "name": "Świątynia Saiyan",
+      "reborn": 3
+    },
+    {
+      "id": 623,
+      "name": "Planeta Świąteczna"
+    },
+    {
+      "id": 624,
+      "name": "GW-14ZD-K4"
+    },
+    {
+      "id": 625,
+      "name": "Centrum Świąt"
+    },
+    {
+      "id": 626,
+      "name": "BZ-ŚW"
+    },
+    {
+      "id": 627,
+      "name": "Burza Śnieżna"
+    },
+    {
+      "id": 628,
+      "name": "Górskie zbocza - zmieniona przeszłość"
+    },
+    {
+      "id": 629,
+      "name": "Rzeczna dolina"
+    },
+    {
+      "id": 630,
+      "name": "Droga do imperium"
+    },
+    {
+      "id": 631,
+      "name": "Hangar"
+    },
+    {
+      "id": 632,
+      "name": "Namek - Miejsce walki"
+    },
+    {
+      "id": 633,
+      "name": "Miejsce przywołania-zmieniona przeszłość"
+    },
+    {
+      "id": 634,
+      "name": "Góry lawy"
+    },
+    {
+      "id": 635,
+      "name": "Planeta Freezera"
+    },
+    {
+      "id": 636,
+      "name": "Statek King Colda"
+    },
+    {
+      "id": 637,
+      "name": "Jezioro zagłady-zmieniona przeszłość"
+    },
+    {
+      "id": 638,
+      "name": "Las Zagubionych"
+    },
+    {
+      "id": 639,
+      "name": "Pustkowie czasu"
+    },
+    {
+      "id": 640,
+      "name": "Fala czasu"
+    },
+    {
+      "id": 641,
+      "name": "Wydmy czasu"
+    },
+    {
+      "id": 642,
+      "name": "Sidła czasu"
+    },
+    {
+      "id": 643,
+      "name": "Tunel czasu"
+    },
+    {
+      "id": 644,
+      "name": "Samotne miasto"
+    },
+    {
+      "id": 645,
+      "name": "Zniszczona prowincja"
+    },
+    {
+      "id": 646,
+      "name": "Sekretna maszyna czasu"
+    },
+    {
+      "id": 647,
+      "name": "Wschodnia stolica",
+      "reborn": 4
+    },
+    {
+      "id": 648,
+      "name": "Pole",
+      "reborn": 4
+    },
+    {
+      "id": 649,
+      "name": "Łąka",
+      "reborn": 4
+    },
+    {
+      "id": 650,
+      "name": "Zachodnia stolica",
+      "reborn": 4
+    },
+    {
+      "id": 651,
+      "name": "Dziób statku",
+      "reborn": 4
+    },
+    {
+      "id": 652,
+      "name": "Bakburta",
+      "reborn": 4
+    },
+    {
+      "id": 653,
+      "name": "Sterburta",
+      "reborn": 4
+    },
+    {
+      "id": 654,
+      "name": "Rufa",
+      "reborn": 4
+    },
+    {
+      "id": 655,
+      "name": "Prywatna wyspa - północ",
+      "reborn": 4
+    },
+    {
+      "id": 656,
+      "name": "Prywatna wyspa",
+      "reborn": 4
+    },
+    {
+      "id": 657,
+      "name": "Prywatna wyspa - południe",
+      "reborn": 4
+    },
+    {
+      "id": 658,
+      "name": "Podziemia",
+      "reborn": 4
+    },
+    {
+      "id": 659,
+      "name": "Puszcza",
+      "reborn": 4
+    },
+    {
+      "id": 660,
+      "name": "Pieczara",
+      "reborn": 4
+    },
+    {
+      "id": 661,
+      "name": "Planeta Beerusa",
+      "reborn": 4
+    },
+    {
+      "id": 662,
+      "name": "Wielkanoc 2017"
+    },
+    {
+      "id": 663,
+      "name": "Miejsce lądowania Freezera",
+      "reborn": 4
+    },
+    {
+      "id": 664,
+      "name": "Podziemna grota",
+      "reborn": 4
+    },
+    {
+      "id": 665,
+      "name": "Spaczone miejsce",
+      "reborn": 4
+    },
+    {
+      "id": 666,
+      "name": "Pole zmagań",
+      "reborn": 4
+    },
+    {
+      "id": 667,
+      "name": "Glamorgan",
+      "reborn": 4
+    },
+    {
+      "id": 668,
+      "name": "Górska wieś",
+      "reborn": 4
+    },
+    {
+      "id": 669,
+      "name": "Jezioro",
+      "reborn": 4
+    },
+    {
+      "id": 670,
+      "name": "Turniej kwalifikacyjny",
+      "reborn": 4
+    },
+    {
+      "id": 671,
+      "name": "Bezimienna planeta",
+      "reborn": 4
+    },
+    {
+      "id": 672,
+      "name": "Brama zaświatów"
+    },
+    {
+      "id": 673,
+      "name": "Zaświaty poziom 1"
+    },
+    {
+      "id": 674,
+      "name": "Zaświaty poziom 2"
+    },
+    {
+      "id": 675,
+      "name": "Otchłań zaświatów"
+    },
+    {
+      "id": 676,
+      "name": "Planeta Tech-Tech"
+    },
+    {
+      "id": 677,
+      "name": "Lądowisko Gwiazdy Gete"
+    },
+    {
+      "id": 678,
+      "name": "Gwiazda Gete Więzienie"
+    },
+    {
+      "id": 679,
+      "name": "Rdzeń Gwiazdy Gete"
+    },
+    {
+      "id": 680,
+      "name": "Obrzeża północnego miasta"
+    },
+    {
+      "id": 681,
+      "name": "Wschodnia dzielnica"
+    },
+    {
+      "id": 682,
+      "name": "Zachodnia dzielnica"
+    },
+    {
+      "id": 683,
+      "name": "Stolica północego miasta"
+    },
+    {
+      "id": 684,
+      "name": "Planeta Gen",
+      "reborn": 4
+    },
+    {
+      "id": 685,
+      "name": "Planeta Cor",
+      "reborn": 4
+    },
+    {
+      "id": 686,
+      "name": "Planeta Nuts",
+      "reborn": 4
+    },
+    {
+      "id": 687,
+      "name": "Planeta Corn",
+      "reborn": 4
+    },
+    {
+      "id": 688,
+      "name": "Dom",
+      "reborn": 3,
+      "review": [
+        "ID 688 jest daleko od sąsiednich lokacji (397, 395) – sprawdź"
+      ]
+    },
+    {
+      "id": 689,
+      "name": "Plaża"
+    },
+    {
+      "id": 690,
+      "name": "Pole Rodziny Son",
+      "reborn": 4
+    },
+    {
+      "id": 691,
+      "name": "Dom Bulmy",
+      "reborn": 4
+    },
+    {
+      "id": 692,
+      "name": "Planeta Potaufeu",
+      "reborn": 4
+    },
+    {
+      "id": 693,
+      "name": "Planeta Vestria - Centrum",
+      "reborn": 4
+    },
+    {
+      "id": 694,
+      "name": "Podziemia Planety Beerusa"
+    },
+    {
+      "id": 695,
+      "name": "Ikarion - Wielka Biblioteka"
+    },
+    {
+      "id": 696,
+      "name": "Planeta Lehon"
+    },
+    {
+      "id": 697,
+      "name": "Planeta Aetna"
+    },
+    {
+      "id": 698,
+      "name": "Siedziba Gowasu",
+      "reborn": 4
+    },
+    {
+      "id": 699,
+      "name": "Pałac Zeno",
+      "reborn": 4
+    },
+    {
+      "id": 700,
+      "name": "Zniszczone miasto",
+      "reborn": 4
+    },
+    {
+      "id": 701,
+      "name": "Kryjówka Ruchu Oporu",
+      "reborn": 4
+    },
+    {
+      "id": 702,
+      "name": "Laboratorium",
+      "reborn": 4
+    },
+    {
+      "id": 703,
+      "name": "Zniszczone miasto - Południe",
+      "reborn": 4
+    },
+    {
+      "id": 704,
+      "name": "Zniszczone miasto - Zachód",
+      "reborn": 4
+    },
+    {
+      "id": 705,
+      "name": "Zniszczone miasto - Północ",
+      "reborn": 4
+    },
+    {
+      "id": 706,
+      "name": "Zniszczone miasto - Wschód",
+      "reborn": 4
+    },
+    {
+      "id": 707,
+      "name": "Rozdroża Czasu"
+    },
+    {
+      "id": 708,
+      "name": "Alternatywna Planeta Bogów"
+    },
+    {
+      "id": 709,
+      "name": "Pole"
+    },
+    {
+      "id": 710,
+      "name": "Dom"
+    },
+    {
+      "id": 711,
+      "name": "Atakowane miasto"
+    },
+    {
+      "id": 712,
+      "name": "statek - I poziom"
+    },
+    {
+      "id": 713,
+      "name": "Statek - II poziom"
+    },
+    {
+      "id": 714,
+      "name": "Zniszczone miasto - Centrum",
+      "reborn": 4
+    },
+    {
+      "id": 715,
+      "name": "Pola Kaishin",
+      "reborn": 4
+    },
+    {
+      "id": 716,
+      "name": "Centrum Badawcze Capsule Corporation",
+      "reborn": 4
+    },
+    {
+      "id": 717,
+      "name": "Laboratoria Capsule Corporation",
+      "reborn": 4
+    },
+    {
+      "id": 718,
+      "name": "Domek letniskowy Zamasu",
+      "reborn": 4
+    },
+    {
+      "id": 719,
+      "name": "Klasztor Kontemplacji",
+      "reborn": 4
+    },
+    {
+      "id": 720,
+      "name": "Odrodzona Puszcza",
+      "reborn": 4
+    },
+    {
+      "id": 721,
+      "name": "Zniszczone przedmieścia",
+      "reborn": 4
+    },
+    {
+      "id": 722,
+      "name": "Wioska"
+    },
+    {
+      "id": 723,
+      "name": "Obrzeża wioski"
+    },
+    {
+      "id": 724,
+      "name": "Las"
+    },
+    {
+      "id": 725,
+      "name": "Arktoria"
+    },
+    {
+      "id": 726,
+      "name": "Planeta Vestria - Pole Bitwy",
+      "reborn": 4
+    },
+    {
+      "id": 727,
+      "name": "Vestria - Wschód",
+      "reborn": 4
+    },
+    {
+      "id": 728,
+      "name": "Planeta Vestria - Północ",
+      "reborn": 4
+    },
+    {
+      "id": 729,
+      "name": "Szatańskie pustkowa",
+      "reborn": 4
+    },
+    {
+      "id": 730,
+      "name": "Ruiny West City",
+      "reborn": 4
+    },
+    {
+      "id": 731,
+      "name": "Przedmieścia West City",
+      "reborn": 4
+    },
+    {
+      "id": 732,
+      "name": "Ruiny 18 Wszechświata",
+      "reborn": 4
+    },
+    {
+      "id": 733,
+      "name": "Poziom I - Status Quo"
+    },
+    {
+      "id": 734,
+      "name": "Poziom II – Przepastna Grota"
+    },
+    {
+      "id": 735,
+      "name": "Poziom III - Aqua"
+    },
+    {
+      "id": 736,
+      "name": "Poziom IV - Inferno"
+    },
+    {
+      "id": 737,
+      "name": "Poziom V - Elizjum"
+    },
+    {
+      "id": 738,
+      "name": "Poziom VI – Zero Absolutne"
+    },
+    {
+      "id": 739,
+      "name": "Poziom VII - Otchłań"
+    },
+    {
+      "id": 740,
+      "name": "Poziom VIII - Odrodzenie"
+    },
+    {
+      "id": 741,
+      "name": "Poziom IX – Arena Prób"
+    },
+    {
+      "id": 742,
+      "name": "Poziom X –Pałac Zwycięzców"
+    },
+    {
+      "id": 743,
+      "name": "Dom"
+    },
+    {
+      "id": 744,
+      "name": "Dom Bulmy",
+      "reborn": 4
+    },
+    {
+      "id": 745,
+      "name": "Tantaloa - Północ"
+    },
+    {
+      "id": 746,
+      "name": "Tantaloa - Południe"
+    },
+    {
+      "id": 747,
+      "name": "Nora Królika"
+    },
+    {
+      "id": 748,
+      "name": "Głębia Nory"
+    },
+    {
+      "id": 749,
+      "name": "Fabryka Jajek"
+    },
+    {
+      "id": 750,
+      "name": "Dystrybutor Jajek"
+    },
+    {
+      "id": 751,
+      "name": "Zrujnowana stolica",
+      "reborn": 4
+    },
+    {
+      "id": 752,
+      "name": "Pradawne Sanktuarium",
+      "reborn": 4
+    },
+    {
+      "id": 753,
+      "name": "Obrzeża Wszechświata",
+      "reborn": 4
+    },
+    {
+      "id": 754,
+      "name": "Pustynia Chaosu",
+      "reborn": 4
+    },
+    {
+      "id": 755,
+      "name": "Wir Temporalno-Chaotyczny",
+      "reborn": 4
+    },
+    {
+      "id": 756,
+      "name": "Nowa Vegeta",
+      "reborn": 4
+    },
+    {
+      "id": 757,
+      "name": "Nowa Vegeta - Pałac",
+      "reborn": 4
+    },
+    {
+      "id": 758,
+      "name": "Nowa Vegeta - miasto",
+      "reborn": 4
+    },
+    {
+      "id": 759,
+      "name": "Dom"
+    },
+    {
+      "id": 760,
+      "name": "Planeta Shoshinsha - kwatera główna rebeliantów"
+    },
+    {
+      "id": 761,
+      "name": "Planeta Shaoshinsha – pole bitwy"
+    },
+    {
+      "id": 762,
+      "name": "Planeta Shoshinsha – stolica"
+    },
+    {
+      "id": 763,
+      "name": "Koniec czasu",
+      "reborn": 4
+    },
+    {
+      "id": 764,
+      "name": "Planeta Tsufur",
+      "reborn": 4
+    },
+    {
+      "id": 765,
+      "name": "Planeta Tsufur - stolica",
+      "reborn": 4
+    },
+    {
+      "id": 766,
+      "name": "Planeta Tsufur - Pałac Bebiego",
+      "reborn": 4
+    },
+    {
+      "id": 767,
+      "name": "Dom"
+    },
+    {
+      "id": 768,
+      "name": "Arcunos – pustkowia"
+    },
+    {
+      "id": 769,
+      "name": "Arcunos – dżungla"
+    },
+    {
+      "id": 770,
+      "name": "Arcunos – posiadłość Gena"
+    },
+    {
+      "id": 771,
+      "name": "Pierwotny Chaos",
+      "reborn": 4
+    },
+    {
+      "id": 772,
+      "name": "Subterria",
+      "reborn": 4
+    },
+    {
+      "id": 773,
+      "name": "West City - konferencja naukowa",
+      "reborn": 4
+    },
+    {
+      "id": 774,
+      "name": "Skaliste pustkowie",
+      "reborn": 4
+    },
+    {
+      "id": 775,
+      "name": "West City"
+    },
+    {
+      "id": 776,
+      "name": "El Zombie Pre"
+    },
+    {
+      "id": 777,
+      "name": "Planeta Vegeta - przedmieścia"
+    },
+    {
+      "id": 778,
+      "name": "Planeta Vegeta - pałac królewski"
+    },
+    {
+      "id": 779,
+      "name": "Planeta Vegeta - Sala tronowa"
+    },
+    {
+      "id": 780,
+      "name": "Przestrzeń kosmiczna"
+    },
+    {
+      "id": 781,
+      "name": "Pustkowia Ister"
+    },
+    {
+      "id": 782,
+      "name": "Pustkowia Ister - grota"
+    },
+    {
+      "id": 783,
+      "name": "Pustkowia Ister - szczyt wojownika"
+    },
+    {
+      "id": 784,
+      "name": "Pustkowia Ister - dom"
+    },
+    {
+      "id": 785,
+      "name": "Amai - Miasto"
+    },
+    {
+      "id": 786,
+      "name": "Amai - Zgliszcza"
+    },
+    {
+      "id": 787,
+      "name": "Mogina"
+    },
+    {
+      "id": 788,
+      "name": "Mogina - Miasto"
+    },
+    {
+      "id": 789,
+      "name": "Opuszczona Planeta"
+    },
+    {
+      "id": 790,
+      "name": "Martwa planeta"
+    },
+    {
+      "id": 791,
+      "name": "Folut - laboratorium"
+    },
+    {
+      "id": 792,
+      "name": "Folut - pustynia"
+    },
+    {
+      "id": 793,
+      "name": "Nowa Planeta Vegeta – Miasto"
+    },
+    {
+      "id": 794,
+      "name": "Nowa Vegeta - koszary"
+    },
+    {
+      "id": 795,
+      "name": "Nowa Vegeta - zamek"
+    },
+    {
+      "id": 796,
+      "name": "Shamo - przedmieścia"
+    },
+    {
+      "id": 797,
+      "name": "Shamo - farma"
+    },
+    {
+      "id": 798,
+      "name": "Shamo - dom starszyzny"
+    },
+    {
+      "id": 799,
+      "name": "Shamo - zgliszcza"
+    },
+    {
+      "id": 800,
+      "name": "Ziemia - łąka"
+    },
+    {
+      "id": 801,
+      "name": "Sayiański statek"
+    },
+    {
+      "id": 802,
+      "name": "Nowa Planeta Vegeta - Kopalnia"
+    },
+    {
+      "id": 803,
+      "name": "Nowa Planeta Vegeta - pole bitwy"
+    },
+    {
+      "id": 804,
+      "name": "Kapsuła kosmiczna"
+    },
+    {
+      "id": 805,
+      "name": "Mroźna planeta - Powierzchnia"
+    },
+    {
+      "id": 806,
+      "name": "Mroźna planeta - Jaskinia"
+    },
+    {
+      "id": 807,
+      "name": "Mroźna planeta - Jądro"
+    },
+    {
+      "id": 808,
+      "name": "Ziemia - wioska"
+    },
+    {
+      "id": 809,
+      "name": "Ziemia - wodospad"
+    },
+    {
+      "id": 810,
+      "name": "Ziemia - laboratorium"
+    },
+    {
+      "id": 811,
+      "name": "Wielki kanion"
+    },
+    {
+      "id": 812,
+      "name": "Wielki kanion - pole bitwy"
+    },
+    {
+      "id": 813,
+      "name": "Wielki kanion - miejsce przywołania"
+    },
+    {
+      "id": 814,
+      "name": "Piekło"
+    },
+    {
+      "id": 815,
+      "name": "Pole treningowe"
+    },
+    {
+      "id": 816,
+      "name": "Zamrożone miasto"
+    },
+    {
+      "id": 817,
+      "name": "Statek najeźdźców"
+    },
+    {
+      "id": 818,
+      "name": "Pieczara Czarnoksiężnika"
+    },
+    {
+      "id": 819,
+      "name": "Dziewiąty Krąg Piekła"
+    },
+    {
+      "id": 820,
+      "name": "Piekielne Więzienie"
+    },
+    {
+      "id": 821,
+      "name": "Namek – Czas Mroku"
+    },
+    {
+      "id": 822,
+      "name": "Namek – Czas Mroku - Pole Bitwy"
+    },
+    {
+      "id": 823,
+      "name": "Namek – Czas Mroku - Pustkowie"
+    },
+    {
+      "id": 824,
+      "name": "Ziemia – Czas Mroku"
+    },
+    {
+      "id": 825,
+      "name": "Ziemia – Czas Mroku - Arena Cella"
+    },
+    {
+      "id": 826,
+      "name": "Ziemia – Czas Mroku - Zniszczona Arena"
+    },
+    {
+      "id": 827,
+      "name": "Ziemia – Czas Mroku - Kanion"
+    },
+    {
+      "id": 828,
+      "name": "Ziemia – Czas Mroku – Pole Bitwy"
+    },
+    {
+      "id": 829,
+      "name": "Ziemia – Czas Mroku – Plugawe Góry"
+    },
+    {
+      "id": 830,
+      "name": "Planeta Bogów - Czas Mroku"
+    },
+    {
+      "id": 831,
+      "name": "Planeta Bogów - Czas Mroku – Droga Oczyszczenia"
+    },
+    {
+      "id": 832,
+      "name": "Planeta Bogów - Czas Mroku – Drzewo Mocy"
+    },
+    {
+      "id": 833,
+      "name": "Piekło - Czas Mroku"
+    },
+    {
+      "id": 834,
+      "name": "Piekło - Czas Mroku – Rozstaje"
+    },
+    {
+      "id": 835,
+      "name": "Piekło - Czas Mroku – Pałac Demona"
+    },
+    {
+      "id": 836,
+      "name": "Ziemia – Czas Mroku – Miejsce ataku"
+    },
+    {
+      "id": 837,
+      "name": "Pałac Wszechmogącego - Czas Mroku"
+    },
+    {
+      "id": 838,
+      "name": "Rajska Sala Treningowa – Czas Mroku"
+    },
+    {
+      "id": 839,
+      "name": "Nowa Planeta Vegeta – Czas Mroku"
+    },
+    {
+      "id": 840,
+      "name": "Nowa Planeta Vegeta - Pałac Królewski"
+    },
+    {
+      "id": 841,
+      "name": "Zgliszcza Planety Vegeta – Czas Mroku"
+    },
+    {
+      "id": 842,
+      "name": "Pałac Czarnoksiężnika"
+    },
+    {
+      "id": 843,
+      "name": "Pałac Czarnoksiężnika - Miejsce przywołania"
+    },
+    {
+      "id": 844,
+      "name": "Pałac Czarnoksiężnika - Arena"
+    },
+    {
+      "id": 845,
+      "name": "Turniej Wstępny",
+      "reborn": 4
+    },
+    {
+      "id": 846,
+      "name": "Sąsiedztwo Kuririna",
+      "reborn": 4
+    },
+    {
+      "id": 847,
+      "name": "Rezerwat na Wyspie",
+      "reborn": 4
+    },
+    {
+      "id": 848,
+      "name": "Statek kłusowników",
+      "reborn": 4
+    },
+    {
+      "id": 849,
+      "name": "Dom Letni Bulmy"
+    },
+    {
+      "id": 850,
+      "name": "Starożytne Wrota"
+    },
+    {
+      "id": 851,
+      "name": "Odyseja Kosmiczna"
+    },
+    {
+      "id": 852,
+      "name": "Srebrny szlak"
+    },
+    {
+      "id": 853,
+      "name": "Las Patriarchów"
+    },
+    {
+      "id": 854,
+      "name": "Królicza Nora"
+    },
+    {
+      "id": 855,
+      "name": "Pole Marchwi"
+    },
+    {
+      "id": 856,
+      "name": "Wytwórnia Jajek"
+    },
+    {
+      "id": 857,
+      "name": "Magazyn Pisanek"
+    },
+    {
+      "id": 858,
+      "name": "Góra Yonder"
+    },
+    {
+      "id": 859,
+      "name": "Jajeczna Dolina"
+    },
+    {
+      "id": 860,
+      "name": "Dojo Tenshinhana",
+      "reborn": 4
+    },
+    {
+      "id": 861,
+      "name": "Dom Urunai Baby",
+      "reborn": 4
+    },
+    {
+      "id": 862,
+      "name": "Pluszowe Piekło",
+      "reborn": 4
+    },
+    {
+      "id": 863,
+      "name": "Pobojowisko Skaliste",
+      "reborn": 4
+    },
+    {
+      "id": 864,
+      "name": "Wioska Shinsoo",
+      "reborn": 4
+    },
+    {
+      "id": 865,
+      "name": "Nawiedzona Planeta"
+    },
+    {
+      "id": 866,
+      "name": "Dom"
+    },
+    {
+      "id": 867,
+      "name": "Plaża Letniskowa"
+    },
+    {
+      "id": 868,
+      "name": "Kurort Letniskowy"
+    },
+    {
+      "id": 869,
+      "name": "Pole"
+    },
+    {
+      "id": 870,
+      "name": "Bezludna Wyspa"
+    },
+    {
+      "id": 871,
+      "name": "Ścieżka powrotna"
+    },
+    {
+      "id": 872,
+      "name": "Góry Tsumisumbri"
+    },
+    {
+      "id": 873,
+      "name": "Twierdza Doktora Whellowa"
+    },
+    {
+      "id": 874,
+      "name": "Boska Arena",
+      "reborn": 4
+    },
+    {
+      "id": 875,
+      "name": "Kraina Wody",
+      "reborn": 4
+    },
+    {
+      "id": 876,
+      "name": "Ziemista Pustynia",
+      "reborn": 4
+    },
+    {
+      "id": 877,
+      "name": "Ognista Ziemia",
+      "reborn": 4
+    },
+    {
+      "id": 878,
+      "name": "Przylądek Wiatru",
+      "reborn": 4
+    },
+    {
+      "id": 879,
+      "name": "Dom Goku"
+    },
+    {
+      "id": 880,
+      "name": "Górskie Apartamenty"
+    },
+    {
+      "id": 881,
+      "name": "Przedsionek góry"
+    },
+    {
+      "id": 882,
+      "name": "Górski Szczyt"
+    },
+    {
+      "id": 883,
+      "name": "Kosmiczne Oko"
+    },
+    {
+      "id": 884,
+      "name": "Droga do domu"
+    },
+    {
+      "id": 885,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 886,
+      "name": "Zniszczona Część Areny",
+      "reborn": 4
+    },
+    {
+      "id": 887,
+      "name": "Boska Arena- Pobojowisko"
+    },
+    {
+      "id": 888,
+      "name": "Katharsis",
+      "reborn": 4
+    },
+    {
+      "id": 889,
+      "name": "Miejsce Wybuchu",
+      "reborn": 4
+    },
+    {
+      "id": 890,
+      "name": "Domek Halloweenowy"
+    },
+    {
+      "id": 891,
+      "name": "Diabelskie Miasteczko"
+    },
+    {
+      "id": 892,
+      "name": "Pole Dyń"
+    },
+    {
+      "id": 893,
+      "name": "Domek Luster"
+    },
+    {
+      "id": 894,
+      "name": "Straszny Szczyt"
+    },
+    {
+      "id": 895,
+      "name": "Droga bez Powrotu"
+    },
+    {
+      "id": 896,
+      "name": "Królestwo Bogów"
+    },
+    {
+      "id": 897,
+      "name": "Królestwo Bogów - Pałac"
+    },
+    {
+      "id": 898,
+      "name": "Królestwo Bogów - Drzewo Świata"
+    },
+    {
+      "id": 899,
+      "name": "Królestwo Bogów - Boskie Pole"
+    },
+    {
+      "id": 900,
+      "name": "Królestwo Bogów - Ścieżka"
+    },
+    {
+      "id": 901,
+      "name": "Królestwo Bogów - Komnata Spokoju"
+    },
+    {
+      "id": 902,
+      "name": "Królestwo Bogów - Sala Tronowa"
+    },
+    {
+      "id": 903,
+      "name": "Królestwo Bogów Dziesiątego Wszechświata"
+    },
+    {
+      "id": 904,
+      "name": "Królestwo Bogów - Domek Gowasu"
+    },
+    {
+      "id": 905,
+      "name": "Sala Czasu"
+    },
+    {
+      "id": 906,
+      "name": "Planeta Bogów - Miejsce Walki"
+    },
+    {
+      "id": 907,
+      "name": "Ziemia - Stolica Wschodnia"
+    },
+    {
+      "id": 908,
+      "name": "Zgliszcza Zachodniej Stolicy"
+    },
+    {
+      "id": 909,
+      "name": "Zrujnowane Miasto"
+    },
+    {
+      "id": 910,
+      "name": "Północna Stolica - Gruzowisko"
+    },
+    {
+      "id": 911,
+      "name": "Przestrzeń Międzywymiarowa"
+    },
+    {
+      "id": 912,
+      "name": "Smocze Góry"
+    },
+    {
+      "id": 913,
+      "name": "Wymiar Władcy Czasu i Przestrzeni"
+    },
+    {
+      "id": 914,
+      "name": "Planeta Barbaria - Przeszłość"
+    },
+    {
+      "id": 915,
+      "name": "Planeta Barbaria - Kolonia - Przeszłość"
+    },
+    {
+      "id": 916,
+      "name": "Planeta Barbaria - Miejsce Przemiany - Przeszłość"
+    },
+    {
+      "id": 917,
+      "name": "Domek Gowasu - Przeszłość"
+    },
+    {
+      "id": 918,
+      "name": "Wyspa Cienia - Przeszłość"
+    },
+    {
+      "id": 919,
+      "name": "Splugawiona Kopalnia - Przeszłość"
+    },
+    {
+      "id": 920,
+      "name": "Wielka Sala - Przeszłość"
+    },
+    {
+      "id": 921,
+      "name": "Dom Nad Jeziorem"
+    },
+    {
+      "id": 922,
+      "name": "Dom Nad Jeziorem - Pole"
+    },
+    {
+      "id": 923,
+      "name": "Turniej Czasu - Faza Wstępna"
+    },
+    {
+      "id": 924,
+      "name": "Turniej Czasu - Arena Finałowa"
+    },
+    {
+      "id": 925,
+      "name": "Turniej Czasu - Faza Grupowa"
+    },
+    {
+      "id": 926,
+      "name": "Turniej Czasu - Faza Pucharowa"
+    },
+    {
+      "id": 927,
+      "name": "Ośnieżony Las"
+    },
+    {
+      "id": 928,
+      "name": "Zaśnieżony Przesmyk"
+    },
+    {
+      "id": 929,
+      "name": "Śnieżna Dolina"
+    },
+    {
+      "id": 930,
+      "name": "Skalne Zbocza"
+    },
+    {
+      "id": 931,
+      "name": "Szczyt"
+    },
+    {
+      "id": 932,
+      "name": "Mokradła"
+    },
+    {
+      "id": 933,
+      "name": "Uzdrowisko"
+    },
+    {
+      "id": 934,
+      "name": "Starożytny Grobowiec"
+    },
+    {
+      "id": 935,
+      "name": "Obrzeża Areny",
+      "reborn": 4
+    },
+    {
+      "id": 936,
+      "name": "Zrujnowana Część Areny",
+      "reborn": 4
+    },
+    {
+      "id": 937,
+      "name": "Pustkowie Zniszczenia",
+      "reborn": 4
+    },
+    {
+      "id": 938,
+      "name": "Kraniec",
+      "reborn": 4
+    },
+    {
+      "id": 939,
+      "name": "Góry Skaliste",
+      "reborn": 4
+    },
+    {
+      "id": 940,
+      "name": "Przystań końca i początku",
+      "reborn": 4
+    },
+    {
+      "id": 941,
+      "name": "Leśny Przysiułek"
+    },
+    {
+      "id": 942,
+      "name": "Wybrzeże"
+    },
+    {
+      "id": 943,
+      "name": "Leśny Zagajnik"
+    },
+    {
+      "id": 944,
+      "name": "Góra Obfitości"
+    },
+    {
+      "id": 945,
+      "name": "Koszmar",
+      "reborn": 4
+    },
+    {
+      "id": 946,
+      "name": "Zmora",
+      "reborn": 4
+    },
+    {
+      "id": 947,
+      "name": "Mara",
+      "reborn": 4
+    },
+    {
+      "id": 948,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 949,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 950,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 951,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 952,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 953,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 954,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 955,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 956,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 957,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 958,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 959,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 960,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 961,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 962,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 963,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 964,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 965,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 966,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 967,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 968,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 969,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 970,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 971,
+      "name": "Prywatna Planeta"
+    },
+    {
+      "id": 972,
+      "name": "Capsule Corporation"
+    },
+    {
+      "id": 973,
+      "name": "Dom Goku"
+    },
+    {
+      "id": 974,
+      "name": "Targ"
+    },
+    {
+      "id": 975,
+      "name": "Dom Kriillina"
+    },
+    {
+      "id": 976,
+      "name": "Leśne wzgórza"
+    },
+    {
+      "id": 977,
+      "name": "Dom Goku"
+    },
+    {
+      "id": 978,
+      "name": "Okolice Plaży"
+    },
+    {
+      "id": 979,
+      "name": "Plaża"
+    },
+    {
+      "id": 980,
+      "name": "Ósma planeta Namek",
+      "reborn": 5
+    },
+    {
+      "id": 981,
+      "name": "Zamek wielkiego króla światów",
+      "reborn": 5
+    },
+    {
+      "id": 982,
+      "name": "Planeta Kaio ósmego wszechświata",
+      "reborn": 5
+    },
+    {
+      "id": 983,
+      "name": "Kresy",
+      "reborn": 5
+    },
+    {
+      "id": 984,
+      "name": "Centrum północy",
+      "reborn": 5
+    },
+    {
+      "id": 985,
+      "name": "Centrum wszechświata",
+      "reborn": 5
+    },
+    {
+      "id": 986,
+      "name": "Kalisto",
+      "reborn": 5
+    },
+    {
+      "id": 987,
+      "name": "Kosmos",
+      "reborn": 5
+    },
+    {
+      "id": 988,
+      "name": "Io",
+      "reborn": 5
+    },
+    {
+      "id": 989,
+      "name": "Europa",
+      "reborn": 5
+    },
+    {
+      "id": 990,
+      "name": "Ganimedes",
+      "reborn": 5
+    },
+    {
+      "id": 991,
+      "name": "Planeta Liguira",
+      "reborn": 5,
+      "aliases": [
+        "Liguira"
+      ]
+    },
+    {
+      "id": 992,
+      "name": "Sala treningowa",
+      "reborn": 5
+    },
+    {
+      "id": 993,
+      "name": "Ogród",
+      "reborn": 5
+    },
+    {
+      "id": 994,
+      "name": "Więzienie Galaktycznego patrolu",
+      "reborn": 5
+    },
+    {
+      "id": 995,
+      "name": "Juns",
+      "reborn": 5
+    },
+    {
+      "id": 996,
+      "name": "Statek Merusa",
+      "reborn": 5
+    },
+    {
+      "id": 997,
+      "name": "Namek",
+      "reborn": 5
+    },
+    {
+      "id": 998,
+      "name": "Namek-miejsce walki",
+      "reborn": 5
+    },
+    {
+      "id": 999,
+      "name": "Dom Nameczan",
+      "reborn": 5
+    },
+    {
+      "id": 1000,
+      "name": "Namek Wzgórza",
+      "reborn": 5
+    },
+    {
+      "id": 1001,
+      "name": "Dom"
+    },
+    {
+      "id": 1002,
+      "name": "Cmentarz"
+    },
+    {
+      "id": 1003,
+      "name": "Góry"
+    },
+    {
+      "id": 1004,
+      "name": "Stratosfera",
+      "reborn": 5
+    },
+    {
+      "id": 1005,
+      "name": "Namek Ostateczna walka",
+      "reborn": 5
+    },
+    {
+      "id": 1006,
+      "name": "Pustynna planeta",
+      "reborn": 5
+    },
+    {
+      "id": 1007,
+      "name": "Sala Czasu",
+      "reborn": 5
+    },
+    {
+      "id": 1008,
+      "name": "Galaktyczna sala treningowa",
+      "reborn": 5
+    },
+    {
+      "id": 1009,
+      "name": "Vegeta Dom"
+    },
+    {
+      "id": 1010,
+      "name": "Vegeta szkoła"
+    },
+    {
+      "id": 1011,
+      "name": "Vegeta pierwsza próba"
+    },
+    {
+      "id": 1012,
+      "name": "Vegeta Druga próba"
+    },
+    {
+      "id": 1013,
+      "name": "Planeta Man"
+    },
+    {
+      "id": 1014,
+      "name": "Planeta Dal"
+    },
+    {
+      "id": 1015,
+      "name": "Planeta Oria"
+    },
+    {
+      "id": 1016,
+      "name": "Planeta Lin"
+    },
+    {
+      "id": 1017,
+      "name": "Vegeta Pałac"
+    },
+    {
+      "id": 1018,
+      "name": "Vegeta pole bitwy"
+    },
+    {
+      "id": 1019,
+      "name": "Vegeta Odludzie"
+    },
+    {
+      "id": 1020,
+      "name": "Vegeta Decydująca próba"
+    },
+    {
+      "id": 1021,
+      "name": "Horreum"
+    },
+    {
+      "id": 1022,
+      "name": "Insula"
+    },
+    {
+      "id": 1023,
+      "name": "Latarnia morska"
+    },
+    {
+      "id": 1024,
+      "name": "Mauzoleum"
+    },
+    {
+      "id": 1025,
+      "name": "Anor"
+    },
+    {
+      "id": 1026,
+      "name": "Prancer"
+    },
+    {
+      "id": 1027,
+      "name": "Stardust"
+    },
+    {
+      "id": 1028,
+      "name": "Jaskinia Plant"
+    },
+    {
+      "id": 1029,
+      "name": "Wioska Plant"
+    },
+    {
+      "id": 1030,
+      "name": "Góry"
+    },
+    {
+      "id": 1031,
+      "name": "Samotnia"
+    },
+    {
+      "id": 1032,
+      "name": "Miejsce starcia"
+    },
+    {
+      "id": 1033,
+      "name": "Miejsce treningu"
+    },
+    {
+      "id": 1034,
+      "name": "Wyspa Żółwia"
+    },
+    {
+      "id": 1035,
+      "name": "Dom"
+    },
+    {
+      "id": 1036,
+      "name": "Miasto"
+    },
+    {
+      "id": 1037,
+      "name": "Lądowisko",
+      "reborn": 5
+    },
+    {
+      "id": 1038,
+      "name": "Miejsce ćwiczeń",
+      "reborn": 5
+    },
+    {
+      "id": 1039,
+      "name": "Stolica",
+      "reborn": 5
+    },
+    {
+      "id": 1040,
+      "name": "Dżungla",
+      "reborn": 5
+    },
+    {
+      "id": 1041,
+      "name": "Pustynia",
+      "reborn": 5
+    },
+    {
+      "id": 1042,
+      "name": "Miasto",
+      "reborn": 5
+    },
+    {
+      "id": 1043,
+      "name": "Góry",
+      "reborn": 5
+    },
+    {
+      "id": 1044,
+      "name": "Hiper Kuźnia"
+    },
+    {
+      "id": 1045,
+      "name": "Dom"
+    },
+    {
+      "id": 1046,
+      "name": "Era Mezozoiczna"
+    },
+    {
+      "id": 1047,
+      "name": "ALTERNATYWNY ŚWIAT"
+    },
+    {
+      "id": 1048,
+      "name": "PRYJĘCIE URODZINOWE"
+    },
+    {
+      "id": 1049,
+      "name": "Celebes"
+    },
+    {
+      "id": 1050,
+      "name": "Sumatra"
+    },
+    {
+      "id": 1051,
+      "name": "Borneo"
+    },
+    {
+      "id": 1052,
+      "name": "Zapadlisko",
+      "reborn": 5
+    },
+    {
+      "id": 1053,
+      "name": "Kuest",
+      "reborn": 5
+    },
+    {
+      "id": 1054,
+      "name": "Stoliwo",
+      "reborn": 5
+    },
+    {
+      "id": 1055,
+      "name": "Manadnok",
+      "reborn": 5
+    },
+    {
+      "id": 1056,
+      "name": "Gran",
+      "reborn": 5
+    },
+    {
+      "id": 1057,
+      "name": "Turnia",
+      "reborn": 5
+    },
+    {
+      "id": 1058,
+      "name": "Piarg",
+      "reborn": 5
+    },
+    {
+      "id": 1059,
+      "name": "Pasn",
+      "reborn": 5
+    },
+    {
+      "id": 1060,
+      "name": "Grzbiet",
+      "reborn": 5
+    },
+    {
+      "id": 1061,
+      "name": "Filar",
+      "reborn": 5
+    },
+    {
+      "id": 1062,
+      "name": "Kotlina",
+      "reborn": 5
+    },
+    {
+      "id": 1063,
+      "name": "Holweg",
+      "reborn": 5
+    },
+    {
+      "id": 1064,
+      "name": "Masyw",
+      "reborn": 5
+    },
+    {
+      "id": 1065,
+      "name": "Depresja",
+      "reborn": 5
+    },
+    {
+      "id": 1066,
+      "name": "Pagór",
+      "reborn": 5
+    },
+    {
+      "id": 1067,
+      "name": "Dom"
+    },
+    {
+      "id": 1068,
+      "name": "Miasto"
+    },
+    {
+      "id": 1069,
+      "name": "Wioska"
+    },
+    {
+      "id": 1070,
+      "name": "Jaskinia"
+    },
+    {
+      "id": 1071,
+      "name": "Dom"
+    },
+    {
+      "id": 1072,
+      "name": "Leśna droga"
+    },
+    {
+      "id": 1073,
+      "name": "Bezdroża"
+    },
+    {
+      "id": 1074,
+      "name": "Wioska"
+    },
+    {
+      "id": 1075,
+      "name": "Wzgórze",
+      "reborn": 5
+    },
+    {
+      "id": 1076,
+      "name": "Pod Barierą",
+      "reborn": 5
+    },
+    {
+      "id": 1077,
+      "name": "Światłość",
+      "reborn": 5
+    },
+    {
+      "id": 1078,
+      "name": "Głębia światłości",
+      "reborn": 5
+    },
+    {
+      "id": 1079,
+      "name": "Koniec światłości",
+      "reborn": 5
+    },
+    {
+      "id": 1080,
+      "name": "Poza barierą",
+      "reborn": 5
+    },
+    {
+      "id": 1081,
+      "name": "W barierze",
+      "reborn": 5
+    },
+    {
+      "id": 1082,
+      "name": "Zniszczona bariera",
+      "reborn": 5
+    },
+    {
+      "id": 1083,
+      "name": "Krater",
+      "reborn": 5
+    },
+    {
+      "id": 1084,
+      "name": "Dom"
+    },
+    {
+      "id": 1085,
+      "name": "Sen"
+    },
+    {
+      "id": 1086,
+      "name": "Mroczny staw"
+    },
+    {
+      "id": 1087,
+      "name": "Miejsce treningu Roshiego",
+      "reborn": 5
+    },
+    {
+      "id": 1088,
+      "name": "Kuźnia Huhyaj",
+      "reborn": 5
+    },
+    {
+      "id": 1089,
+      "name": "Skraj Krateru",
+      "reborn": 5
+    },
+    {
+      "id": 1090,
+      "name": "Wyspa na lawie",
+      "reborn": 5
+    },
+    {
+      "id": 1091,
+      "name": "Wzgórze - zachód",
+      "reborn": 5
+    },
+    {
+      "id": 1092,
+      "name": "Wysokie Góry",
+      "reborn": 5
+    },
+    {
+      "id": 1093,
+      "name": "Moro - Ziemia",
+      "reborn": 5
+    },
+    {
+      "id": 1094,
+      "name": "Półświadomość",
+      "reborn": 5
+    },
+    {
+      "id": 1095,
+      "name": "Moro - Ziemia - Kraniec",
+      "reborn": 5
+    },
+    {
+      "id": 1096,
+      "name": "Rezydencja Satana",
+      "reborn": 5
+    },
+    {
+      "id": 1097,
+      "name": "Namek - centrum",
+      "reborn": 5
+    },
+    {
+      "id": 1098,
+      "name": "Okolice domu"
+    },
+    {
+      "id": 1099,
+      "name": "Planeta koszmaru"
+    },
+    {
+      "id": 1100,
+      "name": "Podziemne przejście"
+    },
+    {
+      "id": 1101,
+      "name": "Zamek Draculi"
+    },
+    {
+      "id": 1102,
+      "name": "Planeta Sadal z innej lini czasowej - Dom",
+      "reborn": 0
+    },
+    {
+      "id": 1103,
+      "name": "Planeta Sadal z innej lini czasowej - Dziedziniec",
+      "reborn": 0
+    },
+    {
+      "id": 1104,
+      "name": "Planeta Sadal z innej lini czasowej - Las",
+      "reborn": 0
+    },
+    {
+      "id": 1105,
+      "name": "Zamek królewski Króla Sadali",
+      "reborn": 0
+    },
+    {
+      "id": 1106,
+      "name": "Sala Tronowa"
+    },
+    {
+      "id": 1107,
+      "name": "Lądowisko planety sadali"
+    },
+    {
+      "id": 1108,
+      "name": "Planeta Yardrat z innej lini czasowej",
+      "reborn": 0
+    },
+    {
+      "id": 1109,
+      "name": "Yardrat - zachód z innej lini czasowej",
+      "reborn": 0
+    },
+    {
+      "id": 1110,
+      "name": "Statek bandytów",
+      "reborn": 0
+    },
+    {
+      "id": 1111,
+      "name": "Planete Eurilia z innej lini czasowej",
+      "reborn": 0,
+      "aliases": [
+        "Planeta Eurilia z innej lini czasowej"
+      ]
+    },
+    {
+      "id": 1112,
+      "name": "Wejscie do świątyni"
+    },
+    {
+      "id": 1113,
+      "name": "Świątynia Sayian z innej lini czasowej",
+      "reborn": 0
+    },
+    {
+      "id": 1114,
+      "name": "Planeta Sadal z innej lini czasowej - Okolice domu",
+      "reborn": 0
+    },
+    {
+      "id": 1115,
+      "name": "Planeta Sadal z innej lini czasowej - Dziedziniec zamkowy",
+      "reborn": 0
+    },
+    {
+      "id": 1116,
+      "name": "Międzywymiarowa pustka",
+      "reborn": 0,
+      "aliases": [
+        "Między wymiarowa pustka"
+      ]
+    },
+    {
+      "id": 1117,
+      "name": "Cela więzienna",
+      "reborn": 1
+    },
+    {
+      "id": 1118,
+      "name": "Korytarz więzienny",
+      "reborn": 1
+    },
+    {
+      "id": 1119,
+      "name": "Więzienna planeta",
+      "reborn": 1
+    },
+    {
+      "id": 1120,
+      "name": "Więzienna planeta - miejsce walki",
+      "reborn": 1
+    },
+    {
+      "id": 1121,
+      "name": "Rozpadająca się więzienna planeta",
+      "reborn": 1
+    },
+    {
+      "id": 1122,
+      "name": "Planeta we wszechświecie jedynastym",
+      "reborn": 1,
+      "aliases": [
+        "Planeta we wszechświecie jedenastym"
+      ]
+    },
+    {
+      "id": 1123,
+      "name": "Stalowa planeta w trzecim wszechświecie",
+      "reborn": 1
+    },
+    {
+      "id": 1124,
+      "name": "Planeta w nowym wszechświecie",
+      "reborn": 1
+    },
+    {
+      "id": 1125,
+      "name": "Wszechświatowe drzewo",
+      "reborn": 1
+    },
+    {
+      "id": 1126,
+      "name": "Czarna dziura",
+      "reborn": 1
+    },
+    {
+      "id": 1127,
+      "name": "Dziwna Planeta",
+      "reborn": 1
+    },
+    {
+      "id": 1128,
+      "name": "Planeta Kaioshin'a Czasoprzestrzeni",
+      "reborn": 1
+    },
+    {
+      "id": 1129,
+      "name": "Mistyczna Jaskinia",
+      "reborn": 1
+    },
+    {
+      "id": 1130,
+      "name": "Pałac Uduviy",
+      "reborn": 1
+    },
+    {
+      "id": 1131,
+      "name": "Miejsce Odrodzenia",
+      "reborn": 1
+    },
+    {
+      "id": 1132,
+      "name": "Dom"
+    },
+    {
+      "id": 1133,
+      "name": "Centrum Handlowe"
+    },
+    {
+      "id": 1134,
+      "name": "Las"
+    },
+    {
+      "id": 1135,
+      "name": "Dom - czas zbiorów",
+      "reborn": 5
+    },
+    {
+      "id": 1136,
+      "name": "Rezydencja Bulmy",
+      "reborn": 5
+    },
+    {
+      "id": 1137,
+      "name": "Statek Galaktycznego patrolu",
+      "reborn": 5
+    },
+    {
+      "id": 1138,
+      "name": "Siedziba Galaktycznego patrolu",
+      "reborn": 5
+    },
+    {
+      "id": 1139,
+      "name": "Warzywniak rodziny Son",
+      "reborn": 5
+    },
+    {
+      "id": 1140,
+      "name": "Nieznane tereny",
+      "reborn": 5
+    },
+    {
+      "id": 1141,
+      "name": "Posterunek policji",
+      "reborn": 5
+    },
+    {
+      "id": 1142,
+      "name": "Sąsiedztwo Posterunku",
+      "reborn": 5
+    },
+    {
+      "id": 1143,
+      "name": "Posterunek wnętrze",
+      "reborn": 5
+    },
+    {
+      "id": 1144,
+      "name": "Sosnowy Bór",
+      "reborn": 5
+    },
+    {
+      "id": 1145,
+      "name": "Korytarz czasoprzestrzenny"
+    },
+    {
+      "id": 1146,
+      "name": "Planeta Cereal - przeszłość"
+    },
+    {
+      "id": 1147,
+      "name": "Kościół"
+    },
+    {
+      "id": 1148,
+      "name": "Zniszczona wioska nameczan"
+    },
+    {
+      "id": 1149,
+      "name": "Korytarz czasoprzestrzenny - powrót"
+    },
+    {
+      "id": 1150,
+      "name": "Drugi warzywniak rodziny Son",
+      "reborn": 5
+    },
+    {
+      "id": 1151,
+      "name": "Spiżarnia Chi-Chi",
+      "reborn": 5
+    },
+    {
+      "id": 1152,
+      "name": "Miejsce treningu Piccolo",
+      "reborn": 5
+    },
+    {
+      "id": 1153,
+      "name": "Tyły rezydencji Bulmy",
+      "reborn": 5
+    },
+    {
+      "id": 1154,
+      "name": "Nieużytki",
+      "reborn": 5
+    },
+    {
+      "id": 1155,
+      "name": "Nieużytki - północ",
+      "reborn": 5
+    },
+    {
+      "id": 1156,
+      "name": "Posiadłość Kuririn'a",
+      "reborn": 5
+    },
+    {
+      "id": 1157,
+      "name": "Posiadłość Gohana",
+      "reborn": 5
+    },
+    {
+      "id": 1158,
+      "name": "Wąwóz",
+      "reborn": 5
+    },
+    {
+      "id": 1159,
+      "name": "Wąwóz głębia",
+      "reborn": 5
+    },
+    {
+      "id": 1160,
+      "name": "Plaża"
+    },
+    {
+      "id": 1161,
+      "name": "Ocean"
+    },
+    {
+      "id": 1162,
+      "name": "Himalaje"
+    },
+    {
+      "id": 1163,
+      "name": "Statek Bulmy"
+    },
+    {
+      "id": 1164,
+      "name": "Ogrody Bulmy",
+      "reborn": 5
+    },
+    {
+      "id": 1165,
+      "name": "Tyły domu",
+      "reborn": 5
+    },
+    {
+      "id": 1166,
+      "name": "Lądowisko Satana",
+      "reborn": 5
+    },
+    {
+      "id": 1167,
+      "name": "Statek Satana",
+      "reborn": 5
+    },
+    {
+      "id": 1168,
+      "name": "Linia Startu",
+      "reborn": 5
+    },
+    {
+      "id": 1169,
+      "name": "Rozdroże",
+      "reborn": 5
+    },
+    {
+      "id": 1170,
+      "name": "Ścieżka Lasu",
+      "reborn": 5
+    },
+    {
+      "id": 1171,
+      "name": "Ścieżka lasu - koniec",
+      "reborn": 5
+    },
+    {
+      "id": 1172,
+      "name": "Ścieżka pustyni",
+      "reborn": 5
+    },
+    {
+      "id": 1173,
+      "name": "Ścieżka pustyni - ruchome piaski",
+      "reborn": 5
+    },
+    {
+      "id": 1174,
+      "name": "Planeta technologii"
+    },
+    {
+      "id": 1175,
+      "name": "Super Kopalnia"
+    },
+    {
+      "id": 1176,
+      "name": "Super Kopalnia - głębia"
+    },
+    {
+      "id": 1177,
+      "name": "Łąka Wielkanocna"
+    },
+    {
+      "id": 1178,
+      "name": "Droga do wioski"
+    },
+    {
+      "id": 1179,
+      "name": "Świąteczna wioska"
+    },
+    {
+      "id": 1180,
+      "name": "Strome Urwisko - podnóże",
+      "reborn": 5
+    },
+    {
+      "id": 1181,
+      "name": "Strome Urwisko - Lawina",
+      "reborn": 5
+    },
+    {
+      "id": 1182,
+      "name": "Strome urwisko - szczyt",
+      "reborn": 5
+    },
+    {
+      "id": 1183,
+      "name": "Wejście na stadion",
+      "reborn": 5
+    },
+    {
+      "id": 1184,
+      "name": "Arena",
+      "reborn": 5
+    },
+    {
+      "id": 1185,
+      "name": "Restauracja nad urwiskiem",
+      "reborn": 5
+    },
+    {
+      "id": 1186,
+      "name": "Górzysty Las",
+      "reborn": 5
+    },
+    {
+      "id": 1187,
+      "name": "Przepaść",
+      "reborn": 5
+    },
+    {
+      "id": 1188,
+      "name": "Pałac Beerusa",
+      "reborn": 5
+    },
+    {
+      "id": 1189,
+      "name": "Sala treningowa Beerusa",
+      "reborn": 5
+    },
+    {
+      "id": 1190,
+      "name": "DOM GENIALNEGO ŻÓŁWIA"
+    },
+    {
+      "id": 1191,
+      "name": "DOM"
+    },
+    {
+      "id": 1192,
+      "name": "WIOSKA PRZY PLAŻY"
+    },
+    {
+      "id": 1193,
+      "name": "PLAŻA"
+    },
+    {
+      "id": 1194,
+      "name": "Ogrody planety Beerusa",
+      "reborn": 5
+    },
+    {
+      "id": 1195,
+      "name": "Wymiar treningowy - Poziom 1",
+      "reborn": 5
+    },
+    {
+      "id": 1196,
+      "name": "Wymiar treningowy - Poziom 2",
+      "reborn": 5
+    },
+    {
+      "id": 1197,
+      "name": "Wymiar treningowy - Poziom 3",
+      "reborn": 5
+    },
+    {
+      "id": 1198,
+      "name": "Wymiar treningowy - Poziom 4",
+      "reborn": 5
+    },
+    {
+      "id": 1199,
+      "name": "Wymiar treningowy - Poziom 5",
+      "reborn": 5
+    },
+    {
+      "id": 1200,
+      "name": "Wymiar treningowy - Poziom 6",
+      "reborn": 5
+    },
+    {
+      "id": 1201,
+      "name": "Wymiar treningowy - Poziom 7",
+      "reborn": 5
+    },
+    {
+      "id": 1202,
+      "name": "Wymiar treningowy - Poziom 8",
+      "reborn": 5
+    },
+    {
+      "id": 1203,
+      "name": "Wymiar treningowy - Poziom 9",
+      "reborn": 5
+    },
+    {
+      "id": 1204,
+      "name": "Dom Goku i ChiChi"
+    },
+    {
+      "id": 1205,
+      "name": "Dom Bulmy"
+    },
+    {
+      "id": 1206,
+      "name": "Dolina przed jeziorem"
+    },
+    {
+      "id": 1207,
+      "name": "FESTIWAL HALLOWEEN"
+    },
+    {
+      "id": 1208,
+      "name": "NAWIEDZONY DOM"
+    },
+    {
+      "id": 1209,
+      "name": "KRATER W LESIE"
+    },
+    {
+      "id": 1210,
+      "name": "Wymiar treningowy - Poziom 10",
+      "reborn": 5
+    },
+    {
+      "id": 1211,
+      "name": "Wymiar treningowy - Poziom 11",
+      "reborn": 5
+    },
+    {
+      "id": 1212,
+      "name": "Dziwne miejsce",
+      "reborn": 5
+    },
+    {
+      "id": 1213,
+      "name": "Planeta Neso - wszechświat piąty",
+      "reborn": 5
+    },
+    {
+      "id": 1214,
+      "name": "Wioska Fush",
+      "reborn": 5
+    },
+    {
+      "id": 1215,
+      "name": "Droga na turniej",
+      "reborn": 5
+    },
+    {
+      "id": 1216,
+      "name": "Turniej Neso - Rejestracja",
+      "reborn": 5
+    },
+    {
+      "id": 1217,
+      "name": "Turniej Neso - Bitwa królewska",
+      "reborn": 5
+    },
+    {
+      "id": 1218,
+      "name": "Turniej Neso - Główna arena",
+      "reborn": 5
+    },
+    {
+      "id": 1219,
+      "name": "Droga powrotna",
+      "reborn": 5
+    },
+    {
+      "id": 1220,
+      "name": "Dom"
+    },
+    {
+      "id": 1221,
+      "name": "Miasto"
+    },
+    {
+      "id": 1222,
+      "name": "Centrum miasta"
+    },
+    {
+      "id": 1223,
+      "name": "Przesmyk"
+    },
+    {
+      "id": 1224,
+      "name": "Ciemny las"
+    },
+    {
+      "id": 1225,
+      "name": "Zamarznięte jezioro"
+    },
+    {
+      "id": 1226,
+      "name": "Wejście do posiadłości",
+      "reborn": 5
+    },
+    {
+      "id": 1227,
+      "name": "Planeta Teyeya",
+      "reborn": 5
+    },
+    {
+      "id": 1228,
+      "name": "Stolica Teyeya",
+      "reborn": 5
+    },
+    {
+      "id": 1229,
+      "name": "Tajemnicza jaskinia",
+      "reborn": 5
+    },
+    {
+      "id": 1230,
+      "name": "Układ planet Kosura",
+      "reborn": 5
+    },
+    {
+      "id": 1231,
+      "name": "Planeta Ko",
+      "reborn": 5
+    },
+    {
+      "id": 1232,
+      "name": "Opętany umysł",
+      "reborn": 5
+    },
+    {
+      "id": 1233,
+      "name": "Planet Su",
+      "reborn": 5,
+      "aliases": [
+        "Planeta Su"
+      ]
+    },
+    {
+      "id": 1234,
+      "name": "Opętany umysł II",
+      "reborn": 5
+    },
+    {
+      "id": 1235,
+      "name": "Planeta Ra",
+      "reborn": 5
+    },
+    {
+      "id": 1236,
+      "name": "Dom"
+    },
+    {
+      "id": 1237,
+      "name": "Miasto"
+    },
+    {
+      "id": 1238,
+      "name": "Wymiar Carsa"
+    },
+    {
+      "id": 1239,
+      "name": "Miejsce spotkania",
+      "reborn": 5
+    },
+    {
+      "id": 1240,
+      "name": "Dolina zagłady",
+      "reborn": 5
+    },
+    {
+      "id": 1241,
+      "name": "Posiadłość Kolekcjonera",
+      "reborn": 5
+    },
+    {
+      "id": 1242,
+      "name": "Niebiańska Kuźnia",
+      "reborn": 5
+    },
+    {
+      "id": 1243,
+      "name": "Laboratorium Bulmy",
+      "reborn": 5
+    },
+    {
+      "id": 1244,
+      "name": "Nowa Niebiańska kuźnia - wejście",
+      "reborn": 5
+    },
+    {
+      "id": 1245,
+      "name": "Nowa niebiańska kuźnia",
+      "reborn": 5
+    },
+    {
+      "id": 1246,
+      "name": "Tajemnicza planeta",
+      "reborn": 5
+    },
+    {
+      "id": 1247,
+      "name": "Planeta Natarp",
+      "reborn": 5
+    },
+    {
+      "id": 1248,
+      "name": "Niezamieszkała planeta",
+      "reborn": 5
+    },
+    {
+      "id": 1249,
+      "name": "Dom"
+    },
+    {
+      "id": 1250,
+      "name": "Centrum Miasta"
+    },
+    {
+      "id": 1251,
+      "name": "Wymiar Carsa"
+    },
+    {
+      "id": 1252,
+      "name": "Komnata treningowa",
+      "reborn": 5
+    },
+    {
+      "id": 1253,
+      "name": "Kamienna komnata",
+      "reborn": 5
+    },
+    {
+      "id": 1254,
+      "name": "Komnata mocy",
+      "reborn": 5
+    },
+    {
+      "id": 1255,
+      "name": "Sala pojedynków",
+      "reborn": 5
+    },
+    {
+      "id": 1256,
+      "name": "Kryształowa Jaskinia",
+      "reborn": 5
+    },
+    {
+      "id": 1257,
+      "name": "Korytarz łowców",
+      "reborn": 5
+    },
+    {
+      "id": 1258,
+      "name": "Schody do perfekcji",
+      "reborn": 5
+    },
+    {
+      "id": 1259,
+      "name": "Komnata koncentracji",
+      "reborn": 5
+    },
+    {
+      "id": 1260,
+      "name": "Martwa planeta",
+      "reborn": 5
+    },
+    {
+      "id": 1261,
+      "name": "Komnata doświadczenia",
+      "reborn": 5
+    },
+    {
+      "id": 1262,
+      "name": "Planeta Hamoha",
+      "reborn": 5
+    },
+    {
+      "id": 1263,
+      "name": "Pole uprawne"
+    },
+    {
+      "id": 1264,
+      "name": "Planeta Beerusa"
+    },
+    {
+      "id": 1265,
+      "name": "Sala na planecie Beerusa"
+    },
+    {
+      "id": 1266,
+      "name": "Planeta Astron-7",
+      "reborn": 5
+    },
+    {
+      "id": 1267,
+      "name": "Planeta Zefyra",
+      "reborn": 5
+    },
+    {
+      "id": 1268,
+      "name": "Planeta Cytelon",
+      "reborn": 5
+    },
+    {
+      "id": 1269,
+      "name": "Planeta Astra Prime",
+      "reborn": 5
+    },
+    {
+      "id": 1270,
+      "name": "Planeta Neptara",
+      "reborn": 5
+    },
+    {
+      "id": 1271,
+      "name": "Planeta Pyrothia",
+      "reborn": 5
+    },
+    {
+      "id": 1272,
+      "name": "Planeta Eldoria",
+      "reborn": 5
+    },
+    {
+      "id": 1273,
+      "name": "Planeta Lyraxis",
+      "reborn": 5
+    },
+    {
+      "id": 1274,
+      "name": "Planeta Chronos Minor",
+      "reborn": 5
+    },
+    {
+      "id": 1275,
+      "name": "Planeta Solara",
+      "reborn": 5
+    },
+    {
+      "id": 1276,
+      "name": "POLE"
+    },
+    {
+      "id": 1277,
+      "name": "WZGÓRZA"
+    },
+    {
+      "id": 1278,
+      "name": "PUSTYNIA"
+    },
+    {
+      "id": 1279,
+      "name": "Planeta Quantaris",
+      "reborn": 5
+    },
+    {
+      "id": 1280,
+      "name": "Planeta Luminora",
+      "reborn": 5
+    },
+    {
+      "id": 1281,
+      "name": "Planeta Luminora - Jaskinia Mocy",
+      "reborn": 5
+    },
+    {
+      "id": 1282,
+      "name": "Planeta Nebuloria",
+      "reborn": 5
+    },
+    {
+      "id": 1283,
+      "name": "Planeta Sylvaria",
+      "reborn": 5
+    },
+    {
+      "id": 1284,
+      "name": "Planeta Etherion",
+      "reborn": 5
+    },
+    {
+      "id": 1285,
+      "name": "Planeta Etherion - Okolice wioski",
+      "reborn": 5
+    },
+    {
+      "id": 1286,
+      "name": "Planeta Astraflux",
+      "reborn": 5
+    },
+    {
+      "id": 1287,
+      "name": "Planeta Astraflux - Miasto",
+      "reborn": 5
+    },
+    {
+      "id": 1288,
+      "name": "Planeta Celestria",
+      "reborn": 5
+    },
+    {
+      "id": 1289,
+      "name": "Planeta Celestria - Zakazana komnata",
+      "reborn": 5
+    },
+    {
+      "id": 1290,
+      "name": "Nawiedzony Dwór"
+    },
+    {
+      "id": 1291,
+      "name": "Zaklęty Las"
+    },
+    {
+      "id": 1292,
+      "name": "Wyjście z Nawiedzonego dworu"
+    },
+    {
+      "id": 1293,
+      "name": "Planeta Xylotheon",
+      "reborn": 5
+    },
+    {
+      "id": 1294,
+      "name": "Planeta Typhoonara",
+      "reborn": 5
+    },
+    {
+      "id": 1295,
+      "name": "Planeta Lunovia",
+      "reborn": 5
+    },
+    {
+      "id": 1296,
+      "name": "Planeta Ethereos",
+      "reborn": 5
+    },
+    {
+      "id": 1297,
+      "name": "Planeta Quanticora",
+      "reborn": 5
+    },
+    {
+      "id": 1298,
+      "name": "Planeta Vermilion-9",
+      "reborn": 5
+    },
+    {
+      "id": 1299,
+      "name": "Planeta Arcanara",
+      "reborn": 5
+    },
+    {
+      "id": 1300,
+      "name": "Planeta Crystallax",
+      "reborn": 5
+    },
+    {
+      "id": 1301,
+      "name": "Planeta Luminexa",
+      "reborn": 5
+    },
+    {
+      "id": 1302,
+      "name": "Planeta Etheralis",
+      "reborn": 5
+    },
+    {
+      "id": 1303,
+      "name": "Planeta Elyrian",
+      "reborn": 5
+    },
+    {
+      "id": 1304,
+      "name": "Dom"
+    },
+    {
+      "id": 1305,
+      "name": "Podwórko"
+    },
+    {
+      "id": 1306,
+      "name": "Centrum Miasta"
+    },
+    {
+      "id": 1307,
+      "name": "Gravitumbrion",
+      "reborn": 5
+    },
+    {
+      "id": 1308,
+      "name": "Gravitumbrion - Zagłębienia Grawitacyjne",
+      "reborn": 5
+    },
+    {
+      "id": 1309,
+      "name": "Plazmokwanta",
+      "reborn": 5
+    },
+    {
+      "id": 1310,
+      "name": "Stellarnox",
+      "reborn": 5
+    },
+    {
+      "id": 1311,
+      "name": "Galaxionix",
+      "reborn": 5
+    },
+    {
+      "id": 1312,
+      "name": "Lunarisfera",
+      "reborn": 5
+    },
+    {
+      "id": 1313,
+      "name": "Orbitrium",
+      "reborn": 5
+    },
+    {
+      "id": 1314,
+      "name": "Aurorium",
+      "reborn": 5
+    },
+    {
+      "id": 1315,
+      "name": "Kinetarium",
+      "reborn": 5
+    },
+    {
+      "id": 1316,
+      "name": "Ecliptaria",
+      "reborn": 5
+    },
+    {
+      "id": 1317,
+      "name": "Zatoka Błogosławionego Brzegu"
+    },
+    {
+      "id": 1318,
+      "name": "Port Marzeń"
+    },
+    {
+      "id": 1319,
+      "name": "Dom"
+    },
+    {
+      "id": 1320,
+      "name": "Wioska Rybacka",
+      "reborn": 5
+    },
+    {
+      "id": 1321,
+      "name": "Oxo-Świątynia",
+      "reborn": 5
+    },
+    {
+      "id": 1322,
+      "name": "Wyrwa Międzywymiarowa - Początek",
+      "reborn": 5
+    },
+    {
+      "id": 1323,
+      "name": "Wyrwa Międzywymiarowa - Środek",
+      "reborn": 5
+    },
+    {
+      "id": 1324,
+      "name": "Wyrwa Międzywymiarowa - Koniec",
+      "reborn": 5
+    },
+    {
+      "id": 1325,
+      "name": "Kaminama",
+      "reborn": 5
+    },
+    {
+      "id": 1326,
+      "name": "Oxo",
+      "reborn": 5
+    },
+    {
+      "id": 1327,
+      "name": "Rezydencja Rodziny Son",
+      "reborn": 5
+    },
+    {
+      "id": 1328,
+      "name": "Rekreacyjna Posiadłość Bulmy",
+      "reborn": 5
+    },
+    {
+      "id": 1329,
+      "name": "Planeta Champy",
+      "reborn": 5
+    },
+    {
+      "id": 1330,
+      "name": "Aquarium",
+      "reborn": 5
+    },
+    {
+      "id": 1331,
+      "name": "Wioska Wielkanocna"
+    },
+    {
+      "id": 1332,
+      "name": "Magiczny Las Króliczych Jaj"
+    },
+    {
+      "id": 1333,
+      "name": "Wielkanocna Wyspa"
+    },
+    {
+      "id": 1334,
+      "name": "Bruma",
+      "reborn": 5
+    },
+    {
+      "id": 1335,
+      "name": "Bruma - Pałac Wszechmogącego",
+      "reborn": 5
+    },
+    {
+      "id": 1336,
+      "name": "Alerce",
+      "reborn": 5
+    },
+    {
+      "id": 1337,
+      "name": "Zelgadia",
+      "reborn": 5
+    },
+    {
+      "id": 1338,
+      "name": "Equuleus",
+      "reborn": 5
+    },
+    {
+      "id": 1339,
+      "name": "Mariposa",
+      "reborn": 5
+    },
+    {
+      "id": 1340,
+      "name": "Huerto",
+      "reborn": 5
+    },
+    {
+      "id": 1341,
+      "name": "Wioska Anielskich Wysłanników",
+      "reborn": 5
+    },
+    {
+      "id": 1342,
+      "name": "Komnata Trenerów",
+      "reborn": 5
+    },
+    {
+      "id": 1343,
+      "name": "Świątynia Wiedzy",
+      "reborn": 5
+    },
+    {
+      "id": 1344,
+      "name": "Planeta Festiva Południe"
+    },
+    {
+      "id": 1345,
+      "name": "Port Kosmiczny"
+    },
+    {
+      "id": 1346,
+      "name": "Planeta Festiva"
+    },
+    {
+      "id": 1347,
+      "name": "Plaża Świetlików"
+    },
+    {
+      "id": 1348,
+      "name": "Targ Rzemieślników"
+    },
+    {
+      "id": 1349,
+      "name": "Księżycowa Zatoka"
+    },
+    {
+      "id": 1350,
+      "name": "Okolice Zamku Królewskiego - Iluzja",
+      "reborn": 5,
+      "aliases": [
+        "Okolice Zamku Króleweskiego - Iluzja"
+      ]
+    },
+    {
+      "id": 1351,
+      "name": "Miejsce Lądowanie Raditza - Iluzja",
+      "reborn": 5,
+      "aliases": [
+        "Miejsce Lądowania Raditza - Iluzja"
+      ]
+    },
+    {
+      "id": 1352,
+      "name": "Sektor Zachodni Namek - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1353,
+      "name": "Sektor Centralny Namek- Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1354,
+      "name": "Cell Game - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1355,
+      "name": "Siedziba Babidiego - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1356,
+      "name": "Plac Treningowy Babidiego - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1357,
+      "name": "Miejsce życzenia - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1358,
+      "name": "Pole złych smoków - Iluzja",
+      "reborn": 5
+    },
+    {
+      "id": 1359,
+      "name": "Pałac Aniołów",
+      "reborn": 5
+    },
+    {
+      "id": 1360,
+      "name": "Rezydencja Gilgamesha",
+      "reborn": 5
+    },
+    {
+      "id": 1361,
+      "name": "Świątynia Hakaishinów",
+      "reborn": 5
+    },
+    {
+      "id": 1362,
+      "name": "Mroczna Posiadłość"
+    },
+    {
+      "id": 1363,
+      "name": "Korytarze Cienia"
+    },
+    {
+      "id": 1364,
+      "name": "Komnata Luster"
+    },
+    {
+      "id": 1365,
+      "name": "Hakaira",
+      "reborn": 6
+    },
+    {
+      "id": 1366,
+      "name": "Latifundio",
+      "reborn": 6
+    },
+    {
+      "id": 1367,
+      "name": "Estanque",
+      "reborn": 6
+    },
+    {
+      "id": 1368,
+      "name": "Laberinto",
+      "reborn": 6
+    },
+    {
+      "id": 1369,
+      "name": "Ardiente",
+      "reborn": 6
+    },
+    {
+      "id": 1370,
+      "name": "Pesadilla",
+      "reborn": 6
+    },
+    {
+      "id": 1371,
+      "name": "Cementerio",
+      "reborn": 6
+    },
+    {
+      "id": 1372,
+      "name": "Exterminio",
+      "reborn": 6
+    },
+    {
+      "id": 1373,
+      "name": "Caos",
+      "reborn": 6
+    },
+    {
+      "id": 1374,
+      "name": "Campamento",
+      "reborn": 6
+    },
+    {
+      "id": 1375,
+      "name": "Mabruumata",
+      "reborn": 6
+    },
+    {
+      "id": 1376,
+      "name": "Vofepau",
+      "reborn": 6
+    },
+    {
+      "id": 1377,
+      "name": "Arcu",
+      "reborn": 6
+    },
+    {
+      "id": 1378,
+      "name": "Ens",
+      "reborn": 6
+    },
+    {
+      "id": 1379,
+      "name": "Chahelur",
+      "reborn": 6
+    },
+    {
+      "id": 1380,
+      "name": "Strioztlis",
+      "reborn": 6
+    },
+    {
+      "id": 1381,
+      "name": "Ticuti",
+      "reborn": 6
+    },
+    {
+      "id": 1382,
+      "name": "Banotu",
+      "reborn": 6
+    },
+    {
+      "id": 1383,
+      "name": "Ketote",
+      "reborn": 6
+    },
+    {
+      "id": 1384,
+      "name": "Dalatadu",
+      "reborn": 6
+    },
+    {
+      "id": 1385,
+      "name": "Smocza Jaskinia"
+    },
+    {
+      "id": 1386,
+      "name": "Kraina Gwiezdnych Płatków"
+    },
+    {
+      "id": 1387,
+      "name": "Orbitalna Fabryka Świętego Mikołaja"
+    },
+    {
+      "id": 1388,
+      "name": "Kometa Wigilii"
+    },
+    {
+      "id": 1389,
+      "name": "Sounds Good - Północ",
+      "reborn": 6
+    },
+    {
+      "id": 1390,
+      "name": "Sounds Good - Centrum",
+      "reborn": 6
+    },
+    {
+      "id": 1391,
+      "name": "Sounds Good - Zachód",
+      "reborn": 6
+    },
+    {
+      "id": 1392,
+      "name": "Sounds Good - Południe",
+      "reborn": 6
+    },
+    {
+      "id": 1393,
+      "name": "Joku",
+      "reborn": 6
+    },
+    {
+      "id": 1394,
+      "name": "Kryształowa planeta",
+      "reborn": 6
+    },
+    {
+      "id": 1395,
+      "name": "Xaradia",
+      "reborn": 6
+    },
+    {
+      "id": 1396,
+      "name": "Xaradia - Pałac",
+      "reborn": 6
+    },
+    {
+      "id": 1397,
+      "name": "Własny strach",
+      "reborn": 6
+    },
+    {
+      "id": 1398,
+      "name": "Sounds Good - Wschód",
+      "reborn": 6
+    },
+    {
+      "id": 1399,
+      "name": "Sala Balowa"
+    },
+    {
+      "id": 1400,
+      "name": "Magazyn"
+    },
+    {
+      "id": 1401,
+      "name": "Platforma Widokowa"
+    },
+    {
+      "id": 1402,
+      "name": "Cephiro",
+      "reborn": 6
+    },
+    {
+      "id": 1403,
+      "name": "Heraklia",
+      "reborn": 6
+    },
+    {
+      "id": 1404,
+      "name": "Chizerta",
+      "reborn": 6
+    },
+    {
+      "id": 1405,
+      "name": "PJ6Y4",
+      "reborn": 6
+    },
+    {
+      "id": 1406,
+      "name": "Boeki",
+      "reborn": 6
+    },
+    {
+      "id": 1407,
+      "name": "Primera",
+      "reborn": 6
+    },
+    {
+      "id": 1408,
+      "name": "Segunda",
+      "reborn": 6
+    },
+    {
+      "id": 1409,
+      "name": "Tercera",
+      "reborn": 6
+    },
+    {
+      "id": 1410,
+      "name": "Cuarta",
+      "reborn": 6
+    },
+    {
+      "id": 1411,
+      "name": "Quanta",
+      "reborn": 6
+    },
+    {
+      "id": 1412,
+      "name": "Wiosenna Polana"
+    },
+    {
+      "id": 1413,
+      "name": "Miasteczko Wielkanocne"
+    },
+    {
+      "id": 1414,
+      "name": "Leśna Kryjówka"
+    },
+    {
+      "id": 1415,
+      "name": "Ozora",
+      "reborn": 6
+    },
+    {
+      "id": 1416,
+      "name": "Hildena",
+      "reborn": 6
+    },
+    {
+      "id": 1417,
+      "name": "Planeta 4 Sfer",
+      "reborn": 6
+    },
+    {
+      "id": 1418,
+      "name": "Planeta 4 sfer - centrum",
+      "reborn": 6
+    },
+    {
+      "id": 1419,
+      "name": "Sanktuarium Żywiołów",
+      "reborn": 6
+    },
+    {
+      "id": 1420,
+      "name": "Kaplica Ognia",
+      "reborn": 6
+    },
+    {
+      "id": 1421,
+      "name": "Kaplica Wody",
+      "reborn": 6
+    },
+    {
+      "id": 1422,
+      "name": "Kaplica Powietrza",
+      "reborn": 6
+    },
+    {
+      "id": 1423,
+      "name": "Kaplica Ziemi",
+      "reborn": 6
+    },
+    {
+      "id": 1424,
+      "name": "Otchłań Żywiołów",
+      "reborn": 6
+    },
+    {
+      "id": 1425,
+      "name": "Słoneczny Brzeg Aeris"
+    },
+    {
+      "id": 1426,
+      "name": "Ukryta Przystań Keora"
+    },
+    {
+      "id": 1427,
+      "name": "Zatoka Letniego Cienia"
+    },
+    {
+      "id": 1428,
+      "name": "PandaTo",
+      "reborn": 6
+    },
+    {
+      "id": 1429,
+      "name": "Elefania",
+      "reborn": 6
+    },
+    {
+      "id": 1430,
+      "name": "Łoszyngton",
+      "reborn": 6
+    },
+    {
+      "id": 1431,
+      "name": "Sharpedia",
+      "reborn": 6
+    },
+    {
+      "id": 1432,
+      "name": "Zebralia",
+      "reborn": 6
+    },
+    {
+      "id": 1433,
+      "name": "Bearia",
+      "reborn": 6
+    },
+    {
+      "id": 1434,
+      "name": "Gorilla City",
+      "reborn": 6
+    },
+    {
+      "id": 1435,
+      "name": "Panteria",
+      "reborn": 6
+    },
+    {
+      "id": 1436,
+      "name": "Koalia",
+      "reborn": 6
+    },
+    {
+      "id": 1437,
+      "name": "Kanguria",
+      "reborn": 6
+    },
+    {
+      "id": 1438,
+      "name": "Błękitna Laguna Wspomnień"
+    },
+    {
+      "id": 1439,
+      "name": "Złote Wydmy Prób"
+    },
+    {
+      "id": 1440,
+      "name": "Klif Zachodzącego Słońca"
+    },
+    {
+      "id": 1441,
+      "name": "Krenon",
+      "reborn": 6
+    },
+    {
+      "id": 1442,
+      "name": "Croas",
+      "reborn": 6
+    },
+    {
+      "id": 1443,
+      "name": "Bernan",
+      "reborn": 6
+    },
+    {
+      "id": 1444,
+      "name": "Orfelia",
+      "reborn": 6
+    },
+    {
+      "id": 1445,
+      "name": "Nicość Kaimetsu I",
+      "reborn": 6
+    },
+    {
+      "id": 1446,
+      "name": "Nicość Kaimetsu II",
+      "reborn": 6
+    },
+    {
+      "id": 1447,
+      "name": "Nicość Kaimetsu III",
+      "reborn": 6
+    },
+    {
+      "id": 1448,
+      "name": "Nicość Kaimetsu IV",
+      "reborn": 6
+    },
+    {
+      "id": 1449,
+      "name": "Orfelia - Centrum",
+      "reborn": 6
+    },
+    {
+      "id": 1450,
+      "name": "Orfelia - Pole Bitwy",
+      "reborn": 6
+    },
+    {
+      "id": 1451,
+      "name": "Przeklęty Jarmark"
+    },
+    {
+      "id": 1452,
+      "name": "Las Zatraconych Dusz"
+    },
+    {
+      "id": 1453,
+      "name": "Maskarada Koszmarów"
+    },
+    {
+      "id": 1454,
+      "name": "FABRYKA ZABAWEK MIKOŁAJA"
+    },
+    {
+      "id": 1455,
+      "name": "KWATERA GŁÓWNA ROBOTÓW"
+    },
+    {
+      "id": 1456,
+      "name": "KOMNATA STEROWANIA PREZENTAMI"
+    },
+    {
+      "id": 1457,
+      "name": "Wyspa Energetycznych Smakołyków"
+    },
+    {
+      "id": 1458,
+      "name": "Przystań Zaproszeń"
+    },
+    {
+      "id": 1459,
+      "name": "Arena Gier i Zabaw"
+    },
+    {
+      "id": 1460,
+      "name": "Bajkowy Ogród",
+      "reborn": 6
+    },
+    {
+      "id": 1461,
+      "name": "Orfelia - Gruzy",
+      "reborn": 6
+    },
+    {
+      "id": 1462,
+      "name": "Rdzeń Orfelii",
+      "reborn": 6
+    },
+    {
+      "id": 1463,
+      "name": "Ruiny Galaktyki",
+      "reborn": 6
+    },
+    {
+      "id": 1464,
+      "name": "Gwiazda Hakairy",
+      "reborn": 6
+    },
+    {
+      "id": 1465,
+      "name": "Klemansja",
+      "reborn": 6
+    },
+    {
+      "id": 1466,
+      "name": "Kuźnia Talentów",
+      "reborn": 6
+    },
+    {
+      "id": 1467,
+      "name": "Skalista Wyspa",
+      "reborn": 6
+    },
+    {
+      "id": 1468,
+      "name": "Dzika Puszcza",
+      "reborn": 6
+    },
+    {
+      "id": 1469,
+      "name": "Niezbadany Ląd",
+      "reborn": 6
+    },
+    {
+      "id": 1470,
+      "name": "Pokojowa Wioska"
+    },
+    {
+      "id": 1471,
+      "name": "Zainfekowany Las"
+    },
+    {
+      "id": 1472,
+      "name": "Laboratorium Profesora"
+    },
+    {
+      "id": 1473,
+      "name": "Cytadela Króla Sępów",
+      "reborn": 6
+    },
+    {
+      "id": 1474,
+      "name": "Ołtarz Niebiańskiego Jastrzębia",
+      "reborn": 6
+    },
+    {
+      "id": 1475,
+      "name": "Piórowe Miasto Skycrest",
+      "reborn": 6
+    },
+    {
+      "id": 1476,
+      "name": "Kanion Kruczych Skrzydeł",
+      "reborn": 6
+    },
+    {
+      "id": 1477,
+      "name": "Gniazdo Burz Stormnest",
+      "reborn": 6
+    },
+    {
+      "id": 1478,
+      "name": "Miasto Złotych Piór Aurelia",
+      "reborn": 6
+    },
+    {
+      "id": 1479,
+      "name": "Szczyty Albatron",
+      "reborn": 6
+    },
+    {
+      "id": 1480,
+      "name": "Świątynia Pióra Czasu",
+      "reborn": 6
+    },
+    {
+      "id": 1481,
+      "name": "Kolonia Feniksów Pyros",
+      "reborn": 6
+    },
+    {
+      "id": 1482,
+      "name": "Aviara – Bramy Niebios",
+      "reborn": 6
+    },
+    {
+      "id": 1483,
+      "name": "PODEJRZANY MOTEL"
+    },
+    {
+      "id": 1484,
+      "name": "WYMARZONA PLAŻA"
+    },
+    {
+      "id": 1485,
+      "name": "MIEJSCE ZBIÓRKI"
+    },
+    {
+      "id": 1486,
+      "name": "Zarośla Krwawej Chlorofilii",
+      "reborn": 6
+    },
+    {
+      "id": 1487,
+      "name": "Ogród Toksycznych Kwiatów",
+      "reborn": 6
+    },
+    {
+      "id": 1488,
+      "name": "Bagna Żywych Korzeni",
+      "reborn": 6
+    },
+    {
+      "id": 1489,
+      "name": "Dolina Krzyczących Pnączy",
+      "reborn": 6
+    },
+    {
+      "id": 1490,
+      "name": "Las Mutagennej Natury",
+      "reborn": 6
+    },
+    {
+      "id": 1491,
+      "name": "Świątynia Zielonej Entropii",
+      "reborn": 6
+    },
+    {
+      "id": 1492,
+      "name": "Pustkowie Zwiędłych Dusz",
+      "reborn": 6
+    },
+    {
+      "id": 1493,
+      "name": "Gaj Wiecznej Fotosyntezy",
+      "reborn": 6
+    },
+    {
+      "id": 1494,
+      "name": "Rdzeń Dzikiej Flory",
+      "reborn": 6
+    },
+    {
+      "id": 1495,
+      "name": "Serce Zielonej Anomalii",
+      "reborn": 6
+    },
+    {
+      "id": 1496,
+      "name": "RAJSKA WYSPA CAPSULE CORP"
+    },
+    {
+      "id": 1497,
+      "name": "ZATOPIONE RUINY BABIDIEGO"
+    },
+    {
+      "id": 1498,
+      "name": "NIEBIAŃSKI KURORT ENMY"
+    },
+    {
+      "id": 1499,
+      "name": "Próg Nicości",
+      "reborn": 6
+    },
+    {
+      "id": 1500,
+      "name": "Morze Milczących Gwiazd",
+      "reborn": 6
+    },
+    {
+      "id": 1501,
+      "name": "Skały Odwróconej Grawitacji",
+      "reborn": 6
+    },
+    {
+      "id": 1502,
+      "name": "Las Cieni",
+      "reborn": 6
+    },
+    {
+      "id": 1503,
+      "name": "Martwy Horyzont",
+      "reborn": 6
+    },
+    {
+      "id": 1504,
+      "name": "Jaskinia Echo",
+      "reborn": 6
+    },
+    {
+      "id": 1505,
+      "name": "Rzeka Zapomnienia",
+      "reborn": 6
+    },
+    {
+      "id": 1506,
+      "name": "Kamienne Niebo",
+      "reborn": 6
+    },
+    {
+      "id": 1507,
+      "name": "Świątynia Ciszy",
+      "reborn": 6
+    },
+    {
+      "id": 1508,
+      "name": "Brama Pierwszego Strażnika",
+      "reborn": 6
+    }
+  ]
+}

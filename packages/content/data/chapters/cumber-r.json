@@ -1,0 +1,790 @@
+{
+  "$schema": "../../schema/chapter.schema.json",
+  "id": "cumber-r",
+  "title": "Rborn – Cumber",
+  "reborn": 1,
+  "races": [
+    7
+  ],
+  "sourceCredit": {
+    "author": "Naruto"
+  },
+  "sections": [
+    {
+      "locId": 1117,
+      "quests": [
+        {
+          "slug": "cumber-r/1117/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Fu"
+              ],
+              "rewards": [
+                "30x Niebieskie senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/500",
+                "Wykonaj akcję [klawisz H] 0/500",
+                "Wykonaj akcję [klawisz H] 0/500",
+                "Zaczekać 00:04:00",
+                "Opanować: Kumulowanie Gniewu"
+              ],
+              "rewards": [
+                "Technika: Niszczycielski szpon"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000"
+              ],
+              "rewards": [
+                "Podróż do Korytarz więzienny"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1117/maska-gniewu",
+          "name": "Maska Gniewu",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zbierz zasób Przeszukanie Celi 0/10"
+              ],
+              "rewards": [
+                "Maska Gniewu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1118,
+      "quests": [
+        {
+          "slug": "cumber-r/1118/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Silny Strażnik(Champion) 0/3 000"
+              ],
+              "rewards": [
+                "1x Strefa Wzmocnienia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Silny Strażnik(Elita) 0/2 000"
+              ],
+              "rewards": [
+                "1x Strefa Wzmocnienia"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000"
+              ],
+              "rewards": [
+                "Podróż do Więzienna planeta"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1118/walka",
+          "name": "Walka",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Ulepsz dowolny przedmiot do + 6 0/1"
+              ],
+              "rewards": [
+                "1x Sekretna Skrzynia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Silny Strażnik(Elita) 0/10 000"
+              ],
+              "rewards": [
+                "2x Sekretna Skrzynia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1119,
+      "quests": [
+        {
+          "slug": "cumber-r/1119/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:02:00",
+                "Zaczekać 00:01:00",
+                "Pokonać w pojedynku: Wielka kula energii"
+              ],
+              "rewards": [
+                "50% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000",
+                "Pokonać w pojedynku: Trunks",
+                "Pokonać w pojedynku: Vegetto",
+                "Pokonać w pojedynku: Vegetto",
+                "Opanować: Kumulacja Energii"
+              ],
+              "rewards": [
+                "Podróż do Więzienna planeta – miejsce walki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1120,
+      "quests": [
+        {
+          "slug": "cumber-r/1120/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Ogromna wściekłość"
+              ],
+              "rewards": [
+                "Technika: SSJ4"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Goku Boski Super Saiyanin"
+              ],
+              "rewards": [
+                "Technika: Niszczycielska Kula"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Xeno Vegetto",
+                "Pokonaj: Silny więzień(Champion) 0/3 000"
+              ],
+              "rewards": [
+                "3 KK"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Silny więzień(Elita) 0/2 500"
+              ],
+              "rewards": [
+                "Podróż do Rozpadająca się więzienna planeta"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1120/w-podrozy",
+          "name": "W podróży",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/3"
+              ],
+              "rewards": [
+                "Tajemna Skrzynia V"
+              ]
+            },
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/5"
+              ],
+              "rewards": [
+                "Tajemna Skrzynia IV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1121,
+      "quests": [
+        {
+          "slug": "cumber-r/1121/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/3 000"
+              ],
+              "rewards": [
+                "25% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Zbierz zasób Wielka Kula Energii 0/1"
+              ],
+              "rewards": [
+                "1x Czerwone Senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Goku Ultra Instynkt",
+                "Zaczekać 00:05:00"
+              ],
+              "rewards": [
+                "Podróż do Planeta we wszechświecie jedynastym"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1121/dziwny-glos",
+          "name": "Dziwny głos",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Upadły więzień(Champion) 0/20 000"
+              ],
+              "rewards": [
+                "50 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Upadły więzień(Elita) 0/10 000"
+              ],
+              "rewards": [
+                "2 500 do max PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Upadły więzień(Legendarny) 0/1 000"
+              ],
+              "rewards": [
+                "1x Błogosławieństwo Widmowego Smoka"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1122,
+      "quests": [
+        {
+          "slug": "cumber-r/1122/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Dumny szturmowiec(Champion) 0/2 500",
+                "Pokonaj: Dumny szturmowiec(Elita) 0/2 500",
+                "Pokonać w pojedynku: Toppo",
+                "Pokonać w pojedynku: Jiren"
+              ],
+              "rewards": [
+                "5x Smoczy Token"
+              ]
+            },
+            {
+              "requirements": [
+                "Zaczekać 00:01:00"
+              ],
+              "rewards": [
+                "Podróż do Stalowa planeta w trzecim wszechświecie"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1122/dumni-szturmowcy",
+          "name": "Dumni szturmowcy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać członków Imperium Armii Czerwonej Wstęgi 0/100"
+              ],
+              "rewards": [
+                "5x Flakon Wojownika"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1123,
+      "quests": [
+        {
+          "slug": "cumber-r/1123/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Stalowy przeciwnik(Champion) 0/2 500"
+              ],
+              "rewards": [
+                "5 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Stalowy przeciwnik(Elita) 0/1 000"
+              ],
+              "rewards": [
+                "5 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Metal cooler",
+                "Zaczekać 00:10:00"
+              ],
+              "rewards": [
+                "Podróż do Planeta w nowym wszechświecie"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1123/zbuntowane-maszyny",
+          "name": "Zbuntowane maszyny",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Zbuntowany robot",
+                "Pokonać w pojedynku: Zbuntowany robot II",
+                "Pokonać w pojedynku: Zbuntowany robot III",
+                "Pokonać w pojedynku: Zbuntowany robot IV",
+                "Pokonać w pojedynku: Silny Zbuntowany robot"
+              ],
+              "rewards": [
+                "10 KK"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1124,
+      "quests": [
+        {
+          "slug": "cumber-r/1124/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/ 500",
+                "Pokonać w pojedynku: Turles",
+                "Pokonać w pojedynku: Vegeta"
+              ],
+              "rewards": [
+                "5x Żółte Sensu"
+              ]
+            },
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/1"
+              ],
+              "rewards": [
+                "Podróż do Wszechświatowe drzewo"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1124/trening",
+          "name": "Trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wykorzystane Punkty PA 0/75 955"
+              ],
+              "rewards": [
+                "Pierścień Ciemności"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1125,
+      "quests": [
+        {
+          "slug": "cumber-r/1125/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "PA równe 1000"
+              ],
+              "rewards": [
+                "50% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj w pojedynku (z aktywnym SSJ4 Brolly)"
+              ],
+              "rewards": [
+                "Podróż do Czarna dziura"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1125/korzenie-drzewa",
+          "name": "Korzenie drzewa",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Korzeń drzewa(Champion) 0/10 000",
+                "Pokonaj: Korzeń drzewa(Elita) 0/8 000",
+                "Pokonaj: Korzeń drzewa(Legendarny) 0/1 500"
+              ],
+              "rewards": [
+                "200% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Rdzeń korzenia"
+              ],
+              "rewards": [
+                "5x Boska karma"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1126,
+      "quests": [
+        {
+          "slug": "cumber-r/1126/nowa-linia-czasowa",
+          "name": "Nowa Linia Czasowa",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zakrzywienie czasop.(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "2x Mistyczna Skrzynia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zakrzywienie czasop.(Elita) 0/3 000"
+              ],
+              "rewards": [
+                "3x Mistyczna Skrzynia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj Punkty Teleportacji 0/10"
+              ],
+              "rewards": [
+                "Podróż do Dziwna Planeta"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1126/przezwyciezenie-grawitacji",
+          "name": "Przezwyciężenie grawitacji",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zakrzywienie czasop.(Normal) 0/3 000"
+              ],
+              "rewards": [
+                "1 000 PSK"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Zakrzywienie czasop.(Champion) 0/10 000"
+              ],
+              "rewards": [
+                "2 000 PSK"
+              ]
+            },
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/5",
+                "Wpisane kody treningowe 0/5"
+              ],
+              "rewards": [
+                "500 000 punktów PvP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1127,
+      "quests": [
+        {
+          "slug": "cumber-r/1127/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Opanowanie gniewu",
+                "Pokonaj: Dziwny przeciwnik(Champion) 0/3 000"
+              ],
+              "rewards": [
+                "25% bazowego PA zostaje odnowione"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Wyzbycie się gniewu"
+              ],
+              "rewards": [
+                "Podróż do Planeta Kaioshin’a Czasoprzestrzeni"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1127/trening-ii",
+          "name": "Trening II",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wygrane walki PvP 0/200"
+              ],
+              "rewards": [
+                "20x Karty Dusz"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1128,
+      "quests": [
+        {
+          "slug": "cumber-r/1128/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Wykonaj akcję [klawisz H] 0/1 000"
+              ],
+              "rewards": [
+                "Podróż do Mistyczna Jaskinia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1128/przeskok-w-czasie",
+          "name": "Przeskok w czasie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kisuko",
+                "Wytrenuj Szybkość 0/50 000 000 000"
+              ],
+              "rewards": [
+                "Bonus premium na 14 dni: Mistrz treningu II"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1129,
+      "quests": [
+        {
+          "slug": "cumber-r/1129/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Zaczekać 00:01:00",
+                "Pokonać w pojedynku: Zjawa Ojca",
+                "Pokonać w pojedynku: Zjawa Ojca"
+              ],
+              "rewards": [
+                "Boski super saiyanin"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Całkowite wyzbycie się gniewu",
+                "Wykonaj akcję [klawisz H] 0/100",
+                "Zbierz zasób Dziwne kolczyki 0/1"
+              ],
+              "rewards": [
+                "Podróż do Pałac Uduviy"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1129/trening-iii",
+          "name": "Trening III",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Nieznajomy"
+              ],
+              "rewards": [
+                "100x Czarny Klejnot"
+              ]
+            },
+            {
+              "requirements": [
+                "Udaj się na wyprawy 0/5"
+              ],
+              "rewards": [
+                "5x Smoczy Token"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1130,
+      "quests": [
+        {
+          "slug": "cumber-r/1130/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Trening Boga"
+              ],
+              "rewards": [
+                "Podróż do Miejsce Odrodzenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1130/trening-iv",
+          "name": "Trening IV",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyte Niebieskie Senzu 0/5 000"
+              ],
+              "rewards": [
+                "2x Błogosławieństwo Szalonej Bogini"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 1131,
+      "quests": [
+        {
+          "slug": "cumber-r/1131/nowa-moc",
+          "name": "Nowa moc",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Odrodzony strażnik(Champion) 0/5 000"
+              ],
+              "rewards": [
+                "5x Fioletowe Senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Odrodzony strażnik(Elita) 0/4 000"
+              ],
+              "rewards": [
+                "5x Żółte Senzu"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Trzeci Generał",
+                "Pokonać w pojedynku: Drugi Generał",
+                "Pokonać w pojedynku: Pierwszy Generał",
+                "Osiągnąć poziom: 0/1 250"
+              ],
+              "rewards": [
+                "Odrodzenie I"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cumber-r/1131/godzien-boskosci",
+          "name": "Godzien Boskości",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyte PSK 0/10 000"
+              ],
+              "rewards": [
+                "5x Sekretna Skrzynia"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

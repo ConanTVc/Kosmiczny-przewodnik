@@ -8,5 +8,7 @@ PROMPTY.md
 solucje/
 poradniki/
 fixtures/
-# Treść generowana/edytowana w formacie JSON.stringify – pilnuje jej content:build.
+# Treść i pliki generowane (format JSON.stringify) – pilnuje ich content:build.
 packages/content/data/
+packages/content/schema/
+packages/content/MIGRACJA.md

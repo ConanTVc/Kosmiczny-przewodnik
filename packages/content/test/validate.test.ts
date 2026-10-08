@@ -162,7 +162,7 @@ describe('validateContent', () => {
     expect(errors(r)).toEqual([]);
     const warnings = r.issues.map((i) => i.message).join('\n');
     expect(warnings).toMatch(/Ta sama nazwa „RUTYNA” w tej samej lokacji/);
-    expect(warnings).toMatch(/Lokacja 1338 ma reborn 5, a rozdział 4/);
+    expect(warnings).toMatch(/Lokacja 1338 ma reborn 5, wyższy niż rozdział \(4\)/);
   });
 
   it('zgłasza brak pliku poradnika i duplikat ID lokacji', () => {

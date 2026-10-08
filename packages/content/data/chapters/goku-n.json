@@ -1,0 +1,4095 @@
+{
+  "$schema": "../../schema/chapter.schema.json",
+  "id": "goku-n",
+  "title": "Nonborn – Goku",
+  "reborn": 0,
+  "races": [
+    0
+  ],
+  "sourceCredit": {
+    "author": "BaronCorbin"
+  },
+  "sections": [
+    {
+      "locId": 1,
+      "quests": [
+        {
+          "slug": "goku-n/1/zguba",
+          "name": "Zguba",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Stary Żółw"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Stary Żółw"
+              ],
+              "rewards": [
+                "10 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/2"
+              ],
+              "rewards": [
+                "Podróż do Wyspa Genialnego Żółwia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 2,
+      "quests": [
+        {
+          "slug": "goku-n/2/trening-na-wyspie",
+          "name": "Trening na Wyspie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/3"
+              ],
+              "rewards": [
+                "100 doświadczenia",
+                "Podróż do Wyspa – Sektor Zachodni"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/2/niedowiarek",
+          "name": "Niedowiarek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Zombie(Normal) 0/1"
+              ],
+              "rewards": [
+                "200 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 3,
+      "quests": [
+        {
+          "slug": "goku-n/3/trening-cd",
+          "name": "Trening cd.",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Mniejszy bies(Normal) 0/1"
+              ],
+              "rewards": [
+                "Magiczny kij"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/5"
+              ],
+              "rewards": [
+                "200 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Deski 0/3"
+              ],
+              "rewards": [
+                "2 000 doświadczenia"
+              ],
+              "note": "Idź na prawo do lokacji Wyspa – Sektor Centralny.\nOdbierz 3 ładunki Desek."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "1 siły"
+              ],
+              "note": "Wróć do lokacji Wyspa – Sektor Zachodni."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "500 doświadczenia",
+                "5 szybkości"
+              ],
+              "note": "Idź do lokacji Wyspa – Sektor Wschodni (znajduje się na prawo od lokacji Wyspa – Sektor Centralny)."
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/8"
+              ],
+              "rewards": [
+                "Podróż do Wyspa – Sektor Południowy"
+              ],
+              "note": "Po wykonaniu zadania wróć do lokacji początkowej."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 6,
+      "quests": [
+        {
+          "slug": "goku-n/6/poszukiwania",
+          "name": "Poszukiwania",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Kamień z Symbolem Żółwia",
+                "Pokonaj: Stara Strzyga(Normal) 0/1"
+              ],
+              "rewards": [
+                "Kamień z Symbolem Żółwia"
+              ],
+              "note": "Idź do lokacji Wyspa – Dolina by odnaleźć kamień."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "3 000 doświadczenia"
+              ],
+              "note": "Po odnalezieniu kamienia wróć do Genialnego Żółwia."
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/15"
+              ],
+              "rewards": [
+                "10 000 doświadczenia",
+                "Podróż do Płonąca Góra"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/6/okradziony-rybak",
+          "name": "Okradziony Rybak",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Pieczywo"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Worek z Rybami"
+              ],
+              "note": "Idź na południe od Rybaka."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Worek z Rybami"
+              ],
+              "rewards": [
+                "1 000 doświadczenia"
+              ],
+              "note": "Wróć do Rybaka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 8,
+      "quests": [
+        {
+          "slug": "goku-n/8/plonaca-gora",
+          "name": "Płonąca Góra",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Przyswajanie technik przeciwnika"
+              ],
+              "rewards": [
+                "Technika: Fala Uderzeniowa",
+                "Podróż do Papaja I"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/8/strach",
+          "name": "Strach",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Umarlak(Normal) 0/1"
+              ],
+              "rewards": [
+                "2 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/8/boskie-artefakty",
+          "name": "Boskie Artefakty",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Boski Flakon (Lokacja: Siedziba Pterodora)"
+              ],
+              "rewards": [
+                "1 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Boska Tarcza (Lokacja: Wschodnia Część lasu)"
+              ],
+              "rewards": [
+                "50 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Boski Topór (Lokacja: Planeta Bogów – Zachód)"
+              ],
+              "rewards": [
+                "2 000 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Boski Miecz (Lokacja: Miejsce Przywołania)"
+              ],
+              "rewards": [
+                "10 000 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Boski Medalion (Lokacja: VALUPTO)"
+              ],
+              "rewards": [
+                "10 000 000 000 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 9,
+      "quests": [
+        {
+          "slug": "goku-n/9/turniej",
+          "name": "Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Uczniowskie Kimono",
+                "1 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Gilan"
+              ],
+              "rewards": [
+                "3 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Namu"
+              ],
+              "rewards": [
+                "5 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Jackie Chun"
+              ],
+              "rewards": [
+                "10 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/9/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "requires": [
+            "goku-n/9/turniej"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Turniej"
+              ],
+              "rewards": [
+                "Podróż do Tajemniczy Las"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 10,
+      "quests": [
+        {
+          "slug": "goku-n/10/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź do lokacji Królestwo Biesów aby uratować Księżniczkę."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 12,
+      "quests": [
+        {
+          "slug": "goku-n/12/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szula"
+              ],
+              "rewards": [
+                "Messa"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Messa"
+              ],
+              "rewards": [
+                "20 000 doświadczenia"
+              ],
+              "note": "Wróć do lokacji Tajemniczy Las."
+            },
+            {
+              "requirements": [
+                "Wykonać zadanie: Herszt"
+              ],
+              "rewards": [],
+              "note": "Idź do lokacji Piekielne Wrota."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 11,
+      "quests": [
+        {
+          "slug": "goku-n/11/herszt",
+          "name": "Herszt",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "500 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Herszt Postrachów"
+              ],
+              "rewards": [
+                "Sygnet Herszta",
+                "5 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Las Zachodni"
+              ],
+              "note": "Wróć do lokacji Tajemniczy Las."
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/11/kradziez",
+          "name": "Kradzież",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bies – Strażnik"
+              ],
+              "rewards": [
+                "Waza – Pamiątka rodzinna"
+              ],
+              "note": "Idź do lokacji Królestwo Biesów."
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Straszny Bies – Strażnik"
+              ],
+              "rewards": [
+                "Portret – Pamiątka rodzinna"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wielki Bies – Strażnik"
+              ],
+              "rewards": [
+                "Kielich – Pamiątka rodzinna"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Waza – Pamiątka rodzinna"
+              ],
+              "rewards": [
+                "5 000 doświadczenia"
+              ],
+              "note": "Po zebraniu wróć do lokacji Piekielne Wrota."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Portret – Pamiątka rodzinna"
+              ],
+              "rewards": [
+                "6 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Kielich – Pamiątka rodzinna"
+              ],
+              "rewards": [
+                "7 000 doświadczenia",
+                "20 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 13,
+      "note": "Idź na północ do lokacji Okolice Świętej Wieży.",
+      "quests": []
+    },
+    {
+      "locId": 14,
+      "quests": [
+        {
+          "slug": "goku-n/14/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Zaawansowana sztuka koncentracji"
+              ],
+              "rewards": [
+                "10 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Sygnet Herszta"
+              ],
+              "rewards": [
+                "50 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Sygnet Bestii"
+              ],
+              "rewards": [
+                "50 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/45"
+              ],
+              "rewards": [
+                "60 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kryminator"
+              ],
+              "rewards": [
+                "100 000 doświadczenia",
+                "Upa"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Upa"
+              ],
+              "rewards": [
+                "Podróż do Zapomniana Dolina"
+              ],
+              "note": "Wróć do lokacji Las Zachodni."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 15,
+      "note": "Aby kontynuować zadanie główne należy udać się na wschód do lokacji Kwatera Główna Armii",
+      "quests": [
+        {
+          "slug": "goku-n/15/napad",
+          "name": "Napad",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Król Topielców"
+              ],
+              "rewards": [
+                "20 000 doświadczenia",
+                "30 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Srebrny Amulet (Amulet znajduję się w lokacji Kwatera Główna Armii)"
+              ],
+              "rewards": [
+                "30 siły woli"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/15/niepokonany",
+          "name": "Niepokonany",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Laska Pustelnika (Zdobywa się go po pokonaniu Generała Niebieskiego)"
+              ],
+              "rewards": [
+                "20 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Pustelnik"
+              ],
+              "rewards": [
+                "Technika: Pocisk Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 16,
+      "quests": [
+        {
+          "slug": "goku-n/16/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Srebrny"
+              ],
+              "rewards": [
+                "10 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Biały"
+              ],
+              "rewards": [
+                "20 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Niebieski"
+              ],
+              "rewards": [
+                "Laska Pustelnika"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sierżant Metalic"
+              ],
+              "rewards": [
+                "100 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Czarny"
+              ],
+              "rewards": [
+                "1 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Generał Czarny – Robot"
+              ],
+              "rewards": [
+                "200 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/55"
+              ],
+              "rewards": [
+                "Podróż do Góry Mgliste"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 17,
+      "quests": [
+        {
+          "slug": "goku-n/17/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szary Wilkołak"
+              ],
+              "rewards": [
+                "Symbol Wilka"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Biały Wilkołak"
+              ],
+              "rewards": [
+                "Symbol Wilka"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Czarny Wilkołak"
+              ],
+              "rewards": [
+                "Symbol Wilka"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Srebrzysty Wilkołak"
+              ],
+              "rewards": [
+                "Symbol Wilka"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wilka 0/4"
+              ],
+              "rewards": [
+                "100 000 doświadczenia",
+                "Worek z rybami",
+                "Podróż do Papaja II"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/17/ryby",
+          "name": "Ryby",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Worek z rybami"
+              ],
+              "rewards": [
+                "Fragment Klucza"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/17/miejsca-mocy",
+          "name": "Miejsca mocy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "50 siły",
+                "50 szybkości",
+                "50 wytrzymałości",
+                "50 siły woli"
+              ],
+              "note": "Szukaj miejsc mocy."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "50 energii Ki"
+              ],
+              "note": "Ostatnie miejsce mocy znajduje się na północ w lokacji Dolina Wilków"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 18,
+      "quests": [
+        {
+          "slug": "goku-n/18/spryciarz",
+          "name": "Spryciarz",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Fragment Klucza",
+                "Pokonać w pojedynku: Kupiec"
+              ],
+              "rewards": [
+                "Klucz do Kufra"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Klucz do Kufra"
+              ],
+              "rewards": [
+                "100 siły woli"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 19,
+      "quests": [
+        {
+          "slug": "goku-n/19/samodzielny-trening",
+          "name": "Samodzielny trening",
+          "kind": "main",
+          "requires": [
+            "goku-n/17/samodzielny-trening"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Samodzielny trening",
+                "Pokonać w pojedynku: Bambuko"
+              ],
+              "rewards": [
+                "1 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Krilan",
+                "Pokonać w pojedynku: Ten-Shin"
+              ],
+              "rewards": [
+                "500 000 doświadczenia",
+                "Podróż do Mroczny Las"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 20,
+      "quests": [
+        {
+          "slug": "goku-n/20/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na południe do lokacji Mroczny Las – Południe."
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/20/ostatnia-wola",
+          "name": "Ostatnia wola",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/70"
+              ],
+              "rewards": [
+                "Medalion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 21,
+      "quests": [
+        {
+          "slug": "goku-n/21/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "10 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na południe do lokacji Dziewicze Pustkowia."
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/21/ostatnia-wola",
+          "name": "Ostatnia Wola",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Medalion"
+              ],
+              "rewards": [
+                "60 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/21/alchemik",
+          "name": "Alchemik",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Smocze Jagody",
+                "Srebrny Korzeń"
+              ],
+              "note": "Szukaj Składników."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Smocze Jagody"
+              ],
+              "rewards": [
+                "50 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Srebrny Korzeń"
+              ],
+              "rewards": [
+                "50 000 doświadczenia",
+                "150 szybkości"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 22,
+      "quests": [
+        {
+          "slug": "goku-n/22/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Jaskiniowiec"
+              ],
+              "rewards": [
+                "10 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Pieczywo (Należy wykonać zadanie: Bestie)"
+              ],
+              "rewards": [
+                "100 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sługa Szatana"
+              ],
+              "rewards": [
+                "200 000 doświadczenia",
+                "Podróż do Okolice świętej wieżyZadanie Główne: Szatański Plan",
+                "Podróż do Lodowy Labirynt"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/22/bestie",
+          "name": "Bestie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Troll(Normal) 0/1"
+              ],
+              "rewards": [
+                "Pieczywo"
+              ],
+              "note": "Idź na południe do lokacji Legowisko tam znajduje się Troll.\nPo pokonaniu wróć do Dziewiczych Pustkowii."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 14,
+      "quests": [
+        {
+          "slug": "goku-n/14/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Lodowy Labirynt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 24,
+      "quests": [
+        {
+          "slug": "goku-n/24/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Musisz przejść labirynt i udać się na południowy wschód do lokacji Tajemna Grota"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 25,
+      "quests": [
+        {
+          "slug": "goku-n/25/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Boski Strażnik"
+              ],
+              "rewards": [
+                "300 000 doświadczenia",
+                "500 siły",
+                "500 szybkości",
+                "500 wytrzymałości",
+                "250 siły woli",
+                "250 energii Ki"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź do labiryntu i wróć do punktu początkowego."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 24,
+      "quests": [
+        {
+          "slug": "goku-n/24/szatanski-plan-2",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Okolice świętej Wieży"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 14,
+      "quests": [
+        {
+          "slug": "goku-n/14/szatanski-plan-2",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Magiczna Chmurka"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź chmurką do lokacji Okolice Zamku Królewskiego."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 26,
+      "quests": [
+        {
+          "slug": "goku-n/26/szatanski-plan",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szatan Serduszko"
+              ],
+              "rewards": [
+                "600 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Wróć Chmurką do lokacji Okolice Świętej Wieży."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 14,
+      "quests": [
+        {
+          "slug": "goku-n/14/szatanski-plan-3",
+          "name": "Szatański Plan",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Dzwoneczek"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Magiczny Kij"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/14/ukochana-pukitsu",
+          "name": "Ukochana Pukitsu",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Poddany Szatana(Normal) 0/1"
+              ],
+              "rewards": [
+                "Symbol Szybkości Super Unique"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/trening-w-niebiosach",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Dzwoneczek",
+                "Opanować: Podstawy treningu w trudnych warunkach"
+              ],
+              "rewards": [
+                "400 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Perfekcyjna sztuka koncentracji"
+              ],
+              "rewards": [
+                "Podróż do Przeszłość"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/27/zadanie-pvm",
+          "name": "Zadanie PVM",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyte punkty PvM 0/500"
+              ],
+              "rewards": [
+                "Punkty PvM (zależne od poziomu doświadczenia)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/27/zadanie-pvp",
+          "name": "Zadanie PVP",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Wygrane walki PvP 0/10"
+              ],
+              "rewards": [
+                "Punkty PvP (zależne od poziomu doświadczenia)"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/27/zadanie-symboli",
+          "name": "Zadanie Symboli",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj 20 symboli normal (losowo siły, Szybkości, Wytrzymałość, siła woli, energii KI)"
+              ],
+              "rewards": [
+                "Losowa: kk, skrzynie, senzu itp."
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/27/zadanie-substancji",
+          "name": "Zadanie Substancji",
+          "kind": "daily",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj 100, 1000 lub 100000 Magicznych substancji"
+              ],
+              "rewards": [
+                "Losowa, zależna od liczby oddanych substancji: kk, skrzynie, senzu itp."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 359,
+      "note": "Teleport po lewej stronie.\nW tej lokacji zdobywasz dodatkowe osiągnięcia.",
+      "quests": [
+        {
+          "slug": "goku-n/359/sztuka-wzmacniania-treningu",
+          "name": "Sztuka Wzmacniania Treningu",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Wpisane kody treningowe 0/200"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Koder"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/sztuka-trenowania",
+          "name": "Sztuka Trenowania",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Spędzone godziny na treningu 0/250"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Wielki Trener"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/sztuka-zabijania-legend",
+          "name": "Sztuka Zabijania Legend",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Dowolny przeciwnik(Legendarny) 0/200"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Legendarny"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/sztuka-odbijania",
+          "name": "Sztuka Odbijania",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Poziom umiejętności Odbicie 0/15"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Siła Odbicia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/kolorowe-zycie",
+          "name": "Kolorowe życie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "odblokowana nowa lokacja do podróży: Zapomniana Dolina"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć Złoty Medalion od Topielec 0/50"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Plotkarz"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/sztuka-zdobywania-psk",
+          "name": "Sztuka Zdobywania PSK",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/200"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Pomniejszy"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/sztuka-zdobywania-senzu",
+          "name": "Sztuka Zdobywania Senzu",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Niebieskie Senzu 0/200"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Hodowca"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/359/zdobywca",
+          "name": "Zdobywca",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Zdobyć moc z Dowolny przeciwnik 0/50 000 000"
+              ],
+              "rewards": [
+                "Aktywacja osiągnięcia: Moc Saiyan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 28,
+      "quests": [
+        {
+          "slug": "goku-n/28/trening-w-niebiosach",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kruk"
+              ],
+              "rewards": [
+                "100 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Podstawy kontroli Ki"
+              ],
+              "rewards": [
+                "500 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Mutarito"
+              ],
+              "rewards": [
+                "Technika: Wybuch Ki",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/28/porwanie",
+          "name": "Porwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Widmo Przeszłości(Normal) 0/1"
+              ],
+              "rewards": [
+                "600 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/28/nocne-koszmary",
+          "name": "Nocne Koszmary",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Widmo Przeszłości(Normal) 0/1"
+              ],
+              "rewards": [
+                "500 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/trening-w-niebiosach-2",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kopia"
+              ],
+              "rewards": [
+                "Podróż do Góra Gromów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 29,
+      "quests": [
+        {
+          "slug": "goku-n/29/trening-w-niebiosach",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Wyczuwanie ruchów powietrza"
+              ],
+              "rewards": [
+                "Korona Gromów",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/29/glaz",
+          "name": "Głaz",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/130"
+              ],
+              "rewards": [
+                "333 siły"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/trening-w-niebiosach-3",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Korona Gromów"
+              ],
+              "rewards": [
+                "400 siły",
+                "Podróż do Las Północny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 30,
+      "quests": [
+        {
+          "slug": "goku-n/30/trening-w-niebiosach",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Jogurt"
+              ],
+              "rewards": [
+                "500 000 doświadczenia",
+                "100 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Zaawansowana kontrola Ki"
+              ],
+              "rewards": [
+                "Technika: Fala uderzeniowa II",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/30/poszukiwacz",
+          "name": "Poszukiwacz",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Czarownica"
+              ],
+              "rewards": [
+                "Kosmyk Włosów"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Kosmyk Włosów"
+              ],
+              "rewards": [
+                "500 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/trening-w-niebiosach-4",
+          "name": "Trening w Niebiosach",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Papaja III"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 31,
+      "quests": [
+        {
+          "slug": "goku-n/31/trzeci-turniej",
+          "name": "Trzeci Turniej",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Chi-Chi"
+              ],
+              "rewards": [
+                "200 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ten-Shin"
+              ],
+              "rewards": [
+                "300 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Junior"
+              ],
+              "rewards": [
+                "Podróż do Okolice Czarnego Jeziora"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 32,
+      "quests": [
+        {
+          "slug": "goku-n/32/czarne-jezioro",
+          "name": "Czarne Jezioro",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Torug(Normal) 0/1",
+                "Oddaj przedmiot Sekstans"
+              ],
+              "rewards": [
+                "200 000 doświadczenia"
+              ],
+              "note": "Po sekstans idź do lokacji Północne Jezioro (Zadanie Posterunek)."
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Pterodor"
+              ],
+              "rewards": [
+                "Klucz Do kufra"
+              ],
+              "note": "Następnie idź do lokacji Siedziba Pteodora (Na północ od lokacji północne jezioro)."
+            },
+            {
+              "requirements": [],
+              "rewards": [
+                "500 000 doświadczenia",
+                "Podróż do Dom"
+              ],
+              "note": "Wróć do lokacji Okolice Czarnego Jeziora."
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/32/monety",
+          "name": "Monety",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Stara Moneta",
+                "Stara Moneta",
+                "Stara Moneta",
+                "Stara Moneta",
+                "Stara Moneta"
+              ],
+              "note": "Szukaj monet."
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Stara Moneta 0/5"
+              ],
+              "rewards": [
+                "Pordzewiały Flakon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 33,
+      "quests": [
+        {
+          "slug": "goku-n/33/posterunek",
+          "name": "Posterunek",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Torug – Dowódca"
+              ],
+              "rewards": [
+                "Sekstans"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/33/wodna-bestia",
+          "name": "Wodna Bestia",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wodna Bestia"
+              ],
+              "rewards": [
+                "500 000 doświadczenia",
+                "200 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 34,
+      "quests": [
+        {
+          "slug": "goku-n/34/kufer",
+          "name": "Kufer",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Klucz Do Kufra"
+              ],
+              "rewards": [
+                "700 siły"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/34/zlota-raczka",
+          "name": "Złota Rączka",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Pordzewiały Flakon"
+              ],
+              "rewards": [
+                "-100 siły",
+                "Boski Flakon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "goku-n/35/nowa-misja",
+          "name": "Nowa Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Musisz odnaleźć Gohana następnie użyj chmurki i przenieś się na Wyspę Genialnego Żółwia"
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/35/sasiedzi",
+          "name": "Sąsiedzi",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Pieczywo"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Pieczywo"
+              ],
+              "rewards": [
+                "Whisky"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Whisky"
+              ],
+              "rewards": [
+                "500 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/35/pamiatka-2",
+          "name": "Pamiątka 2",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Medalion"
+              ],
+              "rewards": [
+                "zwiększenie energii Ki – 10%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 2,
+      "quests": [
+        {
+          "slug": "goku-n/2/nowa-misja",
+          "name": "Nowa Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Ciche Pustkowie"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 36,
+      "quests": [
+        {
+          "slug": "goku-n/36/nowa-misja",
+          "name": "Nowa Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Radim"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia",
+                "Podróż do Wrota zaświatów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/36/zmacony-spokoj",
+          "name": "Zmącony Spokój",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Plugawiec(Normal) 0/1"
+              ],
+              "rewards": [
+                "2 000 energii Ki",
+                "50 do wszystkich statystyk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 37,
+      "quests": [
+        {
+          "slug": "goku-n/37/niebianskie-wyzwanie",
+          "name": "Niebiańskie Wyzwanie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na zachód do lokacji Droga Węża."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 38,
+      "quests": [
+        {
+          "slug": "goku-n/38/niebianskie-wyzwanie",
+          "name": "Niebiańskie Wyzwanie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Niestrudzenie"
+              ],
+              "rewards": [
+                "Podróż do Planeta Kaio"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 39,
+      "quests": [
+        {
+          "slug": "goku-n/39/niebianskie-wyzwanie",
+          "name": "Niebiańskie Wyzwanie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Trening przy 10x większej grawitacji"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Płynność ruchów"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Pozoracja"
+              ],
+              "rewards": [
+                "2 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Moc: 0/50 000"
+              ],
+              "rewards": [
+                "Technika: KaioKen"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/39/kosmiczni-wojownicy",
+          "name": "Kosmiczni Wojownicy",
+          "kind": "main",
+          "requires": [
+            "goku-n/39/niebianskie-wyzwanie"
+          ],
+          "steps": [
+            {
+              "requirements": [
+                "Wykonać zadanie: Niebiańskie wyzwanie"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/kosmiczni-wojownicy",
+          "name": "Kosmiczni Wojownicy",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Okolice świętej wieży"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 14,
+      "quests": [
+        {
+          "slug": "goku-n/14/kosmiczni-wojownicy",
+          "name": "Kosmiczni Wojownicy",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Pole bitwy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 40,
+      "quests": [
+        {
+          "slug": "goku-n/40/kosmiczni-wojownicy",
+          "name": "Kosmiczni Wojownicy",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Nappa"
+              ],
+              "rewards": [
+                "2 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Vegeta"
+              ],
+              "rewards": [
+                "2 000 wytrzymałości",
+                "Podróż do Szpital"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/40/potezna-moc",
+          "name": "Potężna Moc",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/7",
+                "Zdobyć Fragment Kuli od Sługa Wojowników 0/10"
+              ],
+              "rewards": [
+                "Uśpiona Kula Energii x3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 41,
+      "quests": [
+        {
+          "slug": "goku-n/41/kosmiczna-misja",
+          "name": "Kosmiczna Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Odporność na ból"
+              ],
+              "rewards": [
+                "3 000 siły woli",
+                "Podróż do Statek Kosmiczny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 42,
+      "quests": [
+        {
+          "slug": "goku-n/42/kosmiczna-misja",
+          "name": "Kosmiczna Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Moc: 0/70 000",
+                "Opanować: Przeciążenie 20x",
+                "Opanować: Przeciążenie 40x"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Przeciążenie 60x"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Przeciążenie 100x"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia",
+                "Podróż do Namek – Północ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 43,
+      "quests": [
+        {
+          "slug": "goku-n/43/kosmiczna-misja",
+          "name": "Kosmiczna Misja",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Aby kontynuować fabułę, należy udać się na południe do lokacji Namek – Pole Bitwy"
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/43/oprawcy",
+          "name": "Oprawcy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/250",
+                "Pokonać w pojedynku: Oprawca – Wódz"
+              ],
+              "rewards": [
+                "4 000 000 doświadczenia",
+                "1kk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 44,
+      "quests": [
+        {
+          "slug": "goku-n/44/namek",
+          "name": "Namek",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Recom"
+              ],
+              "rewards": [
+                "2 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Barter"
+              ],
+              "rewards": [
+                "3 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ginyo"
+              ],
+              "rewards": [
+                "-10 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Następnie idź na wschód do lokacji Namek – Statek Frezera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 45,
+      "quests": [
+        {
+          "slug": "goku-n/45/namek",
+          "name": "Namek",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Regeneracja"
+              ],
+              "rewards": [
+                "20 000 siły",
+                "20 000 szybkości",
+                "20 000 wytrzymałości",
+                "20 000 siły woli",
+                "20 000 energii Ki",
+                "Podróż do Namek – Sektor Centralny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 46,
+      "quests": [
+        {
+          "slug": "goku-n/46/namek",
+          "name": "Namek",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Frezer"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Wściekłość"
+              ],
+              "rewards": [
+                "Technika: SSJ"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Frezera – Pełna Moc"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia",
+                "Podróż do Namek – Statek Frezera"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 45,
+      "quests": [
+        {
+          "slug": "goku-n/45/namek-2",
+          "name": "Namek",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Yardrat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 47,
+      "quests": [
+        {
+          "slug": "goku-n/47/kosmiczny-trening",
+          "name": "Kosmiczny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Kosmiczny Potwór"
+              ],
+              "rewards": [
+                "20 000 000 doświadczenia",
+                "Podróż do Planeta Kama – Zachód"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 48,
+      "quests": [
+        {
+          "slug": "goku-n/48/kosmiczny-trening",
+          "name": "Kosmiczny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Porucznik Patrolu"
+              ],
+              "rewards": [
+                "12 000 001 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na wschód do lokacji Planeta Kama – Wschód."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 49,
+      "quests": [
+        {
+          "slug": "goku-n/49/kosmiczny-trening",
+          "name": "Kosmiczny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Przywódca Wojowników Kama"
+              ],
+              "rewards": [
+                "50 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Wróć na Planeta Kama – Zachód."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 48,
+      "quests": [
+        {
+          "slug": "goku-n/48/kosmiczny-trening-2",
+          "name": "Kosmiczny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Yardrat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 47,
+      "quests": [
+        {
+          "slug": "goku-n/47/kosmiczny-trening-2",
+          "name": "Kosmiczny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Wyczuwanie Ki"
+              ],
+              "rewards": [
+                "5 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Dematerializacja",
+                "Opanować: Materializacja"
+              ],
+              "rewards": [
+                "Technika: Błyskawiczny transfer (technika teleportacji)",
+                "5kk",
+                "Podróż do Miejsce Lądowania"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 50,
+      "quests": [
+        {
+          "slug": "goku-n/50/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Tronk SSJ"
+              ],
+              "rewards": [
+                "15 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Teleportuj się do lokacji Dom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "goku-n/35/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Chi-Chi"
+              ],
+              "rewards": [
+                "-100 000 doświadczenia",
+                "Podróż do Magiczny Las"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 51,
+      "quests": [
+        {
+          "slug": "goku-n/51/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Nadzwyczajny trening siłowy."
+              ],
+              "rewards": [
+                "20 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szatan Serduszko"
+              ],
+              "rewards": [
+                "20 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Songokan"
+              ],
+              "rewards": [
+                "20 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Szatan Serduszko"
+              ],
+              "rewards": [
+                "10 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Songokan"
+              ],
+              "rewards": [
+                "10 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/340"
+              ],
+              "rewards": [
+                "Technika: Tnąca Tarcza"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/350"
+              ],
+              "rewards": [
+                "Technika: Fala uderzeniowa III",
+                "Podróż do Górskie Zbocza"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 52,
+      "quests": [
+        {
+          "slug": "goku-n/52/balans-mocy",
+          "name": "Balans mocy",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Uczniowskie Kimono"
+              ],
+              "rewards": [
+                "10 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Gladiator"
+              ],
+              "rewards": [
+                "5 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Urgath"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Koszmar"
+              ],
+              "rewards": [
+                "15 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Prastary Postrach"
+              ],
+              "rewards": [
+                "20 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Boski Maruder"
+              ],
+              "rewards": [
+                "Boska Tarcza",
+                "Talizman Balansujący"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Teraz masz do wyboru 4 opcje."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 53,
+      "quests": [
+        {
+          "slug": "goku-n/53/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: C19"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia",
+                "Podróż do Dom"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 35,
+      "quests": [
+        {
+          "slug": "goku-n/35/nowe-zagrozenie-2",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Leczenie choroby serca"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Rajska Sala Treningowa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 54,
+      "quests": [
+        {
+          "slug": "goku-n/54/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Moc: 0/1 300 000"
+              ],
+              "rewards": [
+                "60 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Songokan"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Rajski trening"
+              ],
+              "rewards": [
+                "50 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Moc: 0/2 000 000"
+              ],
+              "rewards": [
+                "20 000 000 doświadczenia",
+                "1 000 000 siły",
+                "1 000 000 szybkości",
+                "1 000 000 wytrzymałości",
+                "500 000 siły woli",
+                "500 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Songokan SSJ"
+              ],
+              "rewards": [
+                "30 000 000 doświadczenia",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/nowe-zagrozenie-2",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Prowincja Zachodnia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 55,
+      "quests": [
+        {
+          "slug": "goku-n/55/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Komórczak"
+              ],
+              "rewards": [
+                "Podróż do Planeta Kaio"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 39,
+      "quests": [
+        {
+          "slug": "goku-n/39/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Droga Węża"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 38,
+      "quests": [
+        {
+          "slug": "goku-n/38/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Władcy Zaświatów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 66,
+      "quests": [
+        {
+          "slug": "goku-n/66/nowe-zagrozenie",
+          "name": "Nowe zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Stadion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 67,
+      "quests": [
+        {
+          "slug": "goku-n/67/nowy-rodzaj-treningu",
+          "name": "Nowy Rodzaj Treningu",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Larwa"
+              ],
+              "rewards": [
+                "100 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Arka"
+              ],
+              "rewards": [
+                "200 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Paulo"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia",
+                "Podróż do Planeta Władcy Zaświatów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 66,
+      "quests": [
+        {
+          "slug": "goku-n/66/nowy-rodzaj-treningu",
+          "name": "Nowy Rodzaj Treningu",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Technika: SSJ2",
+                "Podróż do Sekretne Miejsce Treningu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 68,
+      "quests": [
+        {
+          "slug": "goku-n/68/nowy-rodzaj-treningu",
+          "name": "Nowy Rodzaj Treningu",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/520"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Luzer"
+              ],
+              "rewards": [
+                "10 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Nadzwyczajny trening z obciążeniem."
+              ],
+              "rewards": [
+                "200 000 energii Ki"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/522"
+              ],
+              "rewards": [
+                "Technika: SSJ3"
+              ]
+            },
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Teraz idź na południe do lokacji południe planety."
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/68/tajemnicze-wyzwanie",
+          "name": "Tajemnicze wyzwanie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/420",
+                "Pokonać w pojedynku: Jazgot"
+              ],
+              "rewards": [
+                "40 000 000 doświadczenia",
+                "100 000 szybkości"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Maniek"
+              ],
+              "rewards": [
+                "45 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/440"
+              ],
+              "rewards": [
+                "100 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/460",
+                "Pokonać w pojedynku: Eryk Pogromca"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia",
+                "100 000 wytrzymałości"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/480",
+                "Pokonać w pojedynku: Alicja"
+              ],
+              "rewards": [
+                "55 000 000 doświadczenia",
+                "60 000 siły woli"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/500",
+                "Pokonać w pojedynku: Tabor"
+              ],
+              "rewards": [
+                "59 000 000 doświadczenia",
+                "60 000 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 69,
+      "quests": [
+        {
+          "slug": "goku-n/69/nowy-rodzaj-treningu",
+          "name": "Nowy Rodzaj Treningu",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Antek Wielkolud"
+              ],
+              "rewards": [
+                "20 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Wykonać zadanie: Sekret",
+                "Opanować: Ultra-wydajny trening siłowy"
+              ],
+              "rewards": [
+                "Podróż do Papaja IV"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/69/sekret",
+          "name": "Sekret",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Wojownik Fuzyjny"
+              ],
+              "rewards": [
+                "Technika: Fala Uderzeniowa IV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 70,
+      "quests": [
+        {
+          "slug": "goku-n/70/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Zniszczony Statek Kosmiczny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 71,
+      "quests": [
+        {
+          "slug": "goku-n/71/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Sługa(Normal) 0/1",
+                "Pokonać w pojedynku: Yakon"
+              ],
+              "rewards": [
+                "30 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Vegeta SSJ2",
+                "Pokonać w pojedynku: Vegeta SSJ2"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Sektor Wschodni"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 72,
+      "quests": [
+        {
+          "slug": "goku-n/72/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bubu"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia",
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/kolejne-zagrozenie-2",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Wrota zaświatów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 37,
+      "quests": [
+        {
+          "slug": "goku-n/37/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "Podróż do Planeta Bogów"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 73,
+      "quests": [
+        {
+          "slug": "goku-n/73/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [
+                "10 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły normal 0/15",
+                "Oddaj przedmiot Symbol Szybkości normal 0/15",
+                "Oddaj przedmiot Symbol Wytrzymałości normal 0/15",
+                "Oddaj przedmiot Symbol Siły Woli 0/15",
+                "Oddaj przedmiot Symbol Energii KI 0/15"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Opanować: Perfekcyjna kontrola nad umysłem"
+              ],
+              "rewards": [
+                "1 000 000 doświadczenia",
+                "Kolczyki Fuzyjne",
+                "Podróż do Skaliste Zbocza"
+              ],
+              "note": "Teraz idź na zachód do lokacji Planeta Bogów – Zachód.\nMusisz znaleźć kule i wrócić"
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/73/boska-esencja",
+          "name": "Boska Esencja",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj PSK 0/140"
+              ],
+              "rewards": [
+                "Pusta Esencja Chi"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj PSK 0/350",
+                "Oddaj przedmiot Czarna Smocza Kula 0/7",
+                "Oddaj przedmiot Czystość CHI 0/50",
+                "Oddaj przedmiot Potęga CHI 0/10",
+                "Oddaj przedmiot Pusta Esencja CHI"
+              ],
+              "rewards": [
+                "Esencja Słabej Energii CHI"
+              ]
+            },
+            {
+              "requirements": [
+                "Wymagane odrodzenie 0/1",
+                "Oddaj PSK 0/1 050",
+                "Oddaj przedmiot Czarna Smocza Kula 0/21",
+                "Oddaj przedmiot Czystość CHI 0/100",
+                "Oddaj przedmiot Potęga CHI 0/25",
+                "Oddaj przedmiot Esencja Słabej Energii CHI 0/1"
+              ],
+              "rewards": [
+                "Esencja Silnej Energii CHI x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Wymagane odrodzenie 0/2",
+                "Oddaj PSK 0/3 050",
+                "Oddaj przedmiot Czarna Smocza Kula 0/54",
+                "Oddaj przedmiot Czystość CHI 0/250",
+                "Oddaj przedmiot Potęga CHI 0/100",
+                "Oddaj przedmiot Esencja Silnej Energii CHI 0/1"
+              ],
+              "rewards": [
+                "Esencja Czystej Energii CHI x1"
+              ]
+            },
+            {
+              "requirements": [
+                "Wymagane odrodzenie 0/3",
+                "Oddaj PSK 0/7 000",
+                "Oddaj przedmiot Czarna Smocza Kula 0/105",
+                "Oddaj przedmiot Czystość CHI 0/500",
+                "Oddaj przedmiot Potęga CHI 0/250",
+                "Oddaj przedmiot Esencja Czystej Energii CHI 0/1"
+              ],
+              "rewards": [
+                "Potężna Esencja Czystej CHI x1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 74,
+      "quests": [
+        {
+          "slug": "goku-n/74/boski-topor",
+          "name": "Boski Topór",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ognisty Demon"
+              ],
+              "rewards": [
+                "Boski Topór"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 75,
+      "quests": [
+        {
+          "slug": "goku-n/75/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bubu"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bubu"
+              ],
+              "rewards": [
+                "60 000 000 doświadczenia",
+                "Podróż do Żołądek Bubu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 76,
+      "quests": [
+        {
+          "slug": "goku-n/76/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [],
+              "rewards": [],
+              "note": "Idź na północ do lokacji Wnętrze Bubu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 77,
+      "quests": [
+        {
+          "slug": "goku-n/77/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Wewnętrzna siła"
+              ],
+              "rewards": [
+                "300 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Iluzja SonGokana"
+              ],
+              "rewards": [
+                "Podróż do Głowa Bubu"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/77/bakterie",
+          "name": "Bakterie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/710",
+                "Pokonać w pojedynku: Bakteria"
+              ],
+              "rewards": [
+                "Pokarm"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Większa Bakteria"
+              ],
+              "rewards": [
+                "90 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Średnia Bakteria"
+              ],
+              "rewards": [
+                "Pokarm"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Sprytna Bakteria"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Duża Bakteria"
+              ],
+              "rewards": [
+                "Pokarm"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Gruba Bakteria"
+              ],
+              "rewards": [
+                "120 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Opasła Bakteria"
+              ],
+              "rewards": [
+                "Pokarm"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Agresywna Bakteria"
+              ],
+              "rewards": [
+                "140 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Potężna Bakteria"
+              ],
+              "rewards": [
+                "Pokarm"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Pokarm 0/5"
+              ],
+              "rewards": [
+                "160 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Wirus(Normal) 0/300"
+              ],
+              "rewards": [
+                "80 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 78,
+      "quests": [
+        {
+          "slug": "goku-n/78/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bubu"
+              ],
+              "rewards": [
+                "Podróż do Rozpadlina"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 79,
+      "quests": [
+        {
+          "slug": "goku-n/79/kolejne-zagrozenie",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Mistyczna moc"
+              ],
+              "rewards": [
+                "Podróż do Planeta Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/79/tajemniczy-list",
+          "name": "Tajemniczy list",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Grom(Normal) 0/1"
+              ],
+              "rewards": [
+                "100 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Grom(Champion) 0/300"
+              ],
+              "rewards": [
+                "140 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Grom(Elita) 0/50"
+              ],
+              "rewards": [
+                "160 000 000 doświadczenia",
+                "100 000 energii Ki"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 73,
+      "quests": [
+        {
+          "slug": "goku-n/73/kolejne-zagrozenie-2",
+          "name": "Kolejne zagrożenie",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Bubu"
+              ],
+              "rewards": [
+                "50 000 000 doświadczenia",
+                "Podróż do Miejsce Treningu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 80,
+      "quests": [
+        {
+          "slug": "goku-n/80/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Opanować: Tajemnica Ki",
+                "Osiągnąć poziom: 0/851"
+              ],
+              "rewards": [
+                "Technika: Fala Uderzeniowa V"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: SonGoten"
+              ],
+              "rewards": [
+                "90 000 000 doświadczenia",
+                "Podróż do Miejsce Turnieju"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/80/kolekcjoner",
+          "name": "Kolekcjoner",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Woli normal 0/66"
+              ],
+              "rewards": [
+                "10kk"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/80/tajemniczy-trening",
+          "name": "Tajemniczy trening",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonaj: Oponent(Normal) 0/500"
+              ],
+              "rewards": [
+                "180 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły normal 0/1"
+              ],
+              "rewards": [
+                "200 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Oponent(Elita) 0/100"
+              ],
+              "rewards": [
+                "240 000 000 doświadczenia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 81,
+      "quests": [
+        {
+          "slug": "goku-n/81/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ubub"
+              ],
+              "rewards": [
+                "15 000 000 doświadczenia",
+                "Podróż do Zielona Pustynia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 82,
+      "quests": [
+        {
+          "slug": "goku-n/82/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ubub"
+              ],
+              "rewards": [
+                "16 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ubub"
+              ],
+              "rewards": [
+                "17 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ubub"
+              ],
+              "rewards": [
+                "18 000 000 doświadczenia",
+                "Podróż do Podziemia Pałacu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 83,
+      "quests": [
+        {
+          "slug": "goku-n/83/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Ubub"
+              ],
+              "rewards": [
+                "100 000 siły"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 170"
+              ],
+              "rewards": [
+                "1 000 000 szybkości",
+                "Podróż do Głębia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/83/pierwsza-proba",
+          "name": "Pierwsza Próba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/860",
+                "Pokonaj: Muk(Champion) 0/1"
+              ],
+              "rewards": [
+                "250 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Muk(Normal) 0/100"
+              ],
+              "rewards": [
+                "290 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Czwarty Dowódca"
+              ],
+              "rewards": [
+                "350 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Szybkości normal 0/3"
+              ],
+              "rewards": [
+                "400 000 000 doświadczenia",
+                "Pieczęć starych Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/83/druga-proba",
+          "name": "Druga Próba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/920",
+                "Pokonaj: Muk(Normal) 0/200"
+              ],
+              "rewards": [
+                "390 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Muk(Champion) 0/200"
+              ],
+              "rewards": [
+                "450 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Trzeci Dowódca"
+              ],
+              "rewards": [
+                "490 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Wytrzymałości normal 0/3"
+              ],
+              "rewards": [
+                "500 000 000 doświadczenia",
+                "Pieczęć starych Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/83/trzecia-proba",
+          "name": "Trzecia Próba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 000",
+                "Pokonaj: Muk(Normal) 0/300"
+              ],
+              "rewards": [
+                "500 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Muk(Champion) 0/300"
+              ],
+              "rewards": [
+                "550 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Drugi Dowódca"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Siły Woli normal 0/3"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia",
+                "Pieczęć starych Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/83/czwarta-proba",
+          "name": "Czwarta Próba",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 080",
+                "Pokonaj: Muk(Normal) 0/500"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Muk(Champion) 0/500"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Muk(Elita) 0/300"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Pierwszy Dowódca"
+              ],
+              "rewards": [
+                "650 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Oddaj przedmiot Symbol Energii KI 0/3"
+              ],
+              "rewards": [
+                "Pieczęć starych Bogów"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/83/bariera",
+          "name": "Bariera",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 160",
+                "Zapłacić: 0/5 kk",
+                "Oddaj przedmiot Pieczęć starych Bogów 0/4"
+              ],
+              "rewards": [
+                "Podróż do Komnata Umysłu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 102,
+      "quests": [
+        {
+          "slug": "goku-n/102/bariera",
+          "name": "Bariera",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Oddaj przedmiot Kolczyki Fuzyjne"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Myśliciel(Normal) 0/1 000"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Myśliciel(Champion) 0/500"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Myśliciel(Elita) 0/100"
+              ],
+              "rewards": [
+                "1 000 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonać w pojedynku: Strażnik Bariery"
+              ],
+              "rewards": [
+                "600 000 000 doświadczenia"
+              ]
+            },
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 161"
+              ],
+              "rewards": [
+                "Podróż do Podziemia Pałacu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 84,
+      "quests": [
+        {
+          "slug": "goku-n/84/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 250"
+              ],
+              "rewards": [
+                "Podróż do Pałac Wszechmogącego"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/84/starozytni",
+          "name": "Starożytni",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 200",
+                "Pokonaj: Przodek(Champion) 0/500"
+              ],
+              "rewards": [
+                "700 000 000 doświadczenia"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "goku-n/84/wielcy-przodkowie",
+          "name": "Wielcy Przodkowie",
+          "kind": "side",
+          "steps": [
+            {
+              "requirements": [
+                "Osiągnąć poziom: 0/1 250",
+                "Moc: 0/100 000 000"
+              ],
+              "rewards": [
+                "bonus premium na 14 dni: Zaawansowana Kondycja",
+                "1 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Przodek(Elita) 0/50"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "bonus premium na 14 dni: Mistrz treningu",
+                "bonus premium na 14 dni: Bystrość umysłu"
+              ]
+            },
+            {
+              "requirements": [
+                "Wytrenowana moc 0/5 000 000"
+              ],
+              "rewards": [
+                "bonus premium na 14 dni: Magnetyzm",
+                "1 000 000 do wszystkich statystyk"
+              ]
+            },
+            {
+              "requirements": [
+                "Pokonaj: Przeciwnik Tren.(Legendarny) 0/10"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "bonus premium na 14 dni: Mistrz treningu II"
+              ]
+            },
+            {
+              "requirements": [
+                "Zdobyć moc z Przodek 0/5 000 000"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "bonus premium na 14 dni: Zmysł walki"
+              ]
+            },
+            {
+              "requirements": [
+                "Wydropione przedmioty 0/100"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "Niebieskie Senzu x50"
+              ]
+            },
+            {
+              "requirements": [
+                "Wydropione przedmioty 0/200"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "bonus premium na 14 dni: Mistrz PvP"
+              ]
+            },
+            {
+              "requirements": [
+                "Wygrane walki PvP 0/100"
+              ],
+              "rewards": [
+                "1 000 000 do wszystkich statystyk",
+                "15 do przyrostu PA"
+              ]
+            },
+            {
+              "requirements": [
+                "PA równe 100"
+              ],
+              "rewards": [
+                "1kk",
+                "1 000 000 do wszystkich statystyk",
+                "14 PSK",
+                "3 000 000 do wszystkich statystyk",
+                "Czarna Smocza Kula x7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locId": 27,
+      "quests": [
+        {
+          "slug": "goku-n/27/kolejny-trening",
+          "name": "Kolejny Trening",
+          "kind": "main",
+          "steps": [
+            {
+              "requirements": [
+                "Ostateczny warunek:"
+              ],
+              "rewards": [
+                "Odrodzenie (Koniec fabuły Non r)",
+                "Podróż do Zuna"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

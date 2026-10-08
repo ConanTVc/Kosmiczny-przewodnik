@@ -128,12 +128,13 @@ export function validateContent(input: ContentInput): ValidationResult {
           `Nieznana lokacja ${section.locId} – brak w data/locations.json`,
         );
       } else {
+        // Powrót do lokacji z wcześniejszego rebornu jest normalny; późniejszy reborn – nie.
         const reborn = locations.locations[loc]?.reborn;
-        if (reborn !== undefined && reborn !== chapter.reborn) {
+        if (reborn !== undefined && reborn > chapter.reborn) {
           warn(
             file,
             `${sPath}.locId`,
-            `Lokacja ${section.locId} ma reborn ${reborn}, a rozdział ${chapter.reborn}`,
+            `Lokacja ${section.locId} ma reborn ${reborn}, wyższy niż rozdział (${chapter.reborn})`,
           );
         }
       }

@@ -1,0 +1,1508 @@
+1,Las Wschodni
+2,Wyspa Genialnego Żółwia
+3,Wyspa - Sektor Zachodni
+4,Wyspa - Sektor Centralny
+5,Wyspa - Sektor Wschodni
+6,Wyspa - Sektor Południowy
+7,Wyspa - Dolina
+8,Płonąca Góra
+9,Papaja I
+10,Tajemniczy Las
+11,Piekielne wrota
+12,Królestwo Biesów
+13,Las Zachodni
+14,Okolice świętej wieży
+15,Zapomniana Dolina
+16,Kwatera Główna Armii
+17,Góry Mgliste
+18,Dolina Wilków
+19,Papaja II
+20,Mroczny Las
+21,Mroczny Las - Południe
+22,Dziewicze Pustkowia
+23,Legowisko
+24,Lodowy Labirynt
+25,Tajemna Grota
+26,Okolice Zamku Królewskiego
+27,Pałac Wszechmogącego
+28,Przeszłość
+29,Góra Gromów
+30,Las Północny
+31,Papaja III
+32,Okolice Czarnego Jeziora
+33,Północne Jezioro
+34,Siedziba Pterodora
+35,Dom
+36,Ciche Pustkowie
+37,Wrota zaświatów
+38,Droga Węża
+39,Planeta Kaio
+40,Pole bitwy
+41,Szpital
+42,Statek Kosmiczny
+43,Namek - Północ
+44,Namek - Pole bitwy
+45,Namek - Statek Frezera
+46,Namek - Sektor Centralny
+47,Planeta Yardrat
+48,Planeta Kama - Zachód
+49,Planeta Kama - Wschód
+50,Miejsce lądowania
+51,Magiczny Las
+52,Wschodnia częśc lasu
+53,Górskie zbocza
+54,Rajska Sala Treningowa
+55,Prowincja Zachodnia
+56,Yana
+57,Belgor
+58,Mona
+59,Luna
+60,Mun
+61,Karad
+62,Zun
+63,Behej
+64,Freezer
+65,Vegeta
+66,Planeta Władcy Zaświatów
+67,Stadion
+68,Sekretne Miejsce Treningu
+69,Południe Planety
+70,Papaja IV
+71,Zniszczony Statek Kosmiczny
+72,Sektor Wschodni
+73,Planeta Bogów
+74,Planeta Bogów - Zachód
+75,Skaliste Zbocza
+76,Żołądek Bubu
+77,Wnętrze Bubu
+78,Głowa Bubu
+79,Rozpadlina
+80,Miejsce Treningu
+81,Miejsce Turnieju
+82,Zielona Pustynia
+83,Podziemia Pałacu
+84,Głębia
+85,Zuna
+86,Zuna - Północ
+87,Wielka jaskinia
+88,Gniazdo
+89,Planeta Nova
+90,Planeta Olbrzymów
+91,Planeta Lud
+92,Planeta ZX68
+93,Planeta ZX68 - Laboratorium
+94,Lodowa Planeta
+95,Lodowa Dolina
+96,Inny wymiar
+97,Tajemna Sala
+98,Planeta Xul
+99,Planeta Tsuful
+100,Nowa Namek
+101,Dolina Śmierci
+102,Komnata Umysłu
+103,Atakowana Prowincja
+104,Piekło
+105,Gruzowisko
+106,Miejsce Przywołania
+107,Zatruta Wyspa
+108,Miasto - Widmo
+109,Brzeg Jeziora
+110,Pustkowia
+111,Zniszczone Miasto
+112,Dolina Zagłady
+113,Zaświaty - Część Południowa
+114,Zaświaty - Część Zachodnia
+115,Zaświaty - Część Północna
+116,Zaświaty - Część Wschodnia
+117,Siedziba Bogów
+118,Omega - Zniszczona Siedziba
+119,Omega - Planeta Tytanów
+120,Omega - Opuszczona Planeta
+121,Flora
+122,Syrius
+123,Casjo
+124,Zorda
+125,Rebel
+126,Achaja
+127,Orestes
+128,Eurynia
+129,Pallas
+130,Corsar
+131,Planeta Casjo
+132,Opuszczona Planeta
+133,Planeta Magii
+134,Planeta Mleckor
+135,Lokacja Specjalna
+136,Planeta Wody
+137,Planeta Ciążenia
+138,Sirius
+139,Ziemia - Miejsce Ataku
+140,Dolina Zniszczenia
+141,Nieznana Planeta
+142,Nieznana Planeta II
+143,Wymiar X
+144,Wymiar Y
+145,Wymiar Z
+146,Planeta Nudest
+147,Planeta Ura
+148,Planeta Girlu
+149,Planeta Papri
+150,Planeta Secato
+151,Planeta Handlowa
+152,Planeta Roco
+153,Dom Pan
+154,Ziemska Siedziba Upadłych Saiyan
+155,Miejsce Lądowania Lorda Eriona
+156,Statek Lorda Eriona
+157,Tunel międzywymiarowy – początek
+158,Tunel międzywymiarowy – środek
+159,Tunel międzywymiarowy – wir
+160,Irris
+161,Kopalnia
+162,Tunel międzywymiarowy – wir drugi
+163,Vestfalia
+164,Tunel międzywymiarowy - koniec
+165,Tunel międzywymiarowy - wir trzeci
+166,Starożytność
+167,Góry Wschodnie
+168,Przedsionek
+169,Saiyańska Kopalnia
+170,Głębia Kopalni
+171,Pałac
+172,Planeta Nindu
+173,Jeziora Nindu
+174,Lasy Nindu
+175,Planeta Frieza 50
+176,Siedziba Freezera - Lądowisko
+177,Siedziba Freezera - Korytarz
+178,Siedziba Freezera - Centrum
+179,Planeta Mudi
+180,Stolica
+181,Tajna Kwatera
+182,Planeta Dezerto
+183,Fajro
+184,Flamo
+185,Planeta Nibi
+186,Planeta Nibi - Północ
+187,Planeta Nibi - Południe
+188,Planeta Nibi - Wschód
+189,Planeta Nibi - Zachód
+190,Podziemia Nibi
+191,Miasto Freezera
+192,Obrzeża miasta
+193,Główna Siedziba Freezera
+194,Planeta Triktek
+195,Planeta Arlia
+196,Pałac Królewski - Przedsionek
+197,Pałac Królewski - Lochy
+198,Pałac Królewski – Komnaty Władcy
+199,Planeta Grinda 3
+200,Planeta Arkadia
+201,Hangar Kapsuł Kosmicznych
+202,Ziemia – Las Tropikalny
+203,Kapsuła Regenerująca
+204,Namek – Osada Nameczan
+205,Namek – Centrum Planety
+206,Namek - Południe
+207,Prima 7
+208,Prima 7 Miejsce Lądowania
+209,Kosmiczna Kapsuła CC
+210,Nowa Kosmiczna Kapsuła CC
+211,Statek kosmiczny CC
+212,Kryjówka
+213,Odludzie
+214,Prowincja wschodnia
+215,Rajska Sala Treningowa
+216,Nawiedzona Maszyna Treningowa
+217,Planeta Vegeta – Przeszłość
+218,Ukryte Laboratorium
+219,Ukryte Laboratorium – Podziemia
+220,Statek o Zwiększonej Grawitacji
+221,Pierwszy Pokład
+222,Siedziba Demona
+223,Piekielne Otchłanie
+224,Piekielne Otchłanie - Północ
+225,Dystrykt Centralny
+226,Rzeczywistość
+227,Paradoks
+228,Otchłanie Rajskiej Sali
+229,Rajska Komnata
+230,Głębia Rajskiej Sali
+231,Głód
+232,Żądza
+233,Pragnienie
+234,Utopia
+235,Gehenna
+236,Inferno
+237,Dezolacja
+238,Trauer
+239,Larum
+240,Statek Pleurs
+241,Jasyr
+242,Jasyr - północ
+243,Miedo
+244,Ansiedad
+245,Planeta Życzeń
+246,Planeta Życzeń – Wioska Uchodźców
+247,Planeta Życzeń – Pustelnia nad Jeziorem
+248,Planeta Życzeń – Las
+249,Planeta Tura
+250,Pracownia
+251,Góry
+252,Uniwersytet
+253,Dziedziniec
+254,Impluvium
+255,Ruiny
+256,Przestrzeń Kosmiczna
+257,Rubież
+258,Sulphur
+259,Czarna Dziura
+260,Prywatna Planeta
+261,Prywatna Planeta
+262,Prywatna Planeta
+263,Prywatna Planeta
+264,Prywatna Planeta
+265,Turniej
+266,Wioska Slaya
+267,Cytadela
+268,Siedziba Doktora
+269,Główna Sala
+270,Szczyt Loo
+271,Lodowiec
+272,Loch
+273,Baria
+274,Planeta EUL
+275,Placówka Doktora
+276,Ośrodek Badawczy
+277,Księżyc Gamma
+278,Czubek Góry
+279,Takywan
+280,Vole
+281,Riese
+282,Chata Kolekcjonera
+283,Ziemia – Miejsce Zasadzki
+284,Ziemia – Miejsce Zasadzki – Pole Bitwy
+285,Turniej Międzywymiarowy – Gruzowisko
+286,Indiańska wioska
+287,Strażnica poziom 1
+288,Strażnica poziom 2
+289,Strażnica poziom 3
+290,Strażnica poziom 4
+291,Polana Chowańców
+292,Turniej Międzywymiarowy - Generator
+293,Pustynia
+294,Podziemia Pustyni – Początek
+295,Podziemia Pustyni – Korytarz
+296,Podziemia Pustyni – Hol
+297,Podziemia Pustyni – Sala
+298,Podziemia Pustyni – Ślepy Zaułek
+299,Planeta treningu
+300,Planeta doświadczenia
+301,Planeta szczęścia
+302,Planeta Info
+303,Magiczna Kraina Bukolesa
+304,Planeta Tajemnic
+305,Zapomniana Planeta
+306,Planeta Cork
+307,Południowa Świątynia
+308,Zachodnia Świątynia
+309,Wschodnia Świątynia
+310,Boski Ogród
+311,Jaskinia Przodków
+312,Planeta Ibnu - Wschód
+313,Osada
+314,Przeklęty Las
+315,Zniszczona Osada
+316,Planeta Urni
+317,Planeta Urni - Południe
+318,Leśna Droga
+319,Mroczna Dolina
+320,Lodowa Kraina
+321,Zagadkowa Kamienica
+322,Lochy
+323,Arkosolium
+324,Katakumby
+325,Kazamat
+326,Jezioro
+327,Step
+328,Góry
+329,Erem
+330,Wodospad
+331,Błonie
+332,Sefahat
+333,Valupto
+334,Wejście do Dabinu
+335,Dabin -  Początek
+336,Dabin
+337,Felle
+338,Polif
+339,Propiska
+340,Bumi
+341,Gua
+342,Imezi
+343,Puncak
+344,Pelabuhan
+345,Laut
+346,Pemeltrio
+347,Maratoia
+348,Siedziba Armii RR
+349,Niebo
+350,Siedziba Imperium Demonów
+351,Siedziba Imperium Saiyan
+352,Rozdroża
+353,Niebiański Pałac
+354,Planeta Nazoidów
+355,Opustoszała Planeta
+356,Planeta Śmierci
+357,Dolina Treningowa
+358,Boska Kuźnia
+359,Siedziba Mistrzów
+360,Turniej Międzygalaktyczny
+361,Turniej Międzygalaktyczny – Arena II
+362,Zniszczona Planeta Bogów
+363,Mroczny Pałac Astaroth
+364,Mroczny pałac Astaroth – Sala
+365,Zniszczona Planeta Bogów – Oaza
+366,Zachodnia Prowincja Piekieł
+367,Siedziba Władcy Demonów
+368,Hodowla Yajirobe
+369,Legenda Shenlonga
+370,Planeta Stigma
+371,Podziemia Planety Stigma
+372,Planeta Mrozu
+373,Podziemia Planety Stigma - Arena
+374,Terio
+375,Haikyou
+376,Niezwykła Planeta
+377,Planeta Trax
+378,Planeta Keido
+379,Alternatywny Pałac Wszechmogącego
+380,Kraina Senzu
+381,Daleki Zachód
+382,Bagna
+383,Kryjówka Porywaczy
+384,Las Deszczowy
+385,Labirynt Ciemności
+386,Starożytna Pustynia
+387,Grobowiec
+388,Płonący Las
+389,Wymiar Bogów
+390,Czeluście Piekieł
+391,Piekielna Otchłań
+392,Jezioro Lawy
+393,Sala Sądu
+394,Diabelski Zamek
+395,Czwarty Krąg Piekła
+396,Wnętrze Cerbera
+397,Sierociniec
+398,Brzeg Styksu
+399,Skarbiec
+400,Miasto Man
+401,Grobowce Herezji
+402,Krwawa Dolina
+403,Las Samobójców
+404,Piaski Przeklętych
+405,Wyspa Treningowa
+406,Restauracja
+407,Turniej Sztuk Walki
+408,Święta Wieża
+409,Dolina
+410,Jaskinia
+411,Krypta
+412,Komnata Żywiołów
+413,Piwnica
+414,Wieczny Mrok
+415,Obrzeża Piekła
+416,Sala Tortur
+417,Mroźna Ścieżka
+418,Zamarznięte Jezioro
+419,Bramy Niebios
+420,Niebiańskie Podziemia
+421,Niebiański Turniej
+422,Posiadłość Bulmy
+423,Okolice Pałacu Niebiańskiego
+424,Oaza Spokoju
+425,Kraina Obfitości
+426,Raj
+427,Sala Tronowa
+428,Wnętrze Niebiańskiego Pałacu
+429,Wymiar Cieni
+430,Pustka
+431,Wymiar Nicości
+432,Przerażający Most
+433,Wnętrze Zamku
+434,Zamek Strachu
+435,Lokacja Halloweenowa
+436,Miasteczko
+437,Otchłań - Poziom 5
+438,Otchłań - Poziom 3
+439,Pokój Cieni
+440,Otchłań - Poziom 4
+441,Wymiar Strachu
+442,Wymiar Hexyz
+443,Wymiar Heza
+444,Otchłań - Poziom 2
+445,Otchłań - Poziom 1
+446,Magazyn Cieni
+447,Okolice Domu
+448,Kryjówka
+449,Wnętrze Kryjówki
+450,Dzicz
+451,Puszcza
+452,Uroczysko
+453,Góry centralne
+454,Zamek Garlicka
+455,Ogród
+456,Zniszczone komnaty Garlicka
+457,Capsule Corporation
+458,Statek Kosmiczny - Maszynownia
+459,Namek - Miejsce Lądowania
+460,Namek - Wioska
+461,Namek - Kryjówka
+462,Namek - Obrzeża
+463,Wielki Turniej
+464,Rozstaje
+465,Komnata Smoka
+466,Komnata Regeneracji
+467,Komnata Legendy
+468,Komnata Mocy
+469,Wyimaginowana Kraina Ogarou
+470,Wejście do Krainy Ogarou
+471,Biegun
+472,Góry Paozu
+473,Dom Goku
+474,Pustynia Rozbójników
+475,Śnieżne Góry
+476,Wieża Muskułów
+477,Górski Szlak
+478,Brzeg Morza
+479,Wyspa walki
+480,Iluzja miasta
+481,Zniszczony Pałac Wszechmogącego
+482,Nieznane Tereny
+483,Wieczne Miasto
+484,Zniszczona Planeta Bogów
+485,Więzienie Buu
+486,Planeta Bogów - Miecz Z
+487,Planeta zagłady
+488,Miasto Sin
+489,Katis
+490,Umysł
+491,Sala treningowa Capsule Corporation
+492,Brama piekieł
+493,Otchłań piekieł
+494,Esencja piekła
+495,Jezioro Wiedźmy
+496,Ego
+497,Głębia Jestestwa
+498,Pałac rozpaczy
+499,Zniszczony dom
+500,Czarny zamek
+501,Wieczny ogród
+502,Zakazana Przystań
+503,Zaginiona Planeta
+504,Umysł Boga Destrukcji
+505,Gwiazda Neutronowa
+506,Ziemska kryjówka Nameczan
+507,Obóz Uchodźców
+508,Królestwo Lorda Sluga
+509,Szumiąca łąka
+510,Szumiąca łąka - Północ
+511,Szumiąca łąka - Wschód
+512,Szumiąca łąka - południe
+513,Szumiąca łąka - Zachód
+514,Dom Bulmy
+515,Przygraniczna wioska
+516,Wioska Aru
+517,Mogiły Saiyan
+518,Dąb
+519,Mroźna kraina
+520,Lodowe pustkowie
+521,Zamarznięta maszynownia
+522,Laboratorium
+523,Podziemie laboratorium
+524,Cmentarzysko maszyn
+525,Żelazna komnata
+526,Kryjówka Chi Chi
+527,Wyspa strachu
+528,Piracka przystań
+529,Siedziba Bojacka
+530,Planeta Klanowa
+531,Siedziba Czterech Szkół
+532,Czarny Bór
+533,Zamarznięte Pustkowia
+534,Świątynia Wichrów
+535,Knieja
+536,Szkoła
+537,Wypalone Pole Bitwy
+538,Pałac Herkulesa
+539,Spopielona Droga Węża
+540,Sąd Ostateczny
+541,Miejsce Rzezi
+542,Krwawy Kanion
+543,Wyspa Pamięci
+544,Pałac Spustoszenia - Wnętrze
+545,Pałac Spustoszenia - Sala Tronowa
+546,Nicość
+547,Nowa Planeta Kaio
+548,Zaginiony Kanion
+549,Koszary Armii Zniszczenia
+550,Podziemne Więzienie
+551,Koloseum śmierci
+552,Starożytna Planeta Sadan
+553,Starożytna Planeta Sadan - Północ
+554,Starożytna Planeta Sadan - Południe
+555,Przestrzeń Ponadwymiarowa
+556,Planeta Fox
+557,Promenada
+558,Stadion
+559,Trybuny
+560,Strefa Kibica
+561,Mars z równoległego świata
+562,Mars Z Równoległego Świata - Górski Szczyt
+563,Zniszczona Planeta Fox
+564,Planeta Voulia
+565,Ukryty Skarbiec
+566,Studnia Życzeń
+567,Szczyt Marsa
+568,Plaża
+569,Boisko do Siatkówki
+570,Ganek Domu
+571,Planeta Eurilia - Arena Turniejowa
+572,Planeta Eurilia - Południe
+573,Planeta Eurilia - Wschód
+574,Planeta Eurilia - Centrum
+575,Planeta Voulia - Wioska
+576,Planeta Voulia - Zamek Królewski
+577,Góry
+578,Dom Goku
+579,Pałac Garlica
+580,Pustynia
+581,Planeta Eurilia - Biblioteka
+582,Świat Eterdana
+583,Mapa Survivalowa
+584,Zniszczona Capsule Corporation
+585,Okolice Capsule Corporation
+586,Zniszczone Satan City
+587,Odludzie
+588,Satan City obrzeża
+589,Satan City Centrum
+590,Sala treningowa 1
+591,Sala treningowa 2
+592,Sala treningowa 3
+593,Nieznany las
+594,Piekło na ziemi
+595,Prowincja
+596,Opuszczone góry
+597,CC sala treningowa
+598,Tajne laboratorium
+599,Elektrownia
+600,Skalna dolina
+601,Sala Vegety
+602,Statek kosmiczny CC – przyszłość
+603,Podziemia laboratorium dr. Gero
+604,Centrum
+605,Południowa prowincja
+606,Północna prowincja
+607,Las
+608,Nowa Vegeta
+609,Nowa Vegeta - obrzeża
+610,Nowa vegeta prowincja
+611,Miejsce walki
+612,Nowa Vegeta - stolica
+613,Samotnia
+614,Centrum Czasu
+615,Dom bogini czasu
+616,Miejsce walki - zmieniona przeszłość
+617,Planeta Voulia – Lochy
+618,Planeta Bogów - Wschód
+619,Fubrion - Jaskinia
+620,Siedziba Dawnych Bogów
+621,Fubrion
+622,Świątynia Saiyan
+623,Planeta Świąteczna
+624,GW-14ZD-K4
+625,Centrum Świąt
+626,BZ-ŚW
+627,Burza Śnieżna
+628,Górskie zbocza - zmieniona przeszłość
+629,Rzeczna dolina
+630,Droga do imperium
+631,Hangar
+632,Namek - Miejsce walki
+633,Miejsce przywołania-zmieniona przeszłość
+634,Góry lawy
+635,Planeta Freezera
+636,Statek King Colda
+637,Jezioro zagłady-zmieniona przeszłość
+638,Las Zagubionych
+639,Pustkowie czasu
+640,Fala czasu
+641,Wydmy czasu
+642,Sidła czasu
+643,Tunel czasu
+644,Samotne miasto
+645,Zniszczona prowincja
+646,Sekretna maszyna czasu
+647,Wschodnia stolica
+648,Pole
+649,Łąka
+650,Zachodnia stolica
+651,Dziób statku
+652,Bakburta
+653,Sterburta
+654,Rufa
+655,Prywatna wyspa - północ
+656,Prywatna wyspa
+657,Prywatna wyspa - południe
+658,Podziemia
+659,Puszcza
+660,Pieczara
+661,Planeta Beerusa
+662,Wielkanoc 2017
+663,Miejsce lądowania Freezera
+664,Podziemna grota
+665,Spaczone miejsce
+666,Pole zmagań
+667,Glamorgan
+668,Górska wieś
+669,Jezioro
+670,Turniej kwalifikacyjny
+671,Bezimienna planeta
+672,Brama zaświatów
+673,Zaświaty poziom 1
+674,Zaświaty poziom 2
+675,Otchłań zaświatów
+676,Planeta Tech-Tech
+677,Lądowisko Gwiazdy Gete
+678,Gwiazda Gete Więzienie
+679,Rdzeń Gwiazdy Gete
+680,Obrzeża północnego miasta
+681,Wschodnia dzielnica
+682,Zachodnia dzielnica
+683,Stolica północego miasta
+684,Planeta Gen
+685,Planeta Cor
+686,Planeta Nuts
+687,Planeta Corn
+688,Dom
+689,Plaża
+690,Pole Rodziny Son
+691,Dom Bulmy
+692,Planeta Potaufeu
+693,Planeta Vestria - Centrum
+694,Podziemia Planety Beerusa
+695,Ikarion - Wielka Biblioteka
+696,Planeta Lehon
+697,Planeta Aetna
+698,Siedziba Gowasu
+699,Pałac Zeno
+700,Zniszczone miasto
+701,Kryjówka Ruchu Oporu
+702,Laboratorium
+703,Zniszczone miasto - Południe
+704,Zniszczone miasto - Zachód
+705,Zniszczone miasto - Północ
+706,Zniszczone miasto - Wschód
+707,Rozdroża Czasu
+708,Alternatywna Planeta Bogów
+709,Pole
+710,Dom
+711,Atakowane miasto
+712,statek - I poziom
+713,Statek - II poziom
+714,Zniszczone miasto - Centrum
+715,Pola Kaishin
+716,Centrum Badawcze Capsule Corporation
+717,Laboratoria Capsule Corporation
+718,Domek letniskowy Zamasu
+719,Klasztor Kontemplacji
+720,Odrodzona Puszcza
+721,Zniszczone przedmieścia
+722,Wioska
+723,Obrzeża wioski
+724,Las
+725,Arktoria
+726,Planeta Vestria - Pole Bitwy
+727,Vestria - Wschód
+728,Planeta Vestria - Północ
+729,Szatańskie pustkowa
+730,Ruiny West City
+731,Przedmieścia West City
+732,Ruiny 18 Wszechświata
+733,Poziom I - Status Quo
+734,Poziom II – Przepastna Grota
+735,Poziom III - Aqua
+736,Poziom IV - Inferno
+737,Poziom V - Elizjum
+738,Poziom VI – Zero Absolutne
+739,Poziom VII - Otchłań
+740,Poziom VIII - Odrodzenie
+741,Poziom IX – Arena Prób
+742,Poziom X –Pałac Zwycięzców
+743,Dom
+744,Dom Bulmy
+745,Tantaloa - Północ
+746,Tantaloa - Południe
+747,Nora Królika
+748,Głębia Nory
+749,Fabryka Jajek
+750,Dystrybutor Jajek
+751,Zrujnowana stolica
+752,Pradawne Sanktuarium
+753,Obrzeża Wszechświata
+754,Pustynia Chaosu
+755,Wir Temporalno-Chaotyczny
+756,Nowa Vegeta
+757,Nowa Vegeta - Pałac
+758,Nowa Vegeta - miasto
+759,Dom
+760,Planeta Shoshinsha - kwatera główna rebeliantów
+761,Planeta Shaoshinsha – pole bitwy
+762,Planeta Shoshinsha – stolica
+763,Koniec czasu
+764,Planeta Tsufur
+765,Planeta Tsufur - stolica
+766,Planeta Tsufur - Pałac Bebiego
+767,Dom
+768,Arcunos – pustkowia
+769,Arcunos – dżungla
+770,Arcunos – posiadłość Gena
+771,Pierwotny Chaos
+772,Subterria
+773,West City - konferencja naukowa
+774,Skaliste pustkowie
+775,West City
+776,El Zombie Pre
+777,Planeta Vegeta - przedmieścia
+778,Planeta Vegeta - pałac królewski
+779,Planeta Vegeta - Sala tronowa
+780,Przestrzeń kosmiczna
+781,Pustkowia Ister
+782,Pustkowia Ister - grota
+783,Pustkowia Ister - szczyt wojownika
+784,Pustkowia Ister - dom
+785,Amai - Miasto
+786,Amai - Zgliszcza
+787,Mogina
+788,Mogina - Miasto
+789,Opuszczona Planeta
+790,Martwa planeta
+791,Folut - laboratorium
+792,Folut - pustynia
+793,Nowa Planeta Vegeta – Miasto
+794,Nowa Vegeta - koszary
+795,Nowa Vegeta - zamek
+796,Shamo - przedmieścia
+797,Shamo - farma
+798,Shamo - dom starszyzny
+799,Shamo - zgliszcza
+800,Ziemia - łąka
+801,Sayiański statek
+802,Nowa Planeta Vegeta - Kopalnia
+803,Nowa Planeta Vegeta - pole bitwy
+804,Kapsuła kosmiczna
+805,Mroźna planeta - Powierzchnia
+806,Mroźna planeta - Jaskinia
+807,Mroźna planeta - Jądro
+808,Ziemia - wioska
+809,Ziemia - wodospad
+810,Ziemia - laboratorium
+811,Wielki kanion
+812,Wielki kanion - pole bitwy
+813,Wielki kanion - miejsce przywołania
+814,Piekło
+815,Pole treningowe
+816,Zamrożone miasto
+817,Statek najeźdźców
+818,Pieczara Czarnoksiężnika
+819,Dziewiąty Krąg Piekła
+820,Piekielne Więzienie
+821,Namek – Czas Mroku
+822,Namek – Czas Mroku - Pole Bitwy
+823,Namek – Czas Mroku - Pustkowie
+824,Ziemia – Czas Mroku
+825,Ziemia – Czas Mroku - Arena Cella
+826,Ziemia – Czas Mroku - Zniszczona Arena
+827,Ziemia – Czas Mroku - Kanion
+828,Ziemia – Czas Mroku – Pole Bitwy
+829,Ziemia – Czas Mroku – Plugawe Góry
+830,Planeta Bogów - Czas Mroku
+831,Planeta Bogów - Czas Mroku – Droga Oczyszczenia
+832,Planeta Bogów - Czas Mroku – Drzewo Mocy
+833,Piekło - Czas Mroku
+834,Piekło - Czas Mroku – Rozstaje
+835,Piekło - Czas Mroku – Pałac Demona
+836,Ziemia – Czas Mroku – Miejsce ataku
+837,Pałac Wszechmogącego - Czas Mroku
+838,Rajska Sala Treningowa – Czas Mroku
+839,Nowa Planeta Vegeta – Czas Mroku
+840,Nowa Planeta Vegeta - Pałac Królewski
+841,Zgliszcza Planety Vegeta – Czas Mroku
+842,Pałac Czarnoksiężnika
+843,Pałac Czarnoksiężnika - Miejsce przywołania
+844,Pałac Czarnoksiężnika - Arena
+845,Turniej Wstępny
+846,Sąsiedztwo Kuririna
+847,Rezerwat na Wyspie
+848,Statek kłusowników
+849,Dom Letni Bulmy
+850,Starożytne Wrota
+851,Odyseja Kosmiczna
+852,Srebrny szlak
+853,Las Patriarchów
+854,Królicza Nora
+855,Pole Marchwi
+856,Wytwórnia Jajek
+857,Magazyn Pisanek
+858,Góra Yonder
+859,Jajeczna Dolina
+860,Dojo Tenshinhana
+861,Dom Urunai Baby
+862,Pluszowe Piekło
+863,Pobojowisko Skaliste
+864,Wioska Shinsoo
+865,Nawiedzona Planeta
+866,Dom
+867,Plaża Letniskowa
+868,Kurort Letniskowy
+869,Pole
+870,Bezludna Wyspa
+871,Ścieżka powrotna
+872,Góry Tsumisumbri
+873,Twierdza Doktora Whellowa
+874,Boska Arena
+875,Kraina Wody
+876,Ziemista Pustynia
+877,Ognista Ziemia
+878,Przylądek Wiatru
+879,Dom Goku
+880,Górskie Apartamenty
+881,Przedsionek góry
+882,Górski Szczyt
+883,Kosmiczne Oko
+884,Droga do domu
+885,Prywatna Planeta
+886,Zniszczona Część Areny
+887,Boska Arena- Pobojowisko
+888,Katharsis
+889,Miejsce Wybuchu
+890,Domek Halloweenowy
+891,Diabelskie Miasteczko
+892,Pole Dyń
+893,Domek Luster
+894,Straszny Szczyt
+895,Droga bez Powrotu
+896,Królestwo Bogów
+897,Królestwo Bogów - Pałac
+898,Królestwo Bogów - Drzewo Świata
+899,Królestwo Bogów - Boskie Pole
+900,Królestwo Bogów - Ścieżka
+901,Królestwo Bogów - Komnata Spokoju
+902,Królestwo Bogów - Sala Tronowa
+903,Królestwo Bogów Dziesiątego Wszechświata
+904,Królestwo Bogów - Domek Gowasu
+905,Sala Czasu
+906,Planeta Bogów - Miejsce Walki
+907,Ziemia - Stolica Wschodnia
+908,Zgliszcza Zachodniej Stolicy
+909,Zrujnowane Miasto
+910,Północna Stolica - Gruzowisko
+911,Przestrzeń Międzywymiarowa
+912,Smocze Góry
+913,Wymiar Władcy Czasu i Przestrzeni
+914,Planeta Barbaria - Przeszłość
+915,Planeta Barbaria - Kolonia - Przeszłość
+916,Planeta Barbaria - Miejsce Przemiany - Przeszłość
+917,Domek Gowasu - Przeszłość
+918,Wyspa Cienia - Przeszłość
+919,Splugawiona Kopalnia - Przeszłość
+920,Wielka Sala - Przeszłość
+921,Dom Nad Jeziorem
+922,Dom Nad Jeziorem - Pole
+923,Turniej Czasu - Faza Wstępna
+924,Turniej Czasu - Arena Finałowa
+925,Turniej Czasu - Faza Grupowa
+926,Turniej Czasu - Faza Pucharowa
+927,Ośnieżony Las
+928,Zaśnieżony Przesmyk
+929,Śnieżna Dolina
+930,Skalne Zbocza
+931,Szczyt
+932,Mokradła
+933,Uzdrowisko
+934,Starożytny Grobowiec
+935,Obrzeża Areny
+936,Zrujnowana Część Areny
+937,Pustkowie Zniszczenia
+938,Kraniec
+939,Góry Skaliste
+940,Przystań końca i początku
+941,Leśny Przysiułek
+942,Wybrzeże
+943,Leśny Zagajnik
+944,Góra Obfitości
+945,Koszmar
+946,Zmora
+947,Mara
+948,Prywatna Planeta
+949,Prywatna Planeta
+950,Prywatna Planeta
+951,Prywatna Planeta
+952,Prywatna Planeta
+953,Prywatna Planeta
+954,Prywatna Planeta
+955,Prywatna Planeta
+956,Prywatna Planeta
+957,Prywatna Planeta
+958,Prywatna Planeta
+959,Prywatna Planeta
+960,Prywatna Planeta
+961,Prywatna Planeta
+962,Prywatna Planeta
+963,Prywatna Planeta
+964,Prywatna Planeta
+965,Prywatna Planeta
+966,Prywatna Planeta
+967,Prywatna Planeta
+968,Prywatna Planeta
+969,Prywatna Planeta
+970,Prywatna Planeta
+971,Prywatna Planeta
+972,Capsule Corporation
+973,Dom Goku
+974,Targ
+975,Dom Kriillina
+976,Leśne wzgórza
+977,Dom Goku
+978,Okolice Plaży
+979,Plaża
+980,Ósma planeta Namek
+981,Zamek wielkiego króla światów
+982,Planeta Kaio ósmego wszechświata
+983,Kresy
+984,Centrum północy
+985,Centrum wszechświata
+986,Kalisto
+987,Kosmos
+988,Io
+989,Europa
+990,Ganimedes
+991,Planeta Liguira
+992,Sala treningowa
+993,Ogród
+994,Więzienie Galaktycznego patrolu
+995,Juns
+996,Statek Merusa
+997,Namek
+998,Namek-miejsce walki
+999,Dom Nameczan
+1000,Namek Wzgórza
+1001,Dom
+1002,Cmentarz
+1003,Góry
+1004,Stratosfera
+1005,Namek Ostateczna walka
+1006,Pustynna planeta
+1007,Sala Czasu
+1008,Galaktyczna sala treningowa
+1009,Vegeta Dom
+1010,Vegeta szkoła
+1011,Vegeta pierwsza próba
+1012,Vegeta Druga próba
+1013,Planeta Man
+1014,Planeta Dal
+1015,Planeta Oria
+1016,Planeta Lin
+1017,Vegeta Pałac
+1018,Vegeta pole bitwy
+1019,Vegeta Odludzie
+1020,Vegeta Decydująca próba
+1021,Horreum
+1022,Insula
+1023,Latarnia morska
+1024,Mauzoleum
+1025,Anor
+1026,Prancer
+1027,Stardust
+1028,Jaskinia Plant
+1029,Wioska Plant
+1030,Góry
+1031,Samotnia
+1032,Miejsce starcia
+1033,Miejsce treningu
+1034,Wyspa Żółwia
+1035,Dom
+1036,Miasto
+1037,Lądowisko
+1038,Miejsce ćwiczeń
+1039,Stolica
+1040,Dżungla
+1041,Pustynia
+1042,Miasto
+1043,Góry
+1044,Hiper Kuźnia
+1045,Dom
+1046,Era Mezozoiczna
+1047,ALTERNATYWNY ŚWIAT
+1048,PRYJĘCIE URODZINOWE
+1049,Celebes
+1050,Sumatra
+1051,Borneo
+1052,Zapadlisko
+1053,Kuest
+1054,Stoliwo
+1055,Manadnok
+1056,Gran
+1057,Turnia
+1058,Piarg
+1059,Pasn
+1060,Grzbiet
+1061,Filar
+1062,Kotlina
+1063,Holweg
+1064,Masyw
+1065,Depresja
+1066,Pagór
+1067,Dom
+1068,Miasto
+1069,Wioska
+1070,Jaskinia
+1071,Dom
+1072,Leśna droga
+1073,Bezdroża
+1074,Wioska
+1075,Wzgórze
+1076,Pod Barierą
+1077,Światłość
+1078,Głębia światłości
+1079,Koniec światłości
+1080,Poza barierą
+1081,W barierze
+1082,Zniszczona bariera
+1083,Krater
+1084,Dom
+1085,Sen
+1086,Mroczny staw
+1087,Miejsce treningu Roshiego
+1088,Kuźnia Huhyaj
+1089,Skraj Krateru
+1090,Wyspa na lawie
+1091,Wzgórze - zachód
+1092,Wysokie Góry
+1093,Moro - Ziemia
+1094,Półświadomość
+1095,Moro - Ziemia - Kraniec
+1096,Rezydencja Satana
+1097,Namek - centrum
+1098,Okolice domu
+1099,Planeta koszmaru
+1100,Podziemne przejście
+1101,Zamek Draculi
+1102,Planeta Sadal z innej lini czasowej - Dom
+1103,Planeta Sadal z innej lini czasowej - Dziedziniec
+1104,Planeta Sadal z innej lini czasowej - Las
+1105,Zamek królewski Króla Sadali
+1106,Sala Tronowa
+1107,Lądowisko planety sadali
+1108,Planeta Yardrat z innej lini czasowej
+1109,Yardrat - zachód z innej lini czasowej
+1110,Statek bandytów
+1111,Planete Eurilia z innej lini czasowej
+1112,Wejscie do świątyni
+1113,Świątynia Sayian z innej lini czasowej
+1114,Planeta Sadal z innej lini czasowej - Okolice domu
+1115,Planeta Sadal z innej lini czasowej - Dziedziniec zamkowy
+1116,Międzywymiarowa pustka
+1117,Cela więzienna
+1118,Korytarz więzienny
+1119,Więzienna planeta
+1120,Więzienna planeta - miejsce walki
+1121,Rozpadająca się więzienna planeta
+1122,Planeta we wszechświecie jedynastym
+1123,Stalowa planeta w trzecim wszechświecie
+1124,Planeta w nowym wszechświecie
+1125,Wszechświatowe drzewo
+1126,Czarna dziura
+1127,Dziwna Planeta
+1128,Planeta Kaioshin'a Czasoprzestrzeni
+1129,Mistyczna Jaskinia
+1130,Pałac Uduviy
+1131,Miejsce Odrodzenia
+1132,Dom
+1133,Centrum Handlowe
+1134,Las
+1135,Dom - czas zbiorów
+1136,Rezydencja Bulmy
+1137,Statek Galaktycznego patrolu
+1138,Siedziba Galaktycznego patrolu
+1139,Warzywniak rodziny Son
+1140,Nieznane tereny
+1141,Posterunek policji
+1142,Sąsiedztwo Posterunku
+1143,Posterunek wnętrze
+1144,Sosnowy Bór
+1145,Korytarz czasoprzestrzenny
+1146,Planeta Cereal - przeszłość
+1147,Kościół
+1148,Zniszczona wioska nameczan
+1149,Korytarz czasoprzestrzenny - powrót
+1150,Drugi warzywniak rodziny Son
+1151,Spiżarnia Chi-Chi
+1152,Miejsce treningu Piccolo
+1153,Tyły rezydencji Bulmy
+1154,Nieużytki
+1155,Nieużytki - północ
+1156,Posiadłość Kuririn'a
+1157,Posiadłość Gohana
+1158,Wąwóz
+1159,Wąwóz głębia
+1160,Plaża
+1161,Ocean
+1162,Himalaje
+1163,Statek Bulmy
+1164,Ogrody Bulmy
+1165,Tyły domu
+1166,Lądowisko Satana
+1167,Statek Satana
+1168,Linia Startu
+1169,Rozdroże
+1170,Ścieżka Lasu
+1171,Ścieżka lasu - koniec
+1172,Ścieżka pustyni
+1173,Ścieżka pustyni - ruchome piaski
+1174,Planeta technologii
+1175,Super Kopalnia
+1176,Super Kopalnia - głębia
+1177,Łąka Wielkanocna
+1178,Droga do wioski
+1179,Świąteczna wioska
+1180,Strome Urwisko - podnóże
+1181,Strome Urwisko - Lawina
+1182,Strome urwisko - szczyt
+1183,Wejście na stadion
+1184,Arena
+1185,Restauracja nad urwiskiem
+1186,Górzysty Las
+1187,Przepaść
+1188,Pałac Beerusa
+1189,Sala treningowa Beerusa
+1190,DOM GENIALNEGO ŻÓŁWIA
+1191,DOM
+1192,WIOSKA PRZY PLAŻY
+1193,PLAŻA
+1194,Ogrody planety Beerusa
+1195,Wymiar treningowy - Poziom 1
+1196,Wymiar treningowy - Poziom 2
+1197,Wymiar treningowy - Poziom 3
+1198,Wymiar treningowy - Poziom 4
+1199,Wymiar treningowy - Poziom 5
+1200,Wymiar treningowy - Poziom 6
+1201,Wymiar treningowy - Poziom 7
+1202,Wymiar treningowy - Poziom 8
+1203,Wymiar treningowy - Poziom 9
+1204,Dom Goku i ChiChi
+1205,Dom Bulmy
+1206,Dolina przed jeziorem
+1207,FESTIWAL HALLOWEEN
+1208,NAWIEDZONY DOM
+1209,KRATER W LESIE
+1210,Wymiar treningowy - Poziom 10
+1211,Wymiar treningowy - Poziom 11
+1212,Dziwne miejsce
+1213,Planeta Neso - wszechświat piąty
+1214,Wioska Fush
+1215,Droga na turniej
+1216,Turniej Neso - Rejestracja
+1217,Turniej Neso - Bitwa królewska
+1218,Turniej Neso - Główna arena
+1219,Droga powrotna
+1220,Dom
+1221,Miasto
+1222,Centrum miasta
+1223,Przesmyk
+1224,Ciemny las
+1225,Zamarznięte jezioro
+1226,Wejście do posiadłości
+1227,Planeta Teyeya
+1228,Stolica Teyeya
+1229,Tajemnicza jaskinia
+1230,Układ planet Kosura
+1231,Planeta Ko
+1232,Opętany umysł
+1233,Planet Su
+1234,Opętany umysł II
+1235,Planeta Ra
+1236,Dom
+1237,Miasto
+1238,Wymiar Carsa
+1239,Miejsce spotkania
+1240,Dolina zagłady
+1241,Posiadłość Kolekcjonera
+1242,Niebiańska Kuźnia
+1243,Laboratorium Bulmy
+1244,Nowa Niebiańska kuźnia - wejście
+1245,Nowa niebiańska kuźnia
+1246,Tajemnicza planeta
+1247,Planeta Natarp
+1248,Niezamieszkała planeta
+1249,Dom
+1250,Centrum Miasta
+1251,Wymiar Carsa
+1252,Komnata treningowa
+1253,Kamienna komnata
+1254,Komnata mocy
+1255,Sala pojedynków
+1256,Kryształowa Jaskinia
+1257,Korytarz łowców
+1258,Schody do perfekcji
+1259,Komnata koncentracji
+1260,Martwa planeta
+1261,Komnata doświadczenia
+1262,Planeta Hamoha
+1263,Pole uprawne
+1264,Planeta Beerusa
+1265,Sala na planecie Beerusa
+1266,Planeta Astron-7
+1267,Planeta Zefyra
+1268,Planeta Cytelon
+1269,Planeta Astra Prime
+1270,Planeta Neptara
+1271,Planeta Pyrothia
+1272,Planeta Eldoria
+1273,Planeta Lyraxis
+1274,Planeta Chronos Minor
+1275,Planeta Solara
+1276,POLE
+1277,WZGÓRZA
+1278,PUSTYNIA
+1279,Planeta Quantaris
+1280,Planeta Luminora
+1281,Planeta Luminora - Jaskinia Mocy
+1282,Planeta Nebuloria
+1283,Planeta Sylvaria
+1284,Planeta Etherion
+1285,Planeta Etherion - Okolice wioski
+1286,Planeta Astraflux
+1287,Planeta Astraflux - Miasto
+1288,Planeta Celestria
+1289,Planeta Celestria - Zakazana komnata
+1290,Nawiedzony Dwór
+1291,Zaklęty Las
+1292,Wyjście z Nawiedzonego dworu
+1293,Planeta Xylotheon
+1294,Planeta Typhoonara
+1295,Planeta Lunovia
+1296,Planeta Ethereos
+1297,Planeta Quanticora
+1298,Planeta Vermilion-9
+1299,Planeta Arcanara
+1300,Planeta Crystallax
+1301,Planeta Luminexa
+1302,Planeta Etheralis
+1303,Planeta Elyrian
+1304,Dom
+1305,Podwórko
+1306,Centrum Miasta
+1307,Gravitumbrion
+1308,Gravitumbrion - Zagłębienia Grawitacyjne
+1309,Plazmokwanta
+1310,Stellarnox
+1311,Galaxionix
+1312,Lunarisfera
+1313,Orbitrium
+1314,Aurorium
+1315,Kinetarium
+1316,Ecliptaria
+1317,Zatoka Błogosławionego Brzegu
+1318,Port Marzeń
+1319,Dom
+1320,Wioska Rybacka
+1321,Oxo-Świątynia
+1322,Wyrwa Międzywymiarowa - Początek
+1323,Wyrwa Międzywymiarowa - Środek
+1324,Wyrwa Międzywymiarowa - Koniec
+1325,Kaminama
+1326,Oxo
+1327,Rezydencja Rodziny Son
+1328,Rekreacyjna Posiadłość Bulmy
+1329,Planeta Champy
+1330,Aquarium
+1331,Wioska Wielkanocna
+1332,Magiczny Las Króliczych Jaj
+1333,Wielkanocna Wyspa
+1334,Bruma
+1335,Bruma - Pałac Wszechmogącego
+1336,Alerce
+1337,Zelgadia
+1338,Equuleus
+1339,Mariposa
+1340,Huerto
+1341,Wioska Anielskich Wysłanników
+1342,Komnata Trenerów
+1343,Świątynia Wiedzy
+1344,Planeta Festiva Południe
+1345,Port Kosmiczny
+1346,Planeta Festiva
+1347,Plaża Świetlików
+1348,Targ Rzemieślników
+1349,Księżycowa Zatoka
+1350,Okolice Zamku Królewskiego - Iluzja
+1351,Miejsce Lądowanie Raditza - Iluzja
+1352,Sektor Zachodni Namek - Iluzja
+1353,Sektor Centralny Namek- Iluzja
+1354,Cell Game - Iluzja
+1355,Siedziba Babidiego - Iluzja
+1356,Plac Treningowy Babidiego - Iluzja
+1357,Miejsce życzenia - Iluzja
+1358,Pole złych smoków - Iluzja
+1359,Pałac Aniołów
+1360,Rezydencja Gilgamesha
+1361,Świątynia Hakaishinów
+1362,Mroczna Posiadłość
+1363,Korytarze Cienia
+1364,Komnata Luster
+1365,Hakaira
+1366,Latifundio
+1367,Estanque
+1368,Laberinto
+1369,Ardiente
+1370,Pesadilla
+1371,Cementerio
+1372,Exterminio
+1373,Caos
+1374,Campamento
+1375,Mabruumata
+1376,Vofepau
+1377,Arcu
+1378,Ens
+1379,Chahelur
+1380,Strioztlis
+1381,Ticuti
+1382,Banotu
+1383,Ketote
+1384,Dalatadu
+1385,Smocza Jaskinia
+1386,Kraina Gwiezdnych Płatków
+1387,Orbitalna Fabryka Świętego Mikołaja
+1388,Kometa Wigilii
+1389,Sounds Good - Północ
+1390,Sounds Good - Centrum
+1391,Sounds Good - Zachód
+1392,Sounds Good - Południe
+1393,Joku
+1394,Kryształowa planeta
+1395,Xaradia
+1396,Xaradia - Pałac
+1397,Własny strach
+1398,Sounds Good - Wschód
+1399,Sala Balowa
+1400,Magazyn
+1401,Platforma Widokowa
+1402,Cephiro
+1403,Heraklia
+1404,Chizerta
+1405,PJ6Y4
+1406,Boeki
+1407,Primera
+1408,Segunda
+1409,Tercera
+1410,Cuarta
+1411,Quanta
+1412,Wiosenna Polana
+1413,Miasteczko Wielkanocne
+1414,Leśna Kryjówka
+1415,Ozora
+1416,Hildena
+1417,Planeta 4 Sfer
+1418,Planeta 4 sfer - centrum
+1419,Sanktuarium Żywiołów
+1420,Kaplica Ognia
+1421,Kaplica Wody
+1422,Kaplica Powietrza
+1423,Kaplica Ziemi
+1424,Otchłań Żywiołów
+1425,Słoneczny Brzeg Aeris
+1426,Ukryta Przystań Keora
+1427,Zatoka Letniego Cienia
+1428,PandaTo
+1429,Elefania
+1430,Łoszyngton
+1431,Sharpedia
+1432,Zebralia
+1433,Bearia
+1434,Gorilla City
+1435,Panteria
+1436,Koalia
+1437,Kanguria
+1438,Błękitna Laguna Wspomnień
+1439,Złote Wydmy Prób
+1440,Klif Zachodzącego Słońca
+1441,Krenon
+1442,Croas
+1443,Bernan
+1444,Orfelia
+1445,Nicość Kaimetsu I
+1446,Nicość Kaimetsu II
+1447,Nicość Kaimetsu III
+1448,Nicość Kaimetsu IV
+1449,Orfelia - Centrum
+1450,Orfelia - Pole Bitwy
+1451,Przeklęty Jarmark
+1452,Las Zatraconych Dusz
+1453,Maskarada Koszmarów
+1454,FABRYKA ZABAWEK MIKOŁAJA
+1455,KWATERA GŁÓWNA ROBOTÓW
+1456,KOMNATA STEROWANIA PREZENTAMI
+1457,Wyspa Energetycznych Smakołyków
+1458,Przystań Zaproszeń
+1459,Arena Gier i Zabaw
+1460,Bajkowy Ogród
+1461,Orfelia - Gruzy
+1462,Rdzeń Orfelii
+1463,Ruiny Galaktyki
+1464,Gwiazda Hakairy
+1465,Klemansja
+1466,Kuźnia Talentów
+1467,Skalista Wyspa
+1468,Dzika Puszcza
+1469,Niezbadany Ląd
+1470,Pokojowa Wioska
+1471,Zainfekowany Las
+1472,Laboratorium Profesora
+1473,Cytadela Króla Sępów
+1474,Ołtarz Niebiańskiego Jastrzębia
+1475,Piórowe Miasto Skycrest
+1476,Kanion Kruczych Skrzydeł
+1477,Gniazdo Burz Stormnest
+1478,Miasto Złotych Piór Aurelia
+1479,Szczyty Albatron
+1480,Świątynia Pióra Czasu
+1481,Kolonia Feniksów Pyros
+1482,Aviara – Bramy Niebios
+1483,PODEJRZANY MOTEL
+1484,WYMARZONA PLAŻA
+1485,MIEJSCE ZBIÓRKI
+1486,Zarośla Krwawej Chlorofilii
+1487,Ogród Toksycznych Kwiatów
+1488,Bagna Żywych Korzeni
+1489,Dolina Krzyczących Pnączy
+1490,Las Mutagennej Natury
+1491,Świątynia Zielonej Entropii
+1492,Pustkowie Zwiędłych Dusz
+1493,Gaj Wiecznej Fotosyntezy
+1494,Rdzeń Dzikiej Flory
+1495,Serce Zielonej Anomalii
+1496,RAJSKA WYSPA CAPSULE CORP
+1497,ZATOPIONE RUINY BABIDIEGO
+1498,NIEBIAŃSKI KURORT ENMY
+1499,Próg Nicości
+1500,Morze Milczących Gwiazd
+1501,Skały Odwróconej Grawitacji
+1502,Las Cieni
+1503,Martwy Horyzont
+1504,Jaskinia Echo
+1505,Rzeka Zapomnienia
+1506,Kamienne Niebo
+1507,Świątynia Ciszy
+1508,Brama Pierwszego Strażnika

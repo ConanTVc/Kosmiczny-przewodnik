@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "guides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:\\/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "sourceCredit": {
+            "type": "object",
+            "properties": {
+              "author": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "author"
+            ],
+            "additionalProperties": false
+          },
+          "file": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+\\.md$"
+          }
+        },
+        "required": [
+          "slug",
+          "title",
+          "tags",
+          "sourceCredit",
+          "file"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "guides"
+  ],
+  "additionalProperties": false
+}
