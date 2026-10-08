@@ -36,6 +36,7 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 - `char_data.loc` = ID bieżącej lokacji (to samo ID co `data-loc` w teleportacjach i dzienniku).
 - **Lokalizator** (wymagany do wykrywania zadań): aktywny gdy `char_data.bonus18 - GAME.getTime() > 0`; wynik w sekundach (≈86400 = 24 h).
 - ID lokacji rosną w kolejności dodawania do gry (Nonborn/Rborn Goku najniższe, potem Gborn → Mborn; Cumber dodany niedawno ma wysokie ID). Fabuła wraca do dawnych lokacji – wtedy ID jest niższe niż reszta rozdziału, nigdy wyższe. Nonborn/Rborn każdej rasy ma własne lokacje (np. „Rajska Sala Treningowa” 54 to Goku, 215 inna rasa), od Gborn fabuła jest wspólna.
+- Część lokacji Nonborna jest wspólna dla kilku ras (Pałac Wszechmogącego 27, Dom 35, Głębia 84 …) – gra odblokowuje je np. Goku, Vegecie i Cumberowi. Zadania poboczne stamtąd mogą mieć postacie różnych ras (build daje im wszystkie rasy, chyba że kilka ras ma własny opis).
 
 ### Lista teleportacji – `#tp_list tr.loc2_option`
 - `data-loc` = ID lokacji, `data-reborn` = reborn lokacji, `data-nazwa` = nazwa + nazwa potwora (nie używać do dopasowania),
@@ -55,9 +56,19 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 - Nazwy powtarzają się między lokacjami („Rutyna” w 1338 i 1358), mają końcowe spacje i dopiski `[LV2]`, `[III]` → dopasowanie zawsze po **(locId + znormalizowana nazwa)**.
 - Lokacja w dzienniku = lokacja, w której zadanie jest **teraz**. Zadania przechodzą między lokacjami; w solucji to kolejne sekcje z tym samym zadaniem.
 - Długie zadania (główne co 100 kroków) dostają w grze kolejne części z numerem: „Hakaishin”, „Hakaishin II”…; podobnie „Pamiątka 2”. W solucji nazwa bywa bez numeru → zadanie główne dopasowujemy po lokacji, a numer części tolerujemy.
-- Panel „Postępy zadań” na mapie pokazuje tylko śledzone zadania i nie każdy typ wymagań.
+### Panel „Postępy zadań” – `#quest_track_con .qtrack`
+- `data-loc` elementu = lokacja zadania, nazwa w `<b>` – gra skraca długie nazwy do „...” (dopasowanie po początku nazwy).
+- Pokazuje tylko śledzone zadania i nie każdy typ wymagań – źródło pomocnicze, główne to dziennik.
 
-Przykładowy HTML: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359).
+### Dopasowanie wpisu z gry do treści (sprawdzone na `fixtures/dziennik_s21.tsv`: 135/141, reszty nie ma w solucjach)
+1. lokacja zadania (`locId` albo `alsoAt` – lokacje, do których zadanie przechodzi) + znormalizowana nazwa (też `aliases`); przy kilku trafieniach pierwszeństwo ma część, której główną lokacją jest ta z dziennika,
+2. jw., ale bez numeru części („Hakaishin II” ↔ „Hakaishin”, `[LV2]`) albo nazwa z gry = część nazwy z solucji przed „ - ” („Teleport” ↔ „Teleport - Hiper Kuźnia”),
+3. zadanie główne (`[ GŁÓWNE ]`) – po lokacji, nie po nazwie,
+4. nazwa jednoznaczna w całej treści, mimo innej lokacji – dopasowanie „po nazwie” (mniej pewne, oznaczać w UI),
+5. inaczej → `unmatched`.
+- Kolejne części zadania przechodzącego przez kilka lokacji są połączone przez `requires` (część B wymaga A) – aktywna późniejsza część oznacza, że wcześniejsze są zrobione.
+
+Przykładowe dane: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359), `fixtures/dziennik_s21.tsv` i `fixtures/postepy_s21.tsv` (serwer 21, postać Cumber na Hborn – eksport skryptem z konsoli).
 
 ## Statusy zadań (priorytet od góry)
 
