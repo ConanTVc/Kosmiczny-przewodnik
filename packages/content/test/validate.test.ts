@@ -222,3 +222,52 @@ describe('findCycle', () => {
     ).toBeUndefined();
   });
 });
+
+describe('alsoAt i wspólne lokacje ras', () => {
+  it('zgłasza nieznaną lokację w alsoAt', () => {
+    const r = validateContent(
+      input({
+        chapter: { sections: [{ locId: 1338, quests: [quest('hborn/a', { alsoAt: [4242] })] }] },
+      }),
+    );
+    expect(errors(r).map((i) => `${i.path}: ${i.message}`)).toContain(
+      'sections[0].quests[0].alsoAt[0]: Nieznana lokacja 4242 – brak w data/locations.json',
+    );
+  });
+
+  it('zadanie poboczne opisane tylko przez jedną rasę we wspólnej lokacji jest dla wszystkich ras', () => {
+    const base = input();
+    const chapter = (id: string, races: number[], quests: unknown[]) => ({
+      file: `data/chapters/${id}.json`,
+      data: {
+        id,
+        title: id,
+        reborn: 0,
+        races,
+        sourceCredit: { author: 'A' },
+        sections: [{ locId: 1338, quests }],
+      },
+    });
+    base.chapters = [
+      chapter(
+        'goku-n',
+        [0],
+        [
+          quest('goku-n/1/przodkowie', { name: 'Wielcy Przodkowie' }),
+          quest('goku-n/1/pakt', { name: 'Pakt' }),
+          quest('goku-n/1/glowne', { kind: 'main' }),
+        ],
+      ),
+      chapter('cumber-n', [7], [quest('cumber-n/1/pakt', { name: 'Pakt' })]),
+    ];
+    const r = validateContent(base);
+    const built = buildContent(r.content!);
+    const races = Object.fromEntries(built.quests.map((q) => [q.slug, q.races ?? 'wszystkie']));
+    expect(races).toEqual({
+      'goku-n/1/przodkowie': 'wszystkie',
+      'goku-n/1/pakt': [0],
+      'goku-n/1/glowne': [0],
+      'cumber-n/1/pakt': [7],
+    });
+  });
+});

@@ -87,6 +87,10 @@
           "slug": "goku-n/3/trening-cd",
           "name": "Trening cd.",
           "kind": "main",
+          "alsoAt": [
+            4,
+            5
+          ],
           "steps": [
             {
               "requirements": [
@@ -148,6 +152,9 @@
           "slug": "goku-n/6/poszukiwania",
           "name": "Poszukiwania",
           "kind": "main",
+          "alsoAt": [
+            7
+          ],
           "steps": [
             {
               "requirements": [
@@ -359,6 +366,9 @@
           "slug": "goku-n/10/samodzielny-trening",
           "name": "Samodzielny trening",
           "kind": "main",
+          "alsoAt": [
+            12
+          ],
           "steps": [
             {
               "requirements": [],
@@ -376,6 +386,10 @@
           "slug": "goku-n/12/samodzielny-trening",
           "name": "Samodzielny trening",
           "kind": "main",
+          "alsoAt": [
+            10,
+            11
+          ],
           "steps": [
             {
               "requirements": [
@@ -412,6 +426,9 @@
           "slug": "goku-n/11/herszt",
           "name": "Herszt",
           "kind": "main",
+          "alsoAt": [
+            10
+          ],
           "steps": [
             {
               "requirements": [],
@@ -441,6 +458,9 @@
           "slug": "goku-n/11/kradziez",
           "name": "Kradzież",
           "kind": "side",
+          "alsoAt": [
+            12
+          ],
           "steps": [
             {
               "requirements": [
@@ -509,6 +529,9 @@
           "slug": "goku-n/14/samodzielny-trening",
           "name": "Samodzielny trening",
           "kind": "main",
+          "alsoAt": [
+            13
+          ],
           "steps": [
             {
               "requirements": [
@@ -848,6 +871,9 @@
           "slug": "goku-n/20/szatanski-plan",
           "name": "Szatański Plan",
           "kind": "main",
+          "alsoAt": [
+            21
+          ],
           "steps": [
             {
               "requirements": [],
@@ -880,6 +906,9 @@
           "slug": "goku-n/21/szatanski-plan",
           "name": "Szatański Plan",
           "kind": "main",
+          "alsoAt": [
+            22
+          ],
           "steps": [
             {
               "requirements": [],
@@ -898,6 +927,9 @@
           "slug": "goku-n/21/ostatnia-wola",
           "name": "Ostatnia Wola",
           "kind": "side",
+          "requires": [
+            "goku-n/20/ostatnia-wola"
+          ],
           "steps": [
             {
               "requirements": [
@@ -983,6 +1015,9 @@
           "slug": "goku-n/22/bestie",
           "name": "Bestie",
           "kind": "side",
+          "alsoAt": [
+            23
+          ],
           "steps": [
             {
               "requirements": [
@@ -1087,6 +1122,9 @@
           "slug": "goku-n/14/szatanski-plan-2",
           "name": "Szatański Plan",
           "kind": "main",
+          "alsoAt": [
+            26
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1110,6 +1148,9 @@
           "slug": "goku-n/26/szatanski-plan",
           "name": "Szatański Plan",
           "kind": "main",
+          "alsoAt": [
+            14
+          ],
           "steps": [
             {
               "requirements": [
@@ -1648,6 +1689,9 @@
           "slug": "goku-n/32/czarne-jezioro",
           "name": "Czarne Jezioro",
           "kind": "main",
+          "alsoAt": [
+            33
+          ],
           "steps": [
             {
               "requirements": [
@@ -1901,6 +1945,9 @@
           "slug": "goku-n/37/niebianskie-wyzwanie",
           "name": "Niebiańskie Wyzwanie",
           "kind": "main",
+          "alsoAt": [
+            38
+          ],
           "steps": [
             {
               "requirements": [],
@@ -2175,6 +2222,9 @@
           "slug": "goku-n/44/namek",
           "name": "Namek",
           "kind": "main",
+          "alsoAt": [
+            45
+          ],
           "steps": [
             {
               "requirements": [
@@ -2323,6 +2373,9 @@
           "slug": "goku-n/48/kosmiczny-trening",
           "name": "Kosmiczny Trening",
           "kind": "main",
+          "alsoAt": [
+            49
+          ],
           "steps": [
             {
               "requirements": [
@@ -2348,6 +2401,9 @@
           "slug": "goku-n/49/kosmiczny-trening",
           "name": "Kosmiczny Trening",
           "kind": "main",
+          "alsoAt": [
+            48
+          ],
           "steps": [
             {
               "requirements": [
@@ -2422,6 +2478,9 @@
           "slug": "goku-n/50/nowe-zagrozenie",
           "name": "Nowe zagrożenie",
           "kind": "main",
+          "alsoAt": [
+            35
+          ],
           "steps": [
             {
               "requirements": [
@@ -3147,6 +3206,9 @@
           "slug": "goku-n/73/kolejne-zagrozenie",
           "name": "Kolejne zagrożenie",
           "kind": "main",
+          "alsoAt": [
+            74
+          ],
           "steps": [
             {
               "requirements": [],
@@ -3303,6 +3365,9 @@
           "slug": "goku-n/76/kolejne-zagrozenie",
           "name": "Kolejne zagrożenie",
           "kind": "main",
+          "alsoAt": [
+            77
+          ],
           "steps": [
             {
               "requirements": [],
@@ -3888,6 +3953,9 @@
           "slug": "goku-n/102/bariera",
           "name": "Bariera",
           "kind": "side",
+          "requires": [
+            "goku-n/83/bariera"
+          ],
           "steps": [
             {
               "requirements": [

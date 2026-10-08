@@ -206,6 +206,9 @@
           "slug": "sborn/648/prezent",
           "name": "Prezent",
           "kind": "side",
+          "alsoAt": [
+            649
+          ],
           "steps": [
             {
               "requirements": [],
@@ -345,6 +348,9 @@
           "slug": "sborn/649/prezent",
           "name": "Prezent",
           "kind": "side",
+          "requires": [
+            "sborn/648/prezent"
+          ],
           "steps": [
             {
               "requirements": [
@@ -504,6 +510,9 @@
           "slug": "sborn/651/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            654
+          ],
           "steps": [
             {
               "requirements": [
@@ -533,6 +542,9 @@
           "slug": "sborn/651/kiedy-widze-slodycze-to",
           "name": "Kiedy widzę słodycze to....",
           "kind": "side",
+          "alsoAt": [
+            653
+          ],
           "steps": [
             {
               "requirements": [],
@@ -581,6 +593,9 @@
           "slug": "sborn/654/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            653
+          ],
           "steps": [
             {
               "requirements": [
@@ -602,6 +617,9 @@
           "slug": "sborn/654/na-ratunek",
           "name": "Na ratunek",
           "kind": "side",
+          "alsoAt": [
+            653
+          ],
           "steps": [
             {
               "requirements": [
@@ -690,6 +708,9 @@
           "slug": "sborn/653/na-ratunek",
           "name": "Na ratunek",
           "kind": "side",
+          "requires": [
+            "sborn/654/na-ratunek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -718,6 +739,14 @@
           "slug": "sborn/653/kiedy-widze-slodycze-to",
           "name": "Kiedy widzę słodycze to....",
           "kind": "side",
+          "alsoAt": [
+            652,
+            654,
+            651
+          ],
+          "requires": [
+            "sborn/651/kiedy-widze-slodycze-to"
+          ],
           "steps": [
             {
               "requirements": [
@@ -771,6 +800,9 @@
           "slug": "sborn/653/na-ryby",
           "name": "Na ryby",
           "kind": "side",
+          "alsoAt": [
+            652
+          ],
           "steps": [
             {
               "requirements": [
@@ -801,6 +833,11 @@
           "slug": "sborn/652/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            650,
+            654,
+            653
+          ],
           "steps": [
             {
               "requirements": [
@@ -858,6 +895,12 @@
           "slug": "sborn/652/na-ratunek",
           "name": "Na ratunek",
           "kind": "side",
+          "alsoAt": [
+            651
+          ],
+          "requires": [
+            "sborn/653/na-ratunek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -903,6 +946,9 @@
           "slug": "sborn/656/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            655
+          ],
           "steps": [
             {
               "requirements": [
@@ -948,6 +994,9 @@
           "slug": "sborn/655/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            657
+          ],
           "steps": [
             {
               "requirements": [
@@ -1002,6 +1051,9 @@
           "slug": "sborn/655/magiczny-trening",
           "name": "Magiczny trening",
           "kind": "side",
+          "alsoAt": [
+            282
+          ],
           "steps": [
             {
               "requirements": [
@@ -1100,6 +1152,9 @@
           "slug": "sborn/657/nowy-poczatek-starego-konca",
           "name": "Nowy początek starego końca",
           "kind": "main",
+          "alsoAt": [
+            656
+          ],
           "steps": [
             {
               "requirements": [
@@ -1184,6 +1239,9 @@
           "slug": "sborn/658/pomioty-destrukcji",
           "name": "Pomioty destrukcji",
           "kind": "side",
+          "alsoAt": [
+            659
+          ],
           "steps": [
             {
               "requirements": [
@@ -1305,6 +1363,12 @@
           "slug": "sborn/659/pomioty-destrukcji",
           "name": "Pomioty destrukcji",
           "kind": "side",
+          "alsoAt": [
+            660
+          ],
+          "requires": [
+            "sborn/658/pomioty-destrukcji"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1397,6 +1461,9 @@
           "slug": "sborn/660/pomioty-destrukcji",
           "name": "Pomioty destrukcji",
           "kind": "side",
+          "requires": [
+            "sborn/659/pomioty-destrukcji"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1678,6 +1745,9 @@
           "slug": "sborn/685/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
+          "requires": [
+            "sborn/684/miecz-na-potwory"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1702,6 +1772,9 @@
           "slug": "sborn/686/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
+          "requires": [
+            "sborn/685/miecz-na-potwory"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1724,6 +1797,9 @@
           "slug": "sborn/687/miecz-na-potwory",
           "name": "Miecz na potwory",
           "kind": "side",
+          "requires": [
+            "sborn/686/miecz-na-potwory"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1771,6 +1847,9 @@
           "slug": "sborn/663/sprawa-dla-detektywa",
           "name": "Sprawa dla detektywa",
           "kind": "side",
+          "alsoAt": [
+            666
+          ],
           "steps": [
             {
               "requirements": [
@@ -2102,6 +2181,10 @@
           "slug": "sborn/667/woda",
           "name": "Woda",
           "kind": "side",
+          "alsoAt": [
+            668,
+            669
+          ],
           "steps": [
             {
               "requirements": [
@@ -2230,6 +2313,9 @@
           "slug": "sborn/668/atak-klonow",
           "name": "Atak klonów",
           "kind": "side",
+          "alsoAt": [
+            669
+          ],
           "steps": [
             {
               "requirements": [
@@ -2781,6 +2867,9 @@
           "slug": "sborn/692/zagubiony-w-podrozy",
           "name": "Zagubiony w podróży",
           "kind": "side",
+          "alsoAt": [
+            661
+          ],
           "steps": [
             {
               "requirements": [
@@ -3391,6 +3480,9 @@
           "slug": "sborn/700/black",
           "name": "Black",
           "kind": "main",
+          "alsoAt": [
+            701
+          ],
           "steps": [
             {
               "requirements": [
@@ -4141,6 +4233,13 @@
           "slug": "sborn/705/pierscien-super",
           "name": "Pierścień Super",
           "kind": "side",
+          "alsoAt": [
+            403,
+            708,
+            73,
+            14,
+            698
+          ],
           "steps": [
             {
               "requirements": [],
@@ -4489,6 +4588,9 @@
           "slug": "sborn/715/zamasu",
           "name": "Zamasu",
           "kind": "main",
+          "alsoAt": [
+            716
+          ],
           "steps": [
             {
               "requirements": [
@@ -4599,6 +4701,14 @@
           "slug": "sborn/716/oczekiwanie",
           "name": "Oczekiwanie",
           "kind": "main",
+          "alsoAt": [
+            384,
+            161,
+            159,
+            162,
+            165,
+            717
+          ],
           "steps": [
             {
               "requirements": [
@@ -5341,6 +5451,10 @@
           "slug": "sborn/719/zmartwienie-opata",
           "name": "Zmartwienie opata",
           "kind": "side",
+          "alsoAt": [
+            744,
+            716
+          ],
           "steps": [
             {
               "requirements": [
@@ -5411,6 +5525,9 @@
           "slug": "sborn/719/godne-mistrza",
           "name": "Godne mistrza",
           "kind": "side",
+          "alsoAt": [
+            716
+          ],
           "steps": [
             {
               "requirements": [
@@ -5465,6 +5582,9 @@
           "slug": "sborn/718/tajemnicza-jaskinia",
           "name": "Tajemnicza Jaskinia",
           "kind": "side",
+          "alsoAt": [
+            744
+          ],
           "steps": [
             {
               "requirements": [
@@ -5603,6 +5723,9 @@
           "slug": "sborn/729/obca-obecnosc",
           "name": "Obca obecność",
           "kind": "side",
+          "alsoAt": [
+            73
+          ],
           "steps": [
             {
               "requirements": [
@@ -5957,6 +6080,10 @@
           "slug": "sborn/731/kopalnia-zamasu",
           "name": "Kopalnia Zamasu",
           "kind": "side",
+          "alsoAt": [
+            744,
+            717
+          ],
           "steps": [
             {
               "requirements": [
@@ -13091,6 +13218,9 @@
           "slug": "sborn/946/nowa-podroz",
           "name": "Nowa Podróż",
           "kind": "main",
+          "alsoAt": [
+            947
+          ],
           "steps": [
             {
               "requirements": [

@@ -92,6 +92,15 @@
                     "minLength": 1
                   }
                 },
+                "alsoAt": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
                 "races": {
                   "minItems": 1,
                   "type": "array",

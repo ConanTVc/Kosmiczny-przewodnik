@@ -17,6 +17,9 @@
           "slug": "goku-r/62/poszukiwanie-kul",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            86
+          ],
           "steps": [
             {
               "requirements": [],
@@ -34,6 +37,10 @@
           "slug": "goku-r/86/poszukiwanie-kul",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            87,
+            88
+          ],
           "steps": [
             {
               "requirements": [],
@@ -51,6 +58,9 @@
           "slug": "goku-r/88/poszukiwanie-kul",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            86
+          ],
           "steps": [
             {
               "requirements": [
@@ -171,6 +181,9 @@
           "slug": "goku-r/92/poszukiwanie-kul",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            93
+          ],
           "steps": [
             {
               "requirements": [],
@@ -327,6 +340,9 @@
           "slug": "goku-r/96/zabawa",
           "name": "Zabawa",
           "kind": "side",
+          "alsoAt": [
+            97
+          ],
           "steps": [
             {
               "requirements": [
@@ -506,6 +522,9 @@
           "slug": "goku-r/27/poszukiwanie-kul-3",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            100
+          ],
           "steps": [
             {
               "requirements": [],
@@ -529,6 +548,9 @@
           "slug": "goku-r/100/poszukiwanie-kul-2",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            101
+          ],
           "steps": [
             {
               "requirements": [
@@ -554,6 +576,9 @@
           "slug": "goku-r/101/poszukiwanie-kul",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            100
+          ],
           "steps": [
             {
               "requirements": [
@@ -579,6 +604,9 @@
           "slug": "goku-r/100/poszukiwanie-kul-3",
           "name": "Poszukiwanie kul",
           "kind": "main",
+          "alsoAt": [
+            35
+          ],
           "steps": [
             {
               "requirements": [],

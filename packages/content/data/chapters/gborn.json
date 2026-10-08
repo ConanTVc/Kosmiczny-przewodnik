@@ -487,6 +487,9 @@
           "slug": "gborn/139/nowy-wrog",
           "name": "Nowy wróg",
           "kind": "main",
+          "alsoAt": [
+            140
+          ],
           "steps": [
             {
               "requirements": [
@@ -551,6 +554,9 @@
           "slug": "gborn/139/starozytne-miejsca-mocy",
           "name": "Starożytne Miejsca Mocy",
           "kind": "side",
+          "alsoAt": [
+            140
+          ],
           "steps": [
             {
               "requirements": [],
@@ -705,6 +711,9 @@
           "slug": "gborn/299/wsparcie",
           "name": "Wsparcie",
           "kind": "side",
+          "requires": [
+            "gborn/142/wsparcie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -750,6 +759,9 @@
           "slug": "gborn/300/wsparcie",
           "name": "Wsparcie",
           "kind": "side",
+          "requires": [
+            "gborn/299/wsparcie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -787,6 +799,9 @@
           "slug": "gborn/301/wsparcie",
           "name": "Wsparcie",
           "kind": "side",
+          "requires": [
+            "gborn/300/wsparcie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -899,6 +914,9 @@
           "slug": "gborn/144/moc",
           "name": "Moc",
           "kind": "side",
+          "requires": [
+            "gborn/143/moc"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1024,6 +1042,9 @@
           "slug": "gborn/147/kosmiczna-choroba",
           "name": "Kosmiczna Choroba",
           "kind": "side",
+          "alsoAt": [
+            149
+          ],
           "steps": [
             {
               "requirements": [
@@ -1086,6 +1107,13 @@
           "slug": "gborn/149/kosmiczna-choroba",
           "name": "Kosmiczna Choroba",
           "kind": "side",
+          "alsoAt": [
+            147,
+            150
+          ],
+          "requires": [
+            "gborn/147/kosmiczna-choroba"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1145,6 +1173,9 @@
           "slug": "gborn/302/nowe-wyzwanie",
           "name": "Nowe Wyzwanie",
           "kind": "side",
+          "requires": [
+            "gborn/149/nowe-wyzwanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1166,6 +1197,9 @@
           "slug": "gborn/303/nowe-wyzwanie",
           "name": "Nowe Wyzwanie",
           "kind": "side",
+          "requires": [
+            "gborn/302/nowe-wyzwanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1194,6 +1228,9 @@
           "slug": "gborn/304/nowe-wyzwanie",
           "name": "Nowe Wyzwanie",
           "kind": "side",
+          "requires": [
+            "gborn/303/nowe-wyzwanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1230,6 +1267,9 @@
           "slug": "gborn/305/nowe-wyzwanie",
           "name": "Nowe Wyzwanie",
           "kind": "side",
+          "requires": [
+            "gborn/304/nowe-wyzwanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1268,6 +1308,12 @@
           "slug": "gborn/150/kosmiczna-choroba",
           "name": "Kosmiczna Choroba",
           "kind": "side",
+          "alsoAt": [
+            147
+          ],
+          "requires": [
+            "gborn/149/kosmiczna-choroba"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1376,6 +1422,9 @@
           "slug": "gborn/306/zly-bog",
           "name": "Zły Bóg",
           "kind": "side",
+          "requires": [
+            "gborn/152/zly-bog"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1421,6 +1470,9 @@
           "slug": "gborn/307/zly-bog",
           "name": "Zły Bóg",
           "kind": "side",
+          "requires": [
+            "gborn/306/zly-bog"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1466,6 +1518,9 @@
           "slug": "gborn/308/zly-bog",
           "name": "Zły Bóg",
           "kind": "side",
+          "requires": [
+            "gborn/307/zly-bog"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1495,6 +1550,9 @@
           "slug": "gborn/309/zly-bog",
           "name": "Zły Bóg",
           "kind": "side",
+          "requires": [
+            "gborn/308/zly-bog"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1524,6 +1582,9 @@
           "slug": "gborn/310/zly-bog",
           "name": "Zły Bóg",
           "kind": "side",
+          "requires": [
+            "gborn/309/zly-bog"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1639,6 +1700,9 @@
           "slug": "gborn/155/wygnany-kowal",
           "name": "Wygnany kowal",
           "kind": "side",
+          "requires": [
+            "gborn/154/wygnany-kowal"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1726,6 +1790,9 @@
           "slug": "gborn/311/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "requires": [
+            "gborn/155/podstep"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1753,6 +1820,9 @@
           "slug": "gborn/312/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "requires": [
+            "gborn/311/podstep"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1782,6 +1852,9 @@
           "slug": "gborn/313/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "requires": [
+            "gborn/312/podstep"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1808,6 +1881,9 @@
           "slug": "gborn/314/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "requires": [
+            "gborn/313/podstep"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1826,6 +1902,9 @@
           "slug": "gborn/315/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "requires": [
+            "gborn/314/podstep"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1853,6 +1932,12 @@
           "slug": "gborn/316/podstep",
           "name": "Podstęp",
           "kind": "side",
+          "alsoAt": [
+            317
+          ],
+          "requires": [
+            "gborn/315/podstep"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1964,6 +2049,9 @@
           "slug": "gborn/157/tunel",
           "name": "Tunel",
           "kind": "main",
+          "alsoAt": [
+            159
+          ],
           "steps": [
             {
               "requirements": [],
@@ -1983,6 +2071,10 @@
           "slug": "gborn/160/tunel",
           "name": "Tunel",
           "kind": "main",
+          "alsoAt": [
+            161,
+            162
+          ],
           "steps": [
             {
               "requirements": [
@@ -2038,6 +2130,9 @@
           "slug": "gborn/163/tunel",
           "name": "Tunel",
           "kind": "main",
+          "alsoAt": [
+            165
+          ],
           "steps": [
             {
               "requirements": [
@@ -2152,6 +2247,9 @@
           "slug": "gborn/318/kradziez",
           "name": "Kradzież",
           "kind": "side",
+          "requires": [
+            "gborn/166/kradziez"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2176,6 +2274,9 @@
           "slug": "gborn/318/zguba",
           "name": "Zguba",
           "kind": "side",
+          "alsoAt": [
+            319
+          ],
           "steps": [
             {
               "requirements": [],
@@ -2195,6 +2296,9 @@
           "slug": "gborn/319/kradziez",
           "name": "Kradzież",
           "kind": "side",
+          "requires": [
+            "gborn/318/kradziez"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -2221,6 +2325,9 @@
           "slug": "gborn/320/kradziez",
           "name": "Kradzież",
           "kind": "side",
+          "requires": [
+            "gborn/319/kradziez"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2260,6 +2367,9 @@
           "slug": "gborn/321/kradziez",
           "name": "Kradzież",
           "kind": "side",
+          "requires": [
+            "gborn/320/kradziez"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2378,6 +2488,9 @@
           "slug": "gborn/270/ostateczna-przysluga",
           "name": "Ostateczna Przysługa",
           "kind": "side",
+          "requires": [
+            "gborn/265/ostateczna-przysluga"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2407,6 +2520,9 @@
           "slug": "gborn/271/ostateczna-przysluga",
           "name": "Ostateczna Przysługa",
           "kind": "side",
+          "requires": [
+            "gborn/270/ostateczna-przysluga"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2513,6 +2629,9 @@
           "slug": "gborn/267/slay",
           "name": "Slay",
           "kind": "side",
+          "requires": [
+            "gborn/266/slay"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2592,6 +2711,13 @@
           "slug": "gborn/268/slay",
           "name": "Slay",
           "kind": "side",
+          "alsoAt": [
+            272,
+            269
+          ],
+          "requires": [
+            "gborn/267/slay"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2671,6 +2797,9 @@
           "slug": "gborn/274/potomek",
           "name": "Potomek",
           "kind": "side",
+          "requires": [
+            "gborn/273/potomek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2723,6 +2852,9 @@
           "slug": "gborn/275/potomek",
           "name": "Potomek",
           "kind": "side",
+          "requires": [
+            "gborn/274/potomek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2751,6 +2883,9 @@
           "slug": "gborn/276/potomek",
           "name": "Potomek",
           "kind": "side",
+          "requires": [
+            "gborn/275/potomek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2788,6 +2923,9 @@
           "slug": "gborn/277/potomek",
           "name": "Potomek",
           "kind": "side",
+          "requires": [
+            "gborn/276/potomek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2825,6 +2963,9 @@
           "slug": "gborn/278/potomek",
           "name": "Potomek",
           "kind": "side",
+          "requires": [
+            "gborn/277/potomek"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2943,6 +3084,9 @@
           "slug": "gborn/280/kolekcjoner",
           "name": "Kolekcjoner",
           "kind": "side",
+          "requires": [
+            "gborn/279/kolekcjoner"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2998,6 +3142,13 @@
           "slug": "gborn/282/poszukiwacz",
           "name": "Poszukiwacz",
           "kind": "side",
+          "alsoAt": [
+            29,
+            41
+          ],
+          "requires": [
+            "gborn/281/poszukiwacz"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -3087,6 +3238,9 @@
           "slug": "gborn/283/turniej",
           "name": "Turniej",
           "kind": "main",
+          "alsoAt": [
+            284
+          ],
           "steps": [
             {
               "requirements": [
@@ -3165,6 +3319,9 @@
           "slug": "gborn/286/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/285/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3212,6 +3369,9 @@
           "slug": "gborn/287/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/286/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3241,6 +3401,9 @@
           "slug": "gborn/288/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/287/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3262,6 +3425,9 @@
           "slug": "gborn/289/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/288/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3283,6 +3449,9 @@
           "slug": "gborn/290/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/289/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -3318,6 +3487,9 @@
           "slug": "gborn/291/tajemnicze-zadanie",
           "name": "Tajemnicze Zadanie",
           "kind": "side",
+          "requires": [
+            "gborn/290/tajemnicze-zadanie"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3463,6 +3635,11 @@
           "slug": "gborn/294/turniej",
           "name": "Turniej",
           "kind": "main",
+          "alsoAt": [
+            295,
+            296,
+            297
+          ],
           "steps": [
             {
               "requirements": [
@@ -3601,6 +3778,9 @@
           "slug": "gborn/323/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/322/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3636,6 +3816,9 @@
           "slug": "gborn/324/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/323/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3909,6 +4092,9 @@
           "slug": "gborn/329/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/328/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -3977,6 +4163,9 @@
           "slug": "gborn/330/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/329/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4029,6 +4218,9 @@
           "slug": "gborn/331/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/330/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4113,6 +4305,9 @@
           "slug": "gborn/332/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/331/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4152,6 +4347,9 @@
           "slug": "gborn/333/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/332/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4207,6 +4405,9 @@
           "slug": "gborn/334/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/333/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4243,6 +4444,9 @@
           "slug": "gborn/335/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "requires": [
+            "gborn/334/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [
@@ -4293,6 +4497,13 @@
           "slug": "gborn/336/nowy-trening",
           "name": "Nowy trening",
           "kind": "side",
+          "alsoAt": [
+            334,
+            333
+          ],
+          "requires": [
+            "gborn/335/nowy-trening"
+          ],
           "steps": [
             {
               "requirements": [

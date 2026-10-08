@@ -3557,6 +3557,9 @@
           "slug": "hborn/1006/ultra-instynkt",
           "name": "Ultra Instynkt",
           "kind": "main",
+          "alsoAt": [
+            1007
+          ],
           "steps": [
             {
               "requirements": [
@@ -7959,6 +7962,9 @@
           "slug": "hborn/1087/uciekinierzy",
           "name": "Uciekinierzy",
           "kind": "side",
+          "requires": [
+            "hborn/1083/uciekinierzy"
+          ],
           "steps": [
             {
               "requirements": [
@@ -8044,6 +8050,12 @@
           "slug": "hborn/1088/uciekinierzy",
           "name": "Uciekinierzy",
           "kind": "side",
+          "alsoAt": [
+            1083
+          ],
+          "requires": [
+            "hborn/1087/uciekinierzy"
+          ],
           "steps": [
             {
               "requirements": [
@@ -8093,6 +8105,9 @@
           "slug": "hborn/1088/praktyki-kowalskie",
           "name": "Praktyki Kowalskie",
           "kind": "side",
+          "alsoAt": [
+            875
+          ],
           "requires": [
             "hborn/1088/uciekinierzy"
           ],
@@ -9568,6 +9583,11 @@
           "slug": "hborn/1096/podchody",
           "name": "Podchody",
           "kind": "side",
+          "alsoAt": [
+            388,
+            330,
+            392
+          ],
           "steps": [
             {
               "requirements": [
@@ -20101,6 +20121,9 @@
           "slug": "hborn/1260/koniec-prob",
           "name": "Koniec Prób",
           "kind": "side",
+          "alsoAt": [
+            1261
+          ],
           "requires": [
             "hborn/1252/proba-zmoriego"
           ],
@@ -24671,6 +24694,9 @@
           "slug": "hborn/1316/mistrz-hudo",
           "name": "Mistrz Hudo",
           "kind": "main",
+          "alsoAt": [
+            1307
+          ],
           "steps": [
             {
               "requirements": [
@@ -29916,7 +29942,8 @@
           "name": "Nieświęte Sojusze",
           "kind": "side",
           "requires": [
-            "hborn/1360/pomoc-bogini-isztar"
+            "hborn/1360/pomoc-bogini-isztar",
+            "hborn/1359/nieswiete-sojusze"
           ],
           "steps": [
             {

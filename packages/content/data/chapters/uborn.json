@@ -691,6 +691,9 @@
           "slug": "uborn/410/duchy-pradawnych-wojownikow",
           "name": "Duchy Pradawnych Wojowników",
           "kind": "side",
+          "requires": [
+            "uborn/389/duchy-pradawnych-wojownikow"
+          ],
           "steps": [
             {
               "requirements": [],
@@ -886,6 +889,11 @@
           "slug": "uborn/390/bogowie-i-demony",
           "name": "Bogowie i Demony",
           "kind": "side",
+          "alsoAt": [
+            395,
+            399,
+            419
+          ],
           "steps": [
             {
               "requirements": [
@@ -1486,6 +1494,9 @@
           "slug": "uborn/413/komnata-zywiolow",
           "name": "Komnata Żywiołów",
           "kind": "side",
+          "requires": [
+            "uborn/400/komnata-zywiolow"
+          ],
           "steps": [
             {
               "requirements": [
@@ -1565,6 +1576,9 @@
           "slug": "uborn/412/komnata-zywiolow",
           "name": "Komnata Żywiołów",
           "kind": "side",
+          "requires": [
+            "uborn/413/komnata-zywiolow"
+          ],
           "steps": [
             {
               "requirements": [
@@ -2021,6 +2035,9 @@
           "slug": "uborn/422/wymiar-u",
           "name": "Wymiar U",
           "kind": "main",
+          "alsoAt": [
+            389
+          ],
           "steps": [
             {
               "requirements": [
@@ -2578,6 +2595,9 @@
           "slug": "uborn/432/wymiar-u",
           "name": "Wymiar U",
           "kind": "main",
+          "alsoAt": [
+            434
+          ],
           "steps": [
             {
               "requirements": [
@@ -4115,6 +4135,9 @@
           "slug": "uborn/496/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            497
+          ],
           "steps": [
             {
               "requirements": [
@@ -4705,6 +4728,9 @@
           "slug": "uborn/535/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            533
+          ],
           "steps": [
             {
               "requirements": [
@@ -4829,6 +4855,9 @@
           "slug": "uborn/533/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            534
+          ],
           "steps": [
             {
               "requirements": [
@@ -4859,6 +4888,9 @@
           "slug": "uborn/533/nieumarli",
           "name": "Nieumarli",
           "kind": "side",
+          "alsoAt": [
+            534
+          ],
           "steps": [
             {
               "requirements": [
@@ -4933,6 +4965,11 @@
           "slug": "uborn/534/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            533,
+            535,
+            532
+          ],
           "steps": [
             {
               "requirements": [
@@ -5314,6 +5351,9 @@
           "slug": "uborn/552/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            553
+          ],
           "steps": [
             {
               "requirements": [
@@ -5340,6 +5380,10 @@
           "slug": "uborn/553/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            552,
+            554
+          ],
           "steps": [
             {
               "requirements": [
@@ -5410,6 +5454,9 @@
           "slug": "uborn/554/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            552
+          ],
           "steps": [
             {
               "requirements": [
@@ -6203,6 +6250,10 @@
           "slug": "uborn/573/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            574,
+            572
+          ],
           "steps": [
             {
               "requirements": [
@@ -6249,6 +6300,9 @@
           "slug": "uborn/572/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            581
+          ],
           "steps": [
             {
               "requirements": [
@@ -6531,6 +6585,10 @@
           "slug": "uborn/618/wymiar-u35545xt",
           "name": "Wymiar U35545XT",
           "kind": "main",
+          "alsoAt": [
+            148,
+            134
+          ],
           "steps": [
             {
               "requirements": [
@@ -6594,6 +6652,9 @@
           "slug": "uborn/618/wymiar-u35545xt2",
           "name": "Wymiar U35545XT2",
           "kind": "main",
+          "alsoAt": [
+            125
+          ],
           "requires": [
             "uborn/618/wymiar-u35545xt"
           ],
@@ -6650,6 +6711,10 @@
           "slug": "uborn/618/wymiar-u35545xt3",
           "name": "Wymiar U35545XT3",
           "kind": "main",
+          "alsoAt": [
+            73,
+            74
+          ],
           "requires": [
             "uborn/618/wymiar-u35545xt2"
           ],
@@ -6819,6 +6884,10 @@
           "slug": "uborn/619/wymiar-u35545xt3",
           "name": "Wymiar U35545XT3",
           "kind": "main",
+          "alsoAt": [
+            618,
+            351
+          ],
           "steps": [
             {
               "requirements": [
@@ -6921,6 +6990,10 @@
           "slug": "uborn/619/wymiar-u35545xt4",
           "name": "Wymiar U35545XT4",
           "kind": "main",
+          "alsoAt": [
+            426,
+            618
+          ],
           "requires": [
             "uborn/619/wymiar-u35545xt3"
           ],
@@ -6966,6 +7039,10 @@
           "slug": "uborn/619/wymiar-u35545xt5",
           "name": "Wymiar U35545XT5",
           "kind": "main",
+          "alsoAt": [
+            530,
+            618
+          ],
           "steps": [
             {
               "requirements": [
@@ -7034,6 +7111,11 @@
           "slug": "uborn/619/wymiar-u35545xt6",
           "name": "Wymiar U35545XT6",
           "kind": "main",
+          "alsoAt": [
+            359,
+            27,
+            618
+          ],
           "requires": [
             "uborn/619/wymiar-u35545xt5"
           ],
@@ -7133,6 +7215,9 @@
           "slug": "uborn/620/wymiar-u35545xt6",
           "name": "Wymiar U35545XT6",
           "kind": "main",
+          "alsoAt": [
+            576
+          ],
           "steps": [
             {
               "requirements": [
@@ -7226,6 +7311,10 @@
           "slug": "uborn/617/wymiar-u35545xt6",
           "name": "Wymiar U35545XT6",
           "kind": "main",
+          "alsoAt": [
+            574,
+            572
+          ],
           "steps": [
             {
               "requirements": [

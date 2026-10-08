@@ -1,6 +1,12 @@
 import type { Chapter, Quest, Section, Step } from '../../src/schema';
 import type { LocationMatch } from './locations';
-import { dropRepeated, simplifyLines, simplifyNameNote, simplifyReward } from './notes';
+import {
+  dropRepeated,
+  extractNavTargets,
+  simplifyLines,
+  simplifyNameNote,
+  simplifyReward,
+} from './notes';
 import type { RawChapter, RawItem, RawQuest } from './parse';
 import type { ChapterSource } from './sources';
 import { cleanReward, foldName, normalizeCase, slugify, tidy, zeroProgress } from './text';
@@ -67,11 +73,28 @@ function questName(raw: RawQuest): string {
 }
 
 /** Konwertuje rozdział. `usedSlugs` jest wspólny dla wszystkich rozdziałów (slugi muszą być unikalne). */
+/** Nazwa lokacji z notatki → ID (najbliższe `nearId`), albo undefined, gdy to nie lokacja. */
+export type NavResolver = (name: string, nearId: number) => number | undefined;
+
+/** ID lokacji, do których zadanie przechodzi wg notatek w etapach (bez lokacji sekcji). */
+export function navLocations(
+  steps: readonly Step[],
+  locId: number,
+  resolve: NavResolver,
+): number[] {
+  const ids = steps
+    .flatMap((s) => (s.note ? extractNavTargets(s.note) : []))
+    .map((name) => resolve(name, locId))
+    .filter((id): id is number => id !== undefined && id !== locId);
+  return [...new Set(ids)];
+}
+
 export function convertChapter(
   source: { file: string; chapter: ChapterSource },
   raw: RawChapter,
   matches: readonly LocationMatch[],
   usedSlugs: Set<string>,
+  resolveNav: NavResolver = () => undefined,
 ): ConvertedChapter {
   const { file, chapter: cfg } = source;
   const report: ReportEntry[] = [];
@@ -142,10 +165,12 @@ export function convertChapter(
       }
       const tips = [...new Set(rq.nameNotes.map(simplifyNameNote).filter((n): n is string => !!n))];
       for (const w of rq.warnings) add(rq.line, `Zadanie „${name}”: ${w}`);
+      const alsoAt = navLocations(steps, locId, resolveNav);
       const quest: Quest = {
         slug: uniqueSlug(`${cfg.id}/${locId}/${slugify(name, 40)}`),
         name,
         kind: rq.kind,
+        ...(alsoAt.length > 0 && { alsoAt }),
         steps,
         ...(tips.length > 0 && { tips: tips.join('\n') }),
         ...(rq.warnings.length > 0 && { review: [...rq.warnings] }),
@@ -168,6 +193,7 @@ export function convertChapter(
         );
         if (same) {
           same.steps.push(...q.steps);
+          if (q.alsoAt) same.alsoAt = [...new Set([...(same.alsoAt ?? []), ...q.alsoAt])];
           usedSlugs.delete(q.slug);
           for (const r of pendingRequires) if (r.quest === q) r.quest = same;
         } else {
@@ -246,11 +272,39 @@ export function resolveRequires(converted: ConvertedChapter[]): void {
   }
 }
 
+/**
+ * Zadanie poboczne, które przechodzi przez kilka lokacji, jest w solucji opisane jako kilka części
+ * o tej samej nazwie (np. „Kosmiczna Choroba”: Ura → Papri → Secato). Część B jest dalszym ciągiem
+ * części A, gdy leży w następnej sekcji albo nawigacja A prowadzi do lokacji B. Wtedy B wymaga A
+ * (requires) – status wie, że wcześniejsze części są zrobione. Zadań głównych nie łączymy: ich
+ * kolejność wynika z kolejności lokacji. Zwraca liczbę połączeń.
+ */
+export function linkContinuations(converted: ConvertedChapter[]): number {
+  let links = 0;
+  for (const conv of converted) {
+    const last = new Map<string, { quest: Quest; section: number; locId: number }>();
+    conv.chapter.sections.forEach((section, si) => {
+      for (const q of section.quests) {
+        if (q.kind === 'main') continue;
+        const key = foldName(q.name);
+        const prev = last.get(key);
+        if (prev && (prev.section === si - 1 || prev.quest.alsoAt?.includes(section.locId))) {
+          q.requires = [...new Set([...(q.requires ?? []), prev.quest.slug])];
+          links++;
+        }
+        last.set(key, { quest: q, section: si, locId: section.locId });
+      }
+    });
+  }
+  return links;
+}
+
 const QUEST_KEY_ORDER: (keyof Quest)[] = [
   'slug',
   'name',
   'kind',
   'aliases',
+  'alsoAt',
   'races',
   'rebornMin',
   'rebornMax',

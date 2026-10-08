@@ -16,8 +16,10 @@ import {
   convertChapter,
   orderQuestKeys,
   resolveRequires,
+  linkContinuations,
   type ConvertedChapter,
   type LocationUse,
+  type NavResolver,
 } from './convert';
 import { GUIDES } from './guides';
 import {
@@ -86,6 +88,18 @@ for (const p of parsed) {
     if (c.length === 1) known.add(c[0]!);
   }
 }
+/** Nazwa z nawigacji („Idź do lokacji X”) → ID: tylko pewne dopasowania, najbliższe lokacji zadania. */
+const resolveNav: NavResolver = (name, nearId) => {
+  const forms = [name, name.replace(/^Planetę\s/, 'Planeta '), name.replace(/^Nową\s/, 'Nowa ')];
+  for (const form of forms) {
+    const c = index.candidates(form);
+    if (c.method === 'dokładna' || c.method === 'bez-znaków' || c.method === 'wariant') {
+      return [...c.candidates].sort((a, b) => Math.abs(a - nearId) - Math.abs(b - nearId))[0];
+    }
+  }
+  return undefined;
+};
+
 const usedSlugs = new Set<string>();
 const converted: ConvertedChapter[] = [];
 for (const { source, part, raw } of parsed) {
@@ -96,10 +110,17 @@ for (const { source, part, raw } of parsed) {
   );
   for (const m of matches) if (m.id !== undefined) known.add(m.id);
   converted.push(
-    convertChapter({ file: source.file, chapter: part.chapter }, raw, matches, usedSlugs),
+    convertChapter(
+      { file: source.file, chapter: part.chapter },
+      raw,
+      matches,
+      usedSlugs,
+      resolveNav,
+    ),
   );
 }
 resolveRequires(converted);
+const continuationLinks = linkContinuations(converted);
 for (const c of converted) c.chapter = orderQuestKeys(c.chapter);
 
 // locations.json: cała lista z gry + to, co wiemy z solucji i fixtures
@@ -172,6 +193,7 @@ writeReport(join(pkgDir, 'MIGRACJA.md'), {
   locationNotes,
   issues: result.issues,
   guides: GUIDES,
+  continuationLinks,
 });
 
 for (const c of converted) {

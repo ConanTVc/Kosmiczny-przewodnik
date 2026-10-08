@@ -250,3 +250,22 @@ export function simplifyNameNote(note: string): string | null {
   if (/^[NRGUSHM]\s?\d[\d ]*$/.test(t)) return `Wymagany poziom: ${t}.`;
   return capitalize(simplifyLine(t) ?? t);
 }
+
+const NAV_VERB_RE =
+  /(?<![\p{L}])(?:idź|wróć|udaj się|teleportuj się|przenieś się|kontynuacja|przejście)(?![\p{L}])/iu;
+const NAV_TARGET_RE =
+  /(?<![\p{L}])(?:do|na):?\s+(?:lokacji\s+|lokacje\s+)?(\p{Lu}[^.,;()[\]]*?)(?=\s*(?:[.,;([\]]|$|\s+i\s|\s+a\s+następnie|\s+by\s|\s+aby\s|\s+tam\s|\s+znów\s))/gu;
+
+/**
+ * Nazwy lokacji z poleceń nawigacji w notatce („Idź do lokacji X”, „Wróć na Planetę Ura”,
+ * „Udaj się do: Krater”, „Kontynuacja na Planeta Papri”). Zwraca surowe nazwy – dopasowanie do ID
+ * robi wywołujący.
+ */
+export function extractNavTargets(note: string): string[] {
+  const targets: string[] = [];
+  for (const line of note.split('\n')) {
+    if (!NAV_VERB_RE.test(line)) continue;
+    for (const m of line.matchAll(NAV_TARGET_RE)) targets.push(m[1]!.trim());
+  }
+  return [...new Set(targets)];
+}

@@ -1,0 +1,143 @@
+# Dziennik zadań (#qb_list) – serwer 21, postać rasy Cumber na Hborn. Eksport skryptem autora z konsoli.
+# Kolumny (TAB): nazwa lokacji, ID lokacji (data-loc), status (Nieaktywne = przycisk activate_track z klasą disabled), nazwa zadania (.qname).
+Planeta Sadal z innej lini czasowej - Las	1104	Aktywne	Żywność
+Dom	35	Aktywne	Pamiątka 2
+Głębia	84	Aktywne	Wielcy Przodkowie
+Nieznana Planeta II	142	Aktywne	Wsparcie
+Planeta Secato	150	Aktywne	Kosmiczna Choroba
+Turniej	265	Aktywne	Ostateczna Przysługa
+Szpital	41	Aktywne	Poszukiwacz
+Podziemia Pustyni – Hol	296	Aktywne	Poszukiwania
+Podziemia Pustyni – Ślepy Zaułek	298	Aktywne	Pierścień
+Erem	329	Aktywne	Nowy trening
+Dolina Treningowa	357	Aktywne	W poszukiwaniu siły
+Jezioro	326	Aktywne	Odmalowanie Pałacu
+Płonący Las	388	Aktywne	Strach
+Czeluście Piekieł	390	Aktywne	Prawda albo wyzwanie
+Miasto Man	400	Aktywne	Komnata Żywiołów
+Posiadłość Bulmy	422	Aktywne	Eksperymenty
+Wymiar Nicości	431	Aktywne	Ślepy Keigo
+Wyimaginowana Kraina Ogarou	469	Aktywne	Niebieska Magia
+Głębia Jestestwa	497	Aktywne	Pradawna Siła
+Szczyt Marsa	567	Aktywne	Wymiana substancji [LV1]
+Szczyt Marsa	567	Aktywne	Wymiana substancji [LV2]
+Szczyt Marsa	567	Aktywne	Wymiana substancji [LV3]
+Siedziba Dawnych Bogów	620	Aktywne	Nagi
+Rufa	654	Aktywne	Wsparcie dla szkoły
+Pieczara	660	Aktywne	Pomioty destrukcji
+Planeta Beerusa	661	Aktywne	Dodatkowy trening
+Miejsce lądowania Freezera	663	Aktywne	Wędrowny Handlarz III
+Pole zmagań	666	Aktywne	Sprawa dla detektywa
+Podziemna grota	664	Aktywne	Wybudzenie
+Glamorgan	667	Aktywne	Zaopatrzenie dla policji
+Glamorgan	667	Aktywne	Woda
+Turniej kwalifikacyjny	670	Aktywne	Sprawdź się
+Turniej kwalifikacyjny	670	Aktywne	Rozgrzewka
+Laboratoria Capsule Corporation	717	Aktywne	Maszyna treningowa
+Dom Bulmy	691	Aktywne	Tajemnicza Jaskinia
+Ruiny West City	730	Aktywne	Szczury laboratoryjne
+Przedmieścia West City	731	Aktywne	Kopalnia Zamasu
+Zrujnowana stolica	751	Aktywne	Zwalczanie szkodników
+Pustynia Chaosu	754	Aktywne	Porządek i chaos
+Nowa Vegeta - miasto	758	Aktywne	Mściwe Duchy
+Planeta Tsufur	764	Aktywne	Potęga chaosu
+Ognista Ziemia	877	Aktywne	DYM
+Przystań końca i początku	940	Aktywne	Super Trening
+Mara	947	Aktywne	Strój Króla Vegety
+Ósma planeta Namek	980	Aktywne	Pomoc przy zbiorach
+Kosmos	987	Aktywne	Pierwszy trening w kosmosie
+Kosmos	987	Aktywne	Arena
+Kalisto	986	Aktywne	Czasu coraz mniej
+Europa	989	Aktywne	Zbiory
+Ganimedes	990	Aktywne	Walki
+Planeta Liguira	991	Aktywne	Sprawdzian 1
+Planeta Liguira	991	Aktywne	Teleport
+Więzienie Galaktycznego patrolu	994	Aktywne	Wyposażenie strażników
+Juns	995	Aktywne	Kopalnia
+Statek Merusa	996	Aktywne	Wymiana
+Pustynna planeta	1006	Aktywne	Eskorta
+Lądowisko	1037	Aktywne	Trwoga
+Manadnok	1055	Nieaktywne	Ratunek
+Filar	1061	Nieaktywne	Walka
+Masyw	1064	Aktywne	Zbieractwo
+W barierze	1081	Aktywne	Farmer
+Zniszczona bariera	1082	Nieaktywne	Promieniowanie
+Zniszczona bariera	1082	Nieaktywne	Promieniowanie III
+Skraj Krateru	1089	Nieaktywne	Tajemniczy kufer
+Rezydencja Satana	1096	Aktywne	Niedoszły kucharz.
+Rezydencja Bulmy	1136	Aktywne	Nowa sala treningowa
+Warzywniak rodziny Son	1139	Nieaktywne	Listonosz
+Strome urwisko - szczyt	1182	Aktywne	Wyborowa jajecznica...
+Restauracja nad urwiskiem	1185	Aktywne	Joker
+Pałac Beerusa	1188	Aktywne	Anielski trening
+Planeta Neso - wszechświat piąty	1213	Aktywne	Rzadkie klejnoty
+Droga na turniej	1215	Aktywne	Praktyka
+Stolica Teyeya	1228	Aktywne	Dziwna Chatka
+Planet Su	1233	Aktywne	Rybak w opałach
+Planeta Ra	1235	Aktywne	Trening w górach
+Dolina zagłady	1240	Aktywne	Rzadkie klejnoty
+Posiadłość Kolekcjonera	1241	Aktywne	Dzieło Sztuki
+Nowa Niebiańska kuźnia - wejście	1244	Aktywne	Rzadsze klejnoty
+Nowa Niebiańska kuźnia - wejście	1244	Aktywne	Test Szaleńca
+Tajemnicza planeta	1246	Aktywne	Pomoc przy Zbiorach
+Komnata treningowa	1252	Aktywne	Pomoc Rozbitkowi
+Komnata mocy	1254	Aktywne	W potrzebie
+Kryształowa Jaskinia	1256	Aktywne	Próba Zmoriego V
+Martwa planeta	1260	Aktywne	Koniec prób
+Planeta Astron-7	1266	Aktywne	Zaginiony Artefakt
+Planeta Astra Prime	1269	Aktywne	Poszukiwanie Klejnotów
+Planeta Astra Prime	1269	Aktywne	Zadanie Fasolki
+Planeta Astra Prime	1269	Aktywne	Mistrzowskie Ulepszanie
+Planeta Neptara	1270	Aktywne	Pomoc w Zwalczaniu Szkodników
+Planeta Lyraxis	1273	Aktywne	Trening Duszy
+Planeta Chronos Minor	1274	Aktywne	Naprawa Kapsuły Ratunkowej
+Planeta Solara	1275	Aktywne	Odpoczynek i medytacja
+Planeta Quantaris	1279	Aktywne	Poszukiwanie Niebieskich Klejnotów
+Planeta Luminora - Jaskinia Mocy	1281	Aktywne	Wyzwanie Quanxi
+Planeta Etherion	1284	Aktywne	Piloci Bez Samolotu
+Planeta Etherion - Okolice wioski	1285	Aktywne	Maraton Treningowy
+Planeta Astraflux	1286	Aktywne	Oczyszczenie Ducha
+Planeta Celestria	1288	Aktywne	Poszukiwanie Diabelskich Klejnotów
+Planeta Xylotheon	1293	Aktywne	Poszukiwanie Cesarskich Klejnotów
+Planeta Typhoonara	1294	Aktywne	Poszukiwanie Czerwonych Klejnotów
+Planeta Ethereos	1296	Aktywne	Świąteczne Eksperymenty Kulinarne
+Planeta Quanticora	1297	Aktywne	Ostatnie Przygotowania
+Planeta Arcanara	1299	Aktywne	Hodowla Fasolek
+Planeta Luminexa	1301	Aktywne	Wyzwanie Hotaru
+Planeta Luminexa	1301	Aktywne	Maraton Treningowy
+Oxo-Świątynia	1321	Aktywne	Pierwsza Krew
+Wyrwa Międzywymiarowa - Początek	1322	Aktywne	Twierdza Mroku
+Wyrwa Międzywymiarowa - Początek	1322	Aktywne	Ostatni Strażnik
+Wyrwa Międzywymiarowa - Środek	1323	Aktywne	Poszukiwanie Czarnych Klejnotów
+Kaminama	1325	Aktywne	Poszukiwanie Mroźnych Klejnotów
+Kaminama	1325	Aktywne	Trening Zręczności
+Planeta Champy	1329	Aktywne	Mangowa Misja Urta
+Planeta Champy	1329	Aktywne	Legenda
+Rekreacyjna Posiadłość Bulmy	1328	Aktywne	Medytacja Wojownika
+Rekreacyjna Posiadłość Bulmy	1328	Aktywne	Mistrz Shenzin
+Bruma	1334	Aktywne	Kosmiczny Szuler
+Bruma - Pałac Wszechmogącego	1335	Aktywne	Zapomniany Wojownik
+Alerce	1336	Aktywne	Fizyczne Wyzwanie
+Alerce	1336	Aktywne	Kopalnia pełna Bogactw
+Alerce	1336	Aktywne	Arena
+Zelgadia	1337	Aktywne	Kopalnia Skarbów
+Equuleus	1338	Aktywne	Polowanie na Uciekinierów
+Equuleus	1338	Aktywne	Rutyna
+Mariposa	1339	Aktywne	Plaga roboty
+Huerto	1340	Aktywne	Misja dla Dowódcy
+Komnata Trenerów	1342	Aktywne	Ostatni Rejs
+Pałac Aniołów	1359	Aktywne	Hakaishin II
+Cell Game - Iluzja	1354	Aktywne	Panteon Anarchii
+Cell Game - Iluzja	1354	Aktywne	Handlarz Przedmiotów
+Siedziba Babidiego - Iluzja	1355	Aktywne	Panteon Anarchii II
+Siedziba Babidiego - Iluzja	1355	Aktywne	Panteon Anarchii III
+Plac Treningowy Babidiego - Iluzja	1356	Aktywne	Próba Wojownika
+Plac Treningowy Babidiego - Iluzja	1356	Aktywne	Wyzwanie Dokkaebi
+Miejsce życzenia - Iluzja	1357	Aktywne	Ożywienie Ogrodu
+Pole złych smoków - Iluzja	1358	Aktywne	Rutyna
+Pole złych smoków - Iluzja	1358	Aktywne	Poszukiwacze Klejnotów
+Rezydencja Gilgamesha	1360	Aktywne	Nieświęte Sojusze
+Komnata doświadczenia	1261	Aktywne	Jokery
+Rezydencja Gilgamesha	1360	Aktywne	Pomoc Bogini Isztar
+Rezydencja Gilgamesha	1360	Aktywne	Mądrość Quetzalcoatl
+Rezydencja Gilgamesha	1360	Aktywne	Chaldejska Para

@@ -1,5 +1,7 @@
 Zawartość Tajemnych Skrzyń I–IX. Wszystkie przedmioty są przypisane do konta.
 
+W grze są dwie różne skrzynie nazwane „Tajemna Skrzynia II” (mają inne ID i inną zawartość) – opisane są obie.
+
 ## Tajemna Skrzynia I
 
 - 2× Certyfikat Kwalifikacyjny
@@ -16,7 +18,7 @@ Zawartość Tajemnych Skrzyń I–IX. Wszystkie przedmioty są przypisane do kon
 - 10× Magiczna Esencja
 - 3× Żółte Senzu
 
-## Tajemna Skrzynia II (drugi wariant)
+## Tajemna Skrzynia II (druga skrzynia o tej nazwie)
 
 - 20× Fioletowe Senzu
 - 4× Substancja Przyspieszająca x20

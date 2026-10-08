@@ -1,9 +1,15 @@
 import { describe, expect, it } from 'vitest';
-import { buildSteps } from '../scripts/migrate/convert';
+import {
+  buildSteps,
+  linkContinuations,
+  navLocations,
+  type ConvertedChapter,
+} from '../scripts/migrate/convert';
 import { convertClanCosts } from '../scripts/migrate/guides';
 import { LocationIndex, matchChapterLocations } from '../scripts/migrate/locations';
 import {
   dropRepeated,
+  extractNavTargets,
   simplifyLine,
   simplifyLines,
   simplifyNameNote,
@@ -390,5 +396,79 @@ describe('poradniki', () => {
     expect(md).toBe(
       '## Fortece\n\n| Poziom | Koszt | Suma |\n| --- | --- | --- |\n| 1 | 50 KP | 50 KP |\n\n## Sala Ognia\n\n| Poziom | Koszt |\n| --- | --- |\n| 1 | 3 KP |\n\n**Razem:** 3 KP\n',
     );
+  });
+});
+
+describe('zadania przechodzące przez kilka lokacji', () => {
+  it('wyciąga lokacje z poleceń nawigacji', () => {
+    expect(
+      extractNavTargets(
+        [
+          'Idź na południe do lokacji Mroczny Las – Południe.',
+          'Idź do lokacji Siedziba Doktora, a następnie do lokacji Główna Sala.',
+          'Wróć na Planetę Ura.',
+          'Udaj się do: Krater',
+          'Kontynuacja na Planeta Papri',
+          'Po odnalezieniu kamienia wróć do Genialnego Żółwia.',
+          'Wybór: [Tak] lub [Nie]',
+        ].join('\n'),
+      ),
+    ).toEqual([
+      'Mroczny Las – Południe',
+      'Siedziba Doktora',
+      'Główna Sala',
+      'Planetę Ura',
+      'Krater',
+      'Planeta Papri',
+      'Genialnego Żółwia',
+    ]);
+  });
+
+  it('zamienia nazwy na ID przez resolver i pomija lokację samego zadania', () => {
+    const ids: Record<string, number> = { Szpital: 41, 'Góra Gromów': 29 };
+    const steps = [
+      {
+        requirements: [],
+        rewards: [],
+        note: 'Idź do lokacji Góra Gromów.\nIdź do lokacji Szpital.\nWróć.',
+      },
+    ];
+    expect(navLocations(steps, 29, (name) => ids[name])).toEqual([41]);
+  });
+
+  it('łączy kolejne części zadania pobocznego przez requires (sąsiednia sekcja albo nawigacja)', () => {
+    const q = (slug: string, name: string, extra: Record<string, unknown> = {}) => ({
+      slug,
+      name,
+      kind: 'side' as const,
+      steps: [],
+      ...extra,
+    });
+    const chapter = {
+      id: 'gborn',
+      title: 'Gborn',
+      reborn: 2,
+      sourceCredit: { author: '' },
+      sections: [
+        {
+          locId: 147,
+          quests: [q('g/147/kc', 'Kosmiczna Choroba', { alsoAt: [149] }), q('g/147/a', 'Arena')],
+        },
+        { locId: 148, quests: [] },
+        { locId: 149, quests: [q('g/149/kc', 'Kosmiczna Choroba')] },
+        { locId: 150, quests: [q('g/150/a', 'Arena')] },
+      ],
+    };
+    const conv = {
+      chapter,
+      file: 'x',
+      report: [],
+      locations: [],
+      pendingRequires: [],
+    } as unknown as ConvertedChapter;
+    expect(linkContinuations([conv])).toBe(1);
+    expect(chapter.sections[2]!.quests[0]).toMatchObject({ requires: ['g/147/kc'] });
+    // „Arena” w odległych lokacjach bez nawigacji to różne zadania
+    expect(chapter.sections[3]!.quests[0]).not.toHaveProperty('requires');
   });
 });

@@ -104,6 +104,11 @@ export const QuestSchema = z
     kind: QuestKindSchema,
     /** Inne nazwy tego zadania (np. jak wyświetla je dziennik gry). */
     aliases: z.array(Text).min(1).optional(),
+    /**
+     * Inne lokacje, do których zadanie przechodzi w trakcie („Idź do lokacji X”). Dziennik gry
+     * pokazuje lokację, w której zadanie jest teraz, więc dopasowujemy też po nich.
+     */
+    alsoAt: z.array(z.number().int().positive()).min(1).optional(),
     /** Nadpisuje rasy rozdziału. */
     races: z.array(RaceSchema).min(1).optional(),
     /** Domyślnie = reborn rozdziału. */
@@ -182,9 +187,14 @@ export const BuiltQuestSchema = z
     kind: QuestKindSchema,
     aliases: z.array(Text).optional(),
     locId: z.number().int().positive(),
+    alsoAt: z.array(z.number().int().positive()).optional(),
     chapter: SlugSegmentSchema,
     /** Numer lokacji w rozdziale (od 1). */
     order: z.number().int().positive(),
+    /**
+     * Brak = wszystkie rasy. Zadania poboczne we wspólnych lokacjach Nonborna/Rborna (np. Głębia)
+     * są dla wszystkich ras, chyba że inna rasa ma w tej lokacji własny opis tego zadania.
+     */
     races: z.array(RaceSchema).optional(),
     rebornMin: RebornSchema,
     rebornMax: RebornSchema.optional(),

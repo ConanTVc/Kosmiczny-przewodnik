@@ -6,15 +6,15 @@ Wygenerowany przez `pnpm content:migrate`. Oryginały w `solucje/` i `poradniki/
 
 | Rozdział | Plik | Autor | Lokacje | Zadania (gł./pob./codz./powt.) | Etapy | requires | Do decyzji |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nonborn – Goku | `goku-n.json` | BaronCorbin | 97 | 148 (90/54/4/0) | 314 | 3 | 0 |
+| Nonborn – Goku | `goku-n.json` | BaronCorbin | 97 | 148 (90/54/4/0) | 314 | 5 | 0 |
 | Rborn – Goku | `goku-r.json` | BaronCorbin | 38 | 47 (38/9/0/0) | 98 | 0 | 0 |
 | Nonborn – Cumber | `cumber-n.json` | Naruto | 18 | 43 (18/21/4/0) | 99 | 1 | 0 |
 | Rborn – Cumber | `cumber-r.json` | Naruto | 15 | 29 (15/14/0/0) | 58 | 0 | 0 |
-| Gborn | `gborn.json` | _(pusty)_ | 129 | 189 (88/101/0/0) | 442 | 2 | 0 |
-| Uborn | `uborn.json` | _(pusty)_ | 111 | 224 (112/103/8/1) | 569 | 7 | 0 |
-| Sborn | `sborn.json` | _(pusty)_ | 104 | 278 (95/174/8/1) | 1271 | 7 | 0 |
-| Hborn | `hborn.json` | _(pusty)_ | 238 | 751 (239/510/2/0) | 2842 | 83 | 0 |
-| Mborn | `mborn.json` | _(pusty)_ | 110 | 384 (114/270/0/0) | 1970 | 54 | 0 |
+| Gborn | `gborn.json` | _(pusty)_ | 129 | 189 (88/101/0/0) | 442 | 55 | 0 |
+| Uborn | `uborn.json` | _(pusty)_ | 111 | 224 (112/103/8/1) | 569 | 10 | 0 |
+| Sborn | `sborn.json` | _(pusty)_ | 104 | 278 (95/174/8/1) | 1271 | 16 | 0 |
+| Hborn | `hborn.json` | _(pusty)_ | 238 | 751 (239/510/2/0) | 2842 | 85 | 0 |
+| Mborn | `mborn.json` | _(pusty)_ | 110 | 384 (114/270/0/0) | 1970 | 57 | 0 |
 
 Lokacje: 1508 z listy gry w `data/locations.json`, 809 z rebornem (użyte w solucjach albo w fixtures), 11 z aliasami nazw z solucji, 2 oznaczonych „bez teleportu”.
 
@@ -29,6 +29,8 @@ Lokacje: 1508 z listy gry w `data/locations.json`, 809 z rebornem (użyte w solu
 - Luźny tekst uproszczony: nawigacja w trybie rozkazującym („Idź do lokacji…”), wybory jako „Wybór: … / Autor wybrał: …”, „Uwaga!!” sklejone z treścią, bonusy lokacji w jednej linii, bez powtórzeń.
 - Komentarze w nawiasach przy nazwach przeniesione do wskazówek (`tips`) albo notatek lokacji.
 - `requires` ustawione, gdy pierwszym wymaganiem jest „Wykonać zadanie: X”.
+- Zadania przechodzące przez kilka lokacji: lokacje z nawigacji („Idź do lokacji X”) zapisane w `alsoAt` (101 zadań), a kolejne części tego samego zadania połączone przez `requires` (73 połączeń).
+- Zadania poboczne we wspólnych lokacjach Nonborna/Rborna (np. Głębia) opisane tylko w jednej solucji są w buildzie widoczne dla wszystkich ras.
 
 ## Wymaga Twojej decyzji (0)
 

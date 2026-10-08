@@ -10,6 +10,8 @@ interface ReportInput {
   locationNotes: string[];
   issues: Issue[];
   guides: GuideSource[];
+  /** Liczba połączeń „dalsza część zadania” (requires między częściami o tej samej nazwie). */
+  continuationLinks: number;
 }
 
 function entries(list: ReportEntry[]): string[] {
@@ -76,6 +78,8 @@ export function writeReport(path: string, input: ReportInput): void {
     '- Luźny tekst uproszczony: nawigacja w trybie rozkazującym („Idź do lokacji…”), wybory jako „Wybór: … / Autor wybrał: …”, „Uwaga!!” sklejone z treścią, bonusy lokacji w jednej linii, bez powtórzeń.',
     '- Komentarze w nawiasach przy nazwach przeniesione do wskazówek (`tips`) albo notatek lokacji.',
     '- `requires` ustawione, gdy pierwszym wymaganiem jest „Wykonać zadanie: X”.',
+    `- Zadania przechodzące przez kilka lokacji: lokacje z nawigacji („Idź do lokacji X”) zapisane w \`alsoAt\` (${input.converted.reduce((n, c) => n + c.chapter.sections.flatMap((s) => s.quests).filter((q) => q.alsoAt).length, 0)} zadań), a kolejne części tego samego zadania połączone przez \`requires\` (${input.continuationLinks} połączeń).`,
+    '- Zadania poboczne we wspólnych lokacjach Nonborna/Rborna (np. Głębia) opisane tylko w jednej solucji są w buildzie widoczne dla wszystkich ras.',
     '',
     `## Wymaga Twojej decyzji (${review.length})`,
     '',

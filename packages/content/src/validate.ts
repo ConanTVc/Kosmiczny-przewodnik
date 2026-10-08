@@ -158,6 +158,15 @@ export function validateContent(input: ContentInput): ValidationResult {
             file,
             path: `${qPath}.requires`,
           });
+        quest.alsoAt?.forEach((id, ai) => {
+          if (!locById.has(id)) {
+            error(
+              file,
+              `${qPath}.alsoAt[${ai}]`,
+              `Nieznana lokacja ${id} – brak w data/locations.json`,
+            );
+          }
+        });
 
         if (quest.kind !== 'main') {
           const key = `${section.locId}|${nameKey(quest.name)}`;
