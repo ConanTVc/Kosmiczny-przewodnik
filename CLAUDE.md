@@ -14,10 +14,11 @@ Dla autora i dla innych graczy. Twórca gry zgodził się na narzędzie, które 
 
 ## Istniejąca treść
 
-W repo są już solucje i poradniki napisane przez autora (część własna, część za zgodą autorów). To jest **źródło prawdy**:
-- nie usuwaj i nie przepisuj ich bez pytania,
-- migracja do nowego formatu = kopia/konwersja skryptem, oryginały zostają do czasu mojej akceptacji,
-- każda solucja ma pole `sourceCredit` (autor/źródło).
+Solucje i poradniki napisane przez autora (część własna, część za zgodą autorów) są zmigrowane do `packages/content/data` (rozdziały JSON, `locations.json`, poradniki Markdown). Migrację autor zaakceptował – **źródłem prawdy jest teraz `packages/content/data`**:
+- nie usuwaj i nie przepisuj treści bez pytania; poprawki rób w `data/`, a `pnpm content:build` musi przechodzić,
+- oryginały TXT/PNG (`solucje/`, `poradniki/`) są tylko lokalnie u autora (w `.gitignore`) – `pnpm content:migrate --force` nadpisałby ręczne poprawki w `data/`, więc nie uruchamiamy go dla istniejących rozdziałów,
+- nowe solucje dodajemy jako nowe rozdziały (Prompt 8),
+- każda solucja ma pole `sourceCredit` (autor/źródło); puste = autor uzupełni.
 
 ## Twarde zasady
 

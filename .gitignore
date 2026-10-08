@@ -9,3 +9,8 @@ coverage/
 .env.*
 .DS_Store
 Thumbs.db
+
+# Oryginały solucji i poradników – po migracji źródłem prawdy jest packages/content/data.
+# Zostają lokalnie (dla content:migrate), nie trafiają na GitHub.
+solucje/
+poradniki/
