@@ -25,6 +25,7 @@ const CharacterProgressSchema = z
     lastSeen: z.number().nonnegative(),
     lastScan: stamped(z.number().nonnegative().nullable()),
     tracked: stamped(z.boolean()),
+    removed: stamped(z.boolean()).optional(),
     quests: z.record(z.string(), QuestProgressSchema),
   })
   .strict();

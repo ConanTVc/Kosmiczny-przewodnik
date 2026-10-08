@@ -1,4 +1,4 @@
-import { parseProgress } from '@kp/core';
+import { parseProgress, visibleCharacters } from '@kp/core';
 import { useState } from 'preact/hooks';
 import { usePanel } from '../context';
 import type { SyncProps } from '../types';
@@ -100,7 +100,7 @@ export function SettingsView() {
     setImportText('');
     setMessage({
       ok: true,
-      text: `Zaimportowano – postacie: ${Object.keys(progress.characters).length}. Postęp został scalony z obecnym.`,
+      text: `Zaimportowano – postacie: ${visibleCharacters(progress).length}. Postęp został scalony z obecnym.`,
     });
   };
 

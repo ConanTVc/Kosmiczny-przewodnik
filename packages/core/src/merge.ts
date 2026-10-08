@@ -58,6 +58,7 @@ function mergeQuest(a: QuestProgress | undefined, b: QuestProgress | undefined):
 }
 
 function mergeCharacter(a: CharacterProgress, b: CharacterProgress): CharacterProgress {
+  const removed = lww(a.removed, b.removed);
   const quests: Record<string, QuestProgress> = {};
   for (const slug of sortedKeys(a.quests, b.quests))
     quests[slug] = mergeQuest(a.quests[slug], b.quests[slug]);
@@ -69,6 +70,7 @@ function mergeCharacter(a: CharacterProgress, b: CharacterProgress): CharacterPr
     lastSeen: Math.max(a.lastSeen, b.lastSeen),
     lastScan: lwwRequired(a.lastScan, b.lastScan),
     tracked: lwwRequired(a.tracked, b.tracked),
+    ...(removed && { removed }),
     quests,
   };
 }

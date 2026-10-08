@@ -2,7 +2,7 @@
  * Kosmiczny Przewodnik na telefon. Bez dostępu do gry: postęp zaznaczany ręcznie (później
  * także z synchronizacji), treść wbudowana, działa offline dzięki service workerowi.
  */
-import { emptyProgress, parseProgress } from '@kp/core';
+import { emptyProgress, parseProgress, visibleCharacters } from '@kp/core';
 import { mount, openKv, readLocal, writeLocal, type PanelProps } from '@kp/ui';
 import { registerSW } from 'virtual:pwa-register';
 import { AppSettings, UpdateBanner, Welcome } from './Banners';
@@ -54,7 +54,7 @@ async function start(): Promise<void> {
     progress: store.progress,
     activeCharacter: store.activeKey,
     layout: 'app',
-    initialTab: Object.keys(store.progress.characters).length ? 'here' : 'characters',
+    initialTab: visibleCharacters(store.progress).length ? 'here' : 'characters',
     header: (
       <>
         {needRefresh && (
@@ -94,6 +94,7 @@ async function start(): Promise<void> {
     onImport: (imported) => store.importProgress(imported),
     onAddCharacter: (c) => store.addCharacter(c),
     onSetReborn: (key, reborn) => store.setReborn(key, reborn),
+    onRemoveCharacter: (key) => store.removeCharacter(key),
     onPickLocation: (locId) => store.pickLocation(locId),
   });
 

@@ -34,14 +34,40 @@ function updateCharacter(
   return { ...progress, characters: { ...progress.characters, [key]: update(current) } };
 }
 
-/** Dodaje postać albo odświeża jej dane z gry (nazwa, rasa, reborn, lokacja). */
+export const isRemoved = (c: CharacterProgress | undefined): boolean => !!c?.removed?.v;
+
+/** Postacie widoczne dla gracza – bez usuniętych. */
+export function visibleCharacters(progress: Progress): [string, CharacterProgress][] {
+  return Object.entries(progress.characters).filter(([, c]) => !isRemoved(c));
+}
+
+/**
+ * Usuwa postać: znika z list, postęp jest czyszczony. W danych zostaje znacznik `removed`, żeby
+ * synchronizacja nie przywróciła postaci z innego urządzenia. Gdy postać znowu pojawi się w grze,
+ * jest traktowana jak nowa.
+ */
+export function removeCharacter(progress: Progress, key: string, now: number): Progress {
+  return updateCharacter(progress, key, (c) => ({
+    ...c,
+    tracked: stamp(false, now),
+    removed: stamp(true, now),
+    lastScan: stamp(null, now),
+    quests: {},
+  }));
+}
+
+/**
+ * Dodaje postać albo odświeża jej dane z gry (nazwa, rasa, reborn, lokacja). Postać wcześniej
+ * usunięta wraca jak nowa – bez starego postępu.
+ */
 export function upsertCharacter(
   progress: Progress,
   info: CharacterInfo,
   now: number,
   tracked = true,
 ): Progress {
-  const current = progress.characters[info.key];
+  const existing = progress.characters[info.key];
+  const current = isRemoved(existing) ? undefined : existing;
   const next: CharacterProgress = {
     name: restamp(current?.name, info.name, now),
     race: restamp(current?.race, info.race, now),
@@ -50,6 +76,7 @@ export function upsertCharacter(
     lastSeen: Math.max(current?.lastSeen ?? 0, now),
     lastScan: current?.lastScan ?? stamp(null, now),
     tracked: current?.tracked ?? stamp(tracked, now),
+    ...(existing?.removed && { removed: current ? existing.removed : stamp(false, now) }),
     quests: current?.quests ?? {},
   };
   return { ...progress, characters: { ...progress.characters, [info.key]: next } };

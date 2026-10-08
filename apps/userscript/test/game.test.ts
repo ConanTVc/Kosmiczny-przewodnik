@@ -37,6 +37,7 @@ const fullGame = (): G => ({
   captcha: 'xyz',
   sitekey: 'abc',
   pid: 99,
+  char_id: 3465,
   char_data: {
     id: 3465,
     name: 'Butcher',
@@ -66,6 +67,7 @@ describe('adapter gry – biała lista', () => {
     const allowed = [
       /^GAME\.server$/,
       /^GAME\.getTime$/,
+      /^GAME\.char_id$/,
       /^GAME\.char_data$/,
       /^GAME\.char_data\.(id|name|race|reborn|loc|bonus18)$/,
       /^GAME\.map_quests$/,
@@ -106,6 +108,11 @@ describe('adapter gry – biała lista', () => {
 
   it('postać niewybrana → brak postaci; błąd gry → undefined zamiast wyjątku', () => {
     spyGame({ ...fullGame(), char_data: undefined });
+    expect(readGame()?.character).toBeUndefined();
+    // ekran wyboru postaci: char_id = 0 (albo brak), nawet gdy zostały stare char_data
+    spyGame({ ...fullGame(), char_id: 0 });
+    expect(readGame()?.character).toBeUndefined();
+    spyGame({ ...fullGame(), char_id: undefined });
     expect(readGame()?.character).toBeUndefined();
     g.GAME = new Proxy(
       {},

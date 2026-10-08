@@ -4,6 +4,7 @@ import {
   applyScanResult,
   emptyProgress,
   questLists,
+  removeCharacter,
   setLastLoc,
   setManualStatus,
   setReborn,
@@ -12,6 +13,7 @@ import {
   setStepDone,
   setTracked,
   upsertCharacter,
+  visibleCharacters,
 } from '../src/progress';
 import { parseProgress } from '../src/progress-schema';
 import { manualCharKey, type Progress } from '../src/types';
@@ -275,5 +277,41 @@ describe('postać dodana ręcznie (telefon)', () => {
     expect(setLastLoc(p, key, 1359, 9).characters[key]!.lastLoc.at).toBe(2);
     expect(parseProgress(p)).toBeDefined();
     expect(parseProgress({ ...p, characters: { 's1:x5': p.characters[key] } })).toBeUndefined();
+  });
+});
+
+describe('usuwanie postaci', () => {
+  it('usunięta znika z listy i traci postęp; starsza kopia z innego urządzenia jej nie przywraca', () => {
+    const phone = setManualStatus(base(), KEY, 'hborn/1359/hakaishin', 'done', 20);
+    const removed = removeCharacter(phone, KEY, 30);
+    expect(visibleCharacters(removed)).toEqual([]);
+    expect(removed.characters[KEY]!.quests).toEqual({});
+    expect(parseProgress(removed)).toBeDefined();
+    const merged = mergeProgress(removed, phone);
+    expect(visibleCharacters(merged)).toEqual([]);
+    expect(mergeProgress(phone, removed)).toEqual(merged);
+  });
+
+  it('postać dodana znowu (np. weszła do gry) wraca jak nowa, bez starego postępu', () => {
+    const removed = removeCharacter(
+      setManualStatus(base(), KEY, 'hborn/1359/hakaishin', 'done', 20),
+      KEY,
+      30,
+    );
+    const again = upsertCharacter(
+      removed,
+      { key: KEY, name: 'Butcher', race: 7, reborn: 6, loc: 1400 },
+      40,
+      false,
+    );
+    expect(visibleCharacters(again).map(([k]) => k)).toEqual([KEY]);
+    expect(again.characters[KEY]).toMatchObject({
+      removed: { v: false, at: 40 },
+      tracked: { v: false, at: 40 },
+      reborn: { v: 6 },
+      quests: {},
+    });
+    // ponowne dodanie jest nowsze niż usunięcie – wygrywa przy scalaniu
+    expect(visibleCharacters(mergeProgress(removed, again)).length).toBe(1);
   });
 });

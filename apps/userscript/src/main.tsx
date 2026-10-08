@@ -4,7 +4,7 @@
  * (observer.ts). Nigdy nic nie klika, nie wysyła do serwera gry i nie zmienia `GAME`.
  * Jedyna ingerencja w stronę to własny panel. Każdy błąd jest połykany – gra działa dalej.
  */
-import { emptyProgress, parseProgress } from '@kp/core';
+import { emptyProgress, isRemoved, parseProgress } from '@kp/core';
 import { mount, openKv, type PanelProps } from '@kp/ui';
 import { EMBEDDED, fetchRemoteContent, loadCachedContent } from './content';
 import { Controller } from './controller';
@@ -38,10 +38,8 @@ function PanelSettings({ shell }: { shell: PanelShell }) {
         ))}
       </div>
       <p class="kp-muted">
-        Pokaż/schowaj: ikona kompasu{' '}
-        {shell.inQuickBar() ? 'w pasku szybkich akcji gry' : 'w rogu ekranu'} albo Alt+K. Klik w
-        belkę „Kosmiczny Przewodnik” zwija panel do rogu. Szerokość zmienisz, przeciągając krawędź
-        panelu.
+        Schowaj: klik w belkę „Kosmiczny Przewodnik” albo ×. Pokaż: zakładka ⋮ w rogu ekranu. Skrót:
+        Alt+K. Szerokość zmienisz, przeciągając krawędź panelu.
       </p>
     </section>
   );
@@ -64,7 +62,8 @@ async function start(): Promise<void> {
     const gameChar = c.gameCharacter;
     const active = c.activeKey ?? gameChar?.key;
     const isGameChar = !!gameChar && active === gameChar.key;
-    const tracked = !!gameChar && !!c.progress.characters[gameChar.key]?.tracked.v;
+    const stored = gameChar ? c.progress.characters[gameChar.key] : undefined;
+    const tracked = !!stored?.tracked.v;
     return {
       content: c.loaded.content,
       contentVersion: `${c.loaded.version} (${c.loaded.source})`,
@@ -80,7 +79,9 @@ async function start(): Promise<void> {
           pendingNew={!!gameChar && c.pendingNew === gameChar.key}
           scan={gameChar ? c.scans.get(gameChar.key) : undefined}
           result={c.lastResult}
-          lastFullScan={gameChar ? c.progress.characters[gameChar.key]?.lastScan.v : undefined}
+          removed={isRemoved(stored)}
+          onRestore={() => c.restoreGameCharacter()}
+          lastFullScan={stored?.lastScan.v}
           collapsed={shell.ui.wizardCollapsed}
           onToggle={() => shell.setUi({ wizardCollapsed: !shell.ui.wizardCollapsed })}
           onTrack={(choice) => c.answerTrack(choice)}
@@ -95,8 +96,8 @@ async function start(): Promise<void> {
       onSetting: (name, value) => c.setSetting(name, value),
       onImport: (imported) => c.importProgress(imported),
       onClose: () => shell.setUi({ open: false }),
-      minimized: shell.ui.minimized,
-      onToggleMinimize: () => shell.setUi({ minimized: !shell.ui.minimized }),
+      onCollapse: () => shell.setUi({ open: false }),
+      onRemoveCharacter: (key) => c.removeCharacter(key),
     };
   };
 
@@ -109,7 +110,11 @@ async function start(): Promise<void> {
     }
   };
 
-  watchGame((snapshot, changes) => controller.onGame(snapshot, changes));
+  watchGame((snapshot, changes) => {
+    // Bez wybranej postaci (ekran logowania / wyboru postaci) panelu nie widać wcale.
+    shell.setPresent(!!snapshot?.character);
+    controller.onGame(snapshot, changes);
+  });
   observeGameDom((part) => controller.onDom(part));
   window.addEventListener('pagehide', () => void controller.saveNow());
 

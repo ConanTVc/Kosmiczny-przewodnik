@@ -75,4 +75,24 @@ describe('postęp na telefonie', () => {
     store.addCharacter({ name: 'B', race: 0, reborn: 0 });
     expect(Object.keys(store.progress.characters)).toEqual(['s0:m5', 's0:m6']);
   });
+
+  it('usunięcie wybranej postaci przełącza na inną; usunięta nie wraca po ponownym otwarciu', () => {
+    const kv = memoryKv();
+    let t = 1;
+    const store = new PhoneStore(
+      kv,
+      { progress: emptyProgress() },
+      () => {},
+      () => t++,
+    );
+    store.addCharacter({ name: 'Pierwsza', race: 0, reborn: 0 });
+    const first = store.activeKey!;
+    store.addCharacter({ name: 'Druga', race: 0, reborn: 0 });
+    const second = store.activeKey!;
+    store.removeCharacter(second);
+    expect(store.activeKey).toBe(first);
+    expect(
+      new PhoneStore(kv, { progress: store.progress, activeKey: second }, () => {}).activeKey,
+    ).toBe(first);
+  });
 });

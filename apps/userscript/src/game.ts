@@ -1,7 +1,7 @@
 /**
  * Adapter gry – JEDYNY moduł, który dotyka obiektu `GAME`.
  *
- * Czyta wyłącznie pola z białej listy (CLAUDE.md): `GAME.server`, `GAME.getTime()`,
+ * Czyta wyłącznie pola z białej listy (CLAUDE.md): `GAME.server`, `GAME.getTime()`, `GAME.char_id`,
  * `GAME.char_data.{id, name, race, reborn, loc, bonus18}` i `GAME.map_quests` (tylko
  * `{qb_id, rtype, main, name}`). Kopiuje je do własnego obiektu – nigdy nie przegląda innych pól,
  * niczego nie zapisuje do `GAME` i nie wywołuje innych funkcji gry. Każdy błąd jest połykany:
@@ -27,7 +27,7 @@ export interface GameSnapshot {
   server: number;
   /** Czas gry (`GAME.getTime()`), sekundy. */
   time: number;
-  /** Brak = postać nie jest wybrana. */
+  /** Brak = postać nie jest wybrana (`GAME.char_id` równe 0 albo brak). */
   character?: GameCharacter;
   /** Zadania na mapie bieżącej lokacji. */
   mapQuests: MapQuest[];
@@ -58,7 +58,9 @@ export function readGame(): GameSnapshot | undefined {
     if (!Number.isFinite(server) || !Number.isFinite(time)) return undefined;
 
     let character: GameCharacter | undefined;
-    const cd = game['char_data'];
+    // `char_id` > 0 = postać wybrana; 0 albo brak = ekran wyboru postaci.
+    const selected = int(game['char_id']) > 0;
+    const cd = selected ? game['char_data'] : undefined;
     if (cd && typeof cd === 'object') {
       const c = cd as Raw;
       const id = int(c['id']);

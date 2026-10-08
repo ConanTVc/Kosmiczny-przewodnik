@@ -102,15 +102,6 @@
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
-/* Zwinięty do samej belki – wysokość wyznacza belka, nie ekran. */
-.kp-app.kp-minimized {
-  height: auto;
-  min-height: 0;
-}
-.kp-minimized .kp-top {
-  border-bottom: 0;
-  border-radius: var(--radius);
-}
 .kp-show-done {
   align-self: flex-start;
 }
@@ -138,6 +129,13 @@
   background: var(--surface-2);
   color: var(--text);
 }
+.kp-gear {
+  font-size: 19px;
+}
+.kp-icon-on {
+  background: var(--surface-2);
+  color: var(--accent);
+}
 
 .kp-tabs {
   display: flex;
@@ -149,9 +147,10 @@
   scrollbar-width: none;
 }
 .kp-tab {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   min-height: var(--tap);
-  padding: 0 10px;
+  padding: 0 6px;
+  white-space: nowrap;
   border: 0;
   border-radius: 8px;
   background: transparent;
@@ -626,6 +625,26 @@
 }
 .kp-char-off {
   opacity: 0.6;
+}
+.kp-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-basis: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--danger);
+  border-radius: var(--radius);
+}
+.kp-confirm p {
+  margin: 0;
+}
+.kp-btn-danger {
+  color: var(--danger);
+}
+.kp-btn.kp-btn-danger-on {
+  border-color: var(--danger);
+  background: var(--danger);
+  color: #1a0505;
 }
 .kp-char-main {
   display: flex;

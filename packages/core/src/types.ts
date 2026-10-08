@@ -151,6 +151,11 @@ export interface CharacterProgress {
   lastScan: Stamped<number | null>;
   /** Czy śledzimy tę postać. */
   tracked: Stamped<boolean>;
+  /**
+   * Postać usunięta przez gracza: znika z list, jej postęp jest czyszczony. Zostaje tylko ten
+   * znacznik, żeby synchronizacja nie przywróciła jej z innego urządzenia.
+   */
+  removed?: Stamped<boolean>;
   quests: Record<string, QuestProgress>;
 }
 

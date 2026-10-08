@@ -6,6 +6,7 @@ import {
   indexContent,
   parseQuestLog,
   parseTeleportList,
+  removeCharacter,
   setManualStatus,
   upsertCharacter,
   type Progress,
@@ -158,7 +159,9 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
     await click(tab('Postacie'));
     expect(root.textContent).toContain('Testowa');
 
-    await click(tab('Ustawienia'));
+    // w wąskim panelu „Ustawienia” to ikona ⚙ w nagłówku, nie zakładka
+    expect(tab('Ustawienia')).toBeUndefined();
+    await click(root.querySelector('[aria-label="Ustawienia"]'));
     const textarea = root.querySelector('textarea')!;
     textarea.value = '{"zly": true}';
     textarea.dispatchEvent(new Event('input', { bubbles: true }));
@@ -284,12 +287,43 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
     expect(button('Ukryj zrobione')).toBeDefined();
   });
 
-  it('klik w belkę zwija panel – zostaje sam nagłówek', async () => {
-    const onToggleMinimize = vi.fn();
-    const { root, click } = mountPanel({ minimized: true, onToggleMinimize });
-    expect(root.querySelector('.kp-tabs')).toBeNull();
-    expect(root.querySelector('.kp-main')).toBeNull();
+  it('klik w belkę i × chowają panel', async () => {
+    const onCollapse = vi.fn();
+    const onClose = vi.fn();
+    const { root, click } = mountPanel({ onCollapse, onClose });
     await click(root.querySelector('.kp-brand-btn'));
-    expect(onToggleMinimize).toHaveBeenCalledOnce();
+    await click(root.querySelector('[aria-label="Schowaj panel"]'));
+    expect(onCollapse).toHaveBeenCalledOnce();
+    expect(onClose).toHaveBeenCalledOnce();
+  });
+
+  it('usunięcie postaci wymaga potwierdzenia; usunięta znika z listy', async () => {
+    const onRemoveCharacter = vi.fn();
+    const { root, click, tab, button } = mountPanel({ onRemoveCharacter });
+    await click(tab('Postacie'));
+    await click(button('Usuń'));
+    expect(onRemoveCharacter).not.toHaveBeenCalled();
+    expect(root.querySelector('.kp-confirm')?.textContent).toContain('Butcher');
+    await click(button('Anuluj'));
+    expect(root.querySelector('.kp-confirm')).toBeNull();
+    await click(button('Usuń'));
+    await click(button('Usuń postać'));
+    expect(onRemoveCharacter).toHaveBeenCalledWith(key);
+
+    const host = document.createElement('div');
+    mount(host, {
+      content,
+      progress: removeCharacter(progress, key, 5),
+      activeCharacter: key,
+      initialTab: 'characters',
+      onSetManual: vi.fn(),
+      onSetStep: vi.fn(),
+      onSetLists: vi.fn(),
+      onSelectCharacter: vi.fn(),
+      onSetTracked: vi.fn(),
+      onSetting: vi.fn(),
+      onImport: vi.fn(),
+    });
+    expect(host.shadowRoot!.textContent).not.toContain('Butcher');
   });
 });

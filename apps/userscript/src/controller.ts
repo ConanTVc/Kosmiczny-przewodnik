@@ -2,7 +2,9 @@ import {
   applyScanResult,
   computeStatuses,
   indexContent,
+  isRemoved,
   mergeProgress,
+  removeCharacter,
   setManualStatus,
   setQuestLists,
   setSetting,
@@ -107,15 +109,16 @@ export class Controller {
     const c = snapshot?.character;
     const now = this.now();
     if (c && changes.has('character')) {
+      // Postać usunięta przez gracza wraca jak nowa (pytanie „Śledzić?”).
       const existing = this.progress.characters[c.key];
-      if (existing) {
+      if (existing && !isRemoved(existing)) {
         this.progress = upsertCharacter(this.progress, info(c), now);
       } else {
         this.progress = upsertCharacter(this.progress, info(c), now, this.trackNew === 'always');
         if (this.trackNew === 'ask') this.pendingNew = c.key;
       }
       this.activeKey = c.key;
-    } else if (c && changes.has('location')) {
+    } else if (c && changes.has('location') && !isRemoved(this.progress.characters[c.key])) {
       this.progress = upsertCharacter(this.progress, info(c), now);
     }
     if (c && (changes.has('map') || changes.has('location') || changes.has('character'))) {
@@ -241,6 +244,29 @@ export class Controller {
   setCharacterTracked(key: string, tracked: boolean): void {
     this.progress = setTracked(this.progress, key, tracked, this.now());
     if (key === this.pendingNew) this.pendingNew = undefined;
+    this.recompute();
+    this.commit();
+  }
+
+  /** Usuwa postać razem z postępem (zostaje tylko znacznik dla synchronizacji). */
+  removeCharacter(key: string): void {
+    this.progress = removeCharacter(this.progress, key, this.now());
+    if (this.activeKey === key) this.activeKey = undefined;
+    if (this.pendingNew === key) this.pendingNew = undefined;
+    this.scans.delete(key);
+    this.knownTeleports = Object.fromEntries(
+      Object.entries(this.knownTeleports).filter(([k]) => k !== key),
+    );
+    if (this.gameCharacter?.key === key) this.lastResult = undefined;
+    this.commit();
+  }
+
+  /** Postać z gry, usunięta wcześniej z przewodnika – śledź ją znowu (od zera). */
+  restoreGameCharacter(): void {
+    const c = this.gameCharacter;
+    if (!c) return;
+    this.progress = upsertCharacter(this.progress, info(c), this.now(), true);
+    this.activeKey = c.key;
     this.recompute();
     this.commit();
   }

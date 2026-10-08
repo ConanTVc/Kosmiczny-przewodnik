@@ -1,4 +1,4 @@
-import { computeStatuses, filterForCharacter, indexContent } from '@kp/core';
+import { computeStatuses, filterForCharacter, indexContent, isRemoved } from '@kp/core';
 import { Component, type ComponentChildren } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { PanelContext, type PanelData } from './context';
@@ -49,7 +49,8 @@ class ErrorBoundary extends Component<{ children: ComponentChildren }, { error?:
 export function App(props: PanelProps) {
   const index = useMemo(() => indexContent(props.content), [props.content]);
   const key = props.activeCharacter;
-  const progressChar = key ? props.progress.characters[key] : undefined;
+  const stored = key ? props.progress.characters[key] : undefined;
+  const progressChar = isRemoved(stored) ? undefined : stored;
   const race = progressChar?.race.v;
   const reborn = progressChar?.reborn.v;
 
@@ -112,22 +113,20 @@ export function App(props: PanelProps) {
   };
 
   const layout = props.layout ?? 'panel';
+  // W wąskim panelu „Ustawienia” to ikona w nagłówku – sześć zakładek się nie mieści.
+  const tabs = layout === 'panel' ? TABS.filter(([id]) => id !== 'settings') : TABS;
   return (
     <PanelContext.Provider value={data}>
-      <div
-        class={`kp-app kp-layout-${layout} ${props.minimized ? 'kp-minimized' : ''}`}
-        data-theme={theme}
-      >
+      <div class={`kp-app kp-layout-${layout}`} data-theme={theme}>
         <header class="kp-top">
-          {props.onToggleMinimize ? (
+          {props.onCollapse ? (
             <button
               type="button"
               class="kp-brand kp-brand-btn"
-              aria-expanded={!props.minimized}
-              title={props.minimized ? 'Rozwiń przewodnik' : 'Zwiń przewodnik do belki'}
-              onClick={props.onToggleMinimize}
+              title="Schowaj przewodnik (Alt+K)"
+              onClick={props.onCollapse}
             >
-              Kosmiczny Przewodnik <span aria-hidden="true">{props.minimized ? '▸' : '▾'}</span>
+              Kosmiczny Przewodnik
             </button>
           ) : (
             <div class="kp-brand">Kosmiczny Przewodnik</div>
@@ -141,54 +140,63 @@ export function App(props: PanelProps) {
               {REBORN_LETTER[progressChar.reborn.v]}
             </div>
           )}
+          {layout === 'panel' && (
+            <button
+              type="button"
+              class={`kp-icon-btn kp-gear ${tab === 'settings' ? 'kp-icon-on' : ''}`}
+              aria-label="Ustawienia"
+              title="Ustawienia"
+              aria-pressed={tab === 'settings'}
+              onClick={() => setTab(tab === 'settings' ? 'here' : 'settings')}
+            >
+              ⚙
+            </button>
+          )}
           {props.onClose && (
             <button
               type="button"
               class="kp-icon-btn"
-              aria-label="Zamknij panel"
+              aria-label="Schowaj panel"
+              title="Schowaj (Alt+K)"
               onClick={props.onClose}
             >
               ×
             </button>
           )}
         </header>
-        {!props.minimized && props.header}
-        {!props.minimized && (
-          <nav class="kp-tabs" aria-label="Zakładki">
-            {TABS.map(([id, label]) => (
-              <button
-                key={id}
-                type="button"
-                class={`kp-tab ${tab === id ? 'kp-tab-on' : ''}`}
-                aria-current={tab === id ? 'page' : undefined}
-                onClick={() => setTab(id)}
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-        )}
-        {!props.minimized && (
-          <main class="kp-main">
-            <ErrorBoundary>
-              {tab === 'here' && (
-                <HereView
-                  locId={locId}
-                  onPick={(id) => {
-                    setViewLoc(id);
-                    setFocusSlug(undefined);
-                    props.onPickLocation?.(id);
-                  }}
-                />
-              )}
-              {tab === 'progress' && <ProgressView />}
-              {tab === 'ahead' && <AheadView />}
-              {tab === 'search' && <SearchView />}
-              {tab === 'characters' && <CharactersView />}
-              {tab === 'settings' && <SettingsView />}
-            </ErrorBoundary>
-          </main>
-        )}
+        {props.header}
+        <nav class="kp-tabs" aria-label="Zakładki">
+          {tabs.map(([id, label]) => (
+            <button
+              key={id}
+              type="button"
+              class={`kp-tab ${tab === id ? 'kp-tab-on' : ''}`}
+              aria-current={tab === id ? 'page' : undefined}
+              onClick={() => setTab(id)}
+            >
+              {label}
+            </button>
+          ))}
+        </nav>
+        <main class="kp-main">
+          <ErrorBoundary>
+            {tab === 'here' && (
+              <HereView
+                locId={locId}
+                onPick={(id) => {
+                  setViewLoc(id);
+                  setFocusSlug(undefined);
+                  props.onPickLocation?.(id);
+                }}
+              />
+            )}
+            {tab === 'progress' && <ProgressView />}
+            {tab === 'ahead' && <AheadView />}
+            {tab === 'search' && <SearchView />}
+            {tab === 'characters' && <CharactersView />}
+            {tab === 'settings' && <SettingsView />}
+          </ErrorBoundary>
+        </main>
       </div>
     </PanelContext.Provider>
   );

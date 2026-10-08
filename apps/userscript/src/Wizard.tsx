@@ -11,6 +11,9 @@ export interface WizardProps {
   game?: GameSnapshot;
   tracked: boolean;
   pendingNew: boolean;
+  /** Postać z gry została usunięta z przewodnika. */
+  removed: boolean;
+  onRestore(): void;
   scan?: CharacterScan;
   result?: StatusOutput;
   /** Czas ostatniego pełnego skanu tej postaci (teleportacje bez filtra + dziennik). */
@@ -106,6 +109,21 @@ export function Wizard(props: WizardProps) {
             onClick={() => props.onTrack('always')}
           >
             Zawsze śledź nowe
+          </button>
+        </div>
+      </section>
+    );
+  }
+
+  if (props.removed && c) {
+    return (
+      <section class="kp-wizard">
+        <p>
+          <strong>{c.name}</strong> jest usunięta z przewodnika – jej postęp nie jest zapisywany.
+        </p>
+        <div class="kp-actions">
+          <button type="button" class="kp-btn kp-btn-small" onClick={props.onRestore}>
+            Śledź znowu
           </button>
         </div>
       </section>

@@ -97,6 +97,37 @@ describe('Controller', () => {
     expect(c.progress.characters['s18:c200']?.tracked.v).toBe(true);
   });
 
+  it('usunięta postać znika z postępu; po ponownym wejściu do gry jest jak nowa', () => {
+    const { c } = setup();
+    c.onGame(snapshot(), all);
+    c.answerTrack('yes');
+    c.onDom(teleports());
+    c.onDom(questLog());
+    c.removeCharacter('s18:c100');
+    const removed = c.progress.characters['s18:c100']!;
+    expect(removed.removed?.v).toBe(true);
+    expect(removed.quests).toEqual({});
+    // zmiana lokacji w tej samej sesji nie przywraca postaci po cichu
+    c.onGame(snapshot({ loc: 1360 }), new Set<GameChange>(['location']));
+    expect(c.progress.characters['s18:c100']!.removed?.v).toBe(true);
+    // „Śledź znowu” w kreatorze
+    c.restoreGameCharacter();
+    expect(c.progress.characters['s18:c100']).toMatchObject({
+      removed: { v: false },
+      tracked: { v: true },
+    });
+  });
+
+  it('postać usunięta, a potem wybrana w grze – pytanie „Śledzić?” jak przy nowej', () => {
+    const { c } = setup();
+    c.onGame(snapshot(), all);
+    c.answerTrack('yes');
+    c.removeCharacter('s18:c100');
+    c.onGame(snapshot(), new Set<GameChange>(['character']));
+    expect(c.pendingNew).toBe('s18:c100');
+    expect(c.progress.characters['s18:c100']!.removed?.v).toBe(false);
+  });
+
   it('lista teleportacji, z której zniknęły znane lokacje, jest uznana za przefiltrowaną', () => {
     const { c } = setup();
     c.onGame(snapshot(), all);

@@ -23,16 +23,16 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 
 ## Twarde zasady
 
-1. **Tylko odczyt.** Skrypt NIGDY nie klika, nie wysyła żądań do serwera gry, nie wywołuje funkcji gry, nie modyfikuje obiektu `GAME`. Jedyna ingerencja w DOM to własny panel oraz ikona przewodnika doklejona na końcu paska szybkich akcji gry (rodzic `.qlink`; własny host z Shadow DOM, bez klas gry, klik nie propaguje do gry; dopisane 2026-10-08 na prośbę właściciela projektu). Bez paska – przycisk w rogu ekranu.
-2. **Biała lista danych.** Z `GAME` czytamy wyłącznie: `GAME.server`, `GAME.getTime()`, `GAME.char_data.{id, name, race, reborn, loc, bonus18}` oraz `GAME.map_quests` (z każdego wpisu tylko `{qb_id, rtype, main, name}`; dopisane za zgodą autora 2026-10-08). Nigdy nie czytamy ani nie wysyłamy `login`, `captcha`, `sitekey`, `pid` ani innych pól.
+1. **Tylko odczyt.** Skrypt NIGDY nie klika, nie wysyła żądań do serwera gry, nie wywołuje funkcji gry, nie modyfikuje obiektu `GAME`. Jedyna ingerencja w DOM to własny panel (host z Shadow DOM przy krawędzi ekranu + mała zakładka „⋮” w rogu, gdy panel jest schowany). Bez wybranej postaci (`GAME` brak albo `GAME.char_id` 0) nie pokazujemy niczego.
+2. **Biała lista danych.** Z `GAME` czytamy wyłącznie: `GAME.server`, `GAME.getTime()`, `GAME.char_id` (czy postać jest wybrana; dopisane 2026-10-08), `GAME.char_data.{id, name, race, reborn, loc, bonus18}` oraz `GAME.map_quests` (z każdego wpisu tylko `{qb_id, rtype, main, name}`; dopisane za zgodą autora 2026-10-08). Nigdy nie czytamy ani nie wysyłamy `login`, `captcha`, `sitekey`, `pid` ani innych pól.
 3. **Local-first.** Wszystko działa offline, synchronizacja w tle.
 4. **Błąd skryptu nie może zepsuć gry** – wszystko, co dotyka strony, w try/catch.
 5. Teksty interfejsu po polsku.
 
 ## Dane gry
 
-- Gdy postać nie jest wybrana, `GAME.char_data === undefined` → komunikat „Wybierz postać”.
-- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c3465`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną. Postać dodana ręcznie na telefonie (bez ID z gry): `s{serwer|0}:m{czas dodania}`.
+- Gdy postać nie jest wybrana (`GAME` nie istnieje, `GAME.char_id` = 0 albo brak, `GAME.char_data === undefined`) → panelu w grze nie ma wcale.
+- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c3465`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną. Postać dodana ręcznie na telefonie (bez ID z gry): `s{serwer|0}:m{czas dodania}`. Usunięcie postaci = znacznik `removed` (postęp czyszczony, znacznik zostaje dla synchronizacji); gdy postać znowu pojawi się w grze, jest traktowana jak nowa.
 - Rasy (`char_data.race`): 0 Goku, 1 Vegeta, 2 Gohan, 3 Trunks, 4 Broly, 5 Black, 6 Bardock, 7 Cumber.
 - Reborny (`char_data.reborn`): 0 Nonborn, 1 Rborn, 2 Gborn, 3 Uborn, 4 Sborn, 5 Hborn, 6 Mborn. Litery w grze: R, G, U, S, H, M (`<span class="rN">`).
 - `char_data.loc` = ID bieżącej lokacji (to samo ID co `data-loc` w teleportacjach i dzienniku).

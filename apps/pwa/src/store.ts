@@ -3,8 +3,10 @@
  * opóźnieniem. Wybrana postać jest zapamiętywana tylko na tym urządzeniu.
  */
 import {
+  isRemoved,
   manualCharKey,
   mergeProgress,
+  removeCharacter,
   setLastLoc,
   setManualStatus,
   setQuestLists,
@@ -13,6 +15,7 @@ import {
   setStepDone,
   setTracked,
   upsertCharacter,
+  visibleCharacters,
   type ManualStatus,
   type Progress,
 } from '@kp/core';
@@ -34,15 +37,13 @@ export class PhoneStore {
     private readonly now: () => number = Date.now,
   ) {
     this.progress = init.progress;
-    this.activeKey =
-      init.activeKey && this.progress.characters[init.activeKey]?.tracked.v
-        ? init.activeKey
-        : this.firstTracked();
+    const stored = init.activeKey ? this.progress.characters[init.activeKey] : undefined;
+    this.activeKey = stored?.tracked.v && !isRemoved(stored) ? init.activeKey : this.firstTracked();
   }
 
   /** Ostatnio używana śledzona postać. */
   private firstTracked(): string | undefined {
-    return Object.entries(this.progress.characters)
+    return visibleCharacters(this.progress)
       .filter(([, c]) => c.tracked.v)
       .sort(([, a], [, b]) => b.lastSeen - a.lastSeen)[0]?.[0];
   }
@@ -78,6 +79,13 @@ export class PhoneStore {
   setTracked(key: string, tracked: boolean): void {
     this.progress = setTracked(this.progress, key, tracked, this.now());
     if (!tracked && key === this.activeKey) this.activeKey = this.firstTracked();
+    this.commit(this.progress);
+  }
+
+  /** Usuwa postać razem z postępem; wybrana zostaje inna śledzona. */
+  removeCharacter(key: string): void {
+    this.progress = removeCharacter(this.progress, key, this.now());
+    if (this.activeKey === key) this.activeKey = this.firstTracked();
     this.commit(this.progress);
   }
 

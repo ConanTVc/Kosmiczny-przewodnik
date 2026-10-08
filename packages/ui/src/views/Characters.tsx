@@ -1,4 +1,5 @@
 import { RACES, REBORNS } from '@kp/content';
+import { visibleCharacters } from '@kp/core';
 import { useState } from 'preact/hooks';
 import { usePanel } from '../context';
 import { REBORN_LETTER, formatDate, raceName } from '../labels';
@@ -93,9 +94,9 @@ function AddCharacter({ onAdd, onCancel }: { onAdd(c: NewCharacter): void; onCan
 export function CharactersView() {
   const { props, goTo } = usePanel();
   const [adding, setAdding] = useState(false);
-  const entries = Object.entries(props.progress.characters).sort(
-    ([, a], [, b]) => b.lastSeen - a.lastSeen,
-  );
+  /** Postać, przy której gracz kliknął „Usuń” – czeka na potwierdzenie. */
+  const [confirmRemove, setConfirmRemove] = useState<string>();
+  const entries = visibleCharacters(props.progress).sort(([, a], [, b]) => b.lastSeen - a.lastSeen);
   const add =
     props.onAddCharacter &&
     ((c: NewCharacter) => {
@@ -169,7 +170,44 @@ export function CharactersView() {
                 >
                   {c.tracked.v ? 'Nie śledź' : 'Śledź'}
                 </button>
+                {props.onRemoveCharacter && confirmRemove !== key && (
+                  <button
+                    type="button"
+                    class="kp-btn kp-btn-small kp-btn-ghost kp-btn-danger"
+                    onClick={() => setConfirmRemove(key)}
+                  >
+                    Usuń
+                  </button>
+                )}
               </div>
+              {confirmRemove === key && (
+                <div class="kp-confirm" role="alert">
+                  <p>
+                    Usunąć <strong>{c.name.v}</strong> i cały jej postęp? Tego nie da się cofnąć.
+                    {!manual &&
+                      ' Gdy znowu wejdziesz nią do gry, przewodnik zapyta, czy ją śledzić.'}
+                  </p>
+                  <div class="kp-actions">
+                    <button
+                      type="button"
+                      class="kp-btn kp-btn-small kp-btn-danger-on"
+                      onClick={() => {
+                        setConfirmRemove(undefined);
+                        props.onRemoveCharacter?.(key);
+                      }}
+                    >
+                      Usuń postać
+                    </button>
+                    <button
+                      type="button"
+                      class="kp-btn kp-btn-small kp-btn-ghost"
+                      onClick={() => setConfirmRemove(undefined)}
+                    >
+                      Anuluj
+                    </button>
+                  </div>
+                </div>
+              )}
             </li>
           );
         })}
