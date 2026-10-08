@@ -128,6 +128,8 @@ export function SettingsView() {
         </div>
       </section>
 
+      {props.settingsExtra}
+
       <section class="kp-block">
         <h2 class="kp-h">Synchronizacja</h2>
         <SyncBlock sync={props.sync} />

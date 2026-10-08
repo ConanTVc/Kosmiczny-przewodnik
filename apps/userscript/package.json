@@ -1,0 +1,28 @@
+{
+  "name": "@kp/userscript",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Skrypt Tampermonkey/Violentmonkey: panel przewodnika w grze Kosmiczni (tylko odczyt).",
+  "scripts": {
+    "dev": "pnpm --filter @kp/content build && vite",
+    "build": "pnpm --filter @kp/content build && vite build",
+    "preview": "vite preview --port 4173 --open /kosmiczny-przewodnik.user.js",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kp/content": "workspace:*",
+    "@kp/core": "workspace:*",
+    "@kp/ui": "workspace:*",
+    "preact": "^11.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "jsdom": "^30.1.2",
+    "vite": "^8.3.4",
+    "vite-plugin-monkey": "^8.1.1"
+  }
+}

@@ -34,6 +34,8 @@ export interface PanelProps {
   /** Dodatkowa treść nad zakładkami, np. kreator skanu w userscripcie. */
   header?: ComponentChildren;
   sync?: SyncProps;
+  /** Dodatkowe ustawienia aplikacji (np. strona panelu w grze) – w zakładce „Ustawienia”. */
+  settingsExtra?: ComponentChildren;
   initialTab?: TabId;
   onSetManual(slug: string, status: ManualStatus | null): void;
   /** Odhaczenie kroku zadania (numer od 0); `total` – liczba kroków (wszystkie = zadanie zrobione). */

@@ -102,7 +102,13 @@ for (const { info, scan, manual } of demo) {
 // Przykład autora: „Duchy Ognia” na Io – wszystko poza ostatnim krokiem (exp) zrobione, odłożone na później.
 progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 0, true, 3, Date.now());
 progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 1, true, 3, Date.now());
-progress = setQuestLists(progress, 's21:c3465', 'hborn/988/duchy-ognia', ['Na później'], Date.now());
+progress = setQuestLists(
+  progress,
+  's21:c3465',
+  'hborn/988/duchy-ognia',
+  ['Na później'],
+  Date.now(),
+);
 
 let active: string = demo[0]!.info.key;
 let layout: 'panel' | 'app' = 'panel';

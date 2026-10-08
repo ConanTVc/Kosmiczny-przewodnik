@@ -745,3 +745,69 @@
   gap: 8px;
   align-items: baseline;
 }
+
+/* ───── Kreator skanu (userscript) ───── */
+.kp-wizard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px 8px 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9em;
+  text-align: left;
+}
+.kp-wizard-ask {
+  border-color: var(--accent);
+}
+.kp-wizard-ask p {
+  margin: 0;
+}
+.kp-wizard-line {
+  display: block;
+  width: calc(100% - 16px);
+  cursor: pointer;
+}
+.kp-wizard-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.kp-wiz-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kp-wiz-step {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.kp-wiz-mark {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--st-unknown);
+  color: var(--st-unknown);
+  font-size: 12px;
+  font-weight: 700;
+}
+.kp-wiz-ok .kp-wiz-mark {
+  border-color: var(--st-done);
+  background: var(--st-done);
+  color: var(--bg);
+}
+.kp-wiz-warn .kp-wiz-mark {
+  border-color: var(--st-available);
+  color: var(--st-available);
+}
