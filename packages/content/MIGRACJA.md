@@ -7,16 +7,16 @@ Wygenerowany przez `pnpm content:migrate`. Oryginały w `solucje/` i `poradniki/
 | Rozdział | Plik | Autor | Lokacje | Zadania (gł./pob./codz./powt.) | Etapy | requires | Do decyzji |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Nonborn – Goku | `goku-n.json` | BaronCorbin | 97 | 148 (90/54/4/0) | 314 | 3 | 0 |
-| Rborn – Goku | `goku-r.json` | BaronCorbin | 38 | 47 (38/9/0/0) | 98 | 0 | 1 |
+| Rborn – Goku | `goku-r.json` | BaronCorbin | 38 | 47 (38/9/0/0) | 98 | 0 | 0 |
 | Nonborn – Cumber | `cumber-n.json` | Naruto | 18 | 43 (18/21/4/0) | 99 | 1 | 0 |
 | Rborn – Cumber | `cumber-r.json` | Naruto | 15 | 29 (15/14/0/0) | 58 | 0 | 0 |
 | Gborn | `gborn.json` | _(pusty)_ | 129 | 189 (88/101/0/0) | 442 | 2 | 0 |
-| Uborn | `uborn.json` | _(pusty)_ | 111 | 224 (112/103/8/1) | 569 | 7 | 1 |
-| Sborn | `sborn.json` | _(pusty)_ | 104 | 278 (95/174/8/1) | 1271 | 7 | 1 |
+| Uborn | `uborn.json` | _(pusty)_ | 111 | 224 (112/103/8/1) | 569 | 7 | 0 |
+| Sborn | `sborn.json` | _(pusty)_ | 104 | 278 (95/174/8/1) | 1271 | 7 | 0 |
 | Hborn | `hborn.json` | _(pusty)_ | 238 | 751 (239/510/2/0) | 2842 | 83 | 0 |
-| Mborn | `mborn.json` | _(pusty)_ | 110 | 384 (114/270/0/0) | 1970 | 54 | 2 |
+| Mborn | `mborn.json` | _(pusty)_ | 110 | 384 (114/270/0/0) | 1970 | 54 | 0 |
 
-Lokacje: 1508 z listy gry w `data/locations.json`, 810 z rebornem (użyte w solucjach albo w fixtures), 11 z aliasami nazw z solucji, 2 oznaczonych „bez teleportu”.
+Lokacje: 1508 z listy gry w `data/locations.json`, 809 z rebornem (użyte w solucjach albo w fixtures), 11 z aliasami nazw z solucji, 2 oznaczonych „bez teleportu”.
 
 ## Co zrobiła migracja
 
@@ -30,36 +30,31 @@ Lokacje: 1508 z listy gry w `data/locations.json`, 810 z rebornem (użyte w solu
 - Komentarze w nawiasach przy nazwach przeniesione do wskazówek (`tips`) albo notatek lokacji.
 - `requires` ustawione, gdy pierwszym wymaganiem jest „Wykonać zadanie: X”.
 
-## Wymaga Twojej decyzji (5)
+## Wymaga Twojej decyzji (0)
 
-Te miejsca mają też pole `review` w danych – po sprawdzeniu usuń je.
+„linia” to numer linii w pliku TXT, „ID” to ID lokacji w grze. Te miejsca mają też pole `review` w danych – po sprawdzeniu usuń je.
 
-- `Goku.txt:1194` – Lokacja „Lodowa Dolina Północ”: Dopasowano przybliżenie (zawiera): „Lodowa Dolina” (95) – sprawdź
-- `Mborn.txt:942` – Zadanie „Strach Ma Wielkie Oczy”: Nie znaleziono zadania „Hakaishin IV” (z „Wykonać zadanie”) – requires nieustawione
-- `Mborn.txt:1520` – Zadanie „Strach Ma Wielkie Oczy”: Nie znaleziono zadania „Strach ma Wielkie Oczy II” (z „Wykonać zadanie”) – requires nieustawione
-- `Sborn.txt:717` – Lokacja „RAJSKA SALA TRENINGOWA”: ID 215 jest daleko od sąsiednich lokacji (670, 671) – sprawdź
-- `Uborn.txt:391` – Lokacja „Dom”: ID 688 jest daleko od sąsiednich lokacji (397, 395) – sprawdź
+Brak.
 
-## Do szybkiego przejrzenia (16)
+## Do szybkiego przejrzenia (15)
 
 Dopasowania przybliżone (literówki) i rzeczy informacyjne – prawdopodobnie poprawne.
 
-- `Cumber.txt:165` – Lokacja „Planeta Eurilia z innej lini czasowej”: Dopasowano przybliżenie (literówka): „Planete Eurilia z innej lini czasowej” (1111) – sprawdź
-- `Cumber.txt:180` – Lokacja „Planeta Eurilia z innej lini czasowej”: Dopasowano przybliżenie (literówka): „Planete Eurilia z innej lini czasowej” (1111) – sprawdź
-- `Cumber.txt:250` – Lokacja „Między wymiarowa pustka”: Dopasowano przybliżenie (literówka): „Międzywymiarowa pustka” (1116) – sprawdź
-- `Cumber.txt:411` – Lokacja „Planeta we wszechświecie jedenastym”: Dopasowano przybliżenie (literówka): „Planeta we wszechświecie jedynastym” (1122) – sprawdź
-- `Gborn.txt:249` – Pominięto puste zadanie „Nowy wróg” (brak wymagań i nagród)
-- `Goku.txt:341` – Lokacja „Siedziba Mistrzów”: ID 359 jest daleko od sąsiednich lokacji (27, 28) – sprawdź
-- `Goku.txt:468` – Lokacja „Siedziba Pteodora”: Dopasowano przybliżenie (literówka): „Siedziba Pterodora” (34) – sprawdź
-- `Hborn.txt:4775` – Lokacja „PLANETA SU”: Dopasowano przybliżenie (literówka): „Planet Su” (1233) – sprawdź
-- `Hborn.txt:5045` – Pominięto puste zadanie „Teleport - Niebiańska Kuźnia” (brak wymagań i nagród) – nazwa trafiła do notatki lokacji
-- `Hborn.txt:7132` – Pominięto puste zadanie „Powrót do Domu” (brak wymagań i nagród)
-- `Hborn.txt:7544` – Lokacja „OKOLICE ZAMKU KRÓLEWESKIEGO - ILUZJA”: Dopasowano przybliżenie (literówka): „Okolice Zamku Królewskiego - Iluzja” (1350) – sprawdź
-- `Hborn.txt:7594` – Lokacja „MIEJSCE LĄDOWANIA RADITZA - ILUZJA”: Dopasowano przybliżenie (literówka): „Miejsce Lądowanie Raditza - Iluzja” (1351) – sprawdź
-- `Sborn.txt:109` – Lokacja „PLANETA KAIO”: ID 39 jest daleko od sąsiednich lokacji (649, 650) – sprawdź
-- `Sborn.txt:1567` – Lokacja „WYSPA GENIALNEGO ŻÓŁWIA”: ID 2 jest daleko od sąsiednich lokacji (720, 719) – sprawdź
-- `Sborn.txt:2452` – Lokacja „GÓRSKIE ZBOCZA”: ID 53 jest daleko od sąsiednich lokacji (771, 772) – sprawdź
-- `Uborn.txt:1936` – Pominięto puste zadanie „Wymiar U35545XT” (brak wymagań i nagród)
+- **Cumber.txt, linia 165** – Lokacja „Planeta Eurilia z innej lini czasowej”: Dopasowano przybliżenie (literówka): „Planete Eurilia z innej lini czasowej” (ID 1111) – sprawdź
+- **Cumber.txt, linia 180** – Lokacja „Planeta Eurilia z innej lini czasowej”: Dopasowano przybliżenie (literówka): „Planete Eurilia z innej lini czasowej” (ID 1111) – sprawdź
+- **Cumber.txt, linia 250** – Lokacja „Między wymiarowa pustka”: Dopasowano przybliżenie (literówka): „Międzywymiarowa pustka” (ID 1116) – sprawdź
+- **Cumber.txt, linia 411** – Lokacja „Planeta we wszechświecie jedenastym”: Dopasowano przybliżenie (literówka): „Planeta we wszechświecie jedynastym” (ID 1122) – sprawdź
+- **Gborn.txt, linia 249** – Pominięto puste zadanie „Nowy wróg” (brak wymagań i nagród)
+- **Goku.txt, linia 468** – Lokacja „Siedziba Pteodora”: Dopasowano przybliżenie (literówka): „Siedziba Pterodora” (ID 34) – sprawdź
+- **Goku.txt, linia 1194** – Lokacja „Lodowa Dolina Północ”: Dopasowano przybliżenie (zawiera): „Lodowa Dolina” (ID 95) – sprawdź
+- **Hborn.txt, linia 4775** – Lokacja „PLANETA SU”: Dopasowano przybliżenie (literówka): „Planet Su” (ID 1233) – sprawdź
+- **Hborn.txt, linia 5045** – Pominięto puste zadanie „Teleport - Niebiańska Kuźnia” (brak wymagań i nagród) – nazwa trafiła do notatki lokacji
+- **Hborn.txt, linia 7132** – Pominięto puste zadanie „Powrót do Domu” (brak wymagań i nagród)
+- **Hborn.txt, linia 7544** – Lokacja „OKOLICE ZAMKU KRÓLEWESKIEGO - ILUZJA”: Dopasowano przybliżenie (literówka): „Okolice Zamku Królewskiego - Iluzja” (ID 1350) – sprawdź
+- **Hborn.txt, linia 7594** – Lokacja „MIEJSCE LĄDOWANIA RADITZA - ILUZJA”: Dopasowano przybliżenie (literówka): „Miejsce Lądowanie Raditza - Iluzja” (ID 1351) – sprawdź
+- **Mborn.txt, linia 942** – Zadanie „Strach Ma Wielkie Oczy” wymaga „Hakaishin IV” – to kolejna część fabuły głównej z numerem nadawanym w grze; requires nieustawione
+- **Mborn.txt, linia 1520** – Zadanie „Strach Ma Wielkie Oczy” wymaga „Strach ma Wielkie Oczy II” – to kolejna część fabuły głównej z numerem nadawanym w grze; requires nieustawione
+- **Uborn.txt, linia 1936** – Pominięto puste zadanie „Wymiar U35545XT” (brak wymagań i nagród)
 
 ## Poradniki
 
@@ -67,7 +62,6 @@ Dopasowania przybliżone (literówki) i rzeczy informacyjne – prawdopodobnie p
 - **Zadania codzienne** → `data/guides/zadania-codzienne.md` (z `poradniki/zadania codzienne/Zadania Codzienne.txt`)
 - **Tajemne Skrzynie – zawartość** → `data/guides/skrzynie.md` (przepisane ręcznie ze zrzutów `poradniki/skrzynie/`)
 
-## Ostrzeżenia walidacji (13)
+## Ostrzeżenia walidacji (8)
 
-- Pola review (opisane wyżej): 5
 - Brak autora (sourceCredit.author pusty): 8

@@ -113,8 +113,9 @@ export function convertChapter(
       ...(noTp ? ['Bez teleportu.'] : []),
     ];
 
+    const certain =
+      match.method === 'literówka' || match.candidates.length <= 1 || match.nearAnchor === true;
     if (match.review) {
-      const certain = match.method === 'literówka' || match.candidates.length <= 1;
       add(rs.line, `Lokacja „${rs.name}”: ${match.review}`, certain ? 'info' : 'review');
     }
     locations.push({
@@ -122,9 +123,7 @@ export function convertChapter(
       chapter: cfg,
       name: rs.name,
       ...(noTp && { teleport: false as const }),
-      ...(match.review &&
-        match.method !== 'literówka' &&
-        match.candidates.length > 1 && { review: match.review }),
+      ...(match.review && !certain && { review: match.review }),
     });
 
     const batchRequires: { quest: Quest; name: string; line: number }[] = [];
@@ -219,8 +218,20 @@ export function resolveRequires(converted: ConvertedChapter[]): void {
         if (found || other === conv) continue;
         for (const s of other.chapter.sections) found ??= find(s.quests);
       }
+      // W grze długie zadania dostają kolejne części z numerem („Hakaishin IV”) – w solucji jest sama nazwa.
+      const base = target.replace(/\s+(?:[ivx]+|\d+)$/, '');
+      const allQuests = sections.flatMap((s) => s.quests);
+      const numberedPart = base !== target && allQuests.some((q) => key(q.name) === base);
       if (found) {
         p.quest.requires = [...new Set([...(p.quest.requires ?? []), found.slug])];
+      } else if (numberedPart) {
+        const main = allQuests.some((q) => q.kind === 'main' && key(q.name) === base);
+        conv.report.push({
+          file: conv.file,
+          line: p.line,
+          message: `Zadanie „${p.quest.name}” wymaga „${p.name}” – to kolejna część ${main ? 'fabuły głównej' : `zadania „${normalizeCase(p.name).replace(/\s+\S+$/, '')}”`} z numerem nadawanym w grze; requires nieustawione`,
+          level: 'info',
+        });
       } else {
         const msg = `Nie znaleziono zadania „${p.name}” (z „Wykonać zadanie”) – requires nieustawione`;
         p.quest.review = [...(p.quest.review ?? []), msg];

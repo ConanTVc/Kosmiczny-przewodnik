@@ -65,25 +65,39 @@ const gameLocations = parseLocationList(read(LOCATIONS_LIST));
 const index = new LocationIndex(gameLocations);
 const fixtureReborns = parseTeleportReborns(read(FIXTURE_TELEPORTS));
 
-// Solucje
-const usedSlugs = new Set<string>();
-const converted: ConvertedChapter[] = [];
-for (const source of SOLUTIONS) {
+// Solucje – najpierw parsowanie wszystkiego, żeby znać lokacje jednoznaczne ze wszystkich rozdziałów
+const parsed = SOLUTIONS.flatMap((source) => {
   const overrides = new Map(Object.entries(source.overrides ?? {}).map(([k, v]) => [Number(k), v]));
-  for (const part of splitChapters(source, read(source.file))) {
-    const raw = parseSolution(part.lines, {
+  return splitChapters(source, read(source.file)).map((part) => ({
+    source,
+    part,
+    raw: parseSolution(part.lines, {
       firstLine: part.firstLine,
       overrides,
       isLocationName: (name) => index.isKnown(name),
-    });
-    const matches = matchChapterLocations(
-      index,
-      raw.sections.map((s) => s.name),
-    );
-    converted.push(
-      convertChapter({ file: source.file, chapter: part.chapter }, raw, matches, usedSlugs),
-    );
+    }),
+  }));
+});
+// Lokacje znane z solucji: jednoznaczne nazwy + rozstrzygnięte we wcześniejszych rozdziałach
+const known = new Set<number>();
+for (const p of parsed) {
+  for (const s of p.raw.sections) {
+    const c = index.candidates(s.name).candidates;
+    if (c.length === 1) known.add(c[0]!);
   }
+}
+const usedSlugs = new Set<string>();
+const converted: ConvertedChapter[] = [];
+for (const { source, part, raw } of parsed) {
+  const matches = matchChapterLocations(
+    index,
+    raw.sections.map((s) => s.name),
+    known,
+  );
+  for (const m of matches) if (m.id !== undefined) known.add(m.id);
+  converted.push(
+    convertChapter({ file: source.file, chapter: part.chapter }, raw, matches, usedSlugs),
+  );
 }
 resolveRequires(converted);
 for (const c of converted) c.chapter = orderQuestKeys(c.chapter);

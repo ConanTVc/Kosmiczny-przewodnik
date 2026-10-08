@@ -15,6 +15,8 @@ export interface LocationMatch {
   candidates: number[];
   /** Powód do ręcznej weryfikacji. */
   review?: string;
+  /** ID leży o najwyżej 3 od sąsiednich lokacji w fabule – dopasowanie pewne. */
+  nearAnchor?: boolean;
 }
 
 /** Wczytuje `lista_wszystkich_lokacji.txt` (linie `id,nazwa`). */
@@ -115,43 +117,64 @@ function push(map: Map<string, number[]>, key: string, id: number) {
   else map.set(key, [id]);
 }
 
-/** Odległość ID, powyżej której jednoznaczne dopasowanie i tak oznaczamy do sprawdzenia. */
-const FAR = 150;
+/** Odległość ID od sąsiadów w fabule, do której lokacja jest „po drodze”; dalej = powrót do dawnej. */
+const NEAR = 150;
 
 /**
- * Dopasowuje lokacje rozdziału (w kolejności fabuły) do ID. Nazwy jednoznaczne są kotwicami;
- * przy kilku kandydatach wybieramy ID najbliższe kotwicom przed i po (fabuła idzie zwykle
- * po kolejnych ID).
+ * Dopasowuje lokacje rozdziału (w kolejności fabuły) do ID. Lokacje dodawano do gry po kolei,
+ * więc fabuła idzie zwykle po kolejnych ID. Nazwy jednoznaczne są kotwicami. Przy kilku
+ * kandydatach:
+ *  1. odpadają ID wyższe niż najwyższa kotwica rozdziału (rozdział nie wraca do lokacji, których
+ *     jeszcze nie było),
+ *  2. kandydat blisko sąsiednich kotwic → bierzemy najbliższego,
+ *  3. inaczej to powrót do dawnej lokacji → bierzemy tę, którą znamy z wcześniejszych rozdziałów
+ *     (`known`); lokacje o tej samej nazwie spoza naszych solucji to zwykle fabuła innej rasy.
  */
 export function matchChapterLocations(
   index: LocationIndex,
   names: readonly string[],
+  known: ReadonlySet<number> = new Set(),
 ): LocationMatch[] {
   const matches: LocationMatch[] = names.map((n) => ({ ...index.candidates(n) }));
   for (const m of matches) {
     if (m.candidates.length === 1) m.id = m.candidates[0];
   }
+  const anchors = matches.filter((m) => m.candidates.length === 1).map((m) => m.id!);
+  const maxAnchor = anchors.length ? Math.max(...anchors) : Infinity;
   const anchorAround = (i: number, dir: -1 | 1): number | undefined => {
     for (let j = i + dir; j >= 0 && j < matches.length; j += dir) {
       const m = matches[j]!;
-      if (m.id !== undefined && m.candidates.length === 1) return m.id;
+      if (m.candidates.length === 1) return m.id;
     }
     return undefined;
   };
 
   matches.forEach((m, i) => {
-    const prev = anchorAround(i, -1);
-    const next = anchorAround(i, 1);
-    const neighbours = [prev, next].filter((x): x is number => x !== undefined);
+    const neighbours = [anchorAround(i, -1), anchorAround(i, 1)].filter(
+      (x): x is number => x !== undefined,
+    );
     const distance = (id: number) =>
       neighbours.length ? Math.min(...neighbours.map((n) => Math.abs(n - id))) : 0;
 
     if (m.candidates.length > 1) {
-      const sorted = [...new Set(m.candidates)].sort((a, b) => distance(a) - distance(b) || a - b);
-      m.id = sorted[0];
-      const tie = sorted.length > 1 && distance(sorted[0]!) === distance(sorted[1]!);
-      if (tie || !neighbours.length) {
-        m.review = `Kilka lokacji o tej nazwie (${sorted.join(', ')}) – wybrano ${m.id}, sprawdź`;
+      const all = [...new Set(m.candidates)];
+      const past = all.filter((id) => id <= maxAnchor);
+      const pool = past.length ? past : all;
+      const byDistance = [...pool].sort((a, b) => distance(a) - distance(b) || a - b);
+      const nearest = byDistance[0]!;
+      if (pool.length === 1) {
+        m.id = nearest;
+      } else if (neighbours.length && distance(nearest) <= NEAR) {
+        m.id = nearest;
+        if (byDistance.length > 1 && distance(byDistance[1]!) === distance(nearest)) {
+          m.review = `Kilka lokacji o tej nazwie (${byDistance.join(', ')}) w tej samej odległości – wybrano ${m.id}, sprawdź`;
+        }
+      } else {
+        const familiar = byDistance.filter((id) => known.has(id));
+        m.id = familiar[0] ?? nearest;
+        if (familiar.length !== 1) {
+          m.review = `Kilka lokacji o tej nazwie (${byDistance.join(', ')}) – wybrano ${m.id}, sprawdź`;
+        }
       }
     }
     if (m.id === undefined) {
@@ -159,11 +182,10 @@ export function matchChapterLocations(
       return;
     }
     if (m.method === 'literówka' || m.method === 'zawiera') {
-      m.review = `Dopasowano przybliżenie (${m.method}): „${index.name(m.id)}” (${m.id}) – sprawdź`;
+      m.review = `Dopasowano przybliżenie (${m.method}): „${index.name(m.id)}” (ID ${m.id}) – sprawdź`;
     }
-    if (neighbours.length && distance(m.id) > FAR && !m.review) {
-      m.review = `ID ${m.id} jest daleko od sąsiednich lokacji (${neighbours.join(', ')}) – sprawdź`;
-    }
+    // ID tuż obok sąsiednich lokacji w fabule potwierdza dopasowanie
+    m.nearAnchor = neighbours.length > 0 && distance(m.id) <= 3;
   });
   return matches;
 }

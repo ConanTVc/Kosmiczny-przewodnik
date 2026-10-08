@@ -468,9 +468,6 @@
       "reborn": 1,
       "aliases": [
         "Lodowa Dolina Północ"
-      ],
-      "review": [
-        "Dopasowano przybliżenie (zawiera): „Lodowa Dolina” (95) – sprawdź"
       ]
     },
     {
@@ -1006,11 +1003,7 @@
     },
     {
       "id": 215,
-      "name": "Rajska Sala Treningowa",
-      "reborn": 4,
-      "review": [
-        "ID 215 jest daleko od sąsiednich lokacji (670, 671) – sprawdź"
-      ]
+      "name": "Rajska Sala Treningowa"
     },
     {
       "id": 216,
@@ -3139,10 +3132,7 @@
     {
       "id": 688,
       "name": "Dom",
-      "reborn": 3,
-      "review": [
-        "ID 688 jest daleko od sąsiednich lokacji (397, 395) – sprawdź"
-      ]
+      "reborn": 4
     },
     {
       "id": 689,

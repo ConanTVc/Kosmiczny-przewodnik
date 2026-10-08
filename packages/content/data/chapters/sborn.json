@@ -2392,10 +2392,10 @@
       ]
     },
     {
-      "locId": 215,
+      "locId": 54,
       "quests": [
         {
-          "slug": "sborn/215/turniej-wszechswiatow",
+          "slug": "sborn/54/turniej-wszechswiatow",
           "name": "Turniej wszechświatów",
           "kind": "main",
           "steps": [

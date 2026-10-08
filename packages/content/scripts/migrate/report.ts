@@ -15,7 +15,7 @@ interface ReportInput {
 function entries(list: ReportEntry[]): string[] {
   return list
     .sort((a, b) => a.file.localeCompare(b.file) || a.line - b.line)
-    .map((e) => `- \`${e.file.replace(/^solucje\//, '')}:${e.line}\` – ${e.message}`);
+    .map((e) => `- **${e.file.replace(/^solucje\//, '')}, linia ${e.line}** – ${e.message}`);
 }
 
 export function writeReport(path: string, input: ReportInput): void {
@@ -79,7 +79,7 @@ export function writeReport(path: string, input: ReportInput): void {
     '',
     `## Wymaga Twojej decyzji (${review.length})`,
     '',
-    'Te miejsca mają też pole `review` w danych – po sprawdzeniu usuń je.',
+    '„linia” to numer linii w pliku TXT, „ID” to ID lokacji w grze. Te miejsca mają też pole `review` w danych – po sprawdzeniu usuń je.',
     '',
     ...(review.length ? entries(review) : ['Brak.']),
     '',

@@ -347,6 +347,39 @@ describe('dopasowanie lokacji', () => {
     expect(m!.id).toBeUndefined();
     expect(m!.review).toMatch(/Nie znaleziono/);
   });
+
+  // Lokacje dodawano do gry po kolei: rozdział nie wraca do lokacji, których jeszcze nie było.
+  const history = new LocationIndex([
+    { id: 35, name: 'Dom' },
+    { id: 54, name: 'Rajska Sala Treningowa' },
+    { id: 215, name: 'Rajska Sala Treningowa' },
+    { id: 395, name: 'Czwarty Krąg Piekła' },
+    { id: 397, name: 'Sierociniec' },
+    { id: 670, name: 'Rufa' },
+    { id: 671, name: 'Dziób statku' },
+    { id: 688, name: 'Dom' },
+  ]);
+
+  it('przy powrocie odrzuca lokacje z ID wyższym niż rozdział (Uborn → Dom 35, nie 688)', () => {
+    const m = matchChapterLocations(history, ['Sierociniec', 'Dom', 'Czwarty Krąg Piekła']);
+    expect(m[1]).toMatchObject({ id: 35 });
+    expect(m[1]!.review).toBeUndefined();
+  });
+
+  it('przy powrocie wybiera lokację znaną z wcześniejszych rozdziałów (Sborn → Rajska Sala 54)', () => {
+    const m = matchChapterLocations(
+      history,
+      ['Rufa', 'Rajska Sala Treningowa', 'Dziób statku'],
+      new Set([54]),
+    );
+    expect(m[1]).toMatchObject({ id: 54 });
+    expect(m[1]!.review).toBeUndefined();
+  });
+
+  it('bez wiedzy o wcześniejszych rozdziałach zostawia powrót do sprawdzenia', () => {
+    const m = matchChapterLocations(history, ['Rufa', 'Rajska Sala Treningowa', 'Dziób statku']);
+    expect(m[1]!.review).toMatch(/Kilka lokacji/);
+  });
 });
 
 describe('poradniki', () => {

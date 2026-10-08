@@ -1151,10 +1151,10 @@
       ]
     },
     {
-      "locId": 688,
+      "locId": 35,
       "quests": [
         {
-          "slug": "uborn/688/wymiar-u",
+          "slug": "uborn/35/wymiar-u",
           "name": "Wymiar U",
           "kind": "main",
           "steps": [
