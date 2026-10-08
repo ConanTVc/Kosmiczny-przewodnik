@@ -1,0 +1,26 @@
+{
+  "name": "@kp/ui",
+  "private": true,
+  "type": "module",
+  "description": "Wspólny panel (Preact w Shadow DOM) – userscript i PWA.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @kp/content build && vite",
+    "build:preview": "pnpm --filter @kp/content build && vite build",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kp/content": "workspace:*",
+    "@kp/core": "workspace:*",
+    "preact": "^11.0.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "jsdom": "^30.1.2",
+    "vite": "^8.3.4"
+  }
+}

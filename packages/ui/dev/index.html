@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Podgląd przewodnika</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --page: #07080c;
+        --page-text: #c9cede;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--page);
+        color: var(--page-text);
+        font:
+          14px/1.4 system-ui,
+          sans-serif;
+      }
+      .bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 16px;
+        border-bottom: 1px solid #222634;
+      }
+      .bar button {
+        min-height: 36px;
+        padding: 0 12px;
+        border: 1px solid #2f3547;
+        border-radius: 8px;
+        background: #191c26;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+      }
+      .bar button[aria-pressed='true'] {
+        border-color: #f4b400;
+        color: #f4b400;
+      }
+      .bar .hint {
+        flex: 1 1 260px;
+        color: #8a91a3;
+        font-size: 13px;
+      }
+      .stage {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+      }
+      .game {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        height: calc(100vh - 90px);
+        min-height: 520px;
+        border: 1px solid #222634;
+        border-radius: 12px;
+        background:
+          radial-gradient(circle at 30% 30%, #1d3a6b55, transparent 60%),
+          radial-gradient(circle at 70% 70%, #6b1d5a33, transparent 55%), #0b0d14;
+        overflow: hidden;
+      }
+      .game::before {
+        content: 'Tu jest gra (Kosmiczni)';
+        position: absolute;
+        left: 24px;
+        top: 20px;
+        color: #3a4258;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .game #panel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 380px;
+        max-width: 100%;
+        height: 100%;
+        box-shadow: -8px 0 24px #0008;
+      }
+      .phone {
+        width: 390px;
+        max-width: 100%;
+        height: min(844px, calc(100vh - 90px));
+        border: 10px solid #1a1d27;
+        border-radius: 36px;
+        overflow: hidden;
+        background: #11131a;
+      }
+      .phone #panel {
+        height: 100%;
+        overflow: auto;
+      }
+      @media (max-width: 600px) {
+        .stage {
+          padding: 0;
+        }
+        .phone {
+          width: 100%;
+          height: calc(100vh - 60px);
+          border: 0;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <button type="button" id="mode-panel" aria-pressed="true">Panel w grze</button>
+      <button type="button" id="mode-app" aria-pressed="false">Telefon</button>
+      <span class="hint">Podgląd z prawdziwą treścią. Zmień postać w zakładce „Postacie”.</span>
+    </div>
+    <div class="stage">
+      <div class="game" id="frame"><div id="panel"></div></div>
+    </div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>

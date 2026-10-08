@@ -14,3 +14,6 @@ Thumbs.db
 # Zostają lokalnie (dla content:migrate), nie trafiają na GitHub.
 solucje/
 poradniki/
+
+# Podgląd panelu (vite build)
+dist-preview/
