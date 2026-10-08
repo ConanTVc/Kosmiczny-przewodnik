@@ -1,0 +1,1505 @@
+{\rtf1}N-Born
+Lokacja: Las Wschodni
+Zadanie Główne: Zguba
+✓ Wykonane
+Nagroda: Stary Żółw
+Wymagania: Oddaj przedmiot Stary Żółw
+Nagroda: 10 doświadczenia
+Wymagania: Osiągnąć poziom: 2/2
+Nagroda: Podróż do Wyspa Genialnego Żółwia
+Lokacja: Wyspa Genialnego Żółwia
+Zadanie Główne: Trening na Wyspie
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 3/3
+Nagroda: 100 doświadczenia
+Nagroda: Podróż do Wyspa – Sektor Zachodni
+Poboczne: Niedowiarek
+✓ Wykonane
+Wymagania: Pokonaj: Zombie(Normal) 0/1
+Nagroda: 200 doświadczenia
+Lokacja: Wyspa – Sektor Zachodni
+Zadanie Główne: Trening cd.
+✓ Wykonane
+Wymagania: Pokonaj: Mniejszy bies(Normal) 1/1
+Nagroda: Magiczny kij
+Wymagania: Osiągnąć poziom: 5/5
+Nagroda: 200 doświadczenia
+Idziemy na prawo do Lokacji Wyspa – Sektor Centralny
+Odbierz 3 ładunki Desek.
+Wymagania: Oddaj przedmiot Deski 3/3
+Nagroda: 2 000 doświadczenia
+Wracamy do lokacji Wyspa – Sektor Zachodni
+Nagroda: 1 siły
+Idziemy do lokacji Wyspa – Sektor Wschodni (Znajduję się na prawo od lokacji Wyspa – Sektor Centralny)
+Nagroda: 500 doświadczenia
+Nagroda: 5 szybkości
+Po wykonaniu zadania wracamy do lokacji początkowej
+Wymagania: Osiągnąć poziom: 8/8
+Nagroda: Podróż do Wyspa – Sektor Południowy
+Lokacja: Wyspa – Sektor Południowy
+Zadanie Główne: Poszukiwania
+✓ Wykonane
+Wymagania: Oddaj przedmiot Kamień z Symbolem Żółwia
+Idziemy do lokacji Wyspa – Dolina by odnaleźć kamień
+Wymagania: Pokonaj: Stara Strzyga(Normal) 1/1
+Nagroda: Kamień z Symbolem Żółwia
+Po odnalezieniu kamienia wracamy do Genialnego Żółwia
+Nagroda: 3 000 doświadczenia
+Wymagania: Osiągnąć poziom: 15/15
+Nagroda: 10 000 doświadczenia
+Nagroda: Podróż do Płonąca Góra
+Poboczne: Okradziony Rybak
+✓ Wykonane
+Nagroda: Pieczywo
+Idziemy na południe od Rybaka
+Nagroda: Worek z Rybami
+Wracamy do Rybaka
+Wymagania: Oddaj przedmiot Worek z Rybami
+Nagroda: 1 000 doświadczenia
+Lokacja: Płonąca Góra
+Zadanie Główne: Płonąca Góra
+✓ Wykonane
+Wymagania: Opanować: Przyswajanie technik przeciwnika
+Nagroda: Technika: Fala Uderzeniowa
+Nagroda: Podróż do Papaja I
+Poboczne: Strach
+✓ Wykonane
+Wymagania: Pokonaj: Umarlak(Normal) 0/1
+Nagroda: 2 000 doświadczenia
+Poboczne: Boskie Artefakty
+✓ Wykonane
+Wymagania: Oddaj przedmiot Boski Flakon (Lokacja: Siedziba Pterodora)
+Nagroda: 1 000 energii Ki
+Wymagania: Oddaj przedmiot Boska Tarcza (Lokacja: Wschodnia Część lasu)
+Nagroda:50 000 siły
+Wymagania: Oddaj przedmiot Boski Topór (Lokacja: Planeta Bogów – Zachód)
+Nagroda:2 000 000 szybkości
+Wymagania: Oddaj przedmiot Boski Miecz (Lokacja: Miejsce Przywołania)
+Nagroda:10 000 000 siły
+Wymagania: Oddaj przedmiot Boski Medalion (Lokacja: VALUPTO)
+Nagroda:10 000 000 000 do wszystkich statystyk
+Lokacja: Papaja I
+Zadanie Główne: Turniej
+✓ Wykonane
+Nagroda: Uczniowskie Kimono
+Nagroda: 1 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Gilan
+Nagroda: 3 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Namu
+Nagroda: 5 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Jackie Chun
+Nagroda: 10 000 doświadczenia
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Wykonać zadanie: Turniej
+Nagroda: Podróż do Tajemniczy Las
+Lokacja: Tajemniczy Las
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Idziemy do Lokacji Królestwo Biesów aby uratować Księżniczkę.
+Lokacja: Królestwo Biesów
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Szula
+Nagroda: Messa
+Wracamy do Lokacji Tajemniczy Las
+Wymagania: Oddaj przedmiot Messa
+Nagroda: 20 000 doświadczenia
+Wymagania: Wykonać zadanie: Herszt
+Idziemy do lokacji Piekielne Wrota
+Lokacja: Piekielne Wrota
+Zadanie Główne: Herszt
+✓ Wykonane
+Nagroda: 500 doświadczenia
+Wymagania: Pokonać w pojedynku: Herszt Postrachów
+Nagroda: Sygnet Herszta
+Nagroda: 5 000 doświadczenia
+Wracamy do Lokacji Tajemniczy Las
+Nagroda: Podróż do Las Zachodni
+Poboczne: Kradzież
+✓ Wykonane
+Idziemy do Lokacji Królestwo Biesów
+Wymagania: Pokonać w pojedynku: Bies – Strażnik
+Nagroda: Waza – Pamiątka rodzinna
+Wymagania: Pokonać w pojedynku: Straszny Bies – Strażnik
+Nagroda: Portret – Pamiątka rodzinna
+Wymagania: Pokonać w pojedynku: Wielki Bies – Strażnik
+Nagroda: Kielich – Pamiątka rodzinna
+Po zebraniu wracamy do lokacji Piekielne Wrota
+Wymagania: Oddaj przedmiot Waza – Pamiątka rodzinna
+Nagroda: 5 000 doświadczenia
+Wymagania: Oddaj przedmiot Portret – Pamiątka rodzinna
+Nagroda: 6 000 doświadczenia
+Wymagania: Oddaj przedmiot Kielich – Pamiątka rodzinna
+Nagroda: 7 000 doświadczenia
+Nagroda: 20 energii Ki
+Lokacja: Las Zachodni
+Idziemy na północ do lokacji Okolice Świętej Wieży
+Lokacja: Okolice Świętej Wieży
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Opanować: Zaawansowana sztuka koncentracji
+Nagroda: 10 000 doświadczenia
+Wymagania: Oddaj przedmiot Sygnet Herszta
+Nagroda: 50 siły
+Wymagania: Oddaj przedmiot Sygnet Bestii
+Nagroda: 50 szybkości
+Wymagania: Osiągnąć poziom: 45/45
+Nagroda: 60 wytrzymałości
+Wymagania: Pokonać w pojedynku: Kryminator
+Nagroda: 100 000 doświadczenia
+Nagroda: Upa
+Wracamy do Lokacji Las Zachodni
+Wymagania: Oddaj przedmiot Upa
+Nagroda: Podróż do Zapomniana Dolina
+Lokacja: Zapomniana Dolina
+Aby kontynuować zadanie główne należy udać się na wschód do lokacji Kwatera Główna Armii
+Poboczne: Napad
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Król Topielców
+Nagroda: 20 000 doświadczenia
+Nagroda: 30 000 doświadczenia
+Wymagania: Oddaj przedmiot Srebrny Amulet (Amulet znajduję się w lokacji Kwatera Główna Armii)
+Nagroda:30 siły woli
+Poboczne: Niepokonany
+✓ Wykonane
+Wymagania: Oddaj przedmiot Laska Pustelnika (Zdobywa się go po pokonaniu Generała Niebieskiego)
+Nagroda: 20 szybkości
+Wymagania: Pokonać w pojedynku: Pustelnik
+Nagroda: Technika: Pocisk Ki
+Lokacja: Kwatera Główna Armii
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Generał Srebrny
+Nagroda:10 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Generał Biały
+Nagroda:20 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Generał Niebieski
+Nagroda: Laska Pustelnika
+Wymagania: Pokonać w pojedynku: Sierżant Metalic
+Nagroda:100 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Generał Czarny
+Nagroda:1 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Generał Czarny – Robot
+Nagroda: 200 000 doświadczenia
+Wymagania: Osiągnąć poziom: 52/55
+Nagroda: Podróż do Góry Mgliste
+Lokacja: Góry Mgliste
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Szary Wilkołak
+Nagroda: Symbol Wilka
+Wymagania: Pokonać w pojedynku: Biały Wilkołak
+Nagroda: Symbol Wilka
+Wymagania: Pokonać w pojedynku: Czarny Wilkołak
+Nagroda: Symbol Wilka
+Wymagania: Pokonać w pojedynku: Srebrzysty Wilkołak
+Nagroda: Symbol Wilka
+Wymagania: Oddaj przedmiot Symbol Wilka 4/4
+Nagroda: 100 000 doświadczenia
+Nagroda: Worek z rybami
+Nagroda: Podróż do Papaja II
+Poboczne: Ryby
+✓ Wykonane
+Wymagania:Oddaj przedmiot Worek z rybami
+Nagroda: Fragment Klucza
+Poboczne: Miejsca mocy
+✓ Wykonane
+Szukamy miejsc mocy
+Nagroda: 50 siły
+Nagroda: 50 szybkości
+Nagroda: 50 wytrzymałości
+Nagroda: 50 siły woli
+Ostatnie miejsce mocy znajduję się na północ w lokacji Dolina Wilków
+Nagroda: 50 energii Ki
+Lokacja: Dolina Wilków
+Poboczne: Spryciarz
+✓ Wykonane
+Wymagania: Oddaj przedmiot Fragment Klucza
+Wymagania: Pokonać w pojedynku: Kupiec
+Nagroda: Klucz do Kufra
+Wymagania: Oddaj przedmiot Klucz do Kufra
+Nagroda: 100 siły woli
+Lokacja: Papaja II
+Zadanie Główne: Samodzielny trening
+✓ Wykonane
+Wymagania: Wykonać zadanie: Samodzielny trening
+Wymagania: Pokonać w pojedynku: Bambuko
+Nagroda: 1 doświadczenia
+Wymagania: Pokonać w pojedynku: Krilan
+Wymagania: Pokonać w pojedynku: Ten-Shin
+Nagroda: 500 000 doświadczenia
+Nagroda: Podróż do Mroczny Las
+Lokacja: Mroczny Las
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Idziemy na południe do lokacji Mroczny Las – Południe
+Poboczne: Ostatnia wola
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 70/70
+Nagroda: Medalion
+Lokacja: Mroczny Las – Południe
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Nagroda: 10 000 doświadczenia
+Idziemy na południe do lokacji Dziewicze Pustkowia
+Poboczne: Ostatnia Wola
+✓ Wykonane
+Wymagania: Oddaj przedmiot Medalion
+Nagroda: 60 000 doświadczenia
+Poboczne: Alchemik
+✓ Wykonane
+Szukamy Składników.
+Nagroda: Smocze Jagody
+Nagroda: Srebrny Korzeń
+Wymagania: Oddaj przedmiot Smocze Jagody
+Nagroda: 50 000 doświadczenia
+Wymagania: Oddaj przedmiot Srebrny Korzeń
+Nagroda: 50 000 doświadczenia
+Nagroda: 150 szybkości
+Lokacja: Dziewicze Pustkowia
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Jaskiniowiec
+Nagroda: 10 wytrzymałości
+Wymagania: Oddaj przedmiot Pieczywo (Należy wykonać zadanie: Bestie)
+Nagroda: 100 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Sługa Szatana
+Nagroda: 200 000 doświadczenia
+Nagroda: Podróż do Okolice świętej wieżyZadanie Główne: Szatański Plan
+Nagroda: Podróż do Lodowy Labirynt
+Poboczne: Bestie
+✓ Wykonane
+Wymagania: Pokonaj: Troll(Normal) 0/1
+Idziemy na południe do lokacji Legowisko tam znajduję się Troll
+Po pokonaniu wracamy do Dziewiczych Pustkowii
+Nagroda: Pieczywo
+Lokacja: Okolice Świętej Wieży
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Nagroda :Podróż do Lodowy Labirynt
+Lokacja: Lodowy Labirynt
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Musimy przejść labirynt i udać się na południowy wschód do lokacji Tajemna Grota
+Lokacja: Tajemna Grota
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Boski Strażnik
+Nagroda: 300 000 doświadczenia
+Nagroda: 500 siły
+Nagroda: 500 szybkości
+Nagroda: 500 wytrzymałości
+Nagroda: 250 siły woli
+Nagroda: 250 energii Ki
+Udajemy się do labiryntu i wracamy do punktu początkowego
+Lokacja: Lodowy Labirynt
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Nagroda: Podróż do Okolice świętej Wieży
+Lokacja: Okolice Świętej Wieży
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Nagroda: Magiczna Chmurka
+Udajemy się chmurką do lokacji Okolice Zamku Królewskiego
+Lokacja: Okolice Zamku Królewskiego
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Szatan Serduszko
+Nagroda:600 000 doświadczenia
+Wracamy Chmurką do Lokacji Okolice Świętej Wieży
+Lokacja: Okolice Świętej Wieży
+Zadanie Główne: Szatański Plan
+✓ Wykonane
+Nagroda: Dzwoneczek
+Wymagania: Oddaj przedmiot Magiczny Kij
+Nagroda: Podróż do Pałac Wszechmogącego
+Poboczne: Ukochana Pukitsu
+✓ Wykonane
+Wymagania: Pokonaj: Poddany Szatana(Normal) 0/1
+Nagroda: Symbol Szybkości Super Unique
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania: Oddaj przedmiot Dzwoneczek
+Wymagania: Opanować: Podstawy treningu w trudnych warunkach
+Nagroda:400 000 doświadczenia
+Wymagania: Opanować: Perfekcyjna sztuka koncentracji
+Nagroda: Podróż do Przeszłość
+Poboczne(Zadanie Codzienne): Zadanie PVM
+Zdobyte punkty PvM 0/500
+Nagroda to punkty PvM zależna od naszego aktualnego poziomu doświadczenia
+Poboczne(Zadanie Codzienne): Zadanie PVP
+Wymagania: Wygrane walki PvP 0/10
+Nagroda to punkty PVP zależna od naszego aktualnego poziomu doświadczenia
+Poboczne(Zadanie Codzienne): Zadanie Symboli
+Oddaj 20 symboli normal (losowo siły, Szybkości, Wytrzymałość, siła woli, energii KI)
+Nagroda jest losowa (Może to być kk, skrzynie, senzu itp.)
+Poboczne(Zadanie Codzienne): Zadanie Substancji
+Oddaj 100, 1000 lub 100000 Magicznych substancji
+Nagroda jest losowa i zależna od ilości oddanych substancji (Może to być kk, skrzynie, senzu itp.)
+Lokacja: Siedziba Mistrzów(teleport po lewej stronie)
+Jest to lokacja, z której otrzymujemy dodatkowe osiągnięcia
+1- Sztuka Wzmacniania Treningu
+Wymagania: Wpisane kody treningowe 0/200
+Nagroda: Aktywacja osiągnięcia: Koder
+2- Sztuka Trenowania
+Wymagania: Spędzone godziny na treningu 0/250
+Nagroda: Aktywacja osiągnięcia: Wielki Trener
+3- Sztuka Zabijania Legend
+Wymagania: Pokonaj: Dowolny przeciwnik(Legendarny) 0/200
+Nagroda: Aktywacja osiągnięcia: Legendarny
+4- Sztuka Odbijania
+Wymagania: Poziom umiejętności Odbicie 0/15
+Nagroda: Aktywacja osiągnięcia: Siła Odbicia
+5- Kolorowe życie
+Nagroda: odblokowana nowa lokacja do podróży : Zapomniana Dolina
+Wymagania: Zdobyć Złoty Medalion od Topielec 0/50
+Nagroda: Aktywacja osiągnięcia: Plotkarz
+6- Sztuka Zdobywania PSK
+Wymagania: Oddaj PSK 0/200
+Nagroda: Aktywacja osiągnięcia: Pomniejszy
+7- Sztuka Zdobywania Senzu
+Wymagania: Oddaj przedmiot Niebieskie Senzu 0/200
+Nagroda: Aktywacja osiągnięcia: Hodowca
+8- Zdobywca
+Wymagania: Zdobyć moc z Dowolny przeciwnik 0/50 000 000
+Nagroda: Aktywacja osiągnięcia: Moc Saiyan
+Lokacja: Przeszłość
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Kruk
+Nagroda:100 doświadczenia
+Wymagania: Opanować: Podstawy kontroli Ki
+Nagroda:500 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Mutarito
+Nagroda: Technika: Wybuch Ki
+Nagroda: Podróż do Pałac Wszechmogącego
+Poboczne: Porwanie
+✓ Wykonane
+Wymagania: Pokonaj: Widmo Przeszłości(Normal) 0/1
+Nagroda:600 000 doświadczenia
+Poboczne: Nocne Koszmary
+✓ Wykonane
+Wymagania: Pokonaj: Widmo Przeszłości(Normal) 0/1
+Nagroda:500 000 doświadczenia
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Kopia
+Nagroda: Podróż do Góra Gromów
+Lokacja: Góra Gromów
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania:Opanować: Wyczuwanie ruchów powietrza
+Nagroda: Korona Gromów
+Nagroda: Podróż do Pałac Wszechmogącego
+Poboczne: Głaz
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 130/130
+Nagroda:333 siły
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania: Oddaj przedmiot Korona Gromów
+Nagroda:400 siły
+Nagroda: Podróż do Las Północny
+Lokacja: Las Północny
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Jogurt
+Nagroda:500 000 doświadczenia
+Nagroda:100 000 doświadczenia
+Wymagania:Opanować: Zaawansowana kontrola Ki
+Nagroda:Technika: Fala uderzeniowa II
+Nagroda: Podróż do Pałac Wszechmogącego
+Poboczne: Poszukiwacz
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Czarownica
+Nagroda: Kosmyk Włosów
+Wymagania: Oddaj przedmiot Kosmyk Włosów
+Nagroda:500 energii Ki
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Trening w Niebiosach
+✓ Wykonane
+Nagroda: Podróż do Papaja III
+Lokacja: Papaja III
+Zadanie Główne: Trzeci Turniej
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Chi-Chi
+Nagroda:200 doświadczenia
+Wymagania: Pokonać w pojedynku: Ten-Shin
+Nagroda:300 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Junior
+Nagroda: Podróż do Okolice Czarnego Jeziora
+Lokacja: Okolice Czarnego Jeziora
+Zadanie Główne: Czarne Jezioro
+✓ Wykonane
+Wymagania: Pokonaj: Torug(Normal) 0/1
+Wymagania: Oddaj przedmiot Sekstans
+Po sekstans idziemy do lokacji Północne Jezioro (Zadanie Posterunek)
+Nagroda:200 000 doświadczenia
+Następnie idziemy do lokacji Siedziba Pteodora (Na północ od lokacji północne jezioro)
+Wymagania: Pokonać w pojedynku: Pterodor
+Nagroda: Klucz Do kufra
+Wracamy do Lokacji Okolice Czarnego Jeziora
+Nagroda:500 000 doświadczenia
+Nagroda: Podróż do Dom
+Poboczne: Monety
+✓ Wykonane
+Szukamy monet
+Nagroda: Stara Moneta
+Nagroda: Stara Moneta
+Nagroda: Stara Moneta
+Nagroda: Stara Moneta
+Nagroda: Stara Moneta
+Wymagania: Oddaj przedmiot Stara Moneta 5/5
+Nagroda: Pordzewiały Flakon
+Lokacja: Północne Jezioro
+Poboczne: Posterunek
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Torug – Dowódca
+Nagroda: Sekstans
+Poboczne: Wodna Bestia
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Wodna Bestia
+Nagroda:500 000 doświadczenia
+Nagroda:200 000 doświadczenia
+Lokacja: Siedziba Pteodora
+Poboczne: Kufer
+✓ Wykonane
+Wymagania: Oddaj przedmiot Klucz Do Kufra
+Nagroda:700 siły
+Poboczne: Złota Rączka
+✓ Wykonane
+Wymagania: Oddaj przedmiot Pordzewiały Flakon
+Nagroda:-100 siły
+Nagroda: Boski Flakon
+Lokacja: Dom
+Zadanie Główne: Nowa Misja
+✓ Wykonane
+Musimy odnaleźć Gohana następnie używamy chmurki i przenosimy się na Wyspę Genialnego Żółwia
+Poboczne: Sąsiedzi
+✓ Wykonane
+Nagroda: Pieczywo
+Wymagania:Oddaj przedmiot Pieczywo
+Nagroda: Whisky
+Wymagania:Oddaj przedmiot Whisky
+Nagroda:500 000 doświadczenia
+Poboczne: Pamiątka 2
+✓ Wykonane
+Wymagania: Oddaj przedmiot Medalion
+Nagroda: zwiększenie energii Ki – 10%
+Lokacja: Wyspa Genialnego Żółwia
+Zadanie Główne: Nowa Misja
+✓ Wykonane
+Nagroda: Podróż do Ciche Pustkowie
+Lokacja: Ciche Pustkowie
+Zadanie Główne: Nowa Misja
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Radim
+Nagroda:1 000 000 doświadczenia
+Nagroda:Podróż do Wrota zaświatów
+Poboczne: Zmącony Spokój
+✓ Wykonane
+Wymagania:Pokonaj: Plugawiec(Normal) 0/1
+Nagroda:2 000 energii Ki
+Nagroda:50 do wszystkich statystyk
+Lokacja: Wrota Zaświatów
+Zadanie Główne: Niebiańskie Wyzwanie
+✓ Wykonane
+Idziemy na zachód do lokacji Droga Węża
+Lokacja: Droga Węża
+Zadanie Główne: Niebiańskie Wyzwanie
+✓ Wykonane
+Wymagania:Opanować: Niestrudzenie
+Nagroda:Podróż do Planeta Kaio
+Lokacja: Planeta Kaio
+Zadanie Główne: Niebiańskie Wyzwanie
+✓ Wykonane
+Wymagania: Opanować: Trening przy 10x większej grawitacji
+Nagroda:1 000 000 doświadczenia
+Wymagania: Opanować: Płynność ruchów
+Nagroda:1 000 000 doświadczenia
+Wymagania: Opanować: Pozoracja
+Nagroda:2 000 siły
+Wymagania: Moc: 50 000/50 000
+Nagroda: Technika: KaioKen
+Zadanie Główne: Kosmiczni Wojownicy
+✓ Wykonane
+Wymagania: Wykonać zadanie: Niebiańskie wyzwanie
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Kosmiczni Wojownicy
+✓ Wykonane
+Nagroda: Podróż do Okolice świętej wieży
+Lokacja: Okolice świętej wieży
+Zadanie Główne: Kosmiczni Wojownicy
+✓ Wykonane
+Nagroda: Podróż do Pole bitwy
+Lokacja: Pole Bitwy
+Zadanie Główne: Kosmiczni Wojownicy
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Nappa
+Nagroda:2 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Vegeta
+Nagroda:2 000 wytrzymałości
+Nagroda: Podróż do Szpital
+Poboczne: Potężna Moc
+✓ Wykonane
+Wymagania: Oddaj PSK 7/7
+Wymagania: Zdobyć Fragment Kuli od Sługa Wojowników 0/10
+Nagroda: Uśpiona Kula Energii x3
+Lokacja: Szpital
+Zadanie Główne: Kosmiczna Misja
+✓ Wykonane
+Wymagania: Opanować: Odporność na ból
+Nagroda:3 000 siły woli
+Nagroda: Podróż do Statek Kosmiczny
+Lokacja: Statek Kosmiczny
+Zadanie Główne: Kosmiczna Misja
+✓ Wykonane
+Wymagania: Moc: 70 000/70 000
+Wymagania: Opanować: Przeciążenie 20x
+Wymagania: Opanować: Przeciążenie 40x
+Nagroda:1 000 000 doświadczenia
+Wymagania: Opanować: Przeciążenie 60x
+Nagroda:1 000 000 doświadczenia
+Wymagania: Opanować: Przeciążenie 100x
+Nagroda:1 000 000 doświadczenia
+Nagroda: Podróż do Namek – Północ
+Lokacja: Namek – Północ
+Zadanie Główne: Kosmiczna Misja
+✓ Wykonane
+Aby kontynuować fabułę, należy udać się na południe do lokacji Namek – Pole Bitwy
+Poboczne: Oprawcy
+✓ Wykonane
+Wymagania:Osiągnąć poziom: 250/250
+Wymagania:Pokonać w pojedynku: Oprawca – Wódz
+Nagroda:4 000 000 doświadczenia
+Nagroda:1kk
+Lokacja: Namek – Pole Bitwy
+Zadanie Główne: Namek
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Recom
+Nagroda:2 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Barter
+Nagroda:3 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Ginyo
+Nagroda:-10 000 wytrzymałości
+Następnie idziemy na wschód do lokacji Namek – Statek Frezera
+Lokacja: Namek – Statek Frezera
+Zadanie Główne: Namek
+✓ Wykonane
+Wymagania:Opanować: Regeneracja
+Nagroda:20 000 siły
+Nagroda:20 000 szybkości
+Nagroda:20 000 wytrzymałości
+Nagroda:20 000 siły woli
+Nagroda:20 000 energii Ki
+Nagroda: Podróż do Namek – Sektor Centralny
+Lokacja: Namek – Sektor Centralny
+Zadanie Główne: Namek
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Frezer
+Nagroda:10 000 000 doświadczenia
+Wymagania: Opanować: Wściekłość
+Nagroda: Technika: SSJ
+Wymagania: Pokonać w pojedynku: Frezera – Pełna Moc
+Nagroda:50 000 000 doświadczenia
+Nagroda: Podróż do Namek – Statek Frezera
+Lokacja: Namek – Statek Frezera
+Zadanie Główne: Namek
+✓ Wykonane
+Nagroda: Podróż do Planeta Yardrat
+Lokacja: Planeta Yardrat
+Zadanie Główne: Kosmiczny Trening
+✓ Wykonane
+Nagroda:10 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Kosmiczny Potwór
+Nagroda:20 000 000 doświadczenia
+Nagroda: Podróż do Planeta Kama – Zachód
+Lokacja: Planeta Kama – Zachód
+Zadanie Główne: Kosmiczny Trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Porucznik Patrolu
+Nagroda:12 000 001 doświadczenia
+Idziemy na wschód do lokacji Planeta Kama – Wschód
+Lokacja: Planeta Kama – Wschód
+Zadanie Główne: Kosmiczny Trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Przywódca Wojowników Kama
+Nagroda:50 000 wytrzymałości
+Wracamy na Planeta Kama – Zachód
+Lokacja: Planeta Kama – Zachód
+Zadanie Główne: Kosmiczny Trening
+✓ Wykonane
+Nagroda: Podróż do Planeta Yardrat
+Lokacja: Planeta Yardrat
+Zadanie Główne: Kosmiczny Trening
+✓ Wykonane
+Wymagania: Opanować: Wyczuwanie Ki
+Nagroda:5 000 000 doświadczenia
+Wymagania: Opanować: Dematerializacja
+Wymagania: Opanować: Materializacja
+Nagroda: Technika: Błyskawiczny transfer (technika teleportacji)
+Nagroda:5kk
+Nagroda: Podróż do Miejsce Lądowania
+Lokacja: Miejsce Lądowania
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Tronk SSJ
+Nagroda:15 000 000 doświadczenia
+Teleportujemy się do Lokacji Dom
+Lokacja: Dom
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Chi-Chi
+Nagroda:-100 000 doświadczenia
+Nagroda:Podróż do Magiczny Las
+Lokacja: Magiczny Las
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Opanować: Nadzwyczajny trening siłowy.
+Nagroda:20 000 siły
+Wymagania: Pokonać w pojedynku: Szatan Serduszko
+Nagroda:20 000 szybkości
+Wymagania: Pokonać w pojedynku: Songokan
+Nagroda:20 000 wytrzymałości
+Wymagania: Pokonać w pojedynku: Szatan Serduszko
+Nagroda:10 000 siły woli
+Wymagania: Pokonać w pojedynku: Songokan
+Nagroda:10 000 energii Ki
+Wymagania: Osiągnąć poziom: 340/340
+Nagroda: Technika: Tnąca Tarcza
+Wymagania: Osiągnąć poziom: 350/350
+Nagroda: Technika: Fala uderzeniowa III
+Nagroda: Podróż do Górskie Zbocza
+Lokacja: Wschodnia Część Lasu
+Poboczne: Balans mocy
+✓ Wykonane
+Wymagania:Oddaj przedmiot Uczniowskie Kimono
+Nagroda:10 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Gladiator
+Nagroda:5 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Urgath
+Nagroda:10 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Koszmar
+Nagroda:15 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Prastary Postrach
+Nagroda:20 000 000 doświadczenia
+Wymagania:Pokonać w pojedynku: Boski Maruder
+Nagroda: Boska Tarcza
+Nagroda: Talizman Balansujący
+Teraz mamy do wyboru 4 opcje
+Lokacja: Górskie Zbocza
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: C19
+Nagroda:50 000 000 doświadczenia
+Nagroda: Podróż do Dom
+Lokacja: Dom
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Opanować: Leczenie choroby serca
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Rajska Sala Treningowa
+Lokacja: Rajska Sala Treningowa
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Moc: 1 300 000/1 300 000
+Nagroda:60 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Songokan
+Nagroda:10 000 000 doświadczenia
+Wymagania: Opanować: Rajski trening
+Nagroda:50 000 szybkości
+Wymagania: Moc: 2 000 000/2 000 000
+Nagroda:20 000 000 doświadczenia
+Nagroda:1 000 000 siły
+Nagroda:1 000 000 szybkości
+Nagroda:1 000 000 wytrzymałości
+Nagroda:500 000 siły woli
+Nagroda:500 000 energii Ki
+Wymagania: Pokonać w pojedynku: Songokan SSJ
+Nagroda:30 000 000 doświadczenia
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Prowincja Zachodnia
+Lokacja: Prowincja Zachodnia
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Komórczak
+Nagroda: Podróż do Planeta Kaio
+Lokacja: Planeta Kaio
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Droga Węża
+Lokacja: Droga Węża
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Planeta Władcy Zaświatów
+Lokacja: Planeta Władcy Zaświatów
+Zadanie Główne: Nowe zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Stadion
+Lokacja: Stadion
+Zadanie Główne: Nowy Rodzaj Treningu
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Larwa
+Nagroda:100 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Arka
+Nagroda:200 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Paulo
+Nagroda:10 000 000 doświadczenia
+Nagroda: Podróż do Planeta Władcy Zaświatów
+Lokacja: Planeta Władcy Zaświatów
+Zadanie Główne: Nowy Rodzaj Treningu
+✓ Wykonane
+Nagroda: Technika: SSJ2
+Nagroda: Podróż do Sekretne Miejsce Treningu
+Lokacja: Sekretne Miejsce Treningu
+Zadanie Główne: Nowy Rodzaj Treningu
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 520/520
+Nagroda:10 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Luzer
+Nagroda:10 000 000 doświadczenia
+Wymagania: Opanować: Nadzwyczajny trening z obciążeniem.
+Nagroda:200 000 energii Ki
+Wymagania: Osiągnąć poziom: 522/522
+Nagroda: Technika: SSJ3
+Teraz idziemy na południe do lokacji południe planety
+Poboczne: Tajemnicze wyzwanie
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 420/420
+Wymagania: Pokonać w pojedynku: Jazgot
+Nagroda:40 000 000 doświadczenia
+Nagroda:100 000 szybkości
+Wymagania: Pokonać w pojedynku: Maniek
+Nagroda:45 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 440/440
+Nagroda:100 000 siły
+Wymagania: Osiągnąć poziom: 460/460
+Wymagania: Pokonać w pojedynku: Eryk Pogromca
+Nagroda:50 000 000 doświadczenia
+Nagroda:100 000 wytrzymałości
+Wymagania: Osiągnąć poziom: 480/480
+Wymagania: Pokonać w pojedynku: Alicja
+Nagroda:55 000 000 doświadczenia
+Nagroda:60 000 siły woli
+Wymagania: Osiągnąć poziom: 500/500
+Wymagania: Pokonać w pojedynku: Tabor
+Nagroda:59 000 000 doświadczenia
+Nagroda:60 000 energii Ki
+Lokacja: Południe Planety
+Zadanie Główne: Nowy Rodzaj Treningu
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Antek Wielkolud
+Nagroda:20 000 000 doświadczenia
+Wymagania:Wykonać zadanie: Sekret
+Wymagania:Opanować: Ultra-wydajny trening siłowy
+Nagroda: Podróż do Papaja IV
+Poboczne: Sekret
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Wojownik Fuzyjny
+Nagroda: Technika: Fala Uderzeniowa IV
+Lokacja: Papaja IV
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Zniszczony Statek Kosmiczny
+Lokacja: Zniszczony Statek Kosmiczny
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Pokonaj: Sługa(Normal) 0/1
+Wymagania: Pokonać w pojedynku: Yakon
+Nagroda:30 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Vegeta SSJ2
+Wymagania: Pokonać w pojedynku: Vegeta SSJ2
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Sektor Wschodni
+Lokacja: Sektor Wschodni
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bubu
+Nagroda:50 000 000 doświadczenia
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Wrota zaświatów
+Lokacja: Wrota zaświatów
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Nagroda: Podróż do Planeta Bogów
+Lokacja: Planeta Bogów
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Nagroda:10 000 siły
+Wymagania: Oddaj przedmiot Symbol Siły normal 0/15
+Wymagania: Oddaj przedmiot Symbol Szybkości normal 0/15
+Wymagania: Oddaj przedmiot Symbol Wytrzymałości normal 0/15
+Wymagania: Oddaj przedmiot Symbol Siły Woli 0/15
+Wymagania: Oddaj przedmiot Symbol Energii KI 0/15
+Nagroda:100 000 000 doświadczenia
+Wymagania: Opanować: Perfekcyjna kontrola nad umysłem
+Teraz idziemy na zachód do lokacji Planeta Bogów – Zachód
+Musimy znaleźć kule i wrócić
+Nagroda:1 000 000 doświadczenia
+Nagroda: Kolczyki Fuzyjne
+Nagroda: Podróż do Skaliste Zbocza
+Poboczne: Boska Esencja
+✓ Wykonane
+Wymagania: Oddaj PSK 140/140
+Nagroda: Pusta Esencja Chi
+Wymagania: Oddaj PSK 350/350
+Wymagania: Oddaj przedmiot Czarna Smocza Kula 7/7
+Wymagania: Oddaj przedmiot Czystość CHI 50/50
+Wymagania: Oddaj przedmiot Potęga CHI 0/10
+Wymagania: Oddaj przedmiot Pusta Esencja CHI
+Nagroda: Esencja Słabej Energii CHI
+Wymagania: Wymagane odrodzenie 0/1
+Wymagania: Oddaj PSK 1 050/1 050
+Wymagania: Oddaj przedmiot Czarna Smocza Kula 0/21
+Wymagania: Oddaj przedmiot Czystość CHI 0/100
+Wymagania: Oddaj przedmiot Potęga CHI 0/25
+Wymagania: Oddaj przedmiot Esencja Słabej Energii CHI 0/1
+Nagroda: Esencja Silnej Energii CHI x1
+Wymagania: Wymagane odrodzenie 2/2
+Wymagania: Oddaj PSK 3 050/3 050
+Wymagania: Oddaj przedmiot Czarna Smocza Kula 0/54
+Wymagania: Oddaj przedmiot Czystość CHI 0/250
+Wymagania: Oddaj przedmiot Potęga CHI 0/100
+Wymagania: Oddaj przedmiot Esencja Silnej Energii CHI 0/1
+Nagroda: Esencja Czystej Energii CHI x1
+Wymagania: Wymagane odrodzenie 3/3
+Wymagania: Oddaj PSK 7 000/7 000
+Wymagania: Oddaj przedmiot Czarna Smocza Kula 0/105
+Wymagania: Oddaj przedmiot Czystość CHI 0/500
+Wymagania: Oddaj przedmiot Potęga CHI 0/250
+Wymagania: Oddaj przedmiot Esencja Czystej Energii CHI 0/1
+Nagroda: Potężna Esencja Czystej CHI x1
+Lokacja: Planeta Bogów – Zachód
+Poboczne: Boski Topór
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Ognisty Demon
+Nagroda: Boski Topór
+Lokacja: Skaliste Zbocza
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bubu
+Nagroda:50 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Bubu
+Nagroda:60 000 000 doświadczenia
+Nagroda: Podróż do Żołądek Bubu
+Lokacja: Żołądek Bubu
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Idziemy na północ do lokacji Wnętrze Bubu
+Lokacja: Wnętrze Bubu
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Opanować: Wewnętrzna siła
+Nagroda:300 000 siły
+Wymagania:Pokonać w pojedynku: Iluzja SonGokana
+Nagroda: Podróż do Głowa Bubu
+Poboczne: Bakterie
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 710/710
+Wymagania: Pokonać w pojedynku: Bakteria
+Nagroda: Pokarm
+Wymagania: Pokonać w pojedynku: Większa Bakteria
+Nagroda:90 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Średnia Bakteria
+Nagroda: Pokarm
+Wymagania: Pokonać w pojedynku: Sprytna Bakteria
+Nagroda:100 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Duża Bakteria
+Nagroda: Pokarm
+Wymagania: Pokonać w pojedynku: Gruba Bakteria
+Nagroda:120 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Opasła Bakteria
+Nagroda: Pokarm
+Wymagania: Pokonać w pojedynku: Agresywna Bakteria
+Nagroda:140 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Potężna Bakteria
+Nagroda: Pokarm
+Wymagania: Oddaj przedmiot Pokarm 5/5
+Nagroda:160 000 000 doświadczenia
+Wymagania: Pokonaj: Wirus(Normal) 0/300
+Nagroda:80 000 000 doświadczenia
+Lokacja: Głowa Bubu
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bubu
+Nagroda: Podróż do Rozpadlina
+Lokacja: Rozpadlina
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Opanować: Mistyczna moc
+Nagroda: Podróż do Planeta Bogów
+Poboczne: Tajemniczy list
+✓ Wykonane
+Wymagania:Pokonaj: Grom(Normal) 0/1
+Nagroda:100 000 000 doświadczenia
+Wymagania:Pokonaj: Grom(Champion) 0/300
+Nagroda:140 000 000 doświadczenia
+Wymagania:Pokonaj: Grom(Elita) 0/50
+Nagroda:160 000 000 doświadczenia
+Nagroda:100 000 energii Ki
+Lokacja: Planeta Bogów
+Zadanie Główne: Kolejne zagrożenie
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bubu
+Nagroda:50 000 000 doświadczenia
+Nagroda :Podróż do Miejsce Treningu
+Lokacja: Miejsce Treningu
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Opanować: Tajemnica Ki
+Wymagania: Osiągnąć poziom: 851/851
+Nagroda: Technika: Fala Uderzeniowa V
+Wymagania: Pokonać w pojedynku: SonGoten
+Nagroda:90 000 000 doświadczenia
+Nagroda: Podróż do Miejsce Turnieju
+Poboczne: Kolekcjoner
+✓ Wykonane
+Wymagania: Oddaj przedmiot Symbol Siły Woli normal 0/66
+Nagroda:10kk
+Poboczne: Tajemniczy trening
+✓ Wykonane
+Wymagania: Pokonaj: Oponent(Normal) 0/500
+Nagroda:180 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Siły normal 0/1
+Nagroda:200 000 000 doświadczenia
+Wymagania: Pokonaj: Oponent(Elita) 0/100
+Nagroda:240 000 000 doświadczenia
+Lokacja: Miejsce Turnieju
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Ubub
+Nagroda:15 000 000 doświadczenia
+Nagroda: Podróż do Zielona Pustynia
+Lokacja: Zielona Pustynia
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Ubub
+Nagroda:16 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Ubub
+Nagroda:17 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Ubub
+Nagroda:18 000 000 doświadczenia
+Nagroda: Podróż do Podziemia Pałacu
+Lokacja: Podziemia Pałacu
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Ubub
+Nagroda:100 000 siły
+Wymagania: Osiągnąć poziom: 1 170/1 170
+Nagroda:1 000 000 szybkości
+Nagroda: Podróż do Głębia
+Poboczne: Pierwsza Próba
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 860/860
+Wymagania: Pokonaj: Muk(Champion) 1/1
+Nagroda:250 000 000 doświadczenia
+Wymagania: Pokonaj: Muk(Normal) 0/100
+Nagroda:290 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Czwarty Dowódca
+Nagroda:350 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Szybkości normal 0/3
+Nagroda:400 000 000 doświadczenia
+Nagroda: Pieczęć starych Bogów
+Poboczne: Druga Próba
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 920/920
+Wymagania: Pokonaj: Muk(Normal) 0/200
+Nagroda:390 000 000 doświadczenia
+Wymagania: Pokonaj: Muk(Champion) 0/200
+Nagroda:450 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Trzeci Dowódca
+Nagroda:490 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Wytrzymałości normal 0/3
+Nagroda:500 000 000 doświadczenia
+Nagroda: Pieczęć starych Bogów
+Poboczne: Trzecia Próba
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 000/1 000
+Wymagania: Pokonaj: Muk(Normal) 0/300
+Nagroda:500 000 000 doświadczenia
+Wymagania: Pokonaj: Muk(Champion) 0/300
+Nagroda:550 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Drugi Dowódca
+Nagroda:600 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Siły Woli normal 0/3
+Nagroda:600 000 000 doświadczenia
+Nagroda: Pieczęć starych Bogów
+Poboczne: Czwarta Próba
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 080/1 080
+Wymagania: Pokonaj: Muk(Normal) 0/500
+Nagroda:650 000 000 doświadczenia
+Wymagania: Pokonaj: Muk(Champion) 0/500
+Nagroda:650 000 000 doświadczenia
+Wymagania: Pokonaj: Muk(Elita) 0/300
+Nagroda:650 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Pierwszy Dowódca
+Nagroda:650 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Energii KI 0/3
+Nagroda: Pieczęć starych Bogów
+Poboczne: Bariera
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 160/1 160
+Wymagania: Zapłacić : 5/5 kk
+Wymagania: Oddaj przedmiot Pieczęć starych Bogów 4/4
+Nagroda: Podróż do Komnata Umysłu
+Lokacja: Komnata Umysłu
+Poboczne: Bariera
+✓ Wykonane
+Wymagania: Oddaj przedmiot Kolczyki Fuzyjne
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonaj: Myśliciel(Normal) 0/1 000
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonaj: Myśliciel(Champion) 0/500
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonaj: Myśliciel(Elita) 0/100
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Strażnik Bariery
+Nagroda:600 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 161/1 161
+Nagroda: Podróż do Podziemia Pałacu
+Lokacja: Głębia
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 250/1 250
+Nagroda: Podróż do Pałac Wszechmogącego
+Poboczne: Starożytni
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 250/1 200
+Wymagania: Pokonaj: Przodek(Champion) 500/500
+Nagroda:700 000 000 doświadczenia
+Poboczne: Wielcy Przodkowie
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 250/1 250
+Wymagania: Moc: 100 000 000/100 000 000
+Nagroda: bonus premium na 14 dni: Zaawansowana Kondycja
+Nagroda:1 000 000 do wszystkich statystyk
+Wymagania: Pokonaj: Przodek(Elita) 0/50
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda: bonus premium na 14 dni: Mistrz treningu
+Nagroda: bonus premium na 14 dni: Bystrość umysłu
+Wymagania: Wytrenowana moc 0/5 000 000
+Nagroda: bonus premium na 14 dni: Magnetyzm
+Nagroda:1 000 000 do wszystkich statystyk
+Wymagania: Pokonaj: Przeciwnik Tren.(Legendarny) 0/10
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda: bonus premium na 14 dni: Mistrz treningu II
+Wymagania: Zdobyć moc z Przodek 0/5 000 000
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda: bonus premium na 14 dni: Zmysł walki
+Wymagania: Wydropione przedmioty 0/100
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda: Niebieskie Senzu x50
+Wymagania: Wydropione przedmioty 0/200
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda: bonus premium na 14 dni: Mistrz PvP
+Wymagania: Wygrane walki PvP 0/100
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda:15 do przyrostu PA
+Wymagania: PA równe 100
+Nagroda:1kk
+Nagroda:1 000 000 do wszystkich statystyk
+Nagroda:14 PSK
+Nagroda:3 000 000 do wszystkich statystyk
+Nagroda: Czarna Smocza Kula x7
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Kolejny Trening
+✓ Wykonane
+Wymagania: Ostateczny warunek:
+Nagroda: Odrodzenie (Koniec fabuły Non r)
+Nagroda: Podróż do Zuna
+Solucja R-Born
+Lokacja: Zun
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Idziemy na północ do lokacji Zuna – Północ
+Lokacja: Zuna – Północ
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Idziemy na północ do lokacji Wielka jaskinia, a następnie znów na północ do lokacji Gniazdo
+Lokacja: Gniazdo
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Borgol
+Nagroda:1 000 000 siły
+Wracamy do lokacji ZUNA – PÓŁNOC
+Lokacja: Zuna – Północ
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Szalony wódz
+Nagroda:1 000 000 szybkości
+Nagroda: Pradawna Smocza Kula
+Nagroda: Podróż do Planeta Nova
+Lokacja: Planeta Nova
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Glorfin
+Wymagania: Pokonać w pojedynku: Hakon
+Wymagania: Pokonać w pojedynku: Ungmar
+Nagroda: Pradawna Smocza Kula
+Nagroda: Technika: Fala Uderzeniowa VI
+Nagroda: Podróż do Planeta Olbrzymów
+Lokacja: Planeta Olbrzymów
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Nagroda: Pradawna Smocza Kula
+Nagroda: Podróż do Planeta Lud
+Lokacja: Planeta Lud
+Wymagania: Pokonać w pojedynku: Mut-Mot
+Nagroda:100 000 szybkości
+Wymagania: Pokonać w pojedynku: Lord Lude
+Nagroda:100 000 wytrzymałości
+Nagroda: Pradawna Smocza Kula
+Nagroda: Podróż do Planeta ZX68
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Lokacja: Planeta ZX68
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Idziemy na północ do lokacji Planeta ZX68 – Laboratorium
+Lokacja: Planeta ZX68 – Laboratorium
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Robot ZX999
+Nagroda:50 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Generał Lild
+Nagroda:100 000 000 doświadczenia
+Nagroda: Pradawna Smocza Kula
+Wymagania: Pokonać w pojedynku: Mutant
+Nagroda:100 000 wytrzymałości
+Wymagania: Pokonać w pojedynku: Doktor
+Nagroda: Pradawna Smocza Kula
+Nagroda: Podróż do Lodowa Planeta
+Lokacja: Lodowa Planeta
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Idziemy na północ do lokacji Lodowa Dolina Północ
+Lokacja: Lodowa Dolina Północ
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania:Pokonać w pojedynku: Lodowy Klif
+Nagroda: Pradawna Smocza Kula
+Nagroda: Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Oddaj przedmiot Pradawna Smocza Kula 0/7
+Nagroda: Podróż do Dom
+Lokacja: Dom
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bebi SonGokan
+Nagroda: Podróż do Inny wymiar
+Lokacja: Inny wymiar
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Opanować: Boski trening III
+Nagroda: Podróż do Planeta Bogów
+Poboczne: Zabawa
+✓ Wykonane
+Wymagania: Opanować: Boski trening II
+Wymagania: Zapłacić : 5/5 kk
+Idziemy na południe do lokacji Tajemna Sala
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Bezduszny(Normal) 0/2 000
+Nagroda:10 000 000 000 doświadczenia
+Szukamy literek
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Bezduszny(Champion) 0/2 000
+Nagroda:10 000 000 000 doświadczenia
+Lokacja: Planeta Bogów
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Nagroda: Podróż do Planeta Xul
+Lokacja: Planeta Xul
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 820/820
+Nagroda: Technika: SSJ4
+Nagroda: Podróż do Planeta Tsuful
+Poboczne: Wioska
+✓ Wykonane
+Wymagania: Pokonaj: Xul Trah(Normal) 0/500
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Xul Trah(Champion) 0/200
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Xul Trah(Elita) 0/100
+Nagroda:10 000 000 000 doświadczenia
+Nagroda:500 000 szybkości
+Wymagania: Oddaj przedmiot Korona Trzech Bogów
+Nagroda:10 000 000 000 doświadczenia
+Lokacja: Planeta Tsuful
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bebi Vegeta
+Nagroda :Podróż do Pałac Wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Nagroda: Podróż do Nowa Namek
+Lokacja: Nowa Namek
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Potrzebna święta woda użyj teleportacji i przenieś się do pałac wszechmogącego
+Lokacja: Pałac Wszechmogącego
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Nagroda: Święta Woda
+Wracamy na Nową Namek
+Lokacja: Nowa Namek
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Oddaj przedmiot Święta Woda
+Nagroda:500 000 siły woli
+Idziemy na północ do lokacji Dolina Śmierci
+Lokacja: Dolina Śmierci
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Splugawiony Strażnik
+Nagroda:400 000 000 doświadczenia
+Wracamy na Nową Namek
+Lokacja: Nowa Namek
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Teleportujemy się do lokacji Dom
+Lokacja: Dom
+Zadanie Główne: Poszukiwanie kul
+✓ Wykonane
+Nagroda: Podróż do Atakowana Prowincja
+Lokacja: Atakowana Prowincja
+Zadanie Główne: Piekielna Zemsta
+✓ Wykonane
+Wymagania: Pokonaj: Gwardzista Piekieł(Normal) 0/100
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Wojownik Piekieł
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 850/850
+Nagroda:1 000 000 siły woli
+Nagroda: Podróż do Piekło
+Poboczne: Magiczny Kij
+✓ Wykonane
+Wymagania: Wykonaj akcję [klawisz H] 0/1000
+Wymagania: Pokonaj: Gwardzista Piekieł(Champion) 0/250
+Wymagania: Pokonaj: Gwardzista Piekieł(Elita) 0/250
+Wymagania: Pokonaj: Gwardzista Piekieł(Legendarny) 0/1
+Nagroda: Magiczny Kij (Przedmiot specjalny Goku)
+Poboczne: Podróżnik
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 845/845
+Wymagania: Pokonaj: Gwardzista Piekieł(Champion) 0/200
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Pokonaj: Gwardzista Piekieł(Elita) 0/1
+Nagroda: Technika: Smocza Pięść
+Poboczne: Potężna Ki
+✓ Wykonane
+Wymagania: Oddaj przedmiot Symbol Energii KI normal 0/10
+Nagroda: Technika: Fala Uderzeniowa VII
+Lokacja: Piekło
+Zadanie Główne: Piekielna Zemsta
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Morgoth
+Nagroda:1 000 000 000 doświadczenia
+Nagroda:1 000 000 siły
+Wymagania: Pokonać w pojedynku: King Cold
+Nagroda:1 000 000 000 doświadczenia
+Nagroda:1 000 000 szybkości
+Wymagania: Pokonać w pojedynku: Frezer
+Nagroda:1 000 000 000 doświadczenia
+Nagroda:1 000 000 wytrzymałości
+Wymagania: Pokonać w pojedynku: Komórczak
+Nagroda:1 000 000 000 doświadczenia
+Nagroda:1 000 000 siły woli
+Wymagania: Pokonać w pojedynku: Cooler
+Nagroda:1 000 000 000 doświadczenia
+Nagroda:1 000 000 energii Ki
+Wymagania: Osiągnąć poziom: 880/880
+Nagroda: Podróż do Gruzowisko
+Lokacja: Gruzowisko
+Zadanie Główne: Piekielna Zemsta
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Super C17
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 885/885
+Wymagania: Pokonać w pojedynku: Super C17
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 890/890
+Wymagania: Pokonać w pojedynku: Super C17
+Nagroda:1 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 900/900
+Nagroda: Podróż do Miejsce Przywołania
+Lokacja: Miejsce Przywołania
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 901/901
+Nagroda: Podróż do Zatruta Wyspa
+Poboczne: Zły
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Bardzo Zły
+Nagroda:5 000 000 000 doświadczenia
+Nagroda: Boski Miecz
+Poboczne: Złe Czasy
+✓ Wykonane
+Wymagania: Zapłacić : 5/5 kk
+Wymagania: Pokonaj: Sługa Złego(Normal) 0/1 000
+Nagroda:15 000 000 000 doświadczenia
+Szukamy nasion
+Nagroda: Nasiono Życia
+Nagroda: Nasiono Życia
+Nagroda: Nasiono Życia
+Nagroda: Nasiono Życia
+Wymagania: Oddaj przedmiot Nasiono Życia 0/4
+Nagroda:40 000 000 000 doświadczenia
+Wymagania: Pokonaj: Sługa Złego(Champion) 0/500
+Nagroda:15 000 000 000 doświadczenia
+Wymagania: Pokonaj: Sługa Złego(Elita) 0/250
+Nagroda:15 000 000 000 doświadczenia
+Lokacja: Zatruta Wyspa
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Smok Ryan
+Nagroda:5 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 930/930
+Wymagania: Pokonać w pojedynku: Smok Ryan
+Nagroda:5 000 000 000 doświadczenia
+Nagroda: Czarna Kula
+Nagroda: Podróż do Miasto – Widmo
+Lokacja: Miasto – Widmo
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Smok Uh
+Nagroda:5 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 940/940
+Wymagania: Osiągnąć poziom: 945/945
+Wymagania: Osiągnąć poziom: 950/950
+Wymagania: Osiągnąć poziom: 955/955
+Wymagania: Pokonać w pojedynku: Smok Uh
+Nagroda: Czarna Kula
+Nagroda: Podróż do Brzeg Jeziora
+Lokacja: Brzeg Jeziora
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 965/965
+Wymagania: Pokonać w pojedynku: Smok Ryuu
+Nagroda:5 000 000 000 doświadczenia
+Nagroda: Czarna Kula
+Nagroda: Podróż do Pustkowia
+Lokacja: Pustkowia
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 000/1 000
+Wymagania: Pokonać w pojedynku: Smok Chi
+Nagroda: Czarna Kula
+Nagroda: Podróż do Zniszczone Miasto
+Poboczne: Ofiary
+✓ Wykonane
+Wymagania: Pokonaj: Ofiara Smoka(Normal) 0/500
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Ofiara Smoka(Champion) 0/250
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Pokonaj: Ofiara Smoka(Elita) 0/150
+Nagroda:10 000 000 000 doświadczenia
+Lokacja: Zniszczone Miasto
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Pokonać w pojedynku: Smok Suu
+Nagroda:10 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 015/1 015
+Wymagania: Pokonać w pojedynku: Smok Suu
+Nagroda:15 000 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Smok Sab
+Nagroda:15 000 000 000 doświadczenia
+Nagroda:-20 000 000 szybkości
+Nagroda: Czarna Kula
+Nagroda: Czarna Kula
+Wymagania: Osiągnąć poziom: 1 040/1 040
+Nagroda:10 000 000 szybkości
+Wymagania: Osiągnąć poziom: 1 045/1 045
+Nagroda:15 000 000 szybkości
+Wymagania: Pokonać w pojedynku: Smok Li
+Nagroda:18 000 000 000 doświadczenia
+Nagroda: Podróż do Dolina Zagłady
+Lokacja: Dolina Zagłady
+Zadanie Główne: Złe Smoki
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 060/1 060
+Wymagania: Pokonać w pojedynku: Smok Li
+Nagroda:20 000 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Smok Li
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Czarna Kula 0/6
+Wymagania: Osiągnąć poziom: 1 100/1 100
+Wymagania: Pokonać w pojedynku: Smok Omega
+Nagroda:50 000 000 000 doświadczenia
+Wymagania: Pokonać w pojedynku: Smok Li
+Nagroda:25 000 000 000 doświadczenia
+Nagroda: Podróż do Zaświaty – Część Południowa
+Lokacja: Zaświaty – Część Południowa
+Zadanie Główne: Smocza Podróż
+✓ Wykonane
+Smocza Podróż
+Wymagania: Pokonaj: Poległy bohater(Normal) 0/1 000
+Nagroda:15 000 000 000 doświadczenia
+Wymagania: Pokonaj: Poległy bohater(Champion) 0/750
+Nagroda:20 000 000 000 doświadczenia
+Wymagania: Pokonaj: Poległy bohater(Elita) 0/500
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 180/1 180
+Nagroda: Podróż do Zaświaty – Część Zachodnia
+Lokacja: Zaświaty – Część Zachodnia
+Zadanie Główne: Smocza Podróż
+✓ Wykonane
+Wymagania: Pokonaj: Wcielenie(Normal) 0/1 000
+Nagroda:15 000 000 000 doświadczenia
+Wymagania: Pokonaj: Wcielenie(Normal) 0/500
+Nagroda:20 000 000 000 doświadczenia
+Wymagania: Oddaj przedmiot Symbol Szybkości normal 0/30
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 210/1 210
+Nagroda: Podróż do Zaświaty – Część Północna
+Lokacja: Zaświaty – Część Północna
+Zadanie Główne: Smocza Podróż
+✓ Wykonane
+Wymagania: Pokonaj: Duch przeszłości(Normal) 0/1 000
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 225/1 225
+Wymagania: Pokonaj: Duch przeszłości(Champion) 0/500
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Pokonaj: Duch przeszłości(Elita) 0/200
+Nagroda:25 000 000 000 doświadczenia
+Wymagania: Osiągnąć poziom: 1 249/1 249
+Nagroda: Podróż do Zaświaty – Część Wschodnia
+Lokacja: Zaświaty – Część Wschodnia
+Zadanie Główne: Smocza Podróz
+✓ Wykonane
+Wymagania: Osiągnąć poziom: 1 250/1 250
+Wymagania: Opanować: Boskość
+Wymagania: Oddaj przedmiot Symbol Siły woli normal 0/100
+Wymagania: Ostateczny warunek:
+Nagroda: Odrodzenie I (Koniec Fabuły R born)
+Dalsza część dostępna w solucji „G-born”
+Poboczne: Czas próby
+✓ Wykonane
+Wymagania: Zapłacić : 10/10 kk
+Wymagania: Pokonaj: Strażnik boskości(Champion) 0/1 500
+Nagroda:100 000 000 000 doświadczenia
+Wymagania: Pokonaj: Strażnik boskości(Elita) 0/1 000
+Nagroda:100 000 000 000 doświadczenia
+Nagroda:10 000 000 000 doświadczenia
+Solucja Goku by BaronCorbin
