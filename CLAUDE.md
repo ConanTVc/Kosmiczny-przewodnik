@@ -51,7 +51,7 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 ### Dziennik zadań – `#qb_list tr[id^="quest_log_tr"]`
 - `data-qid` w przyciskach, nazwa `.qname`, etap `.grey`, lokacja = element `[data-option="go_teleport"]` (`data-loc` + tekst),
 - `.qb_right` z tekstem „[ GŁÓWNE ]” = zadanie główne (nie ma przycisku forget_quest),
-- przycisk `data-option="cancel_track"` = śledzone, `activate_track` = nieśledzone.
+- przycisk `data-option="cancel_track"` = śledzone, `activate_track` = nieśledzone (wyszarzone „Aktywuj”, klasa `disabled` – zadanie nie jest w panelu postępów, ale nie jest skończone).
 - `qid` to ID instancji u postaci, NIE identyfikator typu zadania – nie kluczujemy po nim treści.
 - Nazwy powtarzają się między lokacjami („Rutyna” w 1338 i 1358), mają końcowe spacje i dopiski `[LV2]`, `[III]` → dopasowanie zawsze po **(locId + znormalizowana nazwa)**.
 - Lokacja w dzienniku = lokacja, w której zadanie jest **teraz**. Zadania przechodzą między lokacjami; w solucji to kolejne sekcje z tym samym zadaniem.
@@ -66,6 +66,7 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 3. zadanie główne (`[ GŁÓWNE ]`) – po lokacji, nie po nazwie,
 4. nazwa jednoznaczna w całej treści, mimo innej lokacji – dopasowanie „po nazwie” (mniej pewne, oznaczać w UI),
 5. inaczej → `unmatched`.
+- **Auto-wykrywanie nie musi być idealne.** Gdy nie ma pewności (dopasowanie „po nazwie”, brak lokalizatora, skan częściowy), nie zgadujemy – status `unknown` / „niepewne” i gracz sam oznacza, czy zrobił. Lepiej „nie wiem” niż błędne „zrobione”.
 - Kolejne części zadania przechodzącego przez kilka lokacji są połączone przez `requires` (część B wymaga A) – aktywna późniejsza część oznacza, że wcześniejsze są zrobione.
 
 Przykładowe dane: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359), `fixtures/dziennik_s21.tsv` i `fixtures/postepy_s21.tsv` (serwer 21, postać Cumber na Hborn – eksport skryptem z konsoli).
