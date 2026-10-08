@@ -35,6 +35,7 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 - Reborny (`char_data.reborn`): 0 Nonborn, 1 Rborn, 2 Gborn, 3 Uborn, 4 Sborn, 5 Hborn, 6 Mborn. Litery w grze: R, G, U, S, H, M (`<span class="rN">`).
 - `char_data.loc` = ID bieżącej lokacji (to samo ID co `data-loc` w teleportacjach i dzienniku).
 - **Lokalizator** (wymagany do wykrywania zadań): aktywny gdy `char_data.bonus18 - GAME.getTime() > 0`; wynik w sekundach (≈86400 = 24 h).
+- ID lokacji rosną w kolejności dodawania do gry (Nonborn/Rborn Goku najniższe, potem Gborn → Mborn; Cumber dodany niedawno ma wysokie ID). Fabuła wraca do dawnych lokacji – wtedy ID jest niższe niż reszta rozdziału, nigdy wyższe. Nonborn/Rborn każdej rasy ma własne lokacje (np. „Rajska Sala Treningowa” 54 to Goku, 215 inna rasa), od Gborn fabuła jest wspólna.
 
 ### Lista teleportacji – `#tp_list tr.loc2_option`
 - `data-loc` = ID lokacji, `data-reborn` = reborn lokacji, `data-nazwa` = nazwa + nazwa potwora (nie używać do dopasowania),
@@ -43,7 +44,8 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 - klasa `current` = bieżąca lokacja, klasa `fav` = ulubiona,
 - klasa `travel_loc_XXXXX` i `data-loc` przycisku `set_fav_loc` to inne ID (wpis ulubionych), NIE ID lokacji.
 - **Brak `hasq1` oznacza „wszystko zrobione” TYLKO gdy lokalizator jest aktywny.** Bez lokalizatora nie wnioskujemy nic.
-- Lokacja nieobecna na liście = jeszcze nieodkryta (to jest „przed tobą”).
+- Lokacja nieobecna na liście = jeszcze nieodkryta (to jest „przed tobą”), **z wyjątkiem lokacji bez teleportu** – tych nigdy nie ma na liście (w treści `teleport: false`).
+- Nad listą są pola „Szukaj” i „Reborn” – gdy gracz ich użył, lista jest przefiltrowana i z braku lokacji nic nie wnioskujemy (skan częściowy).
 
 ### Dziennik zadań – `#qb_list tr[id^="quest_log_tr"]`
 - `data-qid` w przyciskach, nazwa `.qname`, etap `.grey`, lokacja = element `[data-option="go_teleport"]` (`data-loc` + tekst),
@@ -51,6 +53,9 @@ W repo są już solucje i poradniki napisane przez autora (część własna, cz�
 - przycisk `data-option="cancel_track"` = śledzone, `activate_track` = nieśledzone.
 - `qid` to ID instancji u postaci, NIE identyfikator typu zadania – nie kluczujemy po nim treści.
 - Nazwy powtarzają się między lokacjami („Rutyna” w 1338 i 1358), mają końcowe spacje i dopiski `[LV2]`, `[III]` → dopasowanie zawsze po **(locId + znormalizowana nazwa)**.
+- Lokacja w dzienniku = lokacja, w której zadanie jest **teraz**. Zadania przechodzą między lokacjami; w solucji to kolejne sekcje z tym samym zadaniem.
+- Długie zadania (główne co 100 kroków) dostają w grze kolejne części z numerem: „Hakaishin”, „Hakaishin II”…; podobnie „Pamiątka 2”. W solucji nazwa bywa bez numeru → zadanie główne dopasowujemy po lokacji, a numer części tolerujemy.
+- Panel „Postępy zadań” na mapie pokazuje tylko śledzone zadania i nie każdy typ wymagań.
 
 Przykładowy HTML: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359).
 
