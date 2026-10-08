@@ -1,3 +1,4 @@
+import type { Reborn } from '@kp/content';
 import type { StatusOutput } from './status';
 import {
   LATER_LIST,
@@ -67,6 +68,16 @@ export function setTracked(
 }
 
 /** Ręczny status; `null` = „przywróć auto” (zapisane jako zmiana, żeby się zsynchronizowało). */
+/** Ostatnia lokacja postaci – na telefonie ta, którą gracz wybrał w „Tutaj”. */
+export function setLastLoc(progress: Progress, key: string, loc: number, now: number): Progress {
+  return updateCharacter(progress, key, (c) => ({ ...c, lastLoc: restamp(c.lastLoc, loc, now) }));
+}
+
+/** Reborn ustawiony ręcznie (telefon bez gry); w grze i tak nadpisze go odczyt postaci. */
+export function setReborn(progress: Progress, key: string, reborn: Reborn, now: number): Progress {
+  return updateCharacter(progress, key, (c) => ({ ...c, reborn: restamp(c.reborn, reborn, now) }));
+}
+
 export function setManualStatus(
   progress: Progress,
   key: string,

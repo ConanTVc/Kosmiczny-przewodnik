@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#11131a" />
+    <meta
+      name="description"
+      content="Solucje, poradniki i postęp zadań do gry Kosmiczni – w grze na komputerze i na telefonie."
+    />
+    <link rel="icon" href="app/favicon.svg" type="image/svg+xml" />
+    <title>Kosmiczny Przewodnik</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #11131a;
+        --surface: #191c26;
+        --border: #2f3547;
+        --text: #e7e9f0;
+        --muted: #9aa2b4;
+        --accent: #f4b400;
+        --accent-text: #1a1300;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.55 system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 16px 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      header img {
+        width: 56px;
+        height: 56px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-wrap: balance;
+      }
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--surface);
+      }
+      h2 {
+        margin: 0;
+        font-size: 1.15rem;
+      }
+      p,
+      ol {
+        margin: 0;
+      }
+      ol {
+        padding-left: 1.2em;
+        color: var(--muted);
+      }
+      .btn {
+        align-self: flex-start;
+        display: inline-block;
+        margin-top: auto;
+        padding: 10px 16px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: var(--accent-text);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--text);
+        outline-offset: 2px;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="app/icons/icon-192.png" alt="" />
+        <h1>Kosmiczny Przewodnik</h1>
+      </header>
+      <p class="lead">
+        Solucje, poradniki i postęp zadań do gry
+        <a href="https://kosmiczni.pl" rel="noopener">Kosmiczni</a>. Przewodnik tylko czyta to, co
+        gra pokazuje – niczego za Ciebie nie klika.
+      </p>
+      <div class="cards">
+        <section>
+          <h2>W grze na komputerze</h2>
+          <ol>
+            <li>Zainstaluj Tampermonkey albo Violentmonkey w przeglądarce.</li>
+            <li>Kliknij „Zainstaluj skrypt” i potwierdź.</li>
+            <li>Odśwież grę – ikona kompasu pojawi się w pasku szybkich akcji.</li>
+          </ol>
+          <a class="btn" href="kosmiczny-przewodnik.user.js">Zainstaluj skrypt</a>
+        </section>
+        <section>
+          <h2>Na telefonie</h2>
+          <ol>
+            <li>Otwórz aplikację w przeglądarce telefonu.</li>
+            <li>
+              Android: menu ⋮ → „Zainstaluj aplikację”. iPhone: Udostępnij → „Do ekranu
+              początkowego”.
+            </li>
+            <li>Działa także bez internetu.</li>
+          </ol>
+          <a class="btn" href="app/">Otwórz aplikację</a>
+        </section>
+      </div>
+      <footer>
+        Kod źródłowy:
+        <a href="https://github.com/ConanTVc/Kosmiczny-przewodnik"
+          >github.com/ConanTVc/Kosmiczny-przewodnik</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>

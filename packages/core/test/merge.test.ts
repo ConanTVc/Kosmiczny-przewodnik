@@ -4,7 +4,9 @@ import {
   applyScanResult,
   emptyProgress,
   questLists,
+  setLastLoc,
   setManualStatus,
+  setReborn,
   setQuestLists,
   setSetting,
   setStepDone,
@@ -12,7 +14,7 @@ import {
   upsertCharacter,
 } from '../src/progress';
 import { parseProgress } from '../src/progress-schema';
-import type { Progress } from '../src/types';
+import { manualCharKey, type Progress } from '../src/types';
 
 const KEY = 's21:c3465';
 const base = () =>
@@ -255,5 +257,23 @@ describe('kroki i własne listy', () => {
     expect(merged.lists).toEqual({ v: ['Na później'], at: 30 });
     expect(mergeProgress(pc, phone)).toEqual(mergeProgress(phone, pc));
     expect(parseProgress(JSON.parse(JSON.stringify(mergeProgress(pc, phone))))).toBeDefined();
+  });
+});
+
+describe('postać dodana ręcznie (telefon)', () => {
+  it('klucz z „m”, schemat go przyjmuje; lokacja i reborn ustawiane ręcznie', () => {
+    const key = manualCharKey(undefined, 1700000000000);
+    expect(key).toBe('s0:m1700000000000');
+    let p = upsertCharacter(emptyProgress(), { key, name: 'Telefon', race: 7, reborn: 4 }, 1);
+    p = setLastLoc(p, key, 1359, 2);
+    p = setReborn(p, key, 5, 3);
+    expect(p.characters[key]).toMatchObject({
+      lastLoc: { v: 1359, at: 2 },
+      reborn: { v: 5, at: 3 },
+    });
+    // ta sama wartość nie zmienia znacznika czasu
+    expect(setLastLoc(p, key, 1359, 9).characters[key]!.lastLoc.at).toBe(2);
+    expect(parseProgress(p)).toBeDefined();
+    expect(parseProgress({ ...p, characters: { 's1:x5': p.characters[key] } })).toBeUndefined();
   });
 });

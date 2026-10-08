@@ -2,11 +2,19 @@ import type { Race, Reborn } from '@kp/content';
 
 /* ───────────── Postać ───────────── */
 
-/** Klucz postaci: `s${server}:c${id}`, np. `s18:c3465`. */
-export type CharKey = `s${number}:c${number}`;
+/**
+ * Klucz postaci: `s${server}:c${id}`, np. `s18:c3465`. Postać dodana ręcznie na telefonie
+ * (bez ID z gry) ma `m` zamiast `c`: `s${server|0}:m${czas dodania}`.
+ */
+export type CharKey = `s${number}:c${number}` | `s${number}:m${number}`;
 
 export function charKey(server: number, id: number): CharKey {
   return `s${server}:c${id}`;
+}
+
+/** Klucz dla postaci dodanej ręcznie; `server` nieznany = 0. */
+export function manualCharKey(server: number | undefined, now: number): CharKey {
+  return `s${server ?? 0}:m${now}`;
 }
 
 export interface CharacterInfo {

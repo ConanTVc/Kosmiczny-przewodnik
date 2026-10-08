@@ -1,0 +1,27 @@
+{
+  "name": "@kp/pwa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kosmiczny Przewodnik na telefon – instalowalna aplikacja (PWA), działa offline.",
+  "scripts": {
+    "dev": "pnpm --filter @kp/content build && vite",
+    "build": "pnpm --filter @kp/content build && vite build",
+    "preview": "vite preview --port 4174",
+    "icons": "tsx scripts/icons.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kp/content": "workspace:*",
+    "@kp/core": "workspace:*",
+    "@kp/ui": "workspace:*",
+    "preact": "^11.0.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^26.6.4",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "workbox-window": "^7.4.1"
+  }
+}

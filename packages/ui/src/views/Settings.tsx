@@ -13,7 +13,8 @@ const SYNC_STATE: Record<SyncProps['state'], string> = {
 
 function SyncBlock({ sync }: { sync?: SyncProps }) {
   const [code, setCode] = useState('');
-  if (!sync) return <p class="kp-muted">Synchronizacja z telefonem pojawi się wkrótce.</p>;
+  if (!sync)
+    return <p class="kp-muted">Synchronizacja między komputerem a telefonem pojawi się wkrótce.</p>;
   if (sync.code) {
     return (
       <>

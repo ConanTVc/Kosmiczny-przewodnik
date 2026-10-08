@@ -38,7 +38,11 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
   if (locId === undefined) {
     return (
       <div class="kp-view">
-        <p class="kp-muted">Nie wiem, gdzie jest postać. Wejdź do gry albo wybierz lokację:</p>
+        <p class="kp-muted">
+          {props.layout === 'app'
+            ? 'Wybierz lokację, w której jest postać:'
+            : 'Nie wiem, gdzie jest postać. Wejdź do gry albo wybierz lokację:'}
+        </p>
         {picker}
       </div>
     );
@@ -70,7 +74,11 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
         <div>
           <h2 class="kp-loc-name">{locName(locId)}</h2>
           <p class="kp-muted">
-            {isGameLoc ? 'Tu jesteś' : 'Podgląd lokacji'}
+            {isGameLoc
+              ? 'Tu jesteś'
+              : locId === character.lastLoc.v
+                ? 'Ostatnia lokacja postaci'
+                : 'Podgląd lokacji'}
             {location?.reborn !== undefined && ` · ${REBORN_LETTER[location.reborn]}`}
             {sections.map(
               ({ chapter, section }) => ` · ${chapter.title}, lokacja ${section.order}`,

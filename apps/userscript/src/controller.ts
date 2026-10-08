@@ -22,7 +22,7 @@ import {
 import type { LoadedContent } from './content';
 import { lokalizatorSeconds, type GameChange, type GameCharacter, type GameSnapshot } from './game';
 import type { DomScanPart } from './observer';
-import type { Kv } from './storage';
+import type { Kv } from '@kp/ui';
 
 /** Odczyty jednej postaci w tej sesji. */
 export interface CharacterScan {

@@ -11,6 +11,7 @@ Dla autora i dla innych graczy. Twórca gry zgodził się na narzędzie, które 
 - `apps/userscript` – Tampermonkey/Violentmonkey (vite-plugin-monkey). Panel wstrzykiwany w grę na PC, automatyczne wykrywanie.
 - `apps/pwa` – osobna aplikacja na telefon (instalowalna, offline). Bez dostępu do gry: postęp ręczny + dane z synchronizacji.
 - `apps/worker` – Cloudflare Worker + KV, synchronizacja postępu kodem synchronizacji (bez kont).
+- `site/index.html` – strona startowa na GitHub Pages. Workflow `.github/workflows/pages.yml` publikuje na każdy push do main: `/` (strona), `/app/` (PWA), `/content/` (treść + manifest), `/kosmiczny-przewodnik.user.js` + `.meta.js`. `ci.yml` sprawdza pull requesty.
 
 ## Istniejąca treść
 
@@ -31,7 +32,7 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 ## Dane gry
 
 - Gdy postać nie jest wybrana, `GAME.char_data === undefined` → komunikat „Wybierz postać”.
-- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c3465`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną.
+- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c3465`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną. Postać dodana ręcznie na telefonie (bez ID z gry): `s{serwer|0}:m{czas dodania}`.
 - Rasy (`char_data.race`): 0 Goku, 1 Vegeta, 2 Gohan, 3 Trunks, 4 Broly, 5 Black, 6 Bardock, 7 Cumber.
 - Reborny (`char_data.reborn`): 0 Nonborn, 1 Rborn, 2 Gborn, 3 Uborn, 4 Sborn, 5 Hborn, 6 Mborn. Litery w grze: R, G, U, S, H, M (`<span class="rN">`).
 - `char_data.loc` = ID bieżącej lokacji (to samo ID co `data-loc` w teleportacjach i dzienniku).

@@ -34,7 +34,7 @@ export const ProgressSchema = z
   .object({
     version: z.literal(PROGRESS_VERSION),
     settings: z.record(z.string(), stamped(z.unknown())),
-    characters: z.record(z.string().regex(/^s\d+:c\d+$/), CharacterProgressSchema),
+    characters: z.record(z.string().regex(/^s\d+:[cm]\d+$/), CharacterProgressSchema),
   })
   .strict();
 

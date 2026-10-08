@@ -3,7 +3,7 @@
  * akcji gry (albo zapasowy przycisk w rogu), uchwyt do zmiany szerokości i skrót Alt+K.
  * To jedyne elementy, które skrypt dodaje do strony.
  */
-import { readLocal, writeLocal } from './storage';
+import { readLocal, writeLocal } from '@kp/ui';
 
 export interface PanelUi {
   /** Panel widoczny (rozwinięty albo zwinięty do belki). */

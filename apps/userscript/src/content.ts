@@ -17,7 +17,7 @@ import guides from '../../../packages/content/dist/content/guides.json';
 import locations from '../../../packages/content/dist/content/locations.json';
 import manifest from '../../../packages/content/dist/content/manifest.json';
 import quests from '../../../packages/content/dist/content/quests.json';
-import type { Kv } from './storage';
+import type { Kv } from '@kp/ui';
 
 export interface LoadedContent {
   content: BuiltContent;

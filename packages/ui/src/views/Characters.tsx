@@ -1,14 +1,119 @@
+import { RACES, REBORNS } from '@kp/content';
+import { useState } from 'preact/hooks';
 import { usePanel } from '../context';
 import { REBORN_LETTER, formatDate, raceName } from '../labels';
+import type { NewCharacter } from '../types';
+
+const selectValue = (e: Event) => Number((e.currentTarget as HTMLSelectElement).value);
+
+function RebornOptions() {
+  return (
+    <>
+      {REBORNS.map((name, i) => (
+        <option key={name} value={i}>
+          {REBORN_LETTER[i]} – {name}
+        </option>
+      ))}
+    </>
+  );
+}
+
+/** Ręczne dodanie postaci – na telefonie, bez gry. */
+function AddCharacter({ onAdd, onCancel }: { onAdd(c: NewCharacter): void; onCancel?(): void }) {
+  const [name, setName] = useState('');
+  const [race, setRace] = useState(0);
+  const [reborn, setReborn] = useState(0);
+  const [server, setServer] = useState('');
+  return (
+    <form
+      class="kp-block kp-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const trimmed = name.trim();
+        if (!trimmed) return;
+        const s = Number.parseInt(server, 10);
+        onAdd({ name: trimmed, race, reborn, server: s > 0 ? s : undefined });
+      }}
+    >
+      <h2 class="kp-h">Dodaj postać</h2>
+      <label class="kp-label">
+        Nazwa postaci
+        <input
+          class="kp-input"
+          required
+          maxLength={40}
+          autoComplete="off"
+          value={name}
+          onInput={(e) => setName((e.target as HTMLInputElement).value)}
+        />
+      </label>
+      <div class="kp-form-row">
+        <label class="kp-label">
+          Rasa
+          <select class="kp-input" value={race} onChange={(e) => setRace(selectValue(e))}>
+            {RACES.map((r, i) => (
+              <option key={r} value={i}>
+                {r}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label class="kp-label">
+          Reborn
+          <select class="kp-input" value={reborn} onChange={(e) => setReborn(selectValue(e))}>
+            <RebornOptions />
+          </select>
+        </label>
+        <label class="kp-label">
+          Serwer (opcjonalnie)
+          <input
+            class="kp-input"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={4}
+            value={server}
+            onInput={(e) => setServer((e.target as HTMLInputElement).value)}
+          />
+        </label>
+      </div>
+      <div class="kp-actions">
+        <button type="submit" class="kp-btn kp-btn-on">
+          Dodaj postać
+        </button>
+        {onCancel && (
+          <button type="button" class="kp-btn kp-btn-ghost" onClick={onCancel}>
+            Anuluj
+          </button>
+        )}
+      </div>
+    </form>
+  );
+}
 
 export function CharactersView() {
-  const { props } = usePanel();
+  const { props, goTo } = usePanel();
+  const [adding, setAdding] = useState(false);
   const entries = Object.entries(props.progress.characters).sort(
     ([, a], [, b]) => b.lastSeen - a.lastSeen,
   );
+  const add =
+    props.onAddCharacter &&
+    ((c: NewCharacter) => {
+      props.onAddCharacter?.(c);
+      setAdding(false);
+      goTo('here');
+    });
 
   if (!entries.length) {
-    return (
+    return add ? (
+      <div class="kp-view">
+        <p class="kp-muted">
+          Dodaj postać, której postęp chcesz śledzić. Dane zostają na tym telefonie – nic nie jest
+          wysyłane do gry.
+        </p>
+        <AddCharacter onAdd={add} />
+      </div>
+    ) : (
       <p class="kp-empty">
         Nie ma jeszcze żadnej postaci. Wejdź do gry z włączonym skryptem albo połącz się kodem
         synchronizacji.
@@ -21,7 +126,8 @@ export function CharactersView() {
       <ul class="kp-rows">
         {entries.map(([key, c]) => {
           const active = key === props.activeCharacter;
-          const [server] = key.split(':');
+          const [server, id] = key.split(':');
+          const manual = id?.startsWith('m');
           return (
             <li
               key={key}
@@ -30,11 +136,22 @@ export function CharactersView() {
               <div class="kp-char-main">
                 <strong>{c.name.v}</strong>
                 <span class="kp-muted">
-                  {raceName(c.race.v)} · {REBORN_LETTER[c.reborn.v]} · serwer {server?.slice(1)} ·
-                  widziana {formatDate(c.lastSeen)}
+                  {raceName(c.race.v)} · {REBORN_LETTER[c.reborn.v]}
+                  {server !== 's0' && ` · serwer ${server?.slice(1)}`}
+                  {manual ? ' · dodana ręcznie' : ` · widziana ${formatDate(c.lastSeen)}`}
                 </span>
               </div>
               <div class="kp-actions">
+                {props.onSetReborn && (
+                  <select
+                    class="kp-input kp-input-small"
+                    aria-label={`Reborn postaci ${c.name.v}`}
+                    value={c.reborn.v}
+                    onChange={(e) => props.onSetReborn?.(key, selectValue(e))}
+                  >
+                    <RebornOptions />
+                  </select>
+                )}
                 {!active && c.tracked.v && (
                   <button
                     type="button"
@@ -57,6 +174,14 @@ export function CharactersView() {
           );
         })}
       </ul>
+      {add &&
+        (adding ? (
+          <AddCharacter onAdd={add} onCancel={() => setAdding(false)} />
+        ) : (
+          <button type="button" class="kp-btn kp-btn-ghost" onClick={() => setAdding(true)}>
+            + Dodaj postać
+          </button>
+        ))}
     </div>
   );
 }

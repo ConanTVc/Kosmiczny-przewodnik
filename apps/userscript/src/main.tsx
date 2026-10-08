@@ -5,13 +5,12 @@
  * Jedyna ingerencja w stronę to własny panel. Każdy błąd jest połykany – gra działa dalej.
  */
 import { emptyProgress, parseProgress } from '@kp/core';
-import { mount, type PanelProps } from '@kp/ui';
+import { mount, openKv, type PanelProps } from '@kp/ui';
 import { EMBEDDED, fetchRemoteContent, loadCachedContent } from './content';
 import { Controller } from './controller';
 import { watchGame } from './game';
 import { observeGameDom } from './observer';
 import { createPanelShell, type PanelShell } from './panel';
-import { openKv } from './storage';
 import { Wizard } from './Wizard';
 
 function PanelSettings({ shell }: { shell: PanelShell }) {

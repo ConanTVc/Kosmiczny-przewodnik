@@ -170,6 +170,9 @@
 }
 
 /* Telefon: zakładki jako dolny pasek. */
+.kp-layout-app .kp-top {
+  padding-top: calc(10px + env(safe-area-inset-top));
+}
 .kp-layout-app .kp-tabs {
   order: 3;
   position: sticky;
@@ -243,6 +246,9 @@
   gap: 8px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
+}
+.kp-block p {
+  margin: 0;
 }
 .kp-ok {
   color: var(--st-done);
@@ -343,6 +349,16 @@
 }
 .kp-file {
   color: var(--text);
+}
+.kp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.kp-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
 }
 .kp-inline-form {
   display: flex;

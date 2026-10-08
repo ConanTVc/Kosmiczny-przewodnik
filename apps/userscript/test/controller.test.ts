@@ -6,7 +6,7 @@ import { EMBEDDED, fetchRemoteContent } from '../src/content';
 import { Controller } from '../src/controller';
 import type { GameChange, GameSnapshot } from '../src/game';
 import { observeGameDom, type DomScanPart } from '../src/observer';
-import { localKv, type Kv } from '../src/storage';
+import { localKv, type Kv } from '@kp/ui';
 
 const fixture = (name: string) =>
   readFileSync(resolve(import.meta.dirname, '../../../fixtures', name), 'utf8');

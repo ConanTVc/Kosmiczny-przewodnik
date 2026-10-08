@@ -1,7 +1,8 @@
 /**
- * Pamięć skryptu. Postęp i treść w IndexedDB strony (własna baza – nie zajmujemy miejsca grze
- * w localStorage), drobne ustawienia panelu w localStorage z prefiksem `kp:`. Każdy błąd
- * pamięci jest połykany – bez niej skrypt działa, tylko nie pamięta.
+ * Pamięć przeglądarki – wspólna dla skryptu w grze i aplikacji na telefon. Postęp i treść
+ * w IndexedDB (własna baza – w grze nie zajmujemy jej miejsca w localStorage), drobne ustawienia
+ * w localStorage z prefiksem `kp:`. Każdy błąd pamięci jest połykany – bez niej wszystko działa,
+ * tylko nie pamięta.
  */
 const DB_NAME = 'kosmiczny-przewodnik';
 const STORE = 'kv';
