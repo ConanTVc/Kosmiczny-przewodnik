@@ -18,11 +18,11 @@ import {
 import { parseProgress } from '../src/progress-schema';
 import { manualCharKey, type Progress } from '../src/types';
 
-const KEY = 's21:c3465';
+const KEY = 's21:c7001';
 const base = () =>
   upsertCharacter(
     emptyProgress(),
-    { key: KEY, name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    { key: KEY, name: 'Wojownik', race: 7, reborn: 5, loc: 1359 },
     10,
   );
 
@@ -30,7 +30,7 @@ describe('mergeProgress', () => {
   it('last-write-wins osobno dla każdego pola postaci', () => {
     const pc = upsertCharacter(
       base(),
-      { key: KEY, name: 'Butcher', race: 7, reborn: 6, loc: 1365 },
+      { key: KEY, name: 'Wojownik', race: 7, reborn: 6, loc: 1365 },
       50,
     );
     const phone = setTracked(base(), KEY, false, 40);
@@ -128,7 +128,7 @@ describe('postęp', () => {
   it('ponowne odświeżenie tych samych danych nie zmienia znaczników czasu', () => {
     const again = upsertCharacter(
       base(),
-      { key: KEY, name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+      { key: KEY, name: 'Wojownik', race: 7, reborn: 5, loc: 1359 },
       99,
     );
     expect(again.characters[KEY]).toMatchObject({
@@ -300,7 +300,7 @@ describe('usuwanie postaci', () => {
     );
     const again = upsertCharacter(
       removed,
-      { key: KEY, name: 'Butcher', race: 7, reborn: 6, loc: 1400 },
+      { key: KEY, name: 'Wojownik', race: 7, reborn: 6, loc: 1400 },
       40,
       false,
     );

@@ -20,7 +20,7 @@ import {
 } from '../src/sync';
 import type { CharKey, Progress } from '../src/types';
 
-const char = (key: CharKey, name = 'Butcher', at = 1) =>
+const char = (key: CharKey, name = 'Wojownik', at = 1) =>
   upsertCharacter(emptyProgress(), { key, name, race: 7, reborn: 5, loc: 1359 }, at);
 
 describe('kod synchronizacji', () => {
@@ -49,7 +49,7 @@ describe('wysyłka tylko zmian', () => {
     const local = setManualStatus(base, 's1:c1', 'a/1/y', 'active', 6);
     const delta = progressDelta(local, base)!;
     expect(Object.keys(delta.characters['s1:c1']!.quests)).toEqual(['a/1/y']);
-    expect(delta.characters['s1:c1']!.name.v).toBe('Butcher');
+    expect(delta.characters['s1:c1']!.name.v).toBe('Wojownik');
     expect(parseProgress(delta)).toBeDefined();
     // nowa postać i nowe ustawienie – w całości
     const more = setSetting(mergeProgress(local, char('s1:c2', 'Druga')), 'theme', 'light', 7);
@@ -103,13 +103,16 @@ describe('ochrona serwera', () => {
 
 describe('łączenie postaci z telefonu z postacią z gry', () => {
   it('postęp z ręcznej postaci trafia do postaci z gry, ręczna znika', () => {
-    let p = mergeProgress(char('s21:c3465', 'Butcher', 5), char('s0:m100', 'Butcher (telefon)', 5));
+    let p = mergeProgress(
+      char('s21:c7001', 'Wojownik', 5),
+      char('s0:m100', 'Wojownik (telefon)', 5),
+    );
     p = setManualStatus(p, 's0:m100', 'hborn/1359/a', 'done', 10);
-    p = setManualStatus(p, 's21:c3465', 'hborn/1359/b', 'active', 11);
-    p = setManualStatus(p, 's21:c3465', 'hborn/1359/a', 'active', 3); // starsze – przegrywa
-    const linked = linkCharacter(p, 's0:m100', 's21:c3465', 20);
-    expect(visibleCharacters(linked).map(([k]) => k)).toEqual(['s21:c3465']);
-    const quests = linked.characters['s21:c3465']!.quests;
+    p = setManualStatus(p, 's21:c7001', 'hborn/1359/b', 'active', 11);
+    p = setManualStatus(p, 's21:c7001', 'hborn/1359/a', 'active', 3); // starsze – przegrywa
+    const linked = linkCharacter(p, 's0:m100', 's21:c7001', 20);
+    expect(visibleCharacters(linked).map(([k]) => k)).toEqual(['s21:c7001']);
+    const quests = linked.characters['s21:c7001']!.quests;
     expect(quests['hborn/1359/a']!.manual!.v).toBe('done');
     expect(quests['hborn/1359/b']!.manual!.v).toBe('active');
     expect(linkCharacter(p, 's0:m100', 's0:m100', 20)).toBe(p);

@@ -37,10 +37,10 @@ const fullGame = (): G => ({
   captcha: 'xyz',
   sitekey: 'abc',
   pid: 99,
-  char_id: 3465,
+  char_id: 7001,
   char_data: {
-    id: 3465,
-    name: 'Butcher',
+    id: 7001,
+    name: 'Wojownik',
     race: 7,
     reborn: 5,
     loc: 1360,
@@ -91,9 +91,9 @@ describe('adapter gry – biała lista', () => {
     spyGame(fullGame());
     const snap = readGame()!;
     expect(snap.character).toEqual({
-      key: 's21:c3465',
-      id: 3465,
-      name: 'Butcher',
+      key: 's21:c7001',
+      id: 7001,
+      name: 'Wojownik',
       race: 7,
       reborn: 5,
       loc: 1360,

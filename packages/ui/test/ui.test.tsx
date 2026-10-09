@@ -195,10 +195,10 @@ describe('panel z prawdziwą treścią (fixtures z gry)', () => {
 
 describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
   const content = loadRealContent();
-  const key = 's21:c3465';
+  const key = 's21:c7001';
   const progress = upsertCharacter(
     emptyProgress(),
-    { key, name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    { key, name: 'Wojownik', race: 7, reborn: 5, loc: 1359 },
     1,
   );
   const mountPanel = (extra: Partial<PanelProps> = {}) => {
@@ -303,7 +303,7 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
     await click(tab('Postacie'));
     await click(button('Usuń'));
     expect(onRemoveCharacter).not.toHaveBeenCalled();
-    expect(root.querySelector('.kp-confirm')?.textContent).toContain('Butcher');
+    expect(root.querySelector('.kp-confirm')?.textContent).toContain('Wojownik');
     await click(button('Anuluj'));
     expect(root.querySelector('.kp-confirm')).toBeNull();
     await click(button('Usuń'));
@@ -324,7 +324,7 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
       onSetting: vi.fn(),
       onImport: vi.fn(),
     });
-    expect(host.shadowRoot!.textContent).not.toContain('Butcher');
+    expect(host.shadowRoot!.textContent).not.toContain('Wojownik');
   });
 });
 
@@ -332,7 +332,7 @@ describe('synchronizacja i łączenie postaci', () => {
   const content = loadRealContent();
   const game = upsertCharacter(
     emptyProgress(),
-    { key: 's21:c3465', name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    { key: 's21:c7001', name: 'Wojownik', race: 7, reborn: 5, loc: 1359 },
     1,
   );
   const progress = upsertCharacter(
@@ -412,6 +412,6 @@ describe('synchronizacja i łączenie postaci', () => {
     const { button, click } = mountWith({ initialTab: 'characters', onLinkCharacter });
     await click(button('Połącz z postacią z gry'));
     await click(button('Połącz'));
-    expect(onLinkCharacter).toHaveBeenCalledWith('s0:m77', 's21:c3465');
+    expect(onLinkCharacter).toHaveBeenCalledWith('s0:m77', 's21:c7001');
   });
 });

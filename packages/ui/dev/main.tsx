@@ -60,7 +60,7 @@ const demo: {
   manual?: [string, 'done' | 'active' | 'available'][];
 }[] = [
   {
-    info: { key: 's21:c3465', name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    info: { key: 's21:c7001', name: 'Wojownik', race: 7, reborn: 5, loc: 1359 },
     scan: { at: Date.now() - 60_000, lokalizatorActive: true, teleports, questLog: s21Log },
   },
   {
@@ -100,11 +100,11 @@ for (const { info, scan, manual } of demo) {
     progress = setManualStatus(progress, info.key, slug, status, Date.now());
 }
 // Przykład autora: „Duchy Ognia” na Io – wszystko poza ostatnim krokiem (exp) zrobione, odłożone na później.
-progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 0, true, 3, Date.now());
-progress = setStepDone(progress, 's21:c3465', 'hborn/988/duchy-ognia', 1, true, 3, Date.now());
+progress = setStepDone(progress, 's21:c7001', 'hborn/988/duchy-ognia', 0, true, 3, Date.now());
+progress = setStepDone(progress, 's21:c7001', 'hborn/988/duchy-ognia', 1, true, 3, Date.now());
 progress = setQuestLists(
   progress,
-  's21:c3465',
+  's21:c7001',
   'hborn/988/duchy-ognia',
   ['Na później'],
   Date.now(),

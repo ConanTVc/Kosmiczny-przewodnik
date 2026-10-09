@@ -216,7 +216,7 @@ describe('computeStatuses', () => {
     const key = 's21:c1';
     let progress = upsertCharacter(
       emptyProgress(),
-      { key, name: 'Butcher', race: 0, reborn: 2 },
+      { key, name: 'Wojownik', race: 0, reborn: 2 },
       1,
     );
     progress = setManualStatus(progress, key, 'gborn/11/rutyna', 'done', 2);

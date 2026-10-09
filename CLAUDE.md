@@ -32,7 +32,7 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 ## Dane gry
 
 - Gdy postać nie jest wybrana (`GAME` nie istnieje, `GAME.char_id` = 0 albo brak, `GAME.char_data === undefined`) → panelu w grze nie ma wcale.
-- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c3465`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną. Postać dodana ręcznie na telefonie (bez ID z gry): `s{serwer|0}:m{czas dodania}`. Usunięcie postaci = znacznik `removed` (postęp czyszczony, znacznik zostaje dla synchronizacji); gdy postać znowu pojawi się w grze, jest traktowana jak nowa.
+- Klucz postaci: `` `s${GAME.server}:c${GAME.char_data.id}` `` (np. `s18:c7001`). Gracz może mieć wiele postaci na serwerze i wiele serwerów; może też chcieć śledzić tylko jedną. Postać dodana ręcznie na telefonie (bez ID z gry): `s{serwer|0}:m{czas dodania}`. Usunięcie postaci = znacznik `removed` (postęp czyszczony, znacznik zostaje dla synchronizacji); gdy postać znowu pojawi się w grze, jest traktowana jak nowa.
 - Rasy (`char_data.race`): 0 Goku, 1 Vegeta, 2 Gohan, 3 Trunks, 4 Broly, 5 Black, 6 Bardock, 7 Cumber.
 - Reborny (`char_data.reborn`): 0 Nonborn, 1 Rborn, 2 Gborn, 3 Uborn, 4 Sborn, 5 Hborn, 6 Mborn. Litery w grze: R, G, U, S, H, M (`<span class="rN">`).
 - `char_data.loc` = ID bieżącej lokacji (to samo ID co `data-loc` w teleportacjach i dzienniku).

@@ -92,7 +92,7 @@ describe('serwer synchronizacji – API', () => {
     expect(row?.id).not.toContain(code);
 
     const p = setManualStatus(
-      char('s21:c1', 'Butcher'),
+      char('s21:c1', 'Wojownik'),
       's21:c1',
       'hborn/1359/hakaishin',
       'done',
@@ -124,15 +124,15 @@ describe('serwer synchronizacji – API', () => {
   it('serwer scala, nie nadpisuje: starsze dane nie kasują nowszych', async () => {
     const { call } = setup();
     const code = await newCode(call);
-    const newer = setManualStatus(char('s21:c1', 'Butcher'), 's21:c1', 'a/1/x', 'done', 50);
+    const newer = setManualStatus(char('s21:c1', 'Wojownik'), 's21:c1', 'a/1/x', 'done', 50);
     await post(call, code, newer);
     // „śmieszek” z kodem wysyła starszą wersję albo pustą postać – nic nie ginie
     await post(
       call,
       code,
-      setManualStatus(char('s21:c1', 'Butcher'), 's21:c1', 'a/1/x', 'active', 10),
+      setManualStatus(char('s21:c1', 'Wojownik'), 's21:c1', 'a/1/x', 'active', 10),
     );
-    await post(call, code, char('s21:c1', 'Butcher'));
+    await post(call, code, char('s21:c1', 'Wojownik'));
     const body = (await (await call('/v1/sync', { code })).json()) as { progress: Progress };
     expect(body.progress.characters['s21:c1']?.quests['a/1/x']?.manual?.v).toBe('done');
   });
@@ -271,7 +271,7 @@ describe('synchronizacja PC ↔ telefon przez serwer', () => {
     vi.useFakeTimers();
     const { fetcher } = setup();
     let pcProgress = setManualStatus(
-      char('s21:c1', 'Butcher'),
+      char('s21:c1', 'Wojownik'),
       's21:c1',
       'hborn/1359/hakaishin',
       'done',

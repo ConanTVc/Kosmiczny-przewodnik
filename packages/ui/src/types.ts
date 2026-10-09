@@ -30,7 +30,7 @@ export interface PanelProps {
   /** Wersja treści z manifestu – pokazywana w ustawieniach. */
   contentVersion?: string;
   progress: Progress;
-  /** Klucz wybranej postaci (`s18:c3465`). */
+  /** Klucz wybranej postaci (`s18:c7001`). */
   activeCharacter?: string;
   /** Bieżąca lokacja z gry; brak = ostatnia znana z postępu. */
   currentLoc?: number;

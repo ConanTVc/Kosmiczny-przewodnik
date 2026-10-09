@@ -17,3 +17,7 @@ poradniki/
 
 # Podgląd panelu (vite build)
 dist-preview/
+
+# Pliki robocze – tylko lokalnie u autora (nie są potrzebne do budowania ani wdrożenia).
+PROMPTY.md
+packages/content/MIGRACJA.md
