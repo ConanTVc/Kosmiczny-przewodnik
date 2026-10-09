@@ -16,11 +16,29 @@ const VERSION = `${pkg.version}.${BUILD_STAMP}`;
 /** Adres GitHub Pages projektu (Prompt 7) – stąd aktualizacje skryptu i treści. */
 const PAGES = 'https://conantvc.github.io/Kosmiczny-przewodnik';
 
+/**
+ * Adres serwera synchronizacji z KP_SYNC_URL (zmienna repozytorium w GitHub Actions). Przyjmujemy
+ * tylko pełny adres http(s) – literówka nie zepsuje strony, synchronizacja pokaże wtedy „wkrótce”.
+ */
+function syncUrl(): string {
+  const raw = (process.env['KP_SYNC_URL'] ?? '').trim().replace(/\/+$/, '');
+  if (!raw) return '';
+  if (
+    /^https:\/\/[^\s/]+(\/\S*)?$/.test(raw) ||
+    /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(raw)
+  )
+    return raw;
+  console.warn(
+    `[KP_SYNC_URL] „${raw}” to nie jest adres https:// – synchronizacja wyłączona w tym buildzie.`,
+  );
+  return '';
+}
+
 export default defineConfig({
   define: {
     __KP_BUILD_TIME__: JSON.stringify(Date.now()),
     __KP_PAGES__: JSON.stringify(PAGES),
-    __KP_SYNC_URL__: JSON.stringify(process.env['KP_SYNC_URL'] ?? ''),
+    __KP_SYNC_URL__: JSON.stringify(syncUrl()),
   },
   plugins: [
     preact(),

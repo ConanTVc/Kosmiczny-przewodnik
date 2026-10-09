@@ -6,9 +6,27 @@ import { VitePWA } from 'vite-plugin-pwa';
 const PAGES_BASE = process.env['KP_PWA_BASE'] ?? '/Kosmiczny-przewodnik/app/';
 const BG = '#11131a';
 
+/**
+ * Adres serwera synchronizacji z KP_SYNC_URL (zmienna repozytorium w GitHub Actions). Przyjmujemy
+ * tylko pełny adres http(s) – literówka nie zepsuje strony, synchronizacja pokaże wtedy „wkrótce”.
+ */
+function syncUrl(): string {
+  const raw = (process.env['KP_SYNC_URL'] ?? '').trim().replace(/\/+$/, '');
+  if (!raw) return '';
+  if (
+    /^https:\/\/[^\s/]+(\/\S*)?$/.test(raw) ||
+    /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(raw)
+  )
+    return raw;
+  console.warn(
+    `[KP_SYNC_URL] „${raw}” to nie jest adres https:// – synchronizacja wyłączona w tym buildzie.`,
+  );
+  return '';
+}
+
 export default defineConfig(({ command, isPreview }) => ({
   base: command === 'build' || isPreview ? PAGES_BASE : '/',
-  define: { __KP_SYNC_URL__: JSON.stringify(process.env['KP_SYNC_URL'] ?? '') },
+  define: { __KP_SYNC_URL__: JSON.stringify(syncUrl()) },
   // Treść solucji jest celowo wbudowana (offline od pierwszego uruchomienia).
   build: { chunkSizeWarningLimit: 2500 },
   plugins: [
