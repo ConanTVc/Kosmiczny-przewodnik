@@ -1,9 +1,8 @@
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  define: { __KP_SYNC_URL__: JSON.stringify('') },
   test: {
-    name: '@kp/pwa',
+    name: '@kp/worker',
     environment: 'node',
   },
 });

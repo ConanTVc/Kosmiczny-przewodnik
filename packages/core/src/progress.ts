@@ -1,4 +1,5 @@
 import type { Reborn } from '@kp/content';
+import { mergeCharacter } from './merge';
 import type { StatusOutput } from './status';
 import {
   LATER_LIST,
@@ -54,6 +55,27 @@ export function removeCharacter(progress: Progress, key: string, now: number): P
     lastScan: stamp(null, now),
     quests: {},
   }));
+}
+
+/**
+ * Łączy postać dodaną ręcznie (np. na telefonie) z tą samą postacią z gry: postęp zadań trafia
+ * do postaci z gry, a ręczna jest usuwana.
+ */
+export function linkCharacter(
+  progress: Progress,
+  fromKey: string,
+  toKey: string,
+  now: number,
+): Progress {
+  const from = progress.characters[fromKey];
+  const to = progress.characters[toKey];
+  if (!from || !to || fromKey === toKey || isRemoved(from) || isRemoved(to)) return progress;
+  const merged = mergeCharacter(to, { ...to, quests: from.quests });
+  return removeCharacter(
+    { ...progress, characters: { ...progress.characters, [toKey]: merged } },
+    fromKey,
+    now,
+  );
 }
 
 /**

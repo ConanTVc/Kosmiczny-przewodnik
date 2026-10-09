@@ -3,6 +3,7 @@ import {
   computeStatuses,
   indexContent,
   isRemoved,
+  linkCharacter,
   mergeProgress,
   removeCharacter,
   setManualStatus,
@@ -258,6 +259,14 @@ export class Controller {
       Object.entries(this.knownTeleports).filter(([k]) => k !== key),
     );
     if (this.gameCharacter?.key === key) this.lastResult = undefined;
+    this.commit();
+  }
+
+  /** Ręczna postać (np. z telefonu) → ta sama postać z gry; postęp przechodzi. */
+  linkCharacter(fromKey: string, toKey: string): void {
+    this.progress = linkCharacter(this.progress, fromKey, toKey, this.now());
+    if (this.activeKey === fromKey) this.activeKey = toKey;
+    this.recompute();
     this.commit();
   }
 

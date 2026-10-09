@@ -1,0 +1,22 @@
+{
+  "name": "@kp/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Serwer synchronizacji postępu (Cloudflare Worker + D1) – kod synchronizacji, bez kont.",
+  "scripts": {
+    "login": "pnpm dlx wrangler@4 login",
+    "dev": "pnpm dlx wrangler@4 dev",
+    "release": "pnpm dlx wrangler@4 deploy",
+    "db:create": "pnpm dlx wrangler@4 d1 create kp-sync",
+    "db:migrate": "pnpm dlx wrangler@4 d1 migrations apply kp-sync --remote",
+    "db:migrate:local": "pnpm dlx wrangler@4 d1 migrations apply kp-sync --local",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kp/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4"
+  }
+}

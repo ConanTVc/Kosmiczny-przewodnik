@@ -8,6 +8,7 @@ const BG = '#11131a';
 
 export default defineConfig(({ command, isPreview }) => ({
   base: command === 'build' || isPreview ? PAGES_BASE : '/',
+  define: { __KP_SYNC_URL__: JSON.stringify(process.env['KP_SYNC_URL'] ?? '') },
   // Treść solucji jest celowo wbudowana (offline od pierwszego uruchomienia).
   build: { chunkSizeWarningLimit: 2500 },
   plugins: [

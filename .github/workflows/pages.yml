@@ -38,6 +38,10 @@ jobs:
           pnpm test
 
       - name: Budowanie
+        env:
+          # Adres serwera synchronizacji (Settings → Secrets and variables → Actions → Variables).
+          # Pusty = synchronizacja pokazuje „wkrótce”.
+          KP_SYNC_URL: ${{ vars.KP_SYNC_URL }}
         run: |
           pnpm --filter @kp/userscript build
           pnpm --filter @kp/pwa build

@@ -6,8 +6,8 @@ import {
   type Stamped,
 } from './types';
 
-/** JSON z posortowanymi kluczami – do deterministycznego rozstrzygania remisów. */
-function stableStringify(value: unknown): string {
+/** JSON z posortowanymi kluczami – do deterministycznego rozstrzygania remisów i porównań. */
+export function stableStringify(value: unknown): string {
   if (Array.isArray(value)) return `[${value.map(stableStringify).join(',')}]`;
   if (value && typeof value === 'object') {
     const entries = Object.entries(value as Record<string, unknown>)
@@ -57,7 +57,8 @@ function mergeQuest(a: QuestProgress | undefined, b: QuestProgress | undefined):
   };
 }
 
-function mergeCharacter(a: CharacterProgress, b: CharacterProgress): CharacterProgress {
+/** Dwie wersje tej samej postaci → jedna (last-write-wins osobno dla każdego pola i zadania). */
+export function mergeCharacter(a: CharacterProgress, b: CharacterProgress): CharacterProgress {
   const removed = lww(a.removed, b.removed);
   const quests: Record<string, QuestProgress> = {};
   for (const slug of sortedKeys(a.quests, b.quests))

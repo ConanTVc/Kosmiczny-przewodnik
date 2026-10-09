@@ -1,0 +1,25 @@
+// Konfiguracja Cloudflare Workera – instrukcja wdrożenia: WDROZENIE.md
+{
+  "name": "kosmiczny-przewodnik-sync",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kp-sync",
+      // Wklej tu "database_id" wypisany przez: pnpm --filter @kp/worker db:create
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations",
+    },
+  ],
+  // Limity zapytań (okno 60 s). Klucz: IP albo kod – patrz src/app.ts.
+  "ratelimits": [
+    { "name": "RL_CREATE", "namespace_id": "1001", "simple": { "limit": 3, "period": 60 } },
+    { "name": "RL_WRITE", "namespace_id": "1002", "simple": { "limit": 20, "period": 60 } },
+    { "name": "RL_IP_WRITE", "namespace_id": "1003", "simple": { "limit": 40, "period": 60 } },
+    { "name": "RL_READ", "namespace_id": "1004", "simple": { "limit": 60, "period": 60 } },
+  ],
+  // Raz na dobę: usuwanie kodów nieużywanych ponad rok.
+  "triggers": { "crons": ["17 3 * * *"] },
+}

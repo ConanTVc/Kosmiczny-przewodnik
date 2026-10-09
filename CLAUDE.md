@@ -10,7 +10,7 @@ Dla autora i dla innych graczy. Twórca gry zgodził się na narzędzie, które 
 - `packages/ui` – wspólny komponent UI w Preact, montowany w Shadow DOM (izolacja od CSS gry).
 - `apps/userscript` – Tampermonkey/Violentmonkey (vite-plugin-monkey). Panel wstrzykiwany w grę na PC, automatyczne wykrywanie.
 - `apps/pwa` – osobna aplikacja na telefon (instalowalna, offline). Bez dostępu do gry: postęp ręczny + dane z synchronizacji.
-- `apps/worker` – Cloudflare Worker + KV, synchronizacja postępu kodem synchronizacji (bez kont).
+- `apps/worker` – Cloudflare Worker + **D1** (nie KV: darmowy KV ma 1000 zapisów/dobę, D1 100 000 i warunkowe zapisy), synchronizacja postępu kodem synchronizacji (bez kont). Wdrożenie: `apps/worker/WDROZENIE.md`.
 - `site/index.html` – strona startowa na GitHub Pages. Workflow `.github/workflows/pages.yml` publikuje na każdy push do main: `/` (strona), `/app/` (PWA), `/content/` (treść + manifest), `/kosmiczny-przewodnik.user.js` + `.meta.js`. `ci.yml` sprawdza pull requesty.
 
 ## Istniejąca treść
@@ -82,6 +82,16 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 - `requires` („Wykonać zadanie: X” w krokach) **nie blokuje wzięcia** – w grze oba zadania bywają naraz w dzienniku („Panteon Anarchii” i „Panteon Anarchii II”). Wynika z niego tylko: zadanie zrobione ⇒ X zrobione.
 
 Przykładowe dane: `fixtures/tp_list.html`, `fixtures/qb_list.html` (serwer 18, postać Hborn, lokalizator aktywny, bieżąca lokacja 1359), `fixtures/dziennik_s21.tsv` i `fixtures/postepy_s21.tsv` (serwer 21, postać Cumber na Hborn – eksport skryptem z konsoli).
+
+## Synchronizacja (apps/worker + `packages/core/src/sync*.ts`)
+
+- Kod `KOSMO-XXXX-…` (7×4 znaki alfabetu Crockforda = 140 bitów), wysyłany w nagłówku `Authorization: Bearer` (nie w adresie). W D1 tylko SHA-256 kodu.
+- API: `POST /v1/codes`, `GET /v1/sync` (ETag/If-None-Match → 304), `POST /v1/sync` (scal zmiany, zwraca scalone postacie + `rev`/`base`), `DELETE /v1/sync`.
+- Serwer **scala** (mergeCharacter, LWW), nigdy nie nadpisuje; obcina daty z przyszłości (>5 min), waliduje `ProgressSchema`, limity: 256 KB/zapytanie, 30 postaci, 5000 zadań/postać, rate limiting (binding `ratelimits`), 2000 nowych kodów/dobę.
+- Postęp w D1 osobno na postać (`sync_chars`) – darmowy Worker ma 10 ms CPU, więc klient wysyła tylko różnice (`progressDelta`) w kawałkach ≤ 64 KB (`splitDelta`).
+- Klient (`SyncClient`): przy starcie, po zmianie (2 s debounce), co 2 min, po powrocie do karty/internetu; offline → ponawia z narastającą przerwą; kod usunięty → błąd bez ponawiania.
+- Adres serwera wchodzi do builda z `KP_SYNC_URL` (zmienna repozytorium w GitHub Actions); pusty = „Synchronizacja wkrótce”.
+- Telefon łączy się linkiem z QR: `…/app/#kod=KOSMO-…` (adres jest od razu czyszczony). Postać dodaną ręcznie łączy się z postacią z gry (`linkCharacter`).
 
 ## Statusy zadań (priorytet od góry)
 

@@ -9,3 +9,5 @@ export * from './merge';
 export * from './parse/teleports';
 export * from './parse/questLog';
 export * from './mapQuests';
+export * from './sync';
+export * from './sync-client';

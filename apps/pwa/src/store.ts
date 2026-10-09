@@ -4,6 +4,7 @@
  */
 import {
   isRemoved,
+  linkCharacter,
   manualCharKey,
   mergeProgress,
   removeCharacter,
@@ -86,6 +87,16 @@ export class PhoneStore {
   removeCharacter(key: string): void {
     this.progress = removeCharacter(this.progress, key, this.now());
     if (this.activeKey === key) this.activeKey = this.firstTracked();
+    this.commit(this.progress);
+  }
+
+  /** Ręczna postać → ta sama postać z gry (np. po synchronizacji z komputerem). */
+  linkCharacter(fromKey: string, toKey: string): void {
+    this.progress = linkCharacter(this.progress, fromKey, toKey, this.now());
+    if (this.activeKey === fromKey) {
+      this.activeKey = toKey;
+      void this.kv.set(ACTIVE_KEY, toKey).catch(() => {});
+    }
     this.commit(this.progress);
   }
 

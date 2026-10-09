@@ -4,14 +4,21 @@ import type { ComponentChildren } from 'preact';
 
 export type TabId = 'here' | 'progress' | 'ahead' | 'search' | 'characters' | 'settings';
 
-/** Stan synchronizacji – podaje go aplikacja (Prompt 5); brak = synchronizacja niedostępna. */
+/** Stan synchronizacji – podaje go aplikacja; brak = synchronizacja niedostępna. */
 export interface SyncProps {
   code?: string;
   state: 'off' | 'synced' | 'syncing' | 'offline' | 'error';
   message?: string;
+  /** Ostatnia udana synchronizacja (ms). */
+  lastSync?: number;
+  /** Link do aplikacji na telefon, który od razu łączy tym kodem (pokazywany jako QR). */
+  shareUrl?: string;
   onCreate?(): void;
   onConnect?(code: string): void;
   onDisconnect?(): void;
+  /** Usunięcie danych z serwera. */
+  onForget?(): void;
+  onSyncNow?(): void;
 }
 
 /**
@@ -58,6 +65,8 @@ export interface PanelProps {
   onSetReborn?(key: string, reborn: number): void;
   /** Usunięcie postaci razem z postępem. Brak = przycisk niewidoczny. */
   onRemoveCharacter?(key: string): void;
+  /** Połączenie postaci dodanej ręcznie z tą samą postacią z gry (postęp przechodzi). */
+  onLinkCharacter?(fromKey: string, toKey: string): void;
 }
 
 export interface NewCharacter {

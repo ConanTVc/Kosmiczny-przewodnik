@@ -96,7 +96,10 @@ export function CharactersView() {
   const [adding, setAdding] = useState(false);
   /** Postać, przy której gracz kliknął „Usuń” – czeka na potwierdzenie. */
   const [confirmRemove, setConfirmRemove] = useState<string>();
+  /** Ręczna postać, którą gracz łączy z postacią z gry (wybór docelowej). */
+  const [linking, setLinking] = useState<{ from: string; to: string }>();
   const entries = visibleCharacters(props.progress).sort(([, a], [, b]) => b.lastSeen - a.lastSeen);
+  const gameChars = entries.filter(([k]) => k.split(':')[1]?.startsWith('c'));
   const add =
     props.onAddCharacter &&
     ((c: NewCharacter) => {
@@ -170,6 +173,15 @@ export function CharactersView() {
                 >
                   {c.tracked.v ? 'Nie śledź' : 'Śledź'}
                 </button>
+                {manual && props.onLinkCharacter && gameChars.length > 0 && !linking && (
+                  <button
+                    type="button"
+                    class="kp-btn kp-btn-small kp-btn-ghost"
+                    onClick={() => setLinking({ from: key, to: gameChars[0]![0] })}
+                  >
+                    Połącz z postacią z gry
+                  </button>
+                )}
                 {props.onRemoveCharacter && confirmRemove !== key && (
                   <button
                     type="button"
@@ -180,6 +192,52 @@ export function CharactersView() {
                   </button>
                 )}
               </div>
+              {linking?.from === key && (
+                <div
+                  class="kp-confirm kp-confirm-neutral"
+                  role="group"
+                  aria-label="Połącz z postacią z gry"
+                >
+                  <p>
+                    To ta sama postać co w grze? Postęp z <strong>{c.name.v}</strong> przejdzie do
+                    wybranej postaci, a ta dodana ręcznie zniknie.
+                  </p>
+                  <select
+                    class="kp-input"
+                    aria-label="Postać z gry"
+                    value={linking.to}
+                    onChange={(e) =>
+                      setLinking({ from: key, to: (e.currentTarget as HTMLSelectElement).value })
+                    }
+                  >
+                    {gameChars.map(([k, g]) => (
+                      <option key={k} value={k}>
+                        {g.name.v} · {raceName(g.race.v)} {REBORN_LETTER[g.reborn.v]} · serwer{' '}
+                        {k.split(':')[0]?.slice(1)}
+                      </option>
+                    ))}
+                  </select>
+                  <div class="kp-actions">
+                    <button
+                      type="button"
+                      class="kp-btn kp-btn-small kp-btn-on"
+                      onClick={() => {
+                        props.onLinkCharacter?.(key, linking.to);
+                        setLinking(undefined);
+                      }}
+                    >
+                      Połącz
+                    </button>
+                    <button
+                      type="button"
+                      class="kp-btn kp-btn-small kp-btn-ghost"
+                      onClick={() => setLinking(undefined)}
+                    >
+                      Anuluj
+                    </button>
+                  </div>
+                </div>
+              )}
               {confirmRemove === key && (
                 <div class="kp-confirm" role="alert">
                   <p>

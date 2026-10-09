@@ -1,20 +1,53 @@
 /** Elementy aplikacji na telefon wyświetlane w panelu (nagłówek i ustawienia). */
 import { useState } from 'preact/hooks';
 
-/** Pierwsze uruchomienie: synchronizacja jeszcze nie działa – gracz zaczyna bez niej. */
-export function Welcome({ onStart }: { onStart(): void }) {
+/**
+ * Pierwsze uruchomienie: połącz z komputerem kodem synchronizacji albo zacznij bez niego.
+ * `onConnect` brak = serwer synchronizacji jeszcze niewdrożony.
+ */
+export function Welcome({
+  onStart,
+  onConnect,
+}: {
+  onStart(): void;
+  onConnect?(code: string): void;
+}) {
+  const [code, setCode] = useState('');
   return (
     <section class="kp-wizard kp-wizard-ask">
       <p>
         <strong>Witaj w Kosmicznym Przewodniku!</strong>
       </p>
       <p>
-        Masz tu solucje, poradniki i swój postęp – także bez internetu. Na telefonie zaznaczasz
-        postęp ręcznie. Synchronizacja z panelem w grze na komputerze pojawi się wkrótce: wpiszesz
-        wtedy kod i postęp przejdzie tu sam.
+        Masz tu solucje, poradniki i swój postęp – także bez internetu.
+        {onConnect
+          ? ' Grasz z przewodnikiem na komputerze? W jego ustawieniach utwórz kod synchronizacji i zeskanuj QR albo wpisz kod tutaj – postęp przejdzie sam.'
+          : ' Na telefonie zaznaczasz postęp ręcznie. Synchronizacja z komputerem pojawi się wkrótce.'}
       </p>
+      {onConnect && (
+        <form
+          class="kp-inline-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (code.trim()) onConnect(code.trim());
+          }}
+        >
+          <input
+            class="kp-input"
+            placeholder="KOSMO-…"
+            aria-label="Kod synchronizacji"
+            autoComplete="off"
+            spellcheck={false}
+            value={code}
+            onInput={(e) => setCode((e.target as HTMLInputElement).value)}
+          />
+          <button type="submit" class="kp-btn kp-btn-small kp-btn-on">
+            Połącz
+          </button>
+        </form>
+      )}
       <div class="kp-actions">
-        <button type="button" class="kp-btn kp-btn-small kp-btn-on" onClick={onStart}>
+        <button type="button" class="kp-btn kp-btn-small kp-btn-ghost" onClick={onStart}>
           Używaj bez synchronizacji
         </button>
       </div>

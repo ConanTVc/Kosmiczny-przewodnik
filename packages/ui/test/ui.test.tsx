@@ -327,3 +327,91 @@ describe('kroki, listy, wyszukiwarka i fabuła krok po kroku', () => {
     expect(host.shadowRoot!.textContent).not.toContain('Butcher');
   });
 });
+
+describe('synchronizacja i łączenie postaci', () => {
+  const content = loadRealContent();
+  const game = upsertCharacter(
+    emptyProgress(),
+    { key: 's21:c3465', name: 'Butcher', race: 7, reborn: 5, loc: 1359 },
+    1,
+  );
+  const progress = upsertCharacter(
+    game,
+    { key: 's0:m77', name: 'Z telefonu', race: 7, reborn: 5 },
+    2,
+  );
+  const mountWith = (extra: Partial<PanelProps>) => {
+    const host = document.createElement('div');
+    document.body.append(host);
+    mount(host, {
+      content,
+      progress,
+      activeCharacter: 's0:m77',
+      onSetManual: vi.fn(),
+      onSetStep: vi.fn(),
+      onSetLists: vi.fn(),
+      onSelectCharacter: vi.fn(),
+      onSetTracked: vi.fn(),
+      onSetting: vi.fn(),
+      onImport: vi.fn(),
+      ...extra,
+    });
+    const root = host.shadowRoot!;
+    const button = (text: string) =>
+      [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === text);
+    const click = async (el: Element | null | undefined) => {
+      (el as HTMLElement).click();
+      await tick();
+    };
+    return { root, button, click };
+  };
+
+  it('kod z QR dla telefonu; odłączenie wymaga potwierdzenia', async () => {
+    const onDisconnect = vi.fn();
+    const { root, button, click } = mountWith({
+      initialTab: 'settings',
+      layout: 'app',
+      sync: {
+        code: 'KOSMO-AAAA-BBBB-CCCC-DDDD-EEEE-FFFF-GGGG',
+        state: 'synced',
+        lastSync: 5,
+        shareUrl: 'https://example.test/app/#kod=KOSMO-AAAA',
+        onDisconnect,
+      },
+    });
+    expect(root.querySelector('.kp-sync-code .kp-code')?.textContent).toContain('KOSMO-AAAA');
+    expect(root.querySelector('svg.kp-qr path')?.getAttribute('d')).toMatch(/^M\d+ \d+h1v1h-1z/);
+    expect(root.querySelector('.kp-sync-state')?.textContent).toContain('Zsynchronizowano');
+    await click(button('Odłącz to urządzenie'));
+    expect(onDisconnect).not.toHaveBeenCalled();
+    await click(button('Odłącz'));
+    expect(onDisconnect).toHaveBeenCalledOnce();
+  });
+
+  it('bez kodu: utworzenie albo połączenie istniejącym kodem', async () => {
+    const onCreate = vi.fn();
+    const onConnect = vi.fn();
+    const { root, button, click } = mountWith({
+      initialTab: 'settings',
+      layout: 'app',
+      sync: { state: 'off', onCreate, onConnect },
+    });
+    await click(button('Utwórz kod synchronizacji'));
+    expect(onCreate).toHaveBeenCalledOnce();
+    const input = root.querySelector('input[aria-label="Kod synchronizacji"]') as HTMLInputElement;
+    input.value = ' kosmo-aaaa ';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    await tick();
+    (input.form as HTMLFormElement).requestSubmit();
+    await tick();
+    expect(onConnect).toHaveBeenCalledWith('kosmo-aaaa');
+  });
+
+  it('postać z telefonu można połączyć z postacią z gry', async () => {
+    const onLinkCharacter = vi.fn();
+    const { button, click } = mountWith({ initialTab: 'characters', onLinkCharacter });
+    await click(button('Połącz z postacią z gry'));
+    await click(button('Połącz'));
+    expect(onLinkCharacter).toHaveBeenCalledWith('s0:m77', 's21:c3465');
+  });
+});

@@ -20,6 +20,7 @@ export default defineConfig({
   define: {
     __KP_BUILD_TIME__: JSON.stringify(Date.now()),
     __KP_PAGES__: JSON.stringify(PAGES),
+    __KP_SYNC_URL__: JSON.stringify(process.env['KP_SYNC_URL'] ?? ''),
   },
   plugins: [
     preact(),

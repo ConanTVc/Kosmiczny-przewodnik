@@ -4,8 +4,15 @@
  * (observer.ts). Nigdy nic nie klika, nie wysyła do serwera gry i nie zmienia `GAME`.
  * Jedyna ingerencja w stronę to własny panel. Każdy błąd jest połykany – gra działa dalej.
  */
-import { emptyProgress, isRemoved, parseProgress } from '@kp/core';
-import { mount, openKv, type PanelProps } from '@kp/ui';
+import {
+  emptyProgress,
+  isRemoved,
+  parseProgress,
+  SyncClient,
+  type Progress,
+  type SyncStatus,
+} from '@kp/core';
+import { mount, openKv, syncPanelProps, type PanelProps } from '@kp/ui';
 import { EMBEDDED, fetchRemoteContent, loadCachedContent } from './content';
 import { Controller } from './controller';
 import { watchGame } from './game';
@@ -55,7 +62,40 @@ async function start(): Promise<void> {
 
   let render = () => {};
   const shell = createPanelShell(() => render());
-  const controller = new Controller(kv, { progress, loaded, knownTeleports }, () => render());
+
+  // Synchronizacja z telefonem – w tle; wysyła tylko zmiany, nigdy nie nadpisuje.
+  let sync: SyncClient | undefined;
+  let syncStatus: SyncStatus = { state: 'off' };
+  let lastSynced: Progress | undefined;
+  let applyingRemote = false;
+  const controller = new Controller(kv, { progress, loaded, knownTeleports }, () => {
+    render();
+    if (sync && !applyingRemote && controller.progress !== lastSynced) {
+      lastSynced = controller.progress;
+      sync.notifyChange();
+    }
+  });
+  if (__KP_SYNC_URL__) {
+    sync = new SyncClient({
+      baseUrl: __KP_SYNC_URL__,
+      getLocal: () => controller.progress,
+      applyRemote: (remote) => {
+        applyingRemote = true;
+        try {
+          controller.importProgress(remote);
+        } finally {
+          applyingRemote = false;
+          lastSynced = controller.progress;
+        }
+      },
+      loadCode: () => kv.get<string>('syncCode'),
+      saveCode: (code) => kv.set('syncCode', code ?? null),
+      onStatus: (status) => {
+        syncStatus = status;
+        render();
+      },
+    });
+  }
 
   const props = (): PanelProps => {
     const c = controller;
@@ -88,6 +128,8 @@ async function start(): Promise<void> {
         />
       ),
       settingsExtra: <PanelSettings shell={shell} />,
+      sync: sync && syncPanelProps(sync, syncStatus, (code) => `${__KP_PAGES__}/app/#kod=${code}`),
+      onLinkCharacter: (from, to) => c.linkCharacter(from, to),
       onSetManual: (slug, status) => c.setManual(slug, status),
       onSetStep: (slug, step, done, total) => c.setStep(slug, step, done, total),
       onSetLists: (slug, lists) => c.setLists(slug, lists),
@@ -117,6 +159,13 @@ async function start(): Promise<void> {
   });
   observeGameDom((part) => controller.onDom(part));
   window.addEventListener('pagehide', () => void controller.saveNow());
+  if (sync) {
+    void sync.start();
+    window.addEventListener('online', () => void sync.syncNow());
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') void sync.syncNow();
+    });
+  }
 
   // Nowsza treść z GitHub Pages – w tle; bez sieci zostaje obecna.
   if (!import.meta.env.DEV) {

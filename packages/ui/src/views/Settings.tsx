@@ -1,69 +1,7 @@
 import { parseProgress, visibleCharacters } from '@kp/core';
 import { useState } from 'preact/hooks';
+import { SyncBlock } from '../components/SyncBlock';
 import { usePanel } from '../context';
-import type { SyncProps } from '../types';
-
-const SYNC_STATE: Record<SyncProps['state'], string> = {
-  off: 'Wyłączona',
-  synced: 'Zsynchronizowano',
-  syncing: 'Synchronizuję…',
-  offline: 'Brak internetu – zsynchronizuję później',
-  error: 'Błąd synchronizacji',
-};
-
-function SyncBlock({ sync }: { sync?: SyncProps }) {
-  const [code, setCode] = useState('');
-  if (!sync)
-    return <p class="kp-muted">Synchronizacja między komputerem a telefonem pojawi się wkrótce.</p>;
-  if (sync.code) {
-    return (
-      <>
-        <p>
-          Stan: <strong>{SYNC_STATE[sync.state]}</strong>
-          {sync.message && <span class="kp-muted"> – {sync.message}</span>}
-        </p>
-        <p>
-          Kod synchronizacji: <code class="kp-code">{sync.code}</code>
-        </p>
-        <p class="kp-muted">
-          Wpisz ten kod na telefonie. Nie pokazuj go innym – kto ma kod, widzi Twój postęp.
-        </p>
-        <button
-          type="button"
-          class="kp-btn kp-btn-small kp-btn-ghost"
-          onClick={() => sync.onDisconnect?.()}
-        >
-          Odłącz
-        </button>
-      </>
-    );
-  }
-  return (
-    <>
-      <button type="button" class="kp-btn" onClick={() => sync.onCreate?.()}>
-        Utwórz kod synchronizacji
-      </button>
-      <form
-        class="kp-inline-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (code.trim()) sync.onConnect?.(code.trim());
-        }}
-      >
-        <input
-          class="kp-input"
-          placeholder="KOSMO-XXXX-XXXX-…"
-          aria-label="Kod synchronizacji"
-          value={code}
-          onInput={(e) => setCode((e.target as HTMLInputElement).value)}
-        />
-        <button type="submit" class="kp-btn kp-btn-small">
-          Połącz
-        </button>
-      </form>
-    </>
-  );
-}
 
 function download(name: string, text: string) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
