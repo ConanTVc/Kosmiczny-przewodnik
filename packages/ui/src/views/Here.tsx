@@ -59,7 +59,9 @@ export function HereView({ locId, onPick }: { locId?: number; onPick(locId: numb
     .sort(byKind);
   const location = index.locations.get(locId);
   const counts = new Map<string, number>();
+  // Podsumowanie lokacji bez codziennych – nie liczą się do postępu.
   for (const q of quests) {
+    if (q.kind === 'daily' || q.kind === 'repeatable') continue;
     const s = statuses[q.slug]?.status ?? 'unknown';
     counts.set(s, (counts.get(s) ?? 0) + 1);
   }

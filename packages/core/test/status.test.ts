@@ -369,4 +369,58 @@ describe('mapa lokacji (GAME.map_quests)', () => {
     });
     expect(status(out, 'gborn/11/rutyna')).toBe('available?');
   });
+
+  it('pusta mapa: poboczne z jedną lokacją zrobione na pewno, główne i przechodzące – niepewne', () => {
+    const map = (locId: number) => [{ locId, at: 900, quests: [] }];
+    const out11 = computeStatuses({
+      index,
+      character,
+      scan: scan({ lokalizatorActive: false, mapQuests: map(11) }),
+    });
+    expect(status(out11, 'gborn/11/rutyna')).toBe('done');
+    expect(status(out11, 'gborn/11/inwazja')).toBe('done');
+    expect(status(out11, 'gborn/11/glowne')).toBe('done?');
+    // „Kosmiczna Choroba” przechodzi 10 → 12 (alsoAt) – sam brak na mapie 10 nie wystarcza
+    const out10 = computeStatuses({
+      index,
+      character,
+      scan: scan({ lokalizatorActive: false, mapQuests: map(10) }),
+    });
+    expect(status(out10, 'gborn/10/kosmiczna-choroba')).toBe('done?');
+    // codziennych z braku na mapie nie oznaczamy
+    const out13 = computeStatuses({
+      index,
+      character,
+      scan: scan({ lokalizatorActive: false, mapQuests: map(13) }),
+    });
+    expect(status(out13, 'gborn/13/wymiana')).toBe('unknown?');
+  });
+
+  it('dowody się sumują: niepewne „zrobione” z mapy potwierdza lokacja bez QUEST', () => {
+    const out = computeStatuses({
+      index,
+      character,
+      scan: scan({
+        teleports: [tp(10), tp(11, true)],
+        mapQuests: [{ locId: 10, at: 900, quests: [] }],
+      }),
+    });
+    expect(status(out, 'gborn/10/boskie-obowi-zki')).toBe('done');
+    expect(out.statuses['gborn/10/boskie-obowi-zki']?.reason).toBe('Lokacja bez znacznika QUEST');
+  });
+
+  it('ręczne ustawienie nie jest nadpisywane przez pewny dowód', () => {
+    let p = upsertCharacter(emptyProgress(), { key: 's1:c1', name: 'X', race: 0, reborn: 2 }, 1);
+    p = setManualStatus(p, 's1:c1', 'gborn/11/rutyna', 'available', 2);
+    const out = computeStatuses({
+      index,
+      character,
+      progress: p.characters['s1:c1'],
+      scan: scan({ teleports: [tp(11)] }),
+    });
+    expect(out.statuses['gborn/11/rutyna']).toMatchObject({
+      status: 'available',
+      source: 'manual',
+    });
+  });
 });

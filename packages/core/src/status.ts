@@ -66,7 +66,12 @@ export function computeStatuses(input: StatusInput): StatusOutput {
     reason: string,
     at = now,
   ): void => {
-    if (out.has(slug) || !relevantSlugs.has(slug)) return;
+    if (!relevantSlugs.has(slug)) return;
+    const prev = out.get(slug);
+    // Pierwszy wynik wygrywa. Wyjątek: kolejny dowód tego samego statusu, ale pewny, potwierdza
+    // przypuszczenie (np. „nie ma na mapie” + lokacja bez QUEST przy lokalizatorze).
+    if (prev && !(prev.status === status && !prev.certain && certain && prev.basis !== 'manual'))
+      return;
     out.set(slug, {
       status,
       source: basis === 'manual' ? 'manual' : 'auto',
@@ -175,11 +180,23 @@ export function computeStatuses(input: StatusInput): StatusOutput {
         );
       }
     }
-    // Zadania tej lokacji, których nie ma na mapie – zrobione albo jeszcze nieodblokowane.
+    // Zadania tej lokacji, których nie ma na mapie (w trakcie też by tam były) – zrobione albo
+    // jeszcze nieodblokowane. Poboczne z jedną lokacją uznajemy za zrobione na pewno; główne
+    // zostają niepewne, bo fabuła wraca na stare lokacje.
     for (const q of view.current) {
       if (q.locId !== map.locId || onMap.has(q.slug) || RECURRING.has(q.kind)) continue;
       if (!continuesMet(q)) continue;
-      set(q.slug, 'done', 'scan', false, 'Nie ma go już na mapie – pewnie zrobione', map.at);
+      const singlePlace = q.kind === 'side' && !q.continues && !q.alsoAt?.length;
+      set(
+        q.slug,
+        'done',
+        'scan',
+        singlePlace,
+        singlePlace
+          ? 'Nie ma go na mapie lokacji ani w dzienniku – zrobione'
+          : 'Nie ma go już na mapie – pewnie zrobione',
+        map.at,
+      );
     }
   }
 

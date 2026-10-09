@@ -63,7 +63,9 @@ Solucje i poradniki napisane przez autora (część własna, część za zgodą 
 - Pokazuje zadania **w trakcie i jeszcze niewzięte**; zrobionych nie ma. Działa bez lokalizatora.
 - `main: 1` = zadanie główne, `main: 0` = poboczne, `main: 0` + `rtype: 1` = codzienne.
 - `qb_id` = `data-qid` z dziennika (`quest_log_tr629351`) = `track_quest_629351` w panelu postępów – łączymy po nim bez zgadywania.
-- Zadanie na mapie, którego nie ma w dzienniku → do wzięcia. Zadanie tej lokacji z treści, którego nie ma na mapie → pewnie zrobione (niepewne – może jeszcze nie odblokowane).
+- Zadanie na mapie, którego nie ma w dzienniku → do wzięcia. Zadanie tej lokacji z treści, którego nie ma na mapie → zrobione: **pewne** dla pobocznego z jedną lokacją (bez `alsoAt`, pierwsza część – bez `continues`), **niepewne** dla głównego (fabuła wraca na stare lokacje) i przechodzącego przez kilka lokacji. Codziennych z braku na mapie nie oznaczamy.
+- Dowody się sumują: niepewne „zrobione” zmienia się w pewne, gdy potwierdzi je inne źródło (lokacja bez QUEST przy lokalizatorze, wcześniejszy pewny skan). Ręczne ustawienie zawsze wygrywa.
+- Zadania codzienne (i powtarzalne) nie liczą się do postępu – fabuła = główne + poboczne.
 
 ### Panel „Postępy zadań” – `#quest_track_con .qtrack`
 - `data-loc` elementu = lokacja zadania, nazwa w `<b>` – gra skraca długie nazwy do „...” (dopasowanie po początku nazwy); id elementu `track_quest_{qid}`.

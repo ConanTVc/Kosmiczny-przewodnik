@@ -19,14 +19,16 @@ const FILTERS: [Filter, string][] = [
 ];
 
 const KINDS: [KindFilter, string][] = [
-  ['all', 'Wszystkie'],
+  ['all', 'Fabuła'],
   ['main', 'Główne'],
   ['side', 'Poboczne'],
   ['recurring', 'Codzienne'],
 ];
 
+const isRecurring = (q: BuiltQuest) => q.kind === 'daily' || q.kind === 'repeatable';
+/** „Fabuła” = główne + poboczne. Codzienne nie liczą się do postępu – wracają co dzień. */
 const kindMatches = (k: KindFilter, q: BuiltQuest) =>
-  k === 'all' || (k === 'recurring' ? q.kind === 'daily' || q.kind === 'repeatable' : q.kind === k);
+  k === 'all' ? !isRecurring(q) : k === 'recurring' ? isRecurring(q) : q.kind === k;
 
 export function ProgressView() {
   const { character, chapters, relevant, statuses, unmatched, locName, openLocation } = usePanel();
@@ -112,6 +114,9 @@ export function ProgressView() {
           </button>
         ))}
       </div>
+      {kind === 'all' && (
+        <p class="kp-muted">Główne i poboczne. Codzienne nie liczą się do postępu.</p>
+      )}
       {filter === 'todo' && laterCount > 0 && (
         <p class="kp-muted">Bez {laterCount} zadań odłożonych „na później” – są w „Moje listy”.</p>
       )}
