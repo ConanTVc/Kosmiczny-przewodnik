@@ -54,7 +54,7 @@ Otwórz go w przeglądarce. Powinien pokazać `{"ok":true,…}`.
 
 1. Wejdź w repozytorium na GitHubie: **Settings → Secrets and variables → Actions → zakładka Variables → New repository variable**.
 2. Nazwa: `KP_SYNC_URL`. Wartość: adres z punktu 4 (bez `/` na końcu).
-3. Uruchom wdrożenie: zakładka **Actions** na górnym pasku repozytorium (nie w Settings) → po lewej **GitHub Pages** → po prawej przycisk **Run workflow** → zielony **Run workflow**. Zamiast tego wystarczy też dowolny push do .
+3. Uruchom wdrożenie: zakładka **Actions** na górnym pasku repozytorium (nie w Settings) → po lewej **GitHub Pages** → po prawej przycisk **Run workflow** → zielony **Run workflow**. Zamiast tego wystarczy też dowolny push do gałęzi `main`.
 
 Po kilku minutach skrypt w grze i aplikacja na telefon mają synchronizację. Skrypt zaktualizuje się sam.
 
